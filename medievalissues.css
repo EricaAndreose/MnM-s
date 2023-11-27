@@ -1,0 +1,197 @@
+@font-face {
+    /* Font similar to the original ones. French Gothic. Look at the "g", close letters, spigoli, grossezza
+    verticalità e ordine */
+    font-family: 'Old_London';
+    src: url('font/medieval/oldlondon/OldLondon.ttf');
+}
+
+@font-face {
+    font-family: '1492';
+    src: url('font/medieval/1492/1492_Quadrata_lim.otf');
+}
+
+@font-face {
+    font-family: 'salterio';
+    src: url('font/medieval/salterio/Salterio\ Shadow.ttf');
+}
+
+@font-face {
+    font-family: 'genzsch';
+    src: url('font/medieval/genzsch/GenzschInitials.ttf');
+}
+
+#gif {
+    text-align: center;
+    padding-top: 1em;
+}
+
+body {
+    background-image: url('img/medieval/parch.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+#subtitle {
+    color: rgb(40, 36, 36);
+    background-image: url('img/medieval/back.png');
+    text-align: center;
+    padding: 0.5em;
+    font-family: Old_London;
+    border-radius: 5px;
+}
+
+.navbar {
+    border-radius: 5px;
+    background-image: url('img/medieval/back.png');
+    font-family: '1492';
+    margin-top: -0.5cm;
+}
+
+
+
+.dropdown-menu {
+    background-image: url('img/medieval/back.png');
+}
+
+
+#main {
+    background-image: url('img/medieval/back.png');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    border-radius: 5px;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    height: 40vw;
+    position: relative;
+    z-index: 1;
+}
+
+#externalContentColumn {
+    background-image: url('img/medieval/02.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vw;
+    overflow-y: auto; /* or overflow-y: scroll; */
+}
+
+#map { height: 28vw; }
+
+#footer {
+    background-image: url('img/medieval/back.png');
+}
+
+#externalContentColumn {
+    padding: 5%;
+}
+
+p {
+    font-family: '1492';
+    font-size: 22px;
+    column-count: 2;
+    column-gap: 80px;
+    text-align: justify;
+    overflow: hidden; /* Hide any text that overflows */
+    text-overflow: ellipsis; /* Display an ellipsis (...) for overflowed text */
+    padding: 2%;
+}
+
+.myFirstletter {
+    font-family: genzsch;
+    font-size: 4rem;
+}
+
+.title-1 {
+    font-family: salterio;
+}
+
+.title-2 {
+    font-family: salterio;
+}
+
+.title-3 {
+    font-family: salterio;
+}
+
+
+
+#space {
+    height: 17rem; 
+}
+
+.image-container {
+    position: relative;
+    width: 50%; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: -5%;
+}
+
+
+#Vinyl {
+    position: static;
+    text-align: center;
+    width: 100%; /* Set the initial width to 100% */
+    height: auto; /* Set the initial height to 100% */
+    object-fit: cover; /* Maintain aspect ratio while covering container */
+    z-index: -1;
+}
+
+
+#stick {
+    position: absolute;
+    width: 100%; /* Set the initial width to 100% */
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio while covering container */
+    z-index: 1;
+    transform-origin: 0;
+    transform: rotate(0deg);
+    margin-left: -23vw;
+}
+
+
+.button1 {
+    position: absolute;
+    z-index: 3;
+}
+
+#move {
+    transition: 300ms;
+    
+}
+
+
+.music-container {
+    background-color: #F1FAEE;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgb(87, 31, 1);
+    width: 50%;
+    height: 25%;
+    position: relative;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -75%;
+    }
+
+.stitle {
+    font-size: 20px;
+    font-family: Salterio;
+    text-align: center;
+    }
+
+.navigation {
+    background-color: #F1FAEE;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    }
+
+.action-btn {
+    background-color: #F1FAEE;
+    border: 0;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 2px;
+    }
+
