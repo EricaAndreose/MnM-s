@@ -98,14 +98,17 @@ p {
 .myFirstletter {
     font-family: genzsch;
     font-size: 4rem;
+    color: rgb(87, 0, 0)
 }
 
 .title-1 {
     font-family: salterio;
+    color: rgb(0, 0, 143);
 }
 
 .title-2 {
     font-family: salterio;
+    color: rgb(0, 0, 143);
 }
 
 .title-3 {
@@ -194,4 +197,42 @@ p {
     cursor: pointer;
     padding: 2px;
     }
+
+#decor1 {
+    background-image: url('img/medieval/002.png');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 15vw;
+    margin-left: 50%;
+    margin-top: -12vw;
+}
+
+#decor2 {
+    background-image: url('img/medieval/+3.png');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: 19vw;
+    margin-left: 35%;
+   
+}
+
+#decor3 {
+    background-image: url('img/medieval/12 2.png');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: 19vw;
+    margin-left: 35%;
+}
+
+.content img { 
+    filter: sepia(60%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
 
