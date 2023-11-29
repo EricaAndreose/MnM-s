@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'AstrenaDemo';
+    src: url('font/artnouveau/astrenademo/Astrena_Demo.ttf');
+}
+
+@font-face {
+    font-family: 'Beardsons Normal';
+    src: url('font/artnouveau/beardsons-normal/Beardsons\ -\ Normal.ttf');
+}
+
+@font-face {
+    font-family: 'True Golden™';
+    src: url('font/artnouveau/true_golden_quot_/True_Golden_quot_/trg_____.ttf');
+}
+
+
+#gif {
+    text-align: center;
+    padding-top: 1em;
+}
+
+body {
+    font-family: 'True Golden™'; 
+    margin: 0 auto;
+    font-size: 1em; 
+    color: #222;
+    padding: 0 1.5%; 
+    background-image: url('img/artnouveau/backgroundAN.jpg');
+}
+
+#subtitle {
+    font-family: 'True Golden™';
+    color: rgb(40, 36, 36);
+    background-color: #F1FAEE;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.navbar {
+    border-radius: 5px;
+    background-color: #F1FAEE;
+    margin-top: -0.5cm;
+    font-family: 'True Golden™';
+}
+
+
+.dropdown-menu {
+    background-color: #F1FAEE;
+}
+
+#main {
+    background-color: #F1FAEE;
+    border-radius: 5px;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    height: 40vw;
+    position: relative;
+    z-index: 1;
+}
+
+#externalContentColumn {
+    background-color: #F1FAEE;
+    height: 40vw;
+    overflow-y: auto; /* or overflow-y: scroll; */
+    padding: 5%;
+}
+
+#map { height: 28vw; }
+
+#footer {
+    background-color: #F1FAEE;
+}
+
+.title {
+    font-family: 'Beardsons Normal';
+    font-size: 4em;
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: .90;
+    color: #000;
+    text-align: center;
+}
+
+
+.author {
+    font-family: 'AstrenaDemo';
+    color: #000;
+    text-align: center;
+    font-size: 120%;
+    border-bottom: 3px solid #000;
+    padding-bottom: 1.5em;
+}
+
+/* .para-wrap p:first-of-type::first-letter {
+    font-family: 'True Golden™';
+    font-weight: 900;
+    font-size: 6em;
+    background-image: url('prova-lettera.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 1;
+    color: rgb(241, 235, 235);
+    padding: 0 .1em;
+    margin-right: .1em;
+    display: block;
+    float: left;
+} Trova il modo di farlo senza para-wrap*/
+
+.article {
+    padding: 10%;
+    /* background-image: url('cornerTopLeft.png'), url('cornerTopRight.png'), url('cornerBottomLeft.png'), url('cornerBottomRight.png'), url('borderLeft.png'), url('borderLeft.png');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y;
+    background-size: 20%, 20%, 20%, 20%, 3%, 3%;
+    background-position: top left, top right, bottom left, bottom right, left, right; */
+    background: url('img/artnouveau/cornerTopLeft.png') top left no-repeat, url('img/artnouveau/cornerTopRight.png') top right no-repeat, url('img/artnouveau/cornerBottomLeft.png') bottom left no-repeat, url('img/artnouveau/cornerBottomRight.png') bottom right no-repeat, url('img/artnouveau/borderLeft.png') left repeat-y, url('img/artnouveau/borderLeft.png') right repeat-y;
+    background-size: 10%, 10%, 10%, 10%, 3%, 3%;
+
+} 
+
+
+.content {
+    column-count: 2;
+    column-gap: 10dvw;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    font-family: 'True Golden™';
+    background: url('img/artnouveau/centro.jpg') center top no-repeat, url('img/artnouveau/img_centro.png') center bottom repeat-y;
+    background-size: auto auto;
+    padding-top: 10%;
+    
+}
+
+#space {
+    height: 17rem; 
+}
+
+.image-container {
+    position: relative;
+    width: 50%; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: -5%;
+}
+
+
+#Vinyl {
+    position: static;
+    text-align: center;
+    width: 100%; /* Set the initial width to 100% */
+    height: auto; /* Set the initial height to 100% */
+    object-fit: cover; /* Maintain aspect ratio while covering container */
+    z-index: -1;
+}
+
+
+#stick {
+    position: absolute;
+    width: 100%; /* Set the initial width to 100% */
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio while covering container */
+    z-index: 1;
+    transform-origin: 0;
+    transform: rotate(0deg);
+    margin-left: -23vw;
+}
+
+
+.button1 {
+    position: absolute;
+    z-index: 3;
+}
+
+#move {
+    transition: 300ms;
+    
+}
+
+
+.music-container {
+    background-color: #F1FAEE;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgb(87, 31, 1);
+    width: 50%;
+    height: 25%;
+    position: relative;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -75%;
+    }
+
+
+.navigation {
+    background-color: #F1FAEE;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    }
+
+.action-btn {
+    background-color: #F1FAEE;
+    border: 0;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 2px;
+    }
+

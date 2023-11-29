@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>A robust music genre classification approach for global and regional music datasets evaluation</title>
+  <!--link Bootstrap icons-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<!--link google icons-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--link favicon per loghetto -->
+	<link rel="icon" href="img/m.png" type="img/jpg"/>	
+	<!--CSS of Bootstrap-->
+	<link rel="stylesheet" type="text/css" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+	<div class="article">
+		<div class="generic-info">
+			<div class="title">
+				<h1>A robust music <span class="keyword" id="genreClassification">genre classification</span> approach for global and regional music datasets evaluation</h1>
+			</div>
+			<p class="author">By <span class="person" id="JMdS"></span>Jefferson Martins de Sousa</span>,</p>
+			<p class="author"><span class="person" id="ETP">Eanes Torres Pereira</span>,</p>
+			<p class="author"><span class="person" id="LRV">Luciana Ribeiro Veloso</span></p>
+			<!-- <p class="publication-date">data x</p> -->
+		</div>
+
+		<div class="content">
+			
+      <h2 class="title-2"><center>I. Introduction</center></h2>
+      <p>The 21st century began and so the number of streaming music, empowered by the use of internet in all the world. With the huge availability of digital music, there is a need to organize them. Genres are a popular way to organize large music collections, both private and commercial. 
+        In the context of genre music classification, many approaches have been proposed such as: melody [1], source separation [2] and different aspects of music features (low and high-level features).</p>
+
+      <p>Currently, musical genre annotation is performed manually. Automatic musical <span class="keyword" id="genreClassification">genre classification</span> can assist or replace the human user in this process and would be a valuable addition to <span class="keyword" id="musicInformationRetrieval">Music Information Retrieval (MIR)</span> systems.</p>
+
+      <p>There is a considerable amount of proposed approaches on extracting descriptive features for music <span class="keyword" id="genreClassification">genre classification</span> [3]. In this paper, we propose a set of features to classify genres of music based on a methodical selection of important features to <span class="keyword" id="musicInformationRetrieval">music information retrieval (MIR)</span> 
+          and <span class="keyword" id="musicEmotionRecognition">music emotion recognition (MER)</span>.</p>
+
+      <p>Various methods for feature extraction have been developed. Sturm [4], compared MGR (Music Genre Recognition) works which used the <span class="keyword" id="GTZANdataset">GTZAN dataset</span>. According to his paper, we selected all the approaches which performed experiments with 5-fold cross validation and achieved the best accuracies. 
+        Below, we describe a review of these papers.</p>
+
+      <p>Zeng et al. [5] proposed extract features decomposing music signal into a bag of audio words, using latent semantic analysis model (pLSA) for classification. pLSA is a model proposed by Hofmann [6]. Zeng et al. [5] extracted the first 20 MFCC coefficients and its first-order derivative, and achieved 81.5% of accuracy.</p>
+
+      <p>Manzagol et al. [7] comes with a new proposal using sparse coding and AdaBoost for classifying audio streams. With the approach used, they achieved 54.3% of precision. Holzapfel et al. [8] used a non-negative matrix factorization (NMF) technique in order to derive a novel description for the timbre of musical sounds. 
+        Their approach improved classification compared to methods using MFCC and achieved 74% of accuracy. Holzapfel et al. [9] present an approach using a new set of features based on Non-negative Matrix Factorization for classification of musical signals into genres. Their results show a superiority of the proposed features compared to MFCC. 
+        They achieved 74.5% of accuracy. Gaussian Mixture Model (GMM) is used instead of SVM to create a model of genres. According to Sturm [4], these are the last articles published using <span class="keyword" id="GTZANdataset">GTZAN</span> and 5-fold cross-validation.</p>
+
+      <p>There are two main approaches to classify emotions in music: categorical and dimensional [10]. Panda et al. [11] use a categorical approach to classify mood in music using three different frameworks to extract features: Marsyas [12], <span class="keyword" id="musicInformationRetrieval">MIR</span> Toolbox [13] and PsySound3 [14]. 
+        They use a SVM model trained to differentiate between the five existing clusters. The approach proposed by Panda won the MIREX contest of 2012 [11] with 67.83% of accuracy.</p>
+
+      <p>Yang et al. [15] used a dimensional approach to classify mood in music by extracting features using PsySound [14], Marsyas [12] and two DWCH algorithms [16]. These features were given as input to a SVM regression method for predicting arousal and valence. 
+        Coefficient of determination (R2) was computed to evaluate their method on a dataset proposed in the paper. Their method achieved 58.3% of R2 (coefficient of determination) for arousal and 28% for valence.</p>
+
+      <p>We evaluated our method using the <span class="keyword" id="GTZANdataset">GTZAN  [17] dataset</span> [17] dataset which is used for other researchers and applied our approach to creating a model to classify genres from <span class="place" id="BR">Brazil</span>.<p>
+
+      <p>Although music genres do not have strict definitions [17], music genre annotation is performed manually in many websites. However, manual annotation of genres, takes much time and genres can be quite subjective. Due to that, this paper proposes an automatic musical <span class="keyword" id="genreClassification">genre classification</span> using six sets of descriptors: 
+        spectral, time-domain, tonal, rhythm, sound effect, and high-level. Besides, we propose a music dataset with popular genres in <span class="place" id="BR">Brazil</span>.</p>
+
+      <p>This paper is organized as follows. In section 2 we describe the proposed method. In section 3 we describe the datasets used for evaluation and present the classification results obtained. Conclusions of the work are provided in section 4.</p>
+    
+
+    
+      <h2 class="title-2"><center>II. Method</center></h2>
+      <p>We employed a four-step method for <span class="keyword" id="genreClassification">genre classification</span>: dataset creation, feature extraction, classification and evaluation. Although there are many and different kinds of music genre datasets, there is not any dataset with all important genres of the northeast area of Brazil. We found the Audio Latin <span class="keyword" id="genreClassification">Genre Classification</span> Dataset <a class="noteRef" href="#n01">1</a> which includes some important genres of Brazil as forró, pagode, sertanejo and axé, but still lacks some important genres from the northeast area of Brazil, as Repente and a characteristic genre, very similar to the MPB (brazilian popular music) music. Owing to the problem of lack of genres, we proposed the creation of a new dataset that includes others important genres of Brazil withdrawn from the northeast area. Another reason to create the <span class="keyword" id="brazilianMusic">Brazilian music</span> dataset is because we did not find any classifier to the genres we call MPB, Repente and Brega. The genre we call MPB is widely produced by many singers from the northeast and it is important to have a classifier to this important genre. The same we say to Repente, which is widely spread to all the northeast region and until today there is not any music dataset containing samples labeled with Repente.</p>
+
+      <p>The <span class="keyword" id="brazilianMusic">Brazilian music</span> dataset was constructed with 7 musical genres (Forró, Rock, Repente, MPB, Brega, Sertanejo and Disco) in which the representative part of genre was selected from the whole music. These genres were chosen because they are typical genres of the <span class="keyword" id="brazilianMusic">Brazilian music</span> and until now, there is no other classifier implemented to these genres. Each genre has 30 songs with a frequency of 44100Hz sampling rate. We selected excerpts from a wide set of artists to cover a large variation of music in a genre.</p>
+
+      <p>We searched for video-clips in Youtube and mp3 songs in PaicoMP3 <a class="noteRef" href="#n02">2</a> related to the seven categories of genres chosen for composing our proposed dataset. For each genre class we selected 30 audio tracks and used Audacity <a class="noteRef" href="#n03">3</a> , a software for recording and editing sounds, to select and crop the music part that best represents the genre.</p>
+
+      <p>In order to create a set of features to best classify music genres, we made a methodical selection in papers of <span class="keyword" id="musicInformationRetrieval">music information retrieval (MIR)</span> and <span class="keyword" id="musicEmotionRecognition">music emotion recognition (MER)</span>, which have achieved the best accuracies. We wanted to find what were the best features used in both types of system and how we could mix these features in order to create the best set of features to MGR. We searched for papers of <span class="keyword" id="musicInformationRetrieval">MIR</span> and <span class="keyword" id="musicEmotionRecognition">MER</span> <span class="keyword" id="musicEmotionRecognition">MER</span>, we selected papers with less than or 5 years of publication.<p>
+
+      <p>At the end of our search we got 30 articles to select what were the best features we could use to combine and create a new set of features proposed in this paper. We noticed that many articles used repeated features and were only using different classification methods or datasets. With this in mind we reject most part of these 30 papers and stayed with 6 papers that presented higher accuracies among all the papers. The papers selected were: Zeng et al. [5], Manzagol et al. [7], Holzapfel et al. [8], Holzapfel et al. [9], Panda et al. [11], Yang et al. [15]. The criteria to select which features we would use to compose our set of features were: popularity of the feature (if the feature were used in different papers) and features that were presented as important to <span class="keyword" id="musicInformationRetrieval">MIR</span>.</p>
+
+      <p>One of the challenges of working with pattern recognition is to find the best features to solve problems in <span class="keyword" id="musicInformationRetrieval">MIR</span> and the best way to extract them, besides that many features are usually hard to extract from audio signals (high-level features: Danceability, Dynamic Complexity, etc). Although several authors have studied the most relevant musical attributes for <span class="keyword" id="genreClassification">genre classification</span>, there is not a fixed set of features for the music <span class="keyword" id="genreClassification">genre classification</span> problem [18], [19]. Considering this, we used features which belong to 6 categories of descriptors: spectral, time domain, rhythm, sound effect, and high-level. Besides the common features presented in most papers, we also extracted the following features: loudness, sharpness, dissonance, tonality, tempo, inharmonicity, key and beat histograms.</p>
+
+      <p>In order to represent the set of feature extracted for each song, we chose a single vector among three forms of feature representation. To take the average or median values for each feature attribute over all segments is a traditional strategy used [20]. We took a different strategy. For the single vector representation, a set of statistics was computed to summarize the frame descriptor extracted for each song. For each feature attribute we took the mean, mean of the derivative, mean of the second derivative, variance, variance of the derivative, variance of the second derivative, minimum and maximum.</p>
+
+      <p>There are three common choices of classifiers used for <span class="keyword" id="musicInformationRetrieval">music information retrieval</span>: k-Nearest Neighbors (K-NN), Support Vector Machine (SVM) and Gaussian Mixture Model (GMM). Support Vector Machines are among the top performing classifiers [20]. Therefore we opted to use the SVM in our experiments.</p>
+
+      <p>The feature extraction algorithm was coded in C++, using Essentia <a class="noteRef" href="#n04">4</a> library to extract relevant audio features and manipulate data. In our experiments, the LibSvm <a class="noteRef" href="#n05">5</a> implementation of SVM was applied.</p>
+    
+    
+    
+      <h2 class="title-2"><center>III. Evaluation</center></h2>
+      <p>We evaluated our approaches by classification accuracy computed from k-fold cross-validation and splitting our data in training and test. Both methods to measure the approaches are very used in the literature [3]. Following papers which split the dataset 70/30 (70% used to train, 30% used to test) are: [21] and [22]. Following papers which used 5-fold cross-validation are: [5], [7]–​[9].</p>
+
+      <p>We randomly sorted the <span class="keyword" id="GTZANdataset">GTZAN dataset</span> with 1000 pieces and selected the first 667 to train and the latest 333 to test the model created. Representing two thirds (66.7%) of the dataset to train and one third (33.3%) to test. This process was repeated 30 times. We opted to repeat 30 times, because we wanted to show the result found is not a consequence of a random grouping of the best group of songs used to created the model. Therefore, our goal is to present the robustness of our method, repeating 30 times with random sets of songs used to test and train. In the end, we had 9990 pieces of music which were tested. The result is presented in Table I. The average accuracy of this method was 78,00%. Table II shows the result of one repetition of those 30 repetitions shown in Table I. For one repetition the average accuracy was 81.35%.</p>
+
+      <p>The accuracy to rock class was less than 50%. The problem is caused due to the rhythm and the beat of rock songs be very similar to metal and country. This is why we see our model predicting country and metal when it should predict rock. We see the same pattern when we check the Table I and we see that the model predicted rock when it should predict metal and country songs.</p>
+
+      <p>Among the genres presented in <span class="keyword" id="GTZANdataset">GTZAN dataset</span>, the genres classical and jazz are the ones which has most differences in rhythm and beat compared to the others genres. However, the model did not have much difficulty to differentiate classical and jazz music and achieved the best accuracies. As we check in Table I.</p>
+
+      <p>We ran 5-fold cross-validation dividing each genre of the data set in 5 folds. We had the accuracy of 79.70% for this method. There are some genres that had accuracy lower than 70%, Rock with 49.31%, Disco with 65.87% and Country with 69.68%. Reggae had accuracy of 75.37% and all the others genre had accuracy above 80%.</p>
+      
+      <p>For the <span class="keyword" id="brazilianMusic">Brazilian music</span> dataset we ran 5-fold cross-validation and got the rate of 86.11%. From one of the 30 times we ran 5-fold cross validation, with the best set of audios for training and testing, our model achieved 97.62% of accuracy. Two genres that had the lowest rates were Forro and Rock.</p>
+
+      <p>Table III presents the results of works that measured their performance by classification accuracy computed from 5-fold cross-validation [3]. Zeng et al. [5] achieved 1.8% of accuracy higher than results obtained by our proposed approach. This result may be because they performed 5-fold cross validation only one time and used the best set of audios to train and test the model created. We performed 30 runs of 5-fold cross validation and used the average of all results to represent our accuracy, hence we can ensure our model is good not only when we used the best set of features to train and test.</p>
+
+      <table class="table table-hover"> <!--TABLE III-->
+        <caption>Table III: Best accuracies presented in previous works using <span class="keyword" id="GTZANdataset">GTZAN</span>.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Approaches</th>
+            <th scope="col">Accuracies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Manzagol et al. [7]</th>
+            <td>54.3%</td>
+          </tr>
+          <tr>
+            <th scope="row">Holzapfel et al. [9]</th>
+            <td>72.9%</td>
+          </tr>
+          <tr>
+            <th scope="row">Holzapfel et al. [8]</th>
+            <td>74%</td>
+          </tr>
+          <tr>
+            <th scope="row">Zeng et al. [5]</th>
+            <td>81.5%</td>
+          </tr>
+          <tr>
+            <th scope="row">Our Approach using GTZAN</th>
+            <td>79.7%</td>
+          </tr>
+          <tr>
+            <th scope="row">Our Approach using BMD</th>
+            <td>86.11%</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p>According to Table I and Table II, we noticed how good our approach performed with the set of features proposed. Many authors, when performing n-fold cross validation, perform only a single run [22], [23]. That is not a good way of verifying the generality of the method. When they use only 10%, in a 10-fold cross-validation procedure, with randomly shuffling the samples and performing many executions, they may have used the best set of samples to test their model and consequently they have achieved great accuracies. This is why we repeated the process of train and test 30 times with the <span class="keyword" id="GTZANdataset">GTZAN dataset</span>, hence we could have the idea of how good or bad our approach is.</p>
+      <br>
+      <table class="table table-hover"> <!--TABLE I-->
+        <caption>Table I: Confusion matrix showing the results of 30 repetition of the <span class="keyword" id="GTZANdataset">GTZAN dataset</span> divided in 66.7% to train and 33.3% to test. The cell values correspond to the accumulation of classification results for 30 repetition</caption>
+        <thead>
+          <tr>
+            <th scope="col">Genres</th>
+            <th scope="col">Blues</th>
+            <th scope="col">Classical</th>
+            <th scope="col">Country</th>
+            <th scope="col">Disco</th>
+            <th scope="col">Hip Hop</th>
+            <th scope="col">Jazz</th>
+            <th scope="col">Metal</th>
+            <th scope="col">Pop</th>
+            <th scope="col">Reggae</th>
+            <th scope="col">Rock</th>
+            <th scope="col">Accuracies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Blues</th>
+            <td>863</td>
+            <td>7</td>
+            <td>31</td>
+            <td>10</td>
+            <td>6</td>
+            <td>25</td>
+            <td>38</td>
+            <td>5</td>
+            <td>4</td>
+            <td>45</td>
+            <td>83.46%</td>
+          </tr>
+          <tr>
+            <th scope="row">Classical</th>
+            <td>0</td>
+            <td>952</td>
+            <td>15</td>
+            <td>2</td>
+            <td>0</td>
+            <td>33</td>
+            <td>0</td>
+            <td>11</td>
+            <td>1</td>
+            <td>3</td>
+            <td>93.60%</td>
+          </tr>
+          <tr>
+            <th scope="row">Country</th>
+            <td>18</td>
+            <td>42</td>
+            <td>786</td>
+            <td>49</td>
+            <td>0</td>
+            <td>7</td>
+            <td>18</td>
+            <td>34</td>
+            <td>35</td>
+            <td>139</td>
+            <td>69.68%</td>
+          </tr>
+          <tr>
+            <th scope="row">Disco</th>
+            <td>12</td>
+            <td>30</td>
+            <td>35</td>
+            <td>639</td>
+            <td>24</td>
+            <td>2</td>
+            <td>13</td>
+            <td>46</td>
+            <td>97</td>
+            <td>72</td>
+            <td>65.87%</td>
+          </tr>
+          <tr>
+            <th scope="row">Hip Hop</th>
+            <td>7</td>
+            <td>1</td>
+            <td>0</td>
+            <td>62</td>
+            <td>805</td>
+            <td>0</td>
+            <td>3</td>
+            <td>30</td>
+            <td>44</td>
+            <td>6</td>
+            <td>84.02%</td>
+          </tr>
+          <tr>
+            <th scope="row">Jazz</th>
+            <td>19</td>
+            <td>9</td>
+            <td>12</td>
+            <td>10</td>
+            <td>0</td>
+            <td>852</td>
+            <td>0</td>
+            <td>9</td>
+            <td>6</td>
+            <td>14</td>
+            <td>91.51%</td>
+          </tr>
+          <tr>
+            <th scope="row">Metal</th>
+            <td>0</td>
+            <td>31</td>
+            <td>0</td>
+            <td>4</td>
+            <td>9</td>
+            <td>3</td>
+            <td>851</td>
+            <td>17</td>
+            <td>0</td>
+            <td>81</td>
+            <td>85.44%</td>
+          </tr>
+          <tr>
+            <th scope="row">Pop</th>
+            <td>0</td>
+            <td>4</td>
+            <td>7</td>
+            <td>40</td>
+            <td>39</td>
+            <td>2</td>
+            <td>0</td>
+            <td>758</td>
+            <td>31</td>
+            <td>46</td>
+            <td>81.76%</td>
+          </tr>
+          <tr>
+            <th scope="row">Reggae</th>
+            <td>6</td>
+            <td>4</td>
+            <td>23</td>
+            <td>58</td>
+            <td>54</td>
+            <td>4</td>
+            <td>6</td>
+            <td>20</td>
+            <td>710</td>
+            <td>57</td>
+            <td>75.37%</td>
+          </tr>
+          <tr>
+            <th scope="row">Rock</th>
+            <td>3</td>
+            <td>59</td>
+            <td>140</td>
+            <td>78</td>
+            <td>18</td>
+            <td>27</td>
+            <td>119</td>
+            <td>58</td>
+            <td>49</td>
+            <td>536</td>
+            <td>75.37%</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table class="table table-hover"> <!--TABLE II-->
+        <caption>Table II: Confusion matrix presenting the results of one repetition of the <span class="keyword" id="GTZANdataset">GTZAN dataset</span> divided in 66.7% to train and 33.3% to test.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Genres</th>
+            <th scope="col">Blues</th>
+            <th scope="col">Classical</th>
+            <th scope="col">Country</th>
+            <th scope="col">Disco</th>
+            <th scope="col">Hip Hop</th>
+            <th scope="col">Jazz</th>
+            <th scope="col">Metal</th>
+            <th scope="col">Pop</th>
+            <th scope="col">Reggae</th>
+            <th scope="col">Rock</th>
+            <th scope="col">Accuracies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Blues</th>
+            <td>28</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>90.32%</td>
+          </tr>
+          <tr>
+            <th scope="row">Classical</th>
+            <td>0</td>
+            <td>29</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>93.54%</td>
+          </tr>
+          <tr>
+            <th scope="row">Country</th>
+            <td>0</td>
+            <td>1</td>
+            <td>32</td>
+            <td>2</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>5</td>
+            <td>78.04%</td>
+          </tr>
+          <tr>
+            <th scope="row">Disco</th>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>18</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>8</td>
+            <td>62.06%</td>
+          </tr>
+          <tr>
+            <th scope="row">Hip Hop</th>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>23</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>88.46%</td>
+          </tr>
+          <tr>
+            <th scope="row">Jazz</th>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>24</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>3</td>
+            <td>85.71%</td>
+          </tr>
+          <tr>
+            <th scope="row">Metal</th>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>30</td>
+            <td>0</td>
+            <td>0</td>
+            <td>4</td>
+            <td>85.71%</td>
+          </tr>
+          <tr>
+            <th scope="row">Pop</th>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>35</td>
+            <td>1</td>
+            <td>2</td>
+            <td>92.10%</td>
+          </tr>
+          <tr>
+            <th scope="row">Reggae</th>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>6</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>28</td>
+            <td>2</td>
+            <td>70.00%</td>
+          </tr>
+          <tr>
+            <th scope="row">Rock</th>
+            <td>2</td>
+            <td>0</td>
+            <td>3</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>3</td>
+            <td>2</td>
+            <td>0</td>
+            <td>23</td>
+            <td>67.64%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Comparing our result with the latest results of MIREX and ISMIR we noticed that our approach achieved similar accuracy results. Running our approach on <span class="keyword" id="GTZANdataset">GTZAN dataset</span> dataset and using 5-fold cross-validation to evaluate, our average result, after 30 executions of cross-validation, was 79.70%.</p>
+
+      <p>According to the results using <span class="keyword" id="GTZANdataset">GTZAN</span> presented in Table I and Table II and the <span class="keyword" id="brazilianMusic">Brazilian music</span> dataset, we notice an improvement in MGR using the set of features proposed in this article. Since <span class="keyword" id="GTZANdataset">GTZAN</span> (the dataset we used) and the <span class="keyword" id="genreClassification">genre classification</span> dataset (dataset used in MIREX) have 10 genres and both datasets use blues, classical, country, hip hop, metal, jazz, disco and rock, summing 8 equal genres in both datasets. Hence with 8 genres in common, the <span class="keyword" id="GTZANdataset">GTZAN dataset</span> are very similar to the dataset used in MIREX. Our accuracy of 79.7% is still better than accuracies presented in MIREX in 2014 and 2015 (69% to 76%).</p>
+
+      <p>Based on the review of state of art in MGR, using <span class="keyword" id="GTZANdataset">GTZAN</span> and 5-fold cross-validation published by Bob L. Sturm in 2013 [3], our result is competitive to theirs. The accuracies presented on the review varies between 54.3% and 81.5%. We also conclude that the set of features we propose has an important relevance to MGR, due to the high accuracies we achieved not only with the <span class="keyword" id="GTZANdataset">GTZAN dataset</span> but also with the dataset we created.</p>
+    
+    
+    
+      <h2 class="title-2"><center>IV. Conclusion</center></h2>
+      <p>A good set of features is important to achieve high accuracies [3]. Unfortunately, until today many researchers use different features to predict genres in music. The fact that the researches don't have a fixed set of features to start their works turns the research slowly [4], and the researcher needs to select features, a dataset and a method of classification. If the chosen features are not relevant to MGR, even with a good method of classification the research may achieve low accuracies. According to our evaluation we concluded that the set of features proposed in this article is relevant to MGR. Furthermore our results is equivalent to current state of art in MGR [3].</p>
+
+      <p>The latin music database [24] and the MIREX 2009 genre latin classification dataset presents some genres that we also included in BMD. But because these two datasets are focused on music produced in all countries of the latin America, they still lack some important features that represent the <span class="keyword" id="brazilianMusic">Brazilian music</span>. In our dataset we included Repente and Brega that are two important genres to the <span class="keyword" id="brazilianMusic">Brazilian music</span>. The creation of the <span class="keyword" id="brazilianMusic">Brazilian music</span> dataset is important because there are a great amount of music being produced in this region of Brazil and there is not an automatic method to classify some of these genres (Repente MPB and Brega). As presented in the evaluation section, we used the set of features proposed and we achieved a great accuracy of 86.11%. Consequently, the dataset in this paper can be used to classify music produced in the northeast region of Brazil.</p>
+
+      <p>Two important algorithms have been used to feature selection in Music Emotion Retrieval: ReliefF, RReliefF and PCA. As a future work, a feature selection on the set of proposed features may be done to evaluate what are the most relevant features to MGR, excluding the features which presented low importance.</p>
+
+      <p>In this paper we used new features that is not present in other papers analyzed by us. Since the scope of this paper is not about individual features itself, a feature work is needed. The task will be to analyze each new feature as presented by Holzapfel et al. [2] and check the importance of these features to MGR.</p>
+
+      <p>For a better accuracy of the <span class="keyword" id="brazilianMusic">Brazilian music</span> dataset, it's important to select more musics to compose our dataset and create a bigger dataset.</p>
+
+      <p>We built our dataset using rules presented by Sturm [3]. Some of these rules are: use a balanced number of samples by each genre, use the best part of the music which represent the genre of the song, use the same length of music for all songs in the dataset and do not repeat the same song. Moreover, our dataset contains 3 important genres to <span class="keyword" id="brazilianMusic">Brazilian music</span> that is not found in any other shared dataset. The genres are: Repente, Brega and MPB. Thus, a future task may be to add the BMD to another dataset in order to have a dataset which represent a wide variety of genres.</p>
+			
+		</div>
+
+    <!-- <div class="background-svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500" width="100%" height="100%">
+        <path class="line" d="M 100 100 C 10 100, 10 200, 100 200 L 190 200 C 280 200, 280 300, 190 300 L 100 300 C 10 300, 10 400, 100 400 L 190 400 C 280 400, 280 500, 190 500" fill="none" stroke="#67aba0" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" />
+        <path class="line" d="M 100 120 C 10 120, 10 220, 100 220 L 190 220 C 280 220, 280 320, 190 320 L 100 320 C 10 320, 10 420, 100 420 L 190 420 C 280 420, 280 520, 190 520" fill="none" stroke="#deb433" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" />
+        <path class="line" d="M 100 140 C 10 140, 10 240, 100 240 L 190 240 C 280 240, 280 340, 190 340 L 100 340 C 10 340, 10 440, 100 440 L 190 440 C 280 440, 280 540, 190 540" fill="none" stroke="#d8651c" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" />
+        <path class="line" d="M 100 160 C 10 160, 10 260, 100 260 L 190 260 C 280 260, 280 360, 190 360 L 100 360 C 10 340, 10 460, 100 460 L 190 460 C 280 460, 280 560, 190 560" fill="none" stroke="#ab2e20" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" />        
+      </svg>
+    </div> -->
+
+    <div class="notes">
+      <h2 class="title-2">Notes</h2>
+      <p class="note" id="n01"><span class="noteMarker">1. </span> http://www.music-ir.org/mirex/wiki/MIREX_HOME </p>
+      <p class="note" id="n02"><span class="noteMarker">2. </span> http://palcomp3.com/ </p>
+      <p class="note" id="n03"><span class="noteMarker">3. </span> http://audacityteam.org/ </p>
+      <p class="note" id="n04"><span class="noteMarker">4. </span> ESSENTIA has been used in many academic and business projects as Freesound, Dunya, Crypt of the NecroDancer and Good-sounds. Essentia is available at: https://github.com/MTG/essentia. </p>
+      <p class="note" id="n05"><span class="noteMarker">5. </span> https://www.csie.ntu.edu.tw/cjlin/libsvm/ </p>
+    </div>
+  
+    <div class="references">
+      <h2 class="title-2">References</h2>
+      <p class="biblioItem" id="b01"><span class="biblioMarker">1. </span>J. Salamon, B. Rocha, and E. G´omez, “Musical <span class="keyword" id="genreClassification">genre classification</span> using
+        melody features extracted from polyphonic music signals,” in IEEE
+        International Conference on Acoustics, Speech and Signal Processing
+        (ICASSP), Kyoto, Japan, 25/03/2012 2012.</span>.</p>
+      <p class="biblioItem" id="b02"><span class="biblioMarker">2. </span>Y. Panagakis, C. Kotropoulos, D. O. Informatics, and G. R. Arce,
+        “Music genre classification using locality preserving nonnegative tensor
+        factorization and sparse representations,” in In 10th International Society
+        for Music Information Retrieval Conference (ISMIR), 2009.</p>
+      <p class="biblioItem" id="b03"><span class="biblioMarker">3. </span>B. L. Sturm, “The gtzan dataset: Its contents, its faults, their effects on
+        evaluation, and its future use,” arXiv preprint arXiv:1306.1461, 2013.</p>
+      <p class="biblioItem" id="b04"><span class="biblioMarker">4. </span>——, “The state of the art ten years after a state of the art: Future
+        research in music information retrieval,” Journal of New Music Research,
+        vol. 43, no. 2, pp. 147–172, 2014.</p>
+      <p class="biblioItem" id="b05"><span class="biblioMarker">5. </span>Z. Zeng, S. Zhang, H. Li, W. Liang, and H. Zheng, “A novel approach to
+        musical genre classification using probabilistic latent semantic analysis
+        model,” in Multimedia and Expo, 2009. ICME 2009. IEEE International
+        Conference on. IEEE, 2009, pp. 486–489.</p>
+      <p class="biblioItem" id="b06"><span class="biblioMarker">6. </span>T. Hofmann, “Unsupervised learning by probabilistic latent semantic
+        analysis,” Machine learning, vol. 42, no. 1-2, pp. 177–196, 2001.</p>
+      <p class="biblioItem" id="b07"><span class="biblioMarker">7. </span>P.-A. Manzagol, T. Bertin-Mahieux, D. Eck et al., “On the use of sparce
+        time relative auditory codes for music.” in ISMIR, 2008, pp. 603–608.</p>
+      <p class="biblioItem" id="b08"><span class="biblioMarker">8. </span>A. Holzapfel and Y. Stylianou, “Musical genre classification using
+        nonnegative matrix factorization-based features,” Audio, Speech, and
+        Language Processing, IEEE Transactions on, vol. 16, no. 2, pp. 424–
+        434, 2008.</p>
+      <p class="biblioItem" id="b09"><span class="biblioMarker">9. </span>——, “A statistical approach to musical genre classification using
+        non-negative matrix factorization,” in Acoustics, Speech and Signal
+        Processing, 2007. ICASSP 2007. IEEE International Conference on,
+        vol. 2. IEEE, 2007, pp. II–693.</p>
+      <p class="biblioItem" id="b10"><span class="biblioMarker">10. </span>C. Laurier, Automatic Classification of Musical Mood by Content Based
+        Analysis. Universitat Pompeu Fabra, 2011.</p>
+      <p class="biblioItem" id="b11"><span class="biblioMarker">11. </span>R. Panda and R. P. Paiva, “Mirex 2012: Mood classification tasks
+        submission,” Machine Learning, vol. 53, no. 1-2, pp. 23–69, 2003.</p>
+      <p class="biblioItem" id="b12"><span class="biblioMarker">12. </span>G. Tzanetakis and P. Cook, “Musical genre classification of audio
+        signals,” Speech and Audio Processing, IEEE transactions on, vol. 10,
+        no. 5, pp. 293–302, 2002.</p>
+      <p class="biblioItem" id="b13"><span class="biblioMarker">13. </span>O. Lartillot and P. Toiviainen, “A matlab toolbox for musical feature
+        extraction from audio,” in International Conference on Digital Audio
+        Effects, 2007, pp. 237–244.</p>
+      <p class="biblioItem" id="b14"><span class="biblioMarker">14. </span>D. Cabrera et al., “Psysound: A computer program for psychoacoustical
+        analysis,” in Proceedings of the Australian Acoustical Society Confer-
+        ence, vol. 24, 1999, pp. 47–54.</p>
+      <p class="biblioItem" id="b15"><span class="biblioMarker">15. </span>Y.-H. Yang, Y.-C. Lin, Y.-F. Su, and H. H. Chen, “A regression
+        approach to music emotion recognition,” Audio, Speech, and Language
+        Processing, IEEE Transactions on, vol. 16, no. 2, pp. 448–457, 2008.</p>
+      <p class="biblioItem" id="b16"><span class="biblioMarker">16. </span>T. Li and M. Ogihara, “Content-based music similarity search and
+        emotion detection,” in Acoustics, Speech, and Signal Processing, 2004.
+        Proceedings.(ICASSP’04). IEEE International Conference on, vol. 5.
+        IEEE, 2004, pp. V–705.</p>
+      <p class="biblioItem" id="b17"><span class="biblioMarker">17. </span>G. Tzanetakis and P. Cook, “Musical genre classification of audio
+        signals,” Speech and Audio Processing, IEEE Transactions on, vol. 10,
+        no. 5, pp. 293–302, Jul 2002.</p>
+      <p class="biblioItem" id="b18"><span class="biblioMarker">18. </span>J. Bergstra, N. Casagrande, D. Erhan, D. Eck, and B. K´egl, “Aggre-
+        gate features and adaboost for music classification,” Machine learning,
+        vol. 65, no. 2-3, pp. 473–484, 2006.</p>
+      <p class="biblioItem" id="b19"><span class="biblioMarker">19. </span>C. N. Silla Jr, A. L. Koerich, and C. A. Kaestner, “A feature selection
+        approach for automatic music genre classification,” International Journal
+        of Semantic Computing, vol. 3, no. 02, pp. 183–208, 2009.</p>
+      <p class="biblioItem" id="b20"><span class="biblioMarker">20. </span>Z. Fu, G. Lu, K. M. Ting, and D. Zhang, “A survey of audio-based
+        music classification and annotation,” IEEE Transactions on Multimedia,
+        vol. 13, no. 2, pp. 303–319, 2011.</p>
+      <p class="biblioItem" id="b21"><span class="biblioMarker">21. </span>T. Li and M. Ogihara, “Music genre classification with taxonomy,” in
+        Acoustics, Speech, and Signal Processing, 2005. Proceedings. (ICASSP
+        ’05). IEEE International Conference on, vol. 5, March 2005, pp. v/197–
+        v/200 Vol. 5.</p>
+      <p class="biblioItem" id="b22"><span class="biblioMarker">22. </span>E. Benetos and C. Kotropoulos, “A tensor-based approach for automatic
+        music genre classification,” in Signal Processing Conference, 2008 16th
+        European. IEEE, 2008, pp. 1–4</p>
+      <p class="biblioItem" id="b23"><span class="biblioMarker">23. </span>H. Srinivasan and M. Kankanhalli, “Harmonicity and dynamics-based
+        features for audio,” in Acoustics, Speech, and Signal Processing, 2004.
+        Proceedings.(ICASSP’04). IEEE International Conference on, vol. 4.
+        IEEE, 2004, pp. iv–321.</p>
+      <p class="biblioItem" id="b24"><span class="biblioMarker">24. </span>C. N. Silla Jr, A. L. Koerich, and C. A. Kaestner, “The latin music
+        database.” in ISMIR, 2008, pp. 451–456.</p>
+    </div>
+	</div>
+  
+</body>
+</html>
+

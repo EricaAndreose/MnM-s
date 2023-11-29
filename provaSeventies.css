@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Fontanio Black';
+  src: url('font/seventies/fontanio/Fontanio-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Negaroa';
+  src: url('font/seventies/negaroa/Negaroa-Regular.ttf');
+}
+
+#gif {
+  text-align: center;
+  padding-top: 1em;
+}
+
+body {
+  font-family: 'Negaroa';
+  font-size: 1em; 
+  color: #222;
+}
+
+#subtitle {
+  color: rgb(40, 36, 36);
+  background-color: #F1FAEE;
+  text-align: center;
+  padding: 0.5em;
+  font-family: 'Negaroa';
+  border-radius: 5px;
+}
+
+.navbar {
+  border-radius: 5px;
+  background-color: #F1FAEE;
+  font-family: 'Negaroa';
+  margin-top: -0.5cm;
+}
+
+.dropdown-menu {
+  background-color: #F1FAEE;
+}
+
+#main {
+  background-color: #F1FAEE;
+  border-radius: 5px;
+  margin-left: 1cm;
+  margin-right: 1cm;
+  height: 40vw;
+  position: relative;
+  z-index: 1;
+}
+
+
+#externalContentColumn {
+  background-color: #F1FAEE;
+  height: 40vh;
+  overflow-y: auto; /* or overflow-y: scroll; */
+  padding: 5%;
+}
+
+.title {
+  font-family: 'Fontanio Black';
+  font-size: 4em;
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: .90;
+  color: #000;
+  text-align: center;
+}
+
+.author {
+  font-family: 'Negaroa';
+  color: #000;
+  text-align: center;
+  font-size: 120%;
+  border-bottom: 3px solid #000;
+  padding-bottom: 1.5em;
+}
+
+
+.content {
+  font-family: 'Negaroa';
+  font-size: 1em; 
+  color: #222;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%"><path class="line" d="M 100 100 C 10 100, 10 200, 100 200 L 190 200 C 280 200, 280 300, 190 300 L 100 300 C 10 300, 10 400, 100 400 L 190 400 C 280 400, 280 500, 190 500" fill="none" stroke="#67aba0" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /><path class="line" d="M 100 120 C 10 120, 10 220, 100 220 L 190 220 C 280 220, 280 320, 190 320 L 100 320 C 10 320, 10 420, 100 420 L 190 420 C 280 420, 280 520, 190 520" fill="none" stroke="#deb433" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /><path class="line" d="M 100 140 C 10 140, 10 240, 100 240 L 190 240 C 280 240, 280 340, 190 340 L 100 340 C 10 340, 10 440, 100 440 L 190 440 C 280 440, 280 540, 190 540" fill="none" stroke="#d8651c" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /><path class="line" d="M 100 160 C 10 160, 10 260, 100 260 L 190 260 C 280 260, 280 360, 190 360 L 100 360 C 10 340, 10 460, 100 460 L 190 460 C 280 460, 280 560, 190 560" fill="none" stroke="#ab2e20" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /></svg>');
+  /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path class="line" d="M 100 100 C 10 100, 10 200, 100 200 L 190 200 C 280 200, 280 300, 190 300 L 100 300 C 10 300, 10 400, 100 400 L 190 400 C 280 400, 280 500, 190 500" fill="none" stroke="#67aba0" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /></path></svg>') center center; */
+  /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"><animate attributeName="r" from="40" to="0" dur="2s" begin="0s" repeatCount="indefinite" /></circle></svg>') center center no-repeat; */
+
+}
+
+/* .content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500" width="100%" height="100%"><path class="line" d="M 100 100 C 10 100, 10 200, 100 200 L 190 200 C 280 200, 280 300, 190 300 L 100 300 C 10 300, 10 400, 100 400 L 190 400 C 280 400, 280 500, 190 500" fill="none" stroke="#67aba0" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /><path class="line" d="M 100 120 C 10 120, 10 220, 100 220 L 190 220 C 280 220, 280 320, 190 320 L 100 320 C 10 320, 10 420, 100 420 L 190 420 C 280 420, 280 520, 190 520" fill="none" stroke="#deb433" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /><path class="line" d="M 100 140 C 10 140, 10 240, 100 240 L 190 240 C 280 240, 280 340, 190 340 L 100 340 C 10 340, 10 440, 100 440 L 190 440 C 280 440, 280 540, 190 540" fill="none" stroke="#d8651c" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /><path class="line" d="M 100 160 C 10 160, 10 260, 100 260 L 190 260 C 280 260, 280 360, 190 360 L 100 360 C 10 340, 10 460, 100 460 L 190 460 C 280 460, 280 560, 190 560" fill="none" stroke="#ab2e20" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /></svg>');
+  background-size: cover;
+  pointer-events: none;
+  z-index: -1; 
+} */
+
+/* .background-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+.line {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: revealLine 10s linear infinite;
+}
+
+@keyframes revealLine {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+#space {
+  height: 17rem; 
+}
+
+
+
+
+#map { height: 28vw; }
+
+#footer {
+  background-color: #F1FAEE;
+}
+
+#space {
+  height: 17rem; 
+}
+
+.image-container {
+  position: relative;
+  width: 50%; /* Adjust this value as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: -5%;
+}
+
+#Vinyl {
+  position: static;
+  text-align: center;
+  width: 100%; /* Set the initial width to 100% */
+  height: auto; /* Set the initial height to 100% */
+  object-fit: cover; /* Maintain aspect ratio while covering container */
+  z-index: -1;
+}
+
+
+#stick {
+  position: absolute;
+  width: 100%; /* Set the initial width to 100% */
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio while covering container */
+  z-index: 1;
+  transform-origin: 0;
+  transform: rotate(0deg);
+  margin-left: -23vw;
+}
+
+
+.button1 {
+  position: absolute;
+  z-index: 3;
+}
+
+#move {
+  transition: 300ms;
+  
+}
+
+
+.music-container {
+  background-color: #F1FAEE;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px 0 rgb(87, 31, 1);
+  width: 50%;
+  height: 25%;
+  position: relative;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -75%;
+  }
+
+.navigation {
+  background-color: #F1FAEE;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  }
+
+.action-btn {
+  background-color: #F1FAEE;
+  border: 0;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 2px;
+  }
