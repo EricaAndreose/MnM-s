@@ -1,0 +1,87 @@
+@font-face{
+    font-family: 'Becker';
+    src: url(becker-black-nf.regular.otf);
+}
+
+@font-face{
+    font-family:'Josefin';
+    src: url(josefin-sans.light.ttf);
+}
+@font-face{
+    font-family:'Monoton';
+    src: url(Monoton-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Semplicita';
+    src: url(semplicita.light.otf)
+}
+
+.title{
+    font-family: 'Monoton';
+    background-color: #fadadd;
+    font-size: 30px;
+    color: #0a0a0a;
+    opacity: 0.8;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+
+}
+
+.author{
+    font-family: 'Semplicita';
+    text-align: center;
+    font-size: 24px;
+}
+
+.publicationdate {
+    font-family: 'Semplicita';
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.content{
+    column-count: 3;
+    column-gap: 50px;
+    width: 100%;
+    font-family: 'Semplicita';
+    background-color: #fadadd;
+    font-size: 18x;
+    color: #0a0a0a;
+
+}
+
+.start::first-letter{
+    font-family:'Semplicita';
+    font-size: 4vmax;
+    font-weight: bold;
+}
+.article img {
+    filter: grayscale(100%) contrast(1.2);
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.img-description{
+    font-family: 'Becker';
+}
+
+.title-2{
+    font-family: 'Josefin';
+    background-color: #fadadd;
+    font-size: 24px;
+    color: #0a0a0a;
+
+}
+
+.table-table-striped{
+    font-family: 'Semplicita';
+    margin: 0 auto;
+}
+
+
+  
+  
