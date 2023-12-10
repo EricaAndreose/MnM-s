@@ -1,13 +1,14 @@
 @font-face {
     /* Font similar to the original ones. French Gothic. Look at the "g", close letters, spigoli, grossezza
     verticalità e ordine */
-    font-family: 'Old_London';
-    src: url('font/medieval/oldlondon/OldLondon.ttf');
+    font-family: sans;
+    src: url('font/geronimo/OpenSans-ExtraBold.ttf');
+
 }
 
 @font-face {
-    font-family: '1492';
-    src: url('font/medieval/1492/1492_Quadrata_lim.otf');
+    font-family: 'LifeLTStd-Roman';
+    src: url('font/geronimo/LifeLTStd-Roman.otf')
 }
 
 @font-face {
@@ -26,24 +27,29 @@
 }
 
 body {
-    background-image: url('img/medieval/parch.jpg');
-    background-size: cover; /* Adjust as needed */
-    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-image: url('img/geronimo/pattern.png');
+    background-size: auto; /* Adjust as needed */
+    background-repeat: repeat; /* Prevent image from repeating */
 }
 
 #subtitle {
     color: rgb(40, 36, 36);
-    background-image: url('img/medieval/back.png');
+    background-image: url('img/geronimo/cheese.jpg');
+    background-size: cover;
     text-align: center;
     padding: 0.5em;
-    font-family: Old_London;
+    font-family: sans;
+    text-transform: uppercase;
     border-radius: 15px;
 }
+
 
 .navbar {
     background-color: transparent;
     font-family: '1492';
     margin-top: -0.5cm;
+    font-family: 'LifeLTStd-Roman';
+    text-transform: capitalize;
 }
 
 
@@ -70,8 +76,9 @@ body {
 
 /* insertion */
 
+
 #main {
-    background-image: url('img/medieval/back.png');
+    background-image: url('img/geronimo/cheese.jpg');
     background-size: cover; /* Adjust as needed */
     background-repeat: no-repeat; /* Prevent image from repeating */
     border-radius: 5px;
@@ -83,9 +90,8 @@ body {
 }
 
 #externalContentColumn {
-    background-image: url('img/medieval/02.png');
+    background-image: url('img/geronimo/paper.png');
     background-size: cover;
-    background-repeat: no-repeat;
     height: 40vw;
     overflow-y: auto; /* or overflow-y: scroll; */
 }
@@ -93,7 +99,8 @@ body {
 #map { height: 28vw; }
 
 #footer {
-    background-image: url('img/medieval/back.png');
+    background-image: url('img/geronimo/cheese.jpg');
+    background-size: cover;
 }
 
 #externalContentColumn {
@@ -101,30 +108,26 @@ body {
 }
 
 p {
-    font-family: '1492';
+    font-family: 'LifeLTStd-Roman';
     font-size: 22px;
-    column-count: 2;
-    column-gap: 80px;
+    
     text-align: justify;
     overflow: hidden; /* Hide any text that overflows */
     text-overflow: ellipsis; /* Display an ellipsis (...) for overflowed text */
     padding: 2%;
 }
 
-.myFirstletter {
-    font-family: genzsch;
-    font-size: 4rem;
-    color: rgb(87, 0, 0)
-}
-
 .title-1 {
-    font-family: salterio;
-    color: rgb(0, 0, 143);
+    font-family: sans;
+    color: rgb(210, 35, 0);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .title-2 {
-    font-family: salterio;
-    color: rgb(0, 0, 143);
+    font-family: 'LifeLTStd-Roman';
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.918);
 }
 
 .title-3 {
@@ -215,7 +218,7 @@ p {
     }
 
 #decor1 {
-    background-image: url('img/medieval/002.png');
+    background-image: url('img/geronimo/logo.jpg');
     position: relative;
     background-repeat: no-repeat;
     background-size: 50%;
@@ -244,7 +247,6 @@ p {
 }
 
 .content img { 
-    filter: sepia(60%);
     display: block;
     margin-left: auto;
     margin-right: auto;

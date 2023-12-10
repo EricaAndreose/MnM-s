@@ -24,7 +24,7 @@ body {
 
 .navbar {
     border-radius: 5px;
-    background-color: #F1FAEE;
+    background-color: transparent;
     font-family: Tracking_Bold;
     margin-top: -0.5cm;
 }
@@ -33,9 +33,24 @@ body {
     background-color: #F1FAEE;
 }
 
-#space {
-    height: 2cm;
+/* insertion */
+
+.dropdown-submenu {
+    position: relative;
 }
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    display: none; /* Hide the submenu by default */
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block; /* Display the submenu on hover */
+}
+
+/* insertion */
 
 #main {
     background-color: #F1FAEE;
@@ -69,7 +84,7 @@ body {
     position: relative;
     width: 50%; /* Adjust this value as needed */
     margin: 0 auto; /* Center the container horizontally */
-    margin-top: -5%;
+    margin-top: -3%;
 }
 
 
