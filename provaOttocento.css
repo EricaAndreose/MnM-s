@@ -42,7 +42,7 @@ body {
 
 .navbar {
     border-radius: 5px;
-    background-color: #ddd2b2;
+    background-color: transparent;
     margin-top: -0.5%;
     font-family: 'AstrenaDemo';
 }
