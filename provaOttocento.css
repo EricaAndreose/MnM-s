@@ -29,9 +29,9 @@ body {
 }
 
 #subtitle {
-    font-family: 'True Golden™';
+    font-family: 'Beardsons Normal';
     color: rgb(40, 36, 36);
-    background-color: #F1FAEE;
+    background-color: #ddd2b2;
     text-align: center;
     padding: 0.5em;
     border-radius: 5px;
@@ -39,38 +39,40 @@ body {
 
 .navbar {
     border-radius: 5px;
-    background-color: #F1FAEE;
-    margin-top: -0.5cm;
-    font-family: 'True Golden™';
+    background-color: #ddd2b2;
+    margin-top: -0.5%;
+    font-family: 'AstrenaDemo';
 }
 
 
 .dropdown-menu {
-    background-color: #F1FAEE;
+    background-color: #ddd2b2;
 }
 
 #main {
-    background-color: #F1FAEE;
+    font-family: 'AstrenaDemo';
+    background-color: #ddd2b2;
     border-radius: 5px;
-    margin-left: 1cm;
-    margin-right: 1cm;
-    height: 40vw;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    height: 45%;
     position: relative;
     z-index: 1;
 }
 
 #externalContentColumn {
-    background-color: #F1FAEE;
-    height: 40vw;
+    background-color: #ddd2b2;
+    height: 40vw; /* da cambiare con la percentuale anche qua? */
     overflow-y: auto; /* or overflow-y: scroll; */
-    padding: 5%;
+    background-size: 15%, 15%, 15%, 15%;
 }
 
-#map { height: 28vw; }
+#map { height: 28%; } /* da cambiare con la percentuale anche qua? */
 
 #footer {
-    background-color: #F1FAEE;
+    background-color: #ddd2b2;
 }
+
 
 .title {
     font-family: 'Beardsons Normal';
@@ -88,36 +90,34 @@ body {
     color: #000;
     text-align: center;
     font-size: 120%;
-    border-bottom: 3px solid #000;
-    padding-bottom: 1.5em;
 }
 
-/* .para-wrap p:first-of-type::first-letter {
-    font-family: 'True Golden™';
-    font-weight: 900;
-    font-size: 6em;
-    background-image: url('prova-lettera.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    line-height: 1;
-    color: rgb(241, 235, 235);
-    padding: 0 .1em;
-    margin-right: .1em;
-    display: block;
-    float: left;
-} Trova il modo di farlo senza para-wrap*/
+/* classe per la prima lettera*/
 
 .article {
-    padding: 10%;
-    /* background-image: url('cornerTopLeft.png'), url('cornerTopRight.png'), url('cornerBottomLeft.png'), url('cornerBottomRight.png'), url('borderLeft.png'), url('borderLeft.png');
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y;
-    background-size: 20%, 20%, 20%, 20%, 3%, 3%;
-    background-position: top left, top right, bottom left, bottom right, left, right; */
-    background: url('img/artnouveau/cornerTopLeft.png') top left no-repeat, url('img/artnouveau/cornerTopRight.png') top right no-repeat, url('img/artnouveau/cornerBottomLeft.png') bottom left no-repeat, url('img/artnouveau/cornerBottomRight.png') bottom right no-repeat, url('img/artnouveau/borderLeft.png') left repeat-y, url('img/artnouveau/borderLeft.png') right repeat-y;
-    background-size: 10%, 10%, 10%, 10%, 3%, 3%;
+    font-family: 'True Golden™';
+    background: url('img/artnouveau/cornerTopLeft.png') top left no-repeat, url('img/artnouveau/cornerTopRight.png') top right no-repeat, url('img/artnouveau/cornerBottomLeft.png') bottom left no-repeat, url('img/artnouveau/cornerBottomRight.png') bottom right no-repeat;
+    background-size: 20%;
+    padding-bottom: 30%;
+}
 
-} 
+
+
+.generic-info {
+    height: 50vh; /*controlla che non crei casino alle altre*/
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right:10%;
+}
+
+.generic-info::after {
+    content: ''; 
+    display: block; 
+    height: 100%;
+    background: url('img/artnouveau/top.png') center center no-repeat;
+    background-size: 90%; 
+    margin-bottom: 0px; 
+}
 
 
 .content {
@@ -126,33 +126,37 @@ body {
     width: auto;
     height: auto;
     overflow: visible;
-    font-family: 'True Golden™';
-    background: url('img/artnouveau/centro.jpg') center top no-repeat, url('img/artnouveau/img_centro.png') center bottom repeat-y;
-    background-size: auto auto;
-    padding-top: 10%;
-    
+    background: 
+        url('img/artnouveau/centro.png') center top repeat-y,
+        url('img/artnouveau/borders.png') left repeat-y, 
+        url('img/artnouveau/borders.png') right repeat-y;
+    background-size: auto, 3%, 3%;
+    margin: 20% 2% auto;
+    position: relative;
+    padding: 7%;
 }
 
 #space {
-    height: 17rem; 
+    height: 17rem;
 }
 
 .image-container {
     position: relative;
-    width: 50%; /* Adjust this value as needed */
-    margin: 0 auto; /* Center the container horizontally */
+    width: 50%;
+    margin: 0 auto;
     margin-top: -5%;
 }
-
 
 #Vinyl {
     position: static;
     text-align: center;
-    width: 100%; /* Set the initial width to 100% */
-    height: auto; /* Set the initial height to 100% */
-    object-fit: cover; /* Maintain aspect ratio while covering container */
+    width: auto;
+    height: auto;
+    object-fit: cover;
     z-index: -1;
+    
 }
+
 
 
 #stick {
@@ -179,7 +183,7 @@ body {
 
 
 .music-container {
-    background-color: #F1FAEE;
+    background-color: #ddd2b2;
     border-radius: 15px;
     box-shadow: 0 10px 10px 0 rgb(87, 31, 1);
     width: 50%;
@@ -188,12 +192,17 @@ body {
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -75%;
+    margin-top: -90%;
     }
 
+.stitle {
+    font-size: 20px;
+    font-family: 'AstrenaDemo';
+    text-align: center;
+    }
 
 .navigation {
-    background-color: #F1FAEE;
+    background-color: #ddd2b2;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -202,10 +211,13 @@ body {
     }
 
 .action-btn {
-    background-color: #F1FAEE;
+    background-color: #ddd2b2;
     border: 0;
     font-size: 30px;
     cursor: pointer;
     padding: 2px;
     }
 
+#image-gaia-2 {
+    display: none;
+}

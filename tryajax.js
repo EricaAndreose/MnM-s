@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const loadButtons = document.querySelectorAll('.dropdown-item');
+  const loadButtons = document.querySelectorAll('.jsart');
   const contentColumn = document.getElementById('externalContentColumn');
 
   loadButtons.forEach(function(button) {

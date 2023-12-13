@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const styleButtons = document.querySelectorAll('.style-btn');
+    const styleButtons = document.querySelectorAll('.jsstyle');
     const styleLink = document.getElementById('style-link');
     const vinylImage = document.getElementById('rotate');
 

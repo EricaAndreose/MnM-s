@@ -30,7 +30,7 @@
 
 		<div class="content">
 			
-      <h2 class="title-2"><center>I. Introduction</center></h2>
+      <h2 class="title-2">I. Introduction</h2>
       <p>The 21st century began and so the number of streaming music, empowered by the use of internet in all the world. With the huge availability of digital music, there is a need to organize them. Genres are a popular way to organize large music collections, both private and commercial. 
         In the context of genre music classification, many approaches have been proposed such as: melody [1], source separation [2] and different aspects of music features (low and high-level features).</p>
 
@@ -63,7 +63,7 @@
     
 
     
-      <h2 class="title-2"><center>II. Method</center></h2>
+      <h2 class="title-2">II. Method</h2>
       <p>We employed a four-step method for <span class="keyword" id="genreClassification">genre classification</span>: dataset creation, feature extraction, classification and evaluation. Although there are many and different kinds of music genre datasets, there is not any dataset with all important genres of the northeast area of Brazil. We found the Audio Latin <span class="keyword" id="genreClassification">Genre Classification</span> Dataset <a class="noteRef" href="#n01">1</a> which includes some important genres of Brazil as forró, pagode, sertanejo and axé, but still lacks some important genres from the northeast area of Brazil, as Repente and a characteristic genre, very similar to the MPB (brazilian popular music) music. Owing to the problem of lack of genres, we proposed the creation of a new dataset that includes others important genres of Brazil withdrawn from the northeast area. Another reason to create the <span class="keyword" id="brazilianMusic">Brazilian music</span> dataset is because we did not find any classifier to the genres we call MPB, Repente and Brega. The genre we call MPB is widely produced by many singers from the northeast and it is important to have a classifier to this important genre. The same we say to Repente, which is widely spread to all the northeast region and until today there is not any music dataset containing samples labeled with Repente.</p>
 
       <p>The <span class="keyword" id="brazilianMusic">Brazilian music</span> dataset was constructed with 7 musical genres (Forró, Rock, Repente, MPB, Brega, Sertanejo and Disco) in which the representative part of genre was selected from the whole music. These genres were chosen because they are typical genres of the <span class="keyword" id="brazilianMusic">Brazilian music</span> and until now, there is no other classifier implemented to these genres. Each genre has 30 songs with a frequency of 44100Hz sampling rate. We selected excerpts from a wide set of artists to cover a large variation of music in a genre.</p>
@@ -84,7 +84,7 @@
     
     
     
-      <h2 class="title-2"><center>III. Evaluation</center></h2>
+      <h2 class="title-2">III. Evaluation</h2>
       <p>We evaluated our approaches by classification accuracy computed from k-fold cross-validation and splitting our data in training and test. Both methods to measure the approaches are very used in the literature [3]. Following papers which split the dataset 70/30 (70% used to train, 30% used to test) are: [21] and [22]. Following papers which used 5-fold cross-validation are: [5], [7]–​[9].</p>
 
       <p>We randomly sorted the <span class="keyword" id="GTZANdataset">GTZAN dataset</span> with 1000 pieces and selected the first 667 to train and the latest 333 to test the model created. Representing two thirds (66.7%) of the dataset to train and one third (33.3%) to test. This process was repeated 30 times. We opted to repeat 30 times, because we wanted to show the result found is not a consequence of a random grouping of the best group of songs used to created the model. Therefore, our goal is to present the robustness of our method, repeating 30 times with random sets of songs used to test and train. In the end, we had 9990 pieces of music which were tested. The result is presented in Table I. The average accuracy of this method was 78,00%. Table II shows the result of one repetition of those 30 repetitions shown in Table I. For one repetition the average accuracy was 81.35%.</p>
@@ -469,7 +469,7 @@
     
     
     
-      <h2 class="title-2"><center>IV. Conclusion</center></h2>
+      <h2 class="title-2">IV. Conclusion</h2>
       <p>A good set of features is important to achieve high accuracies [3]. Unfortunately, until today many researchers use different features to predict genres in music. The fact that the researches don't have a fixed set of features to start their works turns the research slowly [4], and the researcher needs to select features, a dataset and a method of classification. If the chosen features are not relevant to MGR, even with a good method of classification the research may achieve low accuracies. According to our evaluation we concluded that the set of features proposed in this article is relevant to MGR. Furthermore our results is equivalent to current state of art in MGR [3].</p>
 
       <p>The latin music database [24] and the MIREX 2009 genre latin classification dataset presents some genres that we also included in BMD. But because these two datasets are focused on music produced in all countries of the latin America, they still lack some important features that represent the <span class="keyword" id="brazilianMusic">Brazilian music</span>. In our dataset we included Repente and Brega that are two important genres to the <span class="keyword" id="brazilianMusic">Brazilian music</span>. The creation of the <span class="keyword" id="brazilianMusic">Brazilian music</span> dataset is important because there are a great amount of music being produced in this region of Brazil and there is not an automatic method to classify some of these genres (Repente MPB and Brega). As presented in the evaluation section, we used the set of features proposed and we achieved a great accuracy of 86.11%. Consequently, the dataset in this paper can be used to classify music produced in the northeast region of Brazil.</p>
@@ -482,6 +482,92 @@
 
       <p>We built our dataset using rules presented by Sturm [3]. Some of these rules are: use a balanced number of samples by each genre, use the best part of the music which represent the genre of the song, use the same length of music for all songs in the dataset and do not repeat the same song. Moreover, our dataset contains 3 important genres to <span class="keyword" id="brazilianMusic">Brazilian music</span> that is not found in any other shared dataset. The genres are: Repente, Brega and MPB. Thus, a future task may be to add the BMD to another dataset in order to have a dataset which represent a wide variety of genres.</p>
 			
+      <div class="notes">
+        <h2 class="title-2">Notes</h2>
+        <p class="note" id="n01"><span class="noteMarker">1. </span> http://www.music-ir.org/mirex/wiki/MIREX_HOME </p>
+        <p class="note" id="n02"><span class="noteMarker">2. </span> http://palcomp3.com/ </p>
+        <p class="note" id="n03"><span class="noteMarker">3. </span> http://audacityteam.org/ </p>
+        <p class="note" id="n04"><span class="noteMarker">4. </span> ESSENTIA has been used in many academic and business projects as Freesound, Dunya, Crypt of the NecroDancer and Good-sounds. Essentia is available at: https://github.com/MTG/essentia. </p>
+        <p class="note" id="n05"><span class="noteMarker">5. </span> https://www.csie.ntu.edu.tw/cjlin/libsvm/ </p>
+      </div>
+    
+      <div class="references">
+        <h2 class="title-2">References</h2>
+        <p class="biblioItem" id="b01"><span class="biblioMarker">1. </span>J. Salamon, B. Rocha, and E. G´omez, “Musical <span class="keyword" id="genreClassification">genre classification</span> using
+          melody features extracted from polyphonic music signals,” in IEEE
+          International Conference on Acoustics, Speech and Signal Processing
+          (ICASSP), Kyoto, Japan, 25/03/2012 2012.</span>.</p>
+        <p class="biblioItem" id="b02"><span class="biblioMarker">2. </span>Y. Panagakis, C. Kotropoulos, D. O. Informatics, and G. R. Arce,
+          “Music genre classification using locality preserving nonnegative tensor
+          factorization and sparse representations,” in In 10th International Society
+          for Music Information Retrieval Conference (ISMIR), 2009.</p>
+        <p class="biblioItem" id="b03"><span class="biblioMarker">3. </span>B. L. Sturm, “The gtzan dataset: Its contents, its faults, their effects on
+          evaluation, and its future use,” arXiv preprint arXiv:1306.1461, 2013.</p>
+        <p class="biblioItem" id="b04"><span class="biblioMarker">4. </span>——, “The state of the art ten years after a state of the art: Future
+          research in music information retrieval,” Journal of New Music Research,
+          vol. 43, no. 2, pp. 147–172, 2014.</p>
+        <p class="biblioItem" id="b05"><span class="biblioMarker">5. </span>Z. Zeng, S. Zhang, H. Li, W. Liang, and H. Zheng, “A novel approach to
+          musical genre classification using probabilistic latent semantic analysis
+          model,” in Multimedia and Expo, 2009. ICME 2009. IEEE International
+          Conference on. IEEE, 2009, pp. 486–489.</p>
+        <p class="biblioItem" id="b06"><span class="biblioMarker">6. </span>T. Hofmann, “Unsupervised learning by probabilistic latent semantic
+          analysis,” Machine learning, vol. 42, no. 1-2, pp. 177–196, 2001.</p>
+        <p class="biblioItem" id="b07"><span class="biblioMarker">7. </span>P.-A. Manzagol, T. Bertin-Mahieux, D. Eck et al., “On the use of sparce
+          time relative auditory codes for music.” in ISMIR, 2008, pp. 603–608.</p>
+        <p class="biblioItem" id="b08"><span class="biblioMarker">8. </span>A. Holzapfel and Y. Stylianou, “Musical genre classification using
+          nonnegative matrix factorization-based features,” Audio, Speech, and
+          Language Processing, IEEE Transactions on, vol. 16, no. 2, pp. 424–
+          434, 2008.</p>
+        <p class="biblioItem" id="b09"><span class="biblioMarker">9. </span>——, “A statistical approach to musical genre classification using
+          non-negative matrix factorization,” in Acoustics, Speech and Signal
+          Processing, 2007. ICASSP 2007. IEEE International Conference on,
+          vol. 2. IEEE, 2007, pp. II–693.</p>
+        <p class="biblioItem" id="b10"><span class="biblioMarker">10. </span>C. Laurier, Automatic Classification of Musical Mood by Content Based
+          Analysis. Universitat Pompeu Fabra, 2011.</p>
+        <p class="biblioItem" id="b11"><span class="biblioMarker">11. </span>R. Panda and R. P. Paiva, “Mirex 2012: Mood classification tasks
+          submission,” Machine Learning, vol. 53, no. 1-2, pp. 23–69, 2003.</p>
+        <p class="biblioItem" id="b12"><span class="biblioMarker">12. </span>G. Tzanetakis and P. Cook, “Musical genre classification of audio
+          signals,” Speech and Audio Processing, IEEE transactions on, vol. 10,
+          no. 5, pp. 293–302, 2002.</p>
+        <p class="biblioItem" id="b13"><span class="biblioMarker">13. </span>O. Lartillot and P. Toiviainen, “A matlab toolbox for musical feature
+          extraction from audio,” in International Conference on Digital Audio
+          Effects, 2007, pp. 237–244.</p>
+        <p class="biblioItem" id="b14"><span class="biblioMarker">14. </span>D. Cabrera et al., “Psysound: A computer program for psychoacoustical
+          analysis,” in Proceedings of the Australian Acoustical Society Confer-
+          ence, vol. 24, 1999, pp. 47–54.</p>
+        <p class="biblioItem" id="b15"><span class="biblioMarker">15. </span>Y.-H. Yang, Y.-C. Lin, Y.-F. Su, and H. H. Chen, “A regression
+          approach to music emotion recognition,” Audio, Speech, and Language
+          Processing, IEEE Transactions on, vol. 16, no. 2, pp. 448–457, 2008.</p>
+        <p class="biblioItem" id="b16"><span class="biblioMarker">16. </span>T. Li and M. Ogihara, “Content-based music similarity search and
+          emotion detection,” in Acoustics, Speech, and Signal Processing, 2004.
+          Proceedings.(ICASSP’04). IEEE International Conference on, vol. 5.
+          IEEE, 2004, pp. V–705.</p>
+        <p class="biblioItem" id="b17"><span class="biblioMarker">17. </span>G. Tzanetakis and P. Cook, “Musical genre classification of audio
+          signals,” Speech and Audio Processing, IEEE Transactions on, vol. 10,
+          no. 5, pp. 293–302, Jul 2002.</p>
+        <p class="biblioItem" id="b18"><span class="biblioMarker">18. </span>J. Bergstra, N. Casagrande, D. Erhan, D. Eck, and B. K´egl, “Aggre-
+          gate features and adaboost for music classification,” Machine learning,
+          vol. 65, no. 2-3, pp. 473–484, 2006.</p>
+        <p class="biblioItem" id="b19"><span class="biblioMarker">19. </span>C. N. Silla Jr, A. L. Koerich, and C. A. Kaestner, “A feature selection
+          approach for automatic music genre classification,” International Journal
+          of Semantic Computing, vol. 3, no. 02, pp. 183–208, 2009.</p>
+        <p class="biblioItem" id="b20"><span class="biblioMarker">20. </span>Z. Fu, G. Lu, K. M. Ting, and D. Zhang, “A survey of audio-based
+          music classification and annotation,” IEEE Transactions on Multimedia,
+          vol. 13, no. 2, pp. 303–319, 2011.</p>
+        <p class="biblioItem" id="b21"><span class="biblioMarker">21. </span>T. Li and M. Ogihara, “Music genre classification with taxonomy,” in
+          Acoustics, Speech, and Signal Processing, 2005. Proceedings. (ICASSP
+          ’05). IEEE International Conference on, vol. 5, March 2005, pp. v/197–
+          v/200 Vol. 5.</p>
+        <p class="biblioItem" id="b22"><span class="biblioMarker">22. </span>E. Benetos and C. Kotropoulos, “A tensor-based approach for automatic
+          music genre classification,” in Signal Processing Conference, 2008 16th
+          European. IEEE, 2008, pp. 1–4</p>
+        <p class="biblioItem" id="b23"><span class="biblioMarker">23. </span>H. Srinivasan and M. Kankanhalli, “Harmonicity and dynamics-based
+          features for audio,” in Acoustics, Speech, and Signal Processing, 2004.
+          Proceedings.(ICASSP’04). IEEE International Conference on, vol. 4.
+          IEEE, 2004, pp. iv–321.</p>
+        <p class="biblioItem" id="b24"><span class="biblioMarker">24. </span>C. N. Silla Jr, A. L. Koerich, and C. A. Kaestner, “The latin music
+          database.” in ISMIR, 2008, pp. 451–456.</p>
+      </div>
 		</div>
 
     <!-- <div class="background-svg">
@@ -493,92 +579,6 @@
       </svg>
     </div> -->
 
-    <div class="notes">
-      <h2 class="title-2">Notes</h2>
-      <p class="note" id="n01"><span class="noteMarker">1. </span> http://www.music-ir.org/mirex/wiki/MIREX_HOME </p>
-      <p class="note" id="n02"><span class="noteMarker">2. </span> http://palcomp3.com/ </p>
-      <p class="note" id="n03"><span class="noteMarker">3. </span> http://audacityteam.org/ </p>
-      <p class="note" id="n04"><span class="noteMarker">4. </span> ESSENTIA has been used in many academic and business projects as Freesound, Dunya, Crypt of the NecroDancer and Good-sounds. Essentia is available at: https://github.com/MTG/essentia. </p>
-      <p class="note" id="n05"><span class="noteMarker">5. </span> https://www.csie.ntu.edu.tw/cjlin/libsvm/ </p>
-    </div>
-  
-    <div class="references">
-      <h2 class="title-2">References</h2>
-      <p class="biblioItem" id="b01"><span class="biblioMarker">1. </span>J. Salamon, B. Rocha, and E. G´omez, “Musical <span class="keyword" id="genreClassification">genre classification</span> using
-        melody features extracted from polyphonic music signals,” in IEEE
-        International Conference on Acoustics, Speech and Signal Processing
-        (ICASSP), Kyoto, Japan, 25/03/2012 2012.</span>.</p>
-      <p class="biblioItem" id="b02"><span class="biblioMarker">2. </span>Y. Panagakis, C. Kotropoulos, D. O. Informatics, and G. R. Arce,
-        “Music genre classification using locality preserving nonnegative tensor
-        factorization and sparse representations,” in In 10th International Society
-        for Music Information Retrieval Conference (ISMIR), 2009.</p>
-      <p class="biblioItem" id="b03"><span class="biblioMarker">3. </span>B. L. Sturm, “The gtzan dataset: Its contents, its faults, their effects on
-        evaluation, and its future use,” arXiv preprint arXiv:1306.1461, 2013.</p>
-      <p class="biblioItem" id="b04"><span class="biblioMarker">4. </span>——, “The state of the art ten years after a state of the art: Future
-        research in music information retrieval,” Journal of New Music Research,
-        vol. 43, no. 2, pp. 147–172, 2014.</p>
-      <p class="biblioItem" id="b05"><span class="biblioMarker">5. </span>Z. Zeng, S. Zhang, H. Li, W. Liang, and H. Zheng, “A novel approach to
-        musical genre classification using probabilistic latent semantic analysis
-        model,” in Multimedia and Expo, 2009. ICME 2009. IEEE International
-        Conference on. IEEE, 2009, pp. 486–489.</p>
-      <p class="biblioItem" id="b06"><span class="biblioMarker">6. </span>T. Hofmann, “Unsupervised learning by probabilistic latent semantic
-        analysis,” Machine learning, vol. 42, no. 1-2, pp. 177–196, 2001.</p>
-      <p class="biblioItem" id="b07"><span class="biblioMarker">7. </span>P.-A. Manzagol, T. Bertin-Mahieux, D. Eck et al., “On the use of sparce
-        time relative auditory codes for music.” in ISMIR, 2008, pp. 603–608.</p>
-      <p class="biblioItem" id="b08"><span class="biblioMarker">8. </span>A. Holzapfel and Y. Stylianou, “Musical genre classification using
-        nonnegative matrix factorization-based features,” Audio, Speech, and
-        Language Processing, IEEE Transactions on, vol. 16, no. 2, pp. 424–
-        434, 2008.</p>
-      <p class="biblioItem" id="b09"><span class="biblioMarker">9. </span>——, “A statistical approach to musical genre classification using
-        non-negative matrix factorization,” in Acoustics, Speech and Signal
-        Processing, 2007. ICASSP 2007. IEEE International Conference on,
-        vol. 2. IEEE, 2007, pp. II–693.</p>
-      <p class="biblioItem" id="b10"><span class="biblioMarker">10. </span>C. Laurier, Automatic Classification of Musical Mood by Content Based
-        Analysis. Universitat Pompeu Fabra, 2011.</p>
-      <p class="biblioItem" id="b11"><span class="biblioMarker">11. </span>R. Panda and R. P. Paiva, “Mirex 2012: Mood classification tasks
-        submission,” Machine Learning, vol. 53, no. 1-2, pp. 23–69, 2003.</p>
-      <p class="biblioItem" id="b12"><span class="biblioMarker">12. </span>G. Tzanetakis and P. Cook, “Musical genre classification of audio
-        signals,” Speech and Audio Processing, IEEE transactions on, vol. 10,
-        no. 5, pp. 293–302, 2002.</p>
-      <p class="biblioItem" id="b13"><span class="biblioMarker">13. </span>O. Lartillot and P. Toiviainen, “A matlab toolbox for musical feature
-        extraction from audio,” in International Conference on Digital Audio
-        Effects, 2007, pp. 237–244.</p>
-      <p class="biblioItem" id="b14"><span class="biblioMarker">14. </span>D. Cabrera et al., “Psysound: A computer program for psychoacoustical
-        analysis,” in Proceedings of the Australian Acoustical Society Confer-
-        ence, vol. 24, 1999, pp. 47–54.</p>
-      <p class="biblioItem" id="b15"><span class="biblioMarker">15. </span>Y.-H. Yang, Y.-C. Lin, Y.-F. Su, and H. H. Chen, “A regression
-        approach to music emotion recognition,” Audio, Speech, and Language
-        Processing, IEEE Transactions on, vol. 16, no. 2, pp. 448–457, 2008.</p>
-      <p class="biblioItem" id="b16"><span class="biblioMarker">16. </span>T. Li and M. Ogihara, “Content-based music similarity search and
-        emotion detection,” in Acoustics, Speech, and Signal Processing, 2004.
-        Proceedings.(ICASSP’04). IEEE International Conference on, vol. 5.
-        IEEE, 2004, pp. V–705.</p>
-      <p class="biblioItem" id="b17"><span class="biblioMarker">17. </span>G. Tzanetakis and P. Cook, “Musical genre classification of audio
-        signals,” Speech and Audio Processing, IEEE Transactions on, vol. 10,
-        no. 5, pp. 293–302, Jul 2002.</p>
-      <p class="biblioItem" id="b18"><span class="biblioMarker">18. </span>J. Bergstra, N. Casagrande, D. Erhan, D. Eck, and B. K´egl, “Aggre-
-        gate features and adaboost for music classification,” Machine learning,
-        vol. 65, no. 2-3, pp. 473–484, 2006.</p>
-      <p class="biblioItem" id="b19"><span class="biblioMarker">19. </span>C. N. Silla Jr, A. L. Koerich, and C. A. Kaestner, “A feature selection
-        approach for automatic music genre classification,” International Journal
-        of Semantic Computing, vol. 3, no. 02, pp. 183–208, 2009.</p>
-      <p class="biblioItem" id="b20"><span class="biblioMarker">20. </span>Z. Fu, G. Lu, K. M. Ting, and D. Zhang, “A survey of audio-based
-        music classification and annotation,” IEEE Transactions on Multimedia,
-        vol. 13, no. 2, pp. 303–319, 2011.</p>
-      <p class="biblioItem" id="b21"><span class="biblioMarker">21. </span>T. Li and M. Ogihara, “Music genre classification with taxonomy,” in
-        Acoustics, Speech, and Signal Processing, 2005. Proceedings. (ICASSP
-        ’05). IEEE International Conference on, vol. 5, March 2005, pp. v/197–
-        v/200 Vol. 5.</p>
-      <p class="biblioItem" id="b22"><span class="biblioMarker">22. </span>E. Benetos and C. Kotropoulos, “A tensor-based approach for automatic
-        music genre classification,” in Signal Processing Conference, 2008 16th
-        European. IEEE, 2008, pp. 1–4</p>
-      <p class="biblioItem" id="b23"><span class="biblioMarker">23. </span>H. Srinivasan and M. Kankanhalli, “Harmonicity and dynamics-based
-        features for audio,” in Acoustics, Speech, and Signal Processing, 2004.
-        Proceedings.(ICASSP’04). IEEE International Conference on, vol. 4.
-        IEEE, 2004, pp. iv–321.</p>
-      <p class="biblioItem" id="b24"><span class="biblioMarker">24. </span>C. N. Silla Jr, A. L. Koerich, and C. A. Kaestner, “The latin music
-        database.” in ISMIR, 2008, pp. 451–456.</p>
-    </div>
 	</div>
   
 </body>

@@ -40,11 +40,11 @@
                 <img src="img/mnmsgif.gif" alt="title GIF" id="gifimage">
             </div>
             <!-- subtitle -->
-            <div class="container-fluid" id="subtitle">
+            <div class="container-fluid-nav sticky-top" id="subtitle">
                 <h4>Music and Maps Magazine</h4>
-            </div>
-            <!-- start of the NAVBAR -->
-            <nav class="navbar navbar-expand-lg">
+            
+                <!-- start of the NAVBAR -->
+                <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -55,41 +55,66 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="issues.html">Issues</a>
-                      </li>
-                      <li class="nav-item">
                         <a class="nav-link" href="#">Documentation</a>
                       </li>
                       <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="issues.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Issues
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li class="nav-item dropdown-submenu">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Music and Tech
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
+                              <li><a class="dropdown-item jsart" data-article="covid.html">Covid</a></li>
+                              <li><a class="dropdown-item jsart" data-article="music_learning.html">Music Learning</a></li>
+                              <li><a class="dropdown-item jsart" data-article="shazam.html">Shazam</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown-submenu">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Music and Context
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
+                              <li><a class="dropdown-item jsart" data-article="chiara1.html">Chiara article 1</a></li>
+                              <li><a class="dropdown-item jsart" data-article="chiara2.html">Chiara article 2</a></li>
+                              <li><a class="dropdown-item jsart" data-article="chiara3.html">Chiara article 3</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown-submenu">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Music and Fashion
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
+                              <li><a class="dropdown-item jsart" data-article="gaiaarticolo1.html">Gaia article 1</a></li>
+                              <li><a class="dropdown-item jsart" data-article="gaiaarticolo2.html">Gaia article 2</a></li>
+                              <li><a class="dropdown-item jsart" data-article="gaiaarticolo3.html">Gaia article 3</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Articles
+                          Styles
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" data-article="covid.html">Covid</a></li>
-                          <li><a class="dropdown-item" data-article="music_learning.html">Music Learning</a></li>
-                          <li><a class="dropdown-item" data-article="shazam.html">Shazam</a></li>
-                          <li><a class="dropdown-item" data-article="chiara1.html">Chiara article 1</a></li>
-                          <li><a class="dropdown-item" data-article="chiara2.html">Chiara article 2</a></li>
-                          <li><a class="dropdown-item" data-article="chiara3.html">Chiara article 3</a></li>
-                          <li><a class="dropdown-item" data-article="gaiaarticolo1.html">Gaia article 1</a></li>
-                          <li><a class="dropdown-item" data-article="gaiaarticolo2.html">Gaia article 2</a></li>
-                          <li><a class="dropdown-item" data-article="gaiaarticolo3.html">Gaia article 3</a></li>
-
+                          <li><a class="dropdown-item jsstyle" data-style="issuesstyle.css" data-src="img/lp.png">Default</a></li>
+                          <li><a class="dropdown-item jsstyle" data-style="medievalissues.css" data-src="img/medieval/Wheel.png">1500</a></li>
+                          <li><a class="dropdown-item jsstyle" data-style="provaOttocento.css" data-src="img/artnouveau/discoArtNouveau.png">1800</a></li>
+                          <li><a class="dropdown-item jsstyle" data-style="anni30gaia.css" data-src="img/thirties/top-view-straw-hats_41471-8931.png">1930</button>
+                          <li><a class="dropdown-item jsstyle" data-style="provaSeventies.css" data-src="img/seventies/discoSeventies.png">1970</a></li>
+                          <li><a class="dropdown-item jsstyle" data-style="geronimo.css" data-src="img/geronimo/cerchio.png">2000</a></li>
+                          <li><a class="dropdown-item jsstyle" data-style="2030gaia.css" data-src="2030img/Mars.png">2030</a></li>
                         </ul>
                       </li>
                     </ul>
                   </div>
-                  <div>
-                    <button class="style-btn" data-style="issuesstyle.css" data-src="img/lp.png">Default</button>
-                    <button class="style-btn" data-style="medievalissues.css" data-src="img/medieval/Wheel.png">1500</button>
-                    <button class="style-btn" data-style="styles/green-theme.css">Green Theme</button>
-                    <button class="style-btn" data-style="provaSeventies.css" data-src="img/seventies/discoSeventies.png">Seventies</button>
-                    <button class="style-btn" data-style="provaOttocento.css" data-src="">Art Nouveau</button>
-                    <button class="style-btn" data-style="anni30gaia.css" data-src="img/thirties/top-view-straw-hats_41471-8931.png">Anni 30</button>
-                  </div>
                 </div>
-              </nav>
-            </nav>
+                </nav>
+            </div>
+
+            
 
             <br>
             <br>
@@ -104,31 +129,29 @@
               </div>
 
               <div class="music-container" id="music-container">
-                  <h6 class="stitle" id="title">Medieval theme</h6>
-                  <audio src="./songs/bad_romance.mp3" id="audio"></audio>
-                  <div class="navigation">
-                      <button id="prev" class="action-btn">
-                          <i class="bi bi-skip-backward-circle-fill"></i>
-                      </button>
-                      <button id="js-rotate" class="action-btn action-btn-big">
-                          <i class="bi bi-play-circle-fill"></i>
-                      </button>
-                      <button id="next" class="action-btn">
-                          <i class="bi bi-skip-forward-circle-fill"></i>
-                      </button>
-                  </div>
+                <h6 class="stitle" id="title">Medieval theme</h6>
+                <audio src="./songs/bad_romance.mp3" id="audio"></audio>
+                <div class="navigation">
+                  <button id="prev" class="action-btn">
+                    <i class="bi bi-skip-backward-circle-fill"></i>
+                  </button>
+                  <button id="js-rotate" class="action-btn action-btn-big">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                  <button id="next" class="action-btn">
+                    <i class="bi bi-skip-forward-circle-fill"></i>
+                  </button>
+                </div>
               </div>
+            </div
 
-
-          </div>
-
-
+            <div id="image-gaia-2" ></div>
 
             <div class="container-fluid">
                 <div class="row" id="main">                
                     <div class="col-md-3">
                         <div id="asideLeft" class="sticky">
-                            <h2>METADATA</h2>
+                            <h2 class="title-metadata">METADATA</h2>
                             <ul class="nav nav-underline">
                               <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Map</a>
@@ -146,57 +169,56 @@
                         </div>
                         <div id="map"></div>
                     </div>
-                            
                     <div class="col-md-9" id="externalContentColumn">
-                      
-          
-                    </div>
-
-                    <br><br>         
                 </div>
+                    <br><br>         
             </div>
             
             <br>
             <br>
 
             <footer>
-                
-                    <div class="container-fluid">
-                        <div class="row" id="footer">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-4">
-                                <br>
-                                <p class="text">cbdvinopeanùewvpcds+spvkkkkkkkkkkkkkkkkkkkkpda,xwpwqvdbyunvmbon,ph </p>
-                                <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a>
-                                <br>
-                                <p class="text">This work is distributed with the license <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons Attribuzione - Non commerciale - Non opere derivate 3.0 Unported</a>.</p>
-                                <a href="#su"><button type="button" class="btn btn-outline-dark btn-sm" id="bottone">Back to the top</button></a>
-                                <br>
-                                <br>
-                            </div>
-                            <div class="col-md-2"></div>
-                            <div class="col-md-4">
-                                <br>
-                                <h3 class="text">Contact</h3>
-                                <p><a href="https://www.unibo.it/it" target="_blank">Alma Mater Studiorum Università di Bologna</a></p>
-                                <p><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" target="_blank">Digital Humanities and Digital Knowledge</a></p>
-                                <p><a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/478833" target="_blank">Scholarly Editing and Digital Textuality</a></p>
-        
-                            </div>
-                            <div class="col-md-1"></div>
-                            <p class="text-center">&copy; Copyright 2023 Erica Andreose, Gaia Ortona, Chiara Parravicini - IMWT project - DHDK - Alma Mater Studiorum Bologna</p>
-                        </div>   
-                    </div>
-                    
+              <div class="container-fluid">
+                  <div class="row" id="footer">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-4">
+                          <br>
+                          <p class="text">cbdvinopeanùewvpcds+spvkkkkkkkkkkkkkkkkkkkkpda,xwpwqvdbyunvmbon,ph </p>
+                          <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a>
+                          <br>
+                          <p class="text">This work is distributed with the license <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons Attribuzione - Non commerciale - Non opere derivate 3.0 Unported</a>.</p>
+                          <a href="#su"><button type="button" class="btn btn-outline-dark btn-sm" id="bottone">Back to the top</button></a>
+                          <br>
+                          <br>
+                      </div>
+                      <div class="col-md-2"></div>
+                      <div class="col-md-4">
+                          <br>
+                          <h3 class="text">Contact</h3>
+                          <p><a href="https://www.unibo.it/it" target="_blank">Alma Mater Studiorum Università di Bologna</a></p>
+                          <p><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" target="_blank">Digital Humanities and Digital Knowledge</a></p>
+                          <p><a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/478833" target="_blank">Scholarly Editing and Digital Textuality</a></p>
+  
+                      </div>
+                      <div class="col-md-1"></div>
+                      <p class="text-center">&copy; Copyright 2023 Erica Andreose, Gaia Ortona, Chiara Parravicini - IMWT project - DHDK - Alma Mater Studiorum Bologna</p>
+                  </div>   
+              </div>        
             </footer>
 
 
             <!-- JS of Bootstrap-->
+            
             <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" 
-                integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" 
-                crossorigin="anonymous">
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" 
+            crossorigin="anonymous">
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" 
+            integrity="sha384-kJ3o2DKtIkvYIK3UENzmM7KCkRr4/3pOMkDejvoqxMCJo3f8Ad5SWA6jbVGaS8g" 
+            crossorigin="anonymous">
             </script>
             <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+
             
             <!-- our js files -->
             <script src="tryajax.js"></script>
@@ -211,4 +233,4 @@
 
           </body>
 
-    </html>
+</html>
