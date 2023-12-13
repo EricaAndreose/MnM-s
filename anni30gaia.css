@@ -17,9 +17,6 @@
     src: url(font/fontanni30gaia/semplicita.light.otf)
 }
 
-#image-gaia-2{
-    display: none;
-}
 
 #gif {
     text-align: center;
@@ -56,14 +53,15 @@ body {
     padding: 0.5em;
     font-family: 'Semplicita';
     border-radius: 5px;
+    background-color: rgb(209, 195, 177) ;
+    border: 2px solid #000;
 }
 
 .navbar {
     border-radius: 5px;
-    background-color: rgb(209, 195, 177) ;
+    background-color: transparent;
     font-family: 'Semplicita';
     margin-top: -0.5cm;
-    border: 2px solid #000;
 }
 
 
