@@ -38,12 +38,14 @@ body {
     background-image: url(img/thirties/Woman1.png);
     position: absolute;
     background-repeat: no-repeat;
-    z-index: 99; /* Assicurati che sia sopra tutti gli altri elementi */
+    z-index: 100; /* Assicurati che sia sopra tutti gli altri elementi */
     width: 35%;
     height: 100%;
     right: 0;
     top: 0;
 }
+
+
 
 
 
@@ -62,9 +64,16 @@ body {
     background-color: transparent;
     font-family: 'Semplicita';
     margin-top: -0.5cm;
+    z-index: 5;
 }
 
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 98;
 
+}
 
 .dropdown-menu {
     background-color: rgb(209, 195, 177) ;
