@@ -21,6 +21,10 @@
     src: url('font/medieval/genzsch/GenzschInitials.ttf');
 }
 
+#image-gaia-2{
+    display: none;
+}
+
 #gif {
     text-align: center;
     padding-top: 1em;
