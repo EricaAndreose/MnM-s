@@ -34,7 +34,7 @@ body {
 
 .navbar {
   border-radius: 5px;
-  background-color: #F1FAEE;
+  background-color: transparent;
   font-family: 'Negaroa';
   margin-top: -0.5cm;
 }
