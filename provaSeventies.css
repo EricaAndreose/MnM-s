@@ -8,6 +8,10 @@
   src: url('font/seventies/negaroa/Negaroa-Regular.ttf');
 }
 
+#image-gaia-2{
+    display: none;
+}
+
 #gif {
   text-align: center;
   padding-top: 1em;
