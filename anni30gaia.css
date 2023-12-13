@@ -17,6 +17,9 @@
     src: url(font/fontanni30gaia/semplicita.light.otf)
 }
 
+#image-gaia-2{
+    display: none;
+}
 
 #gif {
     text-align: center;
