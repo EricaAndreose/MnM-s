@@ -12,6 +12,9 @@ body {
     padding-top: 1em;
 }
 
+#image-gaia-2{
+    display: none;
+}
 
 #subtitle {
     color: rgb(40, 36, 36);
