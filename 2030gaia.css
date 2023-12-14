@@ -1,21 +1,10 @@
 @font-face{
-    font-family: 'Becker';
-    src: url(font/fontanni30gaia/becker-black-nf.regular.otf);
+    font-family: 'Dune';
+    src: url(font/2030fonts/BungeeHairline-Regular.ttf);
 }
 
-@font-face{
-    font-family:'Josefin';
-    src: url(font/fontanni30gaia/josefin-sans.light.ttf);
-}
-@font-face{
-    font-family:'Monoton';
-    src: url(font/fontanni30gaia/Monoton-Regular.ttf);
-}
 
-@font-face{
-    font-family: 'Semplicita';
-    src: url(font/fontanni30gaia/semplicita.light.otf)
-}
+
 
 
 #gif {
@@ -27,8 +16,7 @@
 body {
     background-size: cover;
     background: 
-    linear-gradient(to bottom, rgb(237, 165, 78), rgba(92, 59, 7, 0.564));
-    background-repeat: no-repeat;
+    linear-gradient(to bottom, rgb(12, 12, 12), rgb(238, 122, 5));
     position: relative;
     
 }
@@ -43,9 +31,11 @@ body {
     color: rgb(40, 36, 36);
     text-align: center;
     padding: 0.5em;
-    font-family: 'Semplicita';
+    font-family: 'Dune';
+    color: #F1FAEE;
+    font-weight: 900;
     border-radius: 5px;
-    background-color: rgb(209, 195, 177) ;
+    background-color: rgb(105, 90, 67) ;
     border: 2px solid #000;
 }
 
@@ -53,14 +43,16 @@ body {
 .navbar {
     border-radius: 5px;
     background-color: transparent;
-    font-family: 'Semplicita';
+    font-family: 'Dune';
+    color: #F1FAEE;
+    font-weight: 900;
     margin-top: -0.5cm;
 }
 
 
 
 .dropdown-menu {
-    background-color: rgb(209, 195, 177) ;
+    background-color: rgb(124, 99, 58) ;
     border: 2px solid #000;
 }
 
@@ -86,7 +78,8 @@ body {
 #main {
     background-size: cover; /* Adjust as needed */
     background-repeat: no-repeat; /* Prevent image from repeating */
-    background-color:rgb(205, 102, 47) ;
+    background: 
+    linear-gradient(to bottom, rgb(12, 12, 12), rgb(238, 122, 5));
     border-radius: 5px;
     margin-left: 1cm;
     margin-right: 1cm;
@@ -117,7 +110,9 @@ body {
 
 
 #footer {
-    font-family: 'Monoton';
+    font-family: 'Dune';
+    color: #F1FAEE;
+    font-weight: 900;
 }
 
 #externalContentColumn {
@@ -127,7 +122,9 @@ body {
 
 
 .title{
-    font-family: 'Monoton';
+    font-family: 'Dune';
+    color: #F1FAEE;
+    font-weight: 900;
     font-size: 30px;
     color: #0a0a0a;
     opacity: 1;
@@ -138,17 +135,22 @@ body {
 }
 
 .subtitle {
-    font-family: 'Semplicita';
+    font-family: 'Dune';
+    color: #F1FAEE;
+    font-weight: 700;
 }
 
 .author{
-    font-family: 'Semplicita';
+    font-family: 'Dune';
+    color: #F1FAEE;
     text-align: center;
     font-size: 24px;
 }
 
 .publicationdate {
-    font-family: 'Semplicita';
+    font-family: 'Dune';
+    color: #F1FAEE;
+    font-weight: 700;
     text-align: center;
     font-size: 24px;
 
@@ -158,7 +160,8 @@ body {
     column-count: 2;
     column-gap: 50px;
     width: 100%;
-    font-family: 'Semplicita';
+    font-family: 'Dune';
+    color: #F1FAEE;
     font-size: 18x;
     color: #0a0a0a;
 
@@ -168,8 +171,8 @@ body {
     font-size: 300%;
     font-weight: bold;
     letter-spacing: 0.1em;
-    color: #0a0a0a;
-    font-family:'Semplicita';
+    color: #F1FAEE;
+    font-family:'Dune';
 }
 .article img {
     background-color: rgba(0, 0, 0, 0.5); /* Sfondo grigio trasparente */
@@ -183,19 +186,23 @@ body {
 }
 
 .img-description{
-    font-family: 'Josefin';
+    font-family: 'Dune';
+    color: #F1FAEE;
     font-weight: 900;
 }
 
 .title-2{
-    font-family: 'Becker';
+    font-family: 'Dune';
+    color: #F1FAEE;
+    font-weight: 900;
     font-size: 24px;
     color: #0a0a0a;
 
 }
 
 .table-table-striped{
-    font-family: 'Semplicita';
+    font-family: 'Dune';
+    color: #F1FAEE;
     margin: 0 auto;
     border: 2px solid #000;
 }
@@ -260,7 +267,8 @@ body {
 
 .stitle {
     font-size: 20px;
-    font-family: 'Semplicita';
+    font-family: 'Dune';
+    color: #F1FAEE;
     text-align: center;
     }
 
