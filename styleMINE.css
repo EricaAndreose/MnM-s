@@ -24,7 +24,7 @@ body {
 
 .navbar {
     border-radius: 5px;
-    background-color: #F1FAEE;
+    background-color: transparent;
     font-family: Tracking_Bold;
     margin-top: -0.5cm;
 }
@@ -120,6 +120,10 @@ body {
     cursor: pointer;
     padding: 2px;
     }
+
+.title-1 {
+    text-align: center;
+}
 
 
 #footer {
