@@ -86,7 +86,6 @@ body {
     background-color: #ddd2b2;
     height: 40vw; /* da cambiare con la percentuale anche qua? */
     overflow-y: auto; /* or overflow-y: scroll; */
-    background-size: 15%, 15%, 15%, 15%;
 }
 
 #map { height: 28%; } /* da cambiare con la percentuale anche qua? */
@@ -114,7 +113,7 @@ body {
     font-size: 120%;
 }
 
-/* classe per la prima lettera*/
+/* classe per la prima lettera da mettere*/
 
 .article {
     font-family: 'True Golden™';
@@ -240,6 +239,25 @@ body {
     padding: 2px;
     }
 
-#image-gaia-2 {
-    display: none;
+.content img { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
+
+table tr td, table tr th{
+    background-color: rgba(211, 130, 240, 0) !important;
+}
+
+@media (max-width: 800px) {
+    .content {
+    column-count: 1;
+    margin-left: 7%;
+    margin-right: 7%;
+    background:     
+        url('img/artnouveau/borders.png') left repeat-y, 
+        url('img/artnouveau/borders.png') right repeat-y;
+    background-size: 3%, 3%;
+    }
+  }

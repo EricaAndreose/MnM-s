@@ -22,7 +22,7 @@
 			<div class="title">
 				<h1>A robust music <span class="keyword" id="genreClassification">genre classification</span> approach for global and regional music datasets evaluation</h1>
 			</div>
-			<p class="author">By <span class="person" id="JMdS"></span>Jefferson Martins de Sousa</span>,</p>
+			<p class="author">By <span class="person" id="JMdS">Jefferson Martins de Sousa</span>,</p>
 			<p class="author"><span class="person" id="ETP">Eanes Torres Pereira</span>,</p>
 			<p class="author"><span class="person" id="LRV">Luciana Ribeiro Veloso</span></p>
 			<!-- <p class="publication-date">data x</p> -->
@@ -99,367 +99,373 @@
 
       <p>Table III presents the results of works that measured their performance by classification accuracy computed from 5-fold cross-validation [3]. Zeng et al. [5] achieved 1.8% of accuracy higher than results obtained by our proposed approach. This result may be because they performed 5-fold cross validation only one time and used the best set of audios to train and test the model created. We performed 30 runs of 5-fold cross validation and used the average of all results to represent our accuracy, hence we can ensure our model is good not only when we used the best set of features to train and test.</p>
 
-      <table class="table table-hover"> <!--TABLE III-->
-        <caption>Table III: Best accuracies presented in previous works using <span class="keyword" id="GTZANdataset">GTZAN</span>.</caption>
-        <thead>
-          <tr>
-            <th scope="col">Approaches</th>
-            <th scope="col">Accuracies</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Manzagol et al. [7]</th>
-            <td>54.3%</td>
-          </tr>
-          <tr>
-            <th scope="row">Holzapfel et al. [9]</th>
-            <td>72.9%</td>
-          </tr>
-          <tr>
-            <th scope="row">Holzapfel et al. [8]</th>
-            <td>74%</td>
-          </tr>
-          <tr>
-            <th scope="row">Zeng et al. [5]</th>
-            <td>81.5%</td>
-          </tr>
-          <tr>
-            <th scope="row">Our Approach using GTZAN</th>
-            <td>79.7%</td>
-          </tr>
-          <tr>
-            <th scope="row">Our Approach using BMD</th>
-            <td>86.11%</td>
-          </tr>
-        </tbody>
-      </table>
-      
+      <div class="table-responsive">
+        <table class="table table-hover"> <!--TABLE III-->
+          <caption>Table III: Best accuracies presented in previous works using <span class="keyword" id="GTZANdataset">GTZAN</span>.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Approaches</th>
+              <th scope="col">Accuracies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Manzagol et al. [7]</th>
+              <td>54.3%</td>
+            </tr>
+            <tr>
+              <th scope="row">Holzapfel et al. [9]</th>
+              <td>72.9%</td>
+            </tr>
+            <tr>
+              <th scope="row">Holzapfel et al. [8]</th>
+              <td>74%</td>
+            </tr>
+            <tr>
+              <th scope="row">Zeng et al. [5]</th>
+              <td>81.5%</td>
+            </tr>
+            <tr>
+              <th scope="row">Our Approach using GTZAN</th>
+              <td>79.7%</td>
+            </tr>
+            <tr>
+              <th scope="row">Our Approach using BMD</th>
+              <td>86.11%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <p>According to Table I and Table II, we noticed how good our approach performed with the set of features proposed. Many authors, when performing n-fold cross validation, perform only a single run [22], [23]. That is not a good way of verifying the generality of the method. When they use only 10%, in a 10-fold cross-validation procedure, with randomly shuffling the samples and performing many executions, they may have used the best set of samples to test their model and consequently they have achieved great accuracies. This is why we repeated the process of train and test 30 times with the <span class="keyword" id="GTZANdataset">GTZAN dataset</span>, hence we could have the idea of how good or bad our approach is.</p>
       <br>
-      <table class="table table-hover"> <!--TABLE I-->
-        <caption>Table I: Confusion matrix showing the results of 30 repetition of the <span class="keyword" id="GTZANdataset">GTZAN dataset</span> divided in 66.7% to train and 33.3% to test. The cell values correspond to the accumulation of classification results for 30 repetition</caption>
-        <thead>
-          <tr>
-            <th scope="col">Genres</th>
-            <th scope="col">Blues</th>
-            <th scope="col">Classical</th>
-            <th scope="col">Country</th>
-            <th scope="col">Disco</th>
-            <th scope="col">Hip Hop</th>
-            <th scope="col">Jazz</th>
-            <th scope="col">Metal</th>
-            <th scope="col">Pop</th>
-            <th scope="col">Reggae</th>
-            <th scope="col">Rock</th>
-            <th scope="col">Accuracies</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Blues</th>
-            <td>863</td>
-            <td>7</td>
-            <td>31</td>
-            <td>10</td>
-            <td>6</td>
-            <td>25</td>
-            <td>38</td>
-            <td>5</td>
-            <td>4</td>
-            <td>45</td>
-            <td>83.46%</td>
-          </tr>
-          <tr>
-            <th scope="row">Classical</th>
-            <td>0</td>
-            <td>952</td>
-            <td>15</td>
-            <td>2</td>
-            <td>0</td>
-            <td>33</td>
-            <td>0</td>
-            <td>11</td>
-            <td>1</td>
-            <td>3</td>
-            <td>93.60%</td>
-          </tr>
-          <tr>
-            <th scope="row">Country</th>
-            <td>18</td>
-            <td>42</td>
-            <td>786</td>
-            <td>49</td>
-            <td>0</td>
-            <td>7</td>
-            <td>18</td>
-            <td>34</td>
-            <td>35</td>
-            <td>139</td>
-            <td>69.68%</td>
-          </tr>
-          <tr>
-            <th scope="row">Disco</th>
-            <td>12</td>
-            <td>30</td>
-            <td>35</td>
-            <td>639</td>
-            <td>24</td>
-            <td>2</td>
-            <td>13</td>
-            <td>46</td>
-            <td>97</td>
-            <td>72</td>
-            <td>65.87%</td>
-          </tr>
-          <tr>
-            <th scope="row">Hip Hop</th>
-            <td>7</td>
-            <td>1</td>
-            <td>0</td>
-            <td>62</td>
-            <td>805</td>
-            <td>0</td>
-            <td>3</td>
-            <td>30</td>
-            <td>44</td>
-            <td>6</td>
-            <td>84.02%</td>
-          </tr>
-          <tr>
-            <th scope="row">Jazz</th>
-            <td>19</td>
-            <td>9</td>
-            <td>12</td>
-            <td>10</td>
-            <td>0</td>
-            <td>852</td>
-            <td>0</td>
-            <td>9</td>
-            <td>6</td>
-            <td>14</td>
-            <td>91.51%</td>
-          </tr>
-          <tr>
-            <th scope="row">Metal</th>
-            <td>0</td>
-            <td>31</td>
-            <td>0</td>
-            <td>4</td>
-            <td>9</td>
-            <td>3</td>
-            <td>851</td>
-            <td>17</td>
-            <td>0</td>
-            <td>81</td>
-            <td>85.44%</td>
-          </tr>
-          <tr>
-            <th scope="row">Pop</th>
-            <td>0</td>
-            <td>4</td>
-            <td>7</td>
-            <td>40</td>
-            <td>39</td>
-            <td>2</td>
-            <td>0</td>
-            <td>758</td>
-            <td>31</td>
-            <td>46</td>
-            <td>81.76%</td>
-          </tr>
-          <tr>
-            <th scope="row">Reggae</th>
-            <td>6</td>
-            <td>4</td>
-            <td>23</td>
-            <td>58</td>
-            <td>54</td>
-            <td>4</td>
-            <td>6</td>
-            <td>20</td>
-            <td>710</td>
-            <td>57</td>
-            <td>75.37%</td>
-          </tr>
-          <tr>
-            <th scope="row">Rock</th>
-            <td>3</td>
-            <td>59</td>
-            <td>140</td>
-            <td>78</td>
-            <td>18</td>
-            <td>27</td>
-            <td>119</td>
-            <td>58</td>
-            <td>49</td>
-            <td>536</td>
-            <td>75.37%</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-hover"> <!--TABLE I-->
+          <caption>Table I: Confusion matrix showing the results of 30 repetition of the <span class="keyword" id="GTZANdataset">GTZAN dataset</span> divided in 66.7% to train and 33.3% to test. The cell values correspond to the accumulation of classification results for 30 repetition</caption>
+          <thead>
+            <tr>
+              <th scope="col">Genres</th>
+              <th scope="col">Blues</th>
+              <th scope="col">Classical</th>
+              <th scope="col">Country</th>
+              <th scope="col">Disco</th>
+              <th scope="col">Hip Hop</th>
+              <th scope="col">Jazz</th>
+              <th scope="col">Metal</th>
+              <th scope="col">Pop</th>
+              <th scope="col">Reggae</th>
+              <th scope="col">Rock</th>
+              <th scope="col">Accuracies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Blues</th>
+              <td>863</td>
+              <td>7</td>
+              <td>31</td>
+              <td>10</td>
+              <td>6</td>
+              <td>25</td>
+              <td>38</td>
+              <td>5</td>
+              <td>4</td>
+              <td>45</td>
+              <td>83.46%</td>
+            </tr>
+            <tr>
+              <th scope="row">Classical</th>
+              <td>0</td>
+              <td>952</td>
+              <td>15</td>
+              <td>2</td>
+              <td>0</td>
+              <td>33</td>
+              <td>0</td>
+              <td>11</td>
+              <td>1</td>
+              <td>3</td>
+              <td>93.60%</td>
+            </tr>
+            <tr>
+              <th scope="row">Country</th>
+              <td>18</td>
+              <td>42</td>
+              <td>786</td>
+              <td>49</td>
+              <td>0</td>
+              <td>7</td>
+              <td>18</td>
+              <td>34</td>
+              <td>35</td>
+              <td>139</td>
+              <td>69.68%</td>
+            </tr>
+            <tr>
+              <th scope="row">Disco</th>
+              <td>12</td>
+              <td>30</td>
+              <td>35</td>
+              <td>639</td>
+              <td>24</td>
+              <td>2</td>
+              <td>13</td>
+              <td>46</td>
+              <td>97</td>
+              <td>72</td>
+              <td>65.87%</td>
+            </tr>
+            <tr>
+              <th scope="row">Hip Hop</th>
+              <td>7</td>
+              <td>1</td>
+              <td>0</td>
+              <td>62</td>
+              <td>805</td>
+              <td>0</td>
+              <td>3</td>
+              <td>30</td>
+              <td>44</td>
+              <td>6</td>
+              <td>84.02%</td>
+            </tr>
+            <tr>
+              <th scope="row">Jazz</th>
+              <td>19</td>
+              <td>9</td>
+              <td>12</td>
+              <td>10</td>
+              <td>0</td>
+              <td>852</td>
+              <td>0</td>
+              <td>9</td>
+              <td>6</td>
+              <td>14</td>
+              <td>91.51%</td>
+            </tr>
+            <tr>
+              <th scope="row">Metal</th>
+              <td>0</td>
+              <td>31</td>
+              <td>0</td>
+              <td>4</td>
+              <td>9</td>
+              <td>3</td>
+              <td>851</td>
+              <td>17</td>
+              <td>0</td>
+              <td>81</td>
+              <td>85.44%</td>
+            </tr>
+            <tr>
+              <th scope="row">Pop</th>
+              <td>0</td>
+              <td>4</td>
+              <td>7</td>
+              <td>40</td>
+              <td>39</td>
+              <td>2</td>
+              <td>0</td>
+              <td>758</td>
+              <td>31</td>
+              <td>46</td>
+              <td>81.76%</td>
+            </tr>
+            <tr>
+              <th scope="row">Reggae</th>
+              <td>6</td>
+              <td>4</td>
+              <td>23</td>
+              <td>58</td>
+              <td>54</td>
+              <td>4</td>
+              <td>6</td>
+              <td>20</td>
+              <td>710</td>
+              <td>57</td>
+              <td>75.37%</td>
+            </tr>
+            <tr>
+              <th scope="row">Rock</th>
+              <td>3</td>
+              <td>59</td>
+              <td>140</td>
+              <td>78</td>
+              <td>18</td>
+              <td>27</td>
+              <td>119</td>
+              <td>58</td>
+              <td>49</td>
+              <td>536</td>
+              <td>75.37%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <br>
-      <table class="table table-hover"> <!--TABLE II-->
-        <caption>Table II: Confusion matrix presenting the results of one repetition of the <span class="keyword" id="GTZANdataset">GTZAN dataset</span> divided in 66.7% to train and 33.3% to test.</caption>
-        <thead>
-          <tr>
-            <th scope="col">Genres</th>
-            <th scope="col">Blues</th>
-            <th scope="col">Classical</th>
-            <th scope="col">Country</th>
-            <th scope="col">Disco</th>
-            <th scope="col">Hip Hop</th>
-            <th scope="col">Jazz</th>
-            <th scope="col">Metal</th>
-            <th scope="col">Pop</th>
-            <th scope="col">Reggae</th>
-            <th scope="col">Rock</th>
-            <th scope="col">Accuracies</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Blues</th>
-            <td>28</td>
-            <td>0</td>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>90.32%</td>
-          </tr>
-          <tr>
-            <th scope="row">Classical</th>
-            <td>0</td>
-            <td>29</td>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>93.54%</td>
-          </tr>
-          <tr>
-            <th scope="row">Country</th>
-            <td>0</td>
-            <td>1</td>
-            <td>32</td>
-            <td>2</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>5</td>
-            <td>78.04%</td>
-          </tr>
-          <tr>
-            <th scope="row">Disco</th>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>18</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>1</td>
-            <td>8</td>
-            <td>62.06%</td>
-          </tr>
-          <tr>
-            <th scope="row">Hip Hop</th>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>23</td>
-            <td>0</td>
-            <td>0</td>
-            <td>2</td>
-            <td>0</td>
-            <td>0</td>
-            <td>88.46%</td>
-          </tr>
-          <tr>
-            <th scope="row">Jazz</th>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>24</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>3</td>
-            <td>85.71%</td>
-          </tr>
-          <tr>
-            <th scope="row">Metal</th>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>30</td>
-            <td>0</td>
-            <td>0</td>
-            <td>4</td>
-            <td>85.71%</td>
-          </tr>
-          <tr>
-            <th scope="row">Pop</th>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>35</td>
-            <td>1</td>
-            <td>2</td>
-            <td>92.10%</td>
-          </tr>
-          <tr>
-            <th scope="row">Reggae</th>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>6</td>
-            <td>2</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>28</td>
-            <td>2</td>
-            <td>70.00%</td>
-          </tr>
-          <tr>
-            <th scope="row">Rock</th>
-            <td>2</td>
-            <td>0</td>
-            <td>3</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>3</td>
-            <td>2</td>
-            <td>0</td>
-            <td>23</td>
-            <td>67.64%</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-hover"> <!--TABLE II-->
+          <caption>Table II: Confusion matrix presenting the results of one repetition of the <span class="keyword" id="GTZANdataset">GTZAN dataset</span> divided in 66.7% to train and 33.3% to test.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Genres</th>
+              <th scope="col">Blues</th>
+              <th scope="col">Classical</th>
+              <th scope="col">Country</th>
+              <th scope="col">Disco</th>
+              <th scope="col">Hip Hop</th>
+              <th scope="col">Jazz</th>
+              <th scope="col">Metal</th>
+              <th scope="col">Pop</th>
+              <th scope="col">Reggae</th>
+              <th scope="col">Rock</th>
+              <th scope="col">Accuracies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Blues</th>
+              <td>28</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>90.32%</td>
+            </tr>
+            <tr>
+              <th scope="row">Classical</th>
+              <td>0</td>
+              <td>29</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>93.54%</td>
+            </tr>
+            <tr>
+              <th scope="row">Country</th>
+              <td>0</td>
+              <td>1</td>
+              <td>32</td>
+              <td>2</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5</td>
+              <td>78.04%</td>
+            </tr>
+            <tr>
+              <th scope="row">Disco</th>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>18</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>8</td>
+              <td>62.06%</td>
+            </tr>
+            <tr>
+              <th scope="row">Hip Hop</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>23</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>88.46%</td>
+            </tr>
+            <tr>
+              <th scope="row">Jazz</th>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3</td>
+              <td>85.71%</td>
+            </tr>
+            <tr>
+              <th scope="row">Metal</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>30</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4</td>
+              <td>85.71%</td>
+            </tr>
+            <tr>
+              <th scope="row">Pop</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>35</td>
+              <td>1</td>
+              <td>2</td>
+              <td>92.10%</td>
+            </tr>
+            <tr>
+              <th scope="row">Reggae</th>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>6</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>28</td>
+              <td>2</td>
+              <td>70.00%</td>
+            </tr>
+            <tr>
+              <th scope="row">Rock</th>
+              <td>2</td>
+              <td>0</td>
+              <td>3</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>3</td>
+              <td>2</td>
+              <td>0</td>
+              <td>23</td>
+              <td>67.64%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <p>Comparing our result with the latest results of MIREX and ISMIR we noticed that our approach achieved similar accuracy results. Running our approach on <span class="keyword" id="GTZANdataset">GTZAN dataset</span> dataset and using 5-fold cross-validation to evaluate, our average result, after 30 executions of cross-validation, was 79.70%.</p>
 
@@ -580,7 +586,7 @@
     </div> -->
 
 	</div>
-  
+
 </body>
 </html>
 
