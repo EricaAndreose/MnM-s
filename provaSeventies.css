@@ -24,19 +24,19 @@ body {
 }
 
 #subtitle {
+  font-family: 'Fontanio Black';
   color: rgb(40, 36, 36);
   background-color: #F1FAEE;
   text-align: center;
   padding: 0.5em;
-  font-family: 'Negaroa';
   border-radius: 5px;
 }
 
 .navbar {
   border-radius: 5px;
   background-color: transparent;
+  margin-top: -0.5%;
   font-family: 'Negaroa';
-  margin-top: -0.5cm;
 }
 
 .dropdown-menu {
@@ -63,11 +63,12 @@ body {
 /* insertion */
 
 #main {
+  font-family: 'Fontanio Black';
   background-color: #F1FAEE;
   border-radius: 5px;
-  margin-left: 1cm;
-  margin-right: 1cm;
-  height: 40vw;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  height: 45%;
   position: relative;
   z-index: 1;
 }
@@ -78,6 +79,12 @@ body {
   height: 40vh;
   overflow-y: auto; /* or overflow-y: scroll; */
   padding: 5%;
+}
+
+#map { height: 28vw; }
+
+#footer {
+  background-color: #F1FAEE;
 }
 
 .title {
@@ -95,8 +102,6 @@ body {
   color: #000;
   text-align: center;
   font-size: 120%;
-  border-bottom: 3px solid #000;
-  padding-bottom: 1.5em;
 }
 
 
@@ -154,17 +159,6 @@ body {
 
 
 
-
-#map { height: 28vw; }
-
-#footer {
-  background-color: #F1FAEE;
-}
-
-#space {
-  height: 17rem; 
-}
-
 .image-container {
   position: relative;
   width: 50%; /* Adjust this value as needed */
@@ -175,7 +169,7 @@ body {
 #Vinyl {
   position: static;
   text-align: center;
-  width: 100%; /* Set the initial width to 100% */
+  width: auto; /* Set the initial width to 100% */
   height: auto; /* Set the initial height to 100% */
   object-fit: cover; /* Maintain aspect ratio while covering container */
   z-index: -1;
@@ -215,7 +209,13 @@ body {
   z-index: 10;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -75%;
+  margin-top: -50%;
+  }
+
+.stitle {
+  font-size: 20px;
+  font-family: 'Negaroa';
+  text-align: center;
   }
 
 .navigation {
@@ -234,3 +234,14 @@ body {
   cursor: pointer;
   padding: 2px;
   }
+
+  .content img { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+table tr td, table tr th{
+    background-color: rgba(211, 130, 240, 0) !important;
+}

@@ -22,8 +22,31 @@
 }
 
 #image-gaia-2{
-    display: none;
+    background-image: url('img/geronimo/geronimo-stilton-libri.png');
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 1; /* Assicurati che sia sopra tutti gli altri elementi */
+    
+    /* Adjusted margin values with pixel units */
+    margin-left: 730px; /* Adjust based on your layout */
+    margin-top: -300px; /* Adjust based on your layout */
+    
+    /* Optional: Set width and height for the div */
+    width: 500px; /* Adjust based on your image size */
+    height: 300px; /* Adjust based on your image size */
+} 
+
+@media (max-width: 800px) {
+    .content {
+    column-count: 1;
+    margin-left: 7%;
+    margin-right: 7%;
+    background:     
+        url('img/geronimo/geronimo-stilton-libri.png') left repeat-y,;
+    background-size: 3%,3%;
 }
+}
+
 
 #gif {
     text-align: center;
@@ -137,7 +160,6 @@ p {
 .title-3 {
     font-family: salterio;
 }
-
 
 
 #space {
