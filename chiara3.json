@@ -1,0 +1,49 @@
+{
+  "people": {
+    "José A. Rodríguez-Quiles y García": 1,
+    "Konstantina Dogani": 1,
+    "Edgard Willems": 1,
+    "Mozart": 1,
+    "Pavarotti": 1
+  },
+  "places": {
+    "Europe": 16,
+    "European Union": 1,
+    "Austria": 1,
+    "Belgium": 2,
+    "Croatia": 2,
+    "Czech Republic": 2,
+    "Estonia": 5,
+    "Finland": 1,
+    "France": 4,
+    "Germany": 4,
+    "Greece": 14,
+    "Hungary": 4,
+    "Italy": 5,
+    "Montenegro": 2,
+    "Netherlands": 1,
+    "Norway": 1,
+    "Poland": 3,
+    "Slovakia": 4,
+    "Slovenia": 14,
+    "Spain": 14,
+    "Sweden": 1,
+    "United Kingdom": 1,
+    "EU": 3,
+    "Maastricht": 1,
+    "UK": 2,
+    "Bologna": 3,
+    "Pomurje": 1,
+    "Štajerska": 1,
+    "Rezija": 1,
+    "Ljubljana": 1,
+    "Granada": 1
+  },
+  "keywords": {
+    "schools": 29,
+    "music education": 53,
+    "teacher training": 15,
+    "school": 61,
+    "folk music": 17
+  }
+}

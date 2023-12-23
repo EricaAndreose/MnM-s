@@ -1,0 +1,45 @@
+{
+  "people": {
+    "Prince": 39,
+    "Boy George": 1,
+    "Twisted Sister": 1,
+    "Sunset Strip": 1,
+    "Marc Almond": 1,
+    "Holly Johnson": 1,
+    "Jimmy Somerville": 1,
+    "Grace Jones": 1,
+    "Annie Lennox": 1,
+    "Siouxsie Sioux": 1,
+    "Jimi Hendrix": 2,
+    "Future (aka Future Hendrix)": 1,
+    "Rick James": 1,
+    "James": 3,
+    "Rolling Stones": 1,
+    "Little Richard": 1,
+    "Hendrix": 1,
+    "Jimi": 1,
+    "Bowie": 2,
+    "Bolan": 2,
+    "Barney Hoskyns": 1,
+    "Marc Bolan": 1,
+    "T.Rex": 1,
+    "Marc": 1,
+    "Al Green": 1,
+    "Curtis Mayfield": 1,
+    "Marvin Gaye": 1,
+    "Michael Freedburg": 1,
+    "Alexina Barbin": 1,
+    "Barbin": 5,
+    "Michel \nFoucault": 1
+  },
+  "places": {
+    "UK": 1,
+    "Long Island": 1,
+    "America": 1,
+    "New York": 1
+  },
+  "keywords": {
+    "gender": 6,
+    "song": 8
+  }
+}

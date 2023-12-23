@@ -1,0 +1,27 @@
+{
+  "people": {
+    "Waldie E. Hanser": 1,
+    "Ruth E. Mark": 1,
+    "J. J. M. Vingerhoets": 1
+  },
+  "places": {
+    "Croatia": 18,
+    "Netherlands": 26,
+    "United Kingdom": 12,
+    "the Netherlands": 3,
+    "the United Kingdom": 3,
+    "Zagreb": 1,
+    "Osijek": 1,
+    "the \n\t\t\t\tNetherlands": 1,
+    "UK": 14,
+    "HR": 2,
+    "NL": 4
+  },
+  "keywords": {
+    "comparison": 5,
+    "funeral music": 56,
+    "popular music": 23,
+    "spotify": 17,
+    "comparisons": 3
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "people": {
+    "Green Day": 2,
+    "Weezer": 1,
+    "Fall Out Boy": 1,
+    "Elvis Presley": 1,
+    "David Bowie": 1,
+    "Marc Bolan": 1,
+    "Kiss": 1,
+    "Tim Burton": 1,
+    "Kurt Cobain": 1,
+    "Marc Jacobs": 1,
+    "Dua Lipa": 1,
+    "Arianna Grande": 1,
+    "Lil Nas": 1,
+    "Harry Styles": 1
+  },
+  "places": {
+    "NYC": 1,
+    "London": 2,
+    "New York": 1,
+    "Los Angeles": 1,
+    "Detroit": 1
+  },
+  "keywords": {
+    "music": 28,
+    "fashion": 22,
+    "music ": 1
+  }
+}

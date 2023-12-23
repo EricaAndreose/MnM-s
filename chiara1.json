@@ -1,0 +1,22 @@
+{
+  "people": {
+    "Jefferson Martins de Sousa": 1,
+    "Eanes Torres Pereira": 1,
+    "Luciana Ribeiro Veloso": 1
+  },
+  "places": {
+    "Brazil": 2
+  },
+  "keywords": {
+    "genre classification": 10,
+    "music information retrieval (mir)": 3,
+    "music emotion recognition (mer)": 2,
+    "gtzan dataset": 9,
+    "gtzan": 5,
+    "mir": 4,
+    "gtzan  [17] dataset": 1,
+    "brazilian music": 10,
+    "mer": 2,
+    "music information retrieval": 1
+  }
+}
