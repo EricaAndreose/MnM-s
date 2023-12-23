@@ -28,12 +28,19 @@
     z-index: 1; /* Assicurati che sia sopra tutti gli altri elementi */
     
     /* Adjusted margin values with pixel units */
-    margin-left: 730px; /* Adjust based on your layout */
-    margin-top: -300px; /* Adjust based on your layout */
+    margin-left: 58vw; /* Adjust based on your layout */
+    margin-top: -23vw; /* Adjust based on your layout */
     
     /* Optional: Set width and height for the div */
     width: 500px; /* Adjust based on your image size */
     height: 300px; /* Adjust based on your image size */
+
+    /* Media query for smaller devices */
+    @media (max-width: 768px) {
+        width: 100%; /* Set width to 100% for smaller devices */
+        height: auto; /* Maintain the aspect ratio */
+        
+    }
 } 
 
 @media (max-width: 800px) {
