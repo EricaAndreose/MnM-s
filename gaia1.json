@@ -11,7 +11,7 @@
     "Kurt Cobain": 1,
     "Marc Jacobs": 1,
     "Dua Lipa": 1,
-    "Arianna Grande": 1,
+    "Ariana Grande": 1,
     "Lil Nas": 1,
     "Harry Styles": 1
   },
@@ -26,5 +26,6 @@
     "music": 28,
     "fashion": 22,
     "music ": 1
-  }
+  },
+  "references": {}
 }

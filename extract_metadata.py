@@ -14,11 +14,13 @@ def estrai_contenuto_da_html_file(percorso_file):
     contenuti_people = estrai_contenuto_per_classe(soup, 'span', 'person')
     contenuti_places = estrai_contenuto_per_classe(soup, 'span', 'place')
     contenuti_keywords = estrai_contenuto_per_classe_lower(soup, 'span', 'keyword')
+    contenuti_references = estrai_contenuto_per_classe(soup, 'p', 'biblioItem')
 
     return {
         'people': contenuti_people,
         'places': contenuti_places,
-        'keywords': contenuti_keywords
+        'keywords': contenuti_keywords,
+        'references': contenuti_references
     }
 
 def estrai_contenuto_per_classe(soup, tag, classe):
@@ -53,10 +55,10 @@ def salva_su_json(dati, percorso_json):
 
 if __name__ == "__main__":
     # Sostituisci questo con il percorso del tuo file HTML
-    percorso_file_html = 'music_learning.html'
+    percorso_file_html = 'chiara3.html'
 
     # Sostituisci questo con il percorso desiderato per il file JSON
-    percorso_json = 'erica2.json'
+    percorso_json = 'chiara3.json'
 
     # Estrai i contenuti e salvali in un file JSON
     dati = estrai_contenuto_da_html_file(percorso_file_html)
