@@ -50,20 +50,20 @@
   		<div class="content">
   			<section id="Abstract">
   				
-				  <p><span class="label">Abstract</span>: You hear a familiar song in the club or the restaurant. You listened to this song a thousand times long ago, and the sentimentality of the song really touches your heart. You desperately want to heart it tomorrow, but you can’t remember its name! Fortunately, in our amazing futuristic world, you have a phone with music recognition software installed, and you are saved. But how does this really work? Shazam’s algorithm was revealed to world in 2003. In this article we’ll go over the fundamentals of that algorithm.</p>
+				  <p><span class="label">Abstract</span>: You hear a familiar <span class="keyword">song</span>in the club or the restaurant. You listened to this <span class="keyword">song</span>a thousand times long ago, and the sentimentality of the <span class="keyword">song</span>really touches your heart. You desperately want to heart it tomorrow, but you can’t remember its name! Fortunately, in our amazing futuristic world, you have a phone with <span class="keyword">music recognition</span> software installed, and you are saved. But how does this really work? Shazam’s algorithm was revealed to world in 2003. In this article we’ll go over the fundamentals of that algorithm.</p>
 				  
   			</section> 
 
   			
-  			<p><span class="myFirstletter">Y</span>ou hear a familiar song in the club or the restaurant. You listened to this song a thousand times long ago, and the sentimentality of the song really touches your heart. You desperately want to hear it tomorrow, but you can’t remember its name! Fortunately, in our amazing futuristic world, you have a phone with music recognition software installed, and you are saved. You can relax, because software told you the name of the song, and you know that you can hear it again and again until it becomes a part of you…or you get sick of it.</p>
+  			<p><span class="myFirstletter">Y</span>ou hear a familiar <span class="keyword">song</span> in the club or the restaurant. You listened to this <span class="keyword">song</span> a thousand times long ago, and the sentimentality of the <span class="keyword">song</span> really touches your heart. You desperately want to hear it tomorrow, but you can’t remember its name! Fortunately, in our amazing futuristic world, you have a phone with <span class="keyword">music recognition</span> software installed, and you are saved. You can relax, because software told you the name of the <span class="keyword">song</span>, and you know that you can hear it again and again until it becomes a part of you…or you get sick of it.</p>
 
-  			<p>Mobile technologies, along with the huge progress in audio signal processing, have given us algorithm developers the ability to create music recognizers. One of the most popular music recognition apps is Shazam. If you capture 20 seconds of a song, no matter if it’s intro, verse, or chorus, it will create a fingerprint for the recorded sample, consult the database, and use its music recognition algorithm to tell you exactly which song you are listening to.</p>
+  			<p>Mobile technologies, along with the huge progress in audio signal processing, have given us algorithm developers the ability to create music recognizers. One of the most popular <span class="keyword">music recognition</span> apps is <span class="keyword">Shazam</span>. If you capture 20 seconds of a <span class="keyword">song</span>, no matter if it’s intro, verse, or chorus, it will create a fingerprint for the recorded sample, consult the database, and use its <span class="keyword">music recognition</span> algorithm to tell you exactly which <span class="keyword">song</span> you are listening to.</p>
 
-            <p>But how does music recognition work? Shazam’s algorithm was revealed to world by its inventor Avery Li-Chung Wang in 2003. In this article we’ll go over the fundamentals of Shazam’s music recognition algorithm and answer the question: How does Shazam work?</p>
+            <p>But how does <span class="keyword">music recognition</span> work? <span class="keyword">Shazam</span>’s algorithm was revealed to world by its inventor Avery Li-Chung Wang in 2003. In this article we’ll go over the fundamentals of <span class="keyword">Shazam</span>’s <span class="keyword">music recognition</span> algorithm and answer the question: How does <span class="keyword">Shazam</span> work?</p>
 
             <h2 class="title-2">Analog to Digital - Sampling a Signal</h2>
   			
-  			<p>Readers searching for Shazam AI and Shazam machine learning may be surprised to find that the Shazam algorithm involves neither of these technologies, even if they did exist in various forms back then. If Shazam isn’t AI music recognition, what exactly is its approach?</p>
+  			<p>Readers searching for <span class="keyword">Shazam</span> AI and <span class="keyword">Shazam</span> machine learning may be surprised to find that the <span class="keyword">Shazam</span> algorithm involves neither of these technologies, even if they did exist in various forms back then. If <span class="keyword">Shazam</span> isn’t AI <span class="keyword">music recognition</span>, what exactly is its approach?</p>
 
             <p>To answer that, we first have to ask: What is sound, really? Is it some sort of mystical material that we cannot touch but which flies into our ears and makes us hear things?</p>
 
@@ -81,7 +81,7 @@
 
             <h2 class="title-2">Recording - Capturing the Sound</h2>
 
-            <p>Let’s get into some Shazam code.</p>
+            <p>Let’s get into some <span class="keyword">Shazam</span> code.</p>
 
             <p>Recording a sampled audio signal is easy. Since modern sound cards already come with analog-to-digital converters, just pick a programming language, find an appropriate library, set the frequency of the sample, number of channels (typically mono or stereo), sample size (e.g. 16-bit samples). Then open the line from your sound card just like any input stream, and write to a byte array. Here is how that can be done in Java:</p>
 
@@ -135,7 +135,7 @@
 
             <p>What we have in this byte array is signal recorded in the time domain. The time-domain signal represents the amplitude change of the signal over time.</p>
 
-            <p>In the early 1800s, Jean-Baptiste Joseph Fourier made the remarkable discovery that any signal in the time domain is equivalent to the sum of some (possibly infinite) number of simple sinusoidal signals, given that each component sinusoid has a certain frequency, amplitude, and phase. The series of sinusoids that together form the original time-domain signal is known as its Fourier series.</p>
+            <p>In the early 1800s, <span class="person">Jean-Baptiste Joseph Fourier</span> made the remarkable discovery that any signal in the time domain is equivalent to the sum of some (possibly infinite) number of simple sinusoidal signals, given that each component sinusoid has a certain frequency, amplitude, and phase. The series of sinusoids that together form the original time-domain signal is known as its Fourier series.</p>
 
             <p>In other words, it is possible to represent any time domain signal by simply giving the set of frequencies, amplitudes, and phases corresponding to each sinusoid that makes up the signal. This representation of the signal is known as the frequency domain. In some ways, the frequency domain acts as a type of fingerprint or signature for the time-domain signal, providing a static representation of a dynamic signal.</p>
 
@@ -211,9 +211,9 @@
 
             <h2 class="title-2">Music Recognition: Fingerprinting a Song</h2>
 
-            <p>One unfortunate side effect of FFT is that we lose a great deal of information about timing. (Although theoretically this can be avoided, the performance overheads are enormous.) For a three-minute song, we see all the frequencies and their magnitudes, but we don’t have a clue when in the song they appeared. But this is the key information that makes the song what it is! Somehow we need to at know what point of time each frequency appeared.</p>
+            <p>One unfortunate side effect of FFT is that we lose a great deal of information about timing. (Although theoretically this can be avoided, the performance overheads are enormous.) For a three-minute <span class="keyword">song</span>, we see all the frequencies and their magnitudes, but we don’t have a clue when in the <span class="keyword">song</span> they appeared. But this is the key information that makes the <span class="keyword">song</span> what it is! Somehow we need to at know what point of time each frequency appeared.</p>
 
-            <p>That’s why we introduce kind of sliding window, or chunk of data, and transform just this part of the information. The size of each chunk can be determined in a few different ways. For example, if we record the sound, in stereo, with 16-bit samples, at 44,100 Hz, one second of such sound will be 44,100 samples * 2 bytes * 2 channels ≈ 176 kB. If we pick 4 kB for the size of a chunk, we will have 44 chunks of data to analyze in every second of the song. That’s good enough density for the detailed analysis needed for audio identification.</p>
+            <p>That’s why we introduce kind of sliding window, or chunk of data, and transform just this part of the information. The size of each chunk can be determined in a few different ways. For example, if we record the sound, in stereo, with 16-bit samples, at 44,100 Hz, one second of such sound will be 44,100 samples * 2 bytes * 2 channels ≈ 176 kB. If we pick 4 kB for the size of a chunk, we will have 44 chunks of data to analyze in every second of the <span class="keyword">song</span>. That’s good enough density for the detailed analysis needed for audio identification.</p>
 
             <p>Now back to programming:</p>
 
@@ -240,11 +240,11 @@
 
             <p>In the inner loop we are putting the time-domain data (the samples) into a complex number with imaginary part 0. In the outer loop, we iterate through all the chunks and perform FFT analysis on each.</p>
 
-            <p>Once we have information about the frequency makeup of the signal, we can start forming our digital fingerprint of the song. This is the most important part of the entire Shazam audio recognition process. The main challenge here is how to distinguish, in the ocean of frequencies captured, which frequencies are the most important. Intuitively, we search for the frequencies with the highest magnitude (commonly called peaks).</p>
+            <p>Once we have information about the frequency makeup of the signal, we can start forming our digital fingerprint of the <span class="keyword">song</span>. This is the most important part of the entire <span class="keyword">Shazam</span> audio recognition process. The main challenge here is how to distinguish, in the ocean of frequencies captured, which frequencies are the most important. Intuitively, we search for the frequencies with the highest magnitude (commonly called peaks).</p>
 
-            <p>However, in one song the range of strong frequencies might vary between low C - C1 (32.70 Hz) and high C - C8 (4,186.01 Hz). This is a huge interval to cover. So instead of analyzing the entire frequency range at once, we can choose several smaller intervals, chosen based on the common frequencies of important musical components, and analyze each separately. For example, we might use the intervals this guy chose for his implementation of the Shazam algorithm. These are 30 Hz - 40 Hz, 40 Hz - 80 Hz and 80 Hz - 120 Hz for the low tones (covering bass guitar, for example), and 120 Hz - 180 Hz and 180 Hz - 300 Hz for the middle and higher tones (covering vocals and most other instruments).</p>
+            <p>However, in one <span class="keyword">song</span> the range of strong frequencies might vary between low C - C1 (32.70 Hz) and high C - C8 (4,186.01 Hz). This is a huge interval to cover. So instead of analyzing the entire frequency range at once, we can choose several smaller intervals, chosen based on the common frequencies of important musical components, and analyze each separately. For example, we might use the intervals this guy chose for his implementation of the <span class="keyword">Shazam</span> algorithm. These are 30 Hz - 40 Hz, 40 Hz - 80 Hz and 80 Hz - 120 Hz for the low tones (covering bass guitar, for example), and 120 Hz - 180 Hz and 180 Hz - 300 Hz for the middle and higher tones (covering vocals and most other instruments).</p>
 
-            <p>Now within each interval, we can simply identify the frequency with the highest magnitude. This information forms a signature for this chunk of the song, and this signature becomes part of the fingerprint of the song as a whole.</p>
+            <p>Now within each interval, we can simply identify the frequency with the highest magnitude. This information forms a signature for this chunk of the <span class="keyword">song</span>, and this signature becomes part of the fingerprint of the <span class="keyword">song</span> as a whole.</p>
 
             <!-- insert code snippet-->
 
@@ -292,7 +292,7 @@
 
             <p>Note that we must assume that the recording is not done in perfect conditions (i.e., a “deaf room”), and as a result we must include a fuzz factor. Fuzz factor analysis should be taken seriously, and in a real system, the program should have an option to set this parameter based on the conditions of the recording.</p>
 
-            <p>To make for easy audio search, this signature becomes the key in a hash table. The corresponding value is the time this set of frequencies appeared in the song, along with the song ID (song title and artist). Here’s an example of how these records might appear in the database.</p>
+            <p>To make for easy audio search, this signature becomes the key in a hash table. The corresponding value is the time this set of frequencies appeared in the <span class="keyword">song</span>, along with the <span class="keyword">song</span> ID (<span class="keyword">song</span> title and artist). Here’s an example of how these records might appear in the database.</p>
 
             <!-- insert table-->
 
@@ -343,15 +343,15 @@
                 </tbody>
               </table>              
 
-            <p>If we run a whole library of songs through this music identification process, we can build up a database with a complete fingerprint of every song in the library.</p>
+            <p>If we run a whole library of songs through this music identification process, we can build up a database with a complete fingerprint of every <span class="keyword">song</span> in the library.</p>
 
             <h2 class="title-2">The Music Algorithm: Song Identification</h2>
 
-            <p>To identify a song that is currently playing in the club, we record the song with our phone, and run the recording through the same audio fingerprinting process as above. Then we can start searching the database for matching hash tags.</p>
+            <p>To identify a <span class="keyword">song</span> that is currently playing in the club, we record the <span class="keyword">song</span> with our phone, and run the recording through the same audio fingerprinting process as above. Then we can start searching the database for matching hash tags.</p>
 
-            <p>As it happens, many of the hash tags will correspond to the music identifier of multiple songs. For example, it may be that some piece of song A sounds exactly like some piece of song E. Of course, this is not surprising - musicians have always “borrowed” licks and riffs from each other, and these days producers sample other songs all the time. Each time we match a hash tag, the number of possible matches gets smaller, but it is likely that this information alone will not narrow the match down to a single song. So there is one more thing that we need to check with our music recognition algorithm, and that is the timing.</p>
+            <p>As it happens, many of the hash tags will correspond to the music identifier of multiple <span class="keyword">song</span>s. For example, it may be that some piece of <span class="keyword">song</span> A sounds exactly like some piece of <span class="keyword">song</span> E. Of course, this is not surprising - musicians have always “borrowed” licks and riffs from each other, and these days producers sample other songs all the time. Each time we match a hash tag, the number of possible matches gets smaller, but it is likely that this information alone will not narrow the match down to a single <span class="keyword">song</span>. So there is one more thing that we need to check with our <span class="keyword">music recognition</span> algorithm, and that is the timing.</p>
 
-            <p>The sample we recorded in the club might be from any point in the song, so we cannot simply match the timestamp of the matched hash with the timestamp of our sample. However, with multiple matched hashes, we can analyze the relative timing of the matches, and therefore increase our certainty.</p>
+            <p>The sample we recorded in the club might be from any point in the <span class="keyword">song</span>, so we cannot simply match the timestamp of the matched hash with the timestamp of our sample. However, with multiple matched hashes, we can analyze the relative timing of the matches, and therefore increase our certainty.</p>
 
             <p>For example, if you look in the table above, you will see that hash tag 30 51 99 121 195 corresponds to both Song A and Song E. If, one second later, we match the hash 34 57 95 111 200, that’s one more match for Song A but in this case we know that both the hashes and time differences matches.</p>
 
@@ -380,7 +380,7 @@
                 </code>
             </pre>
 
-            <p>Let’s take i  1 and    i    2 as moments in the recorded song, and j 1  and j 2  as moments in the song from database. We can say that we have two matches with time difference match if three things are all true:</p>
+            <p>Let’s take i  1 and    i    2 as moments in the recorded <span class="keyword">song</span>, and j 1  and j 2  as moments in the <span class="keyword">song</span> from database. We can say that we have two matches with time difference match if three things are all true:</p>
 
             <ul>
                 <li>RecordedHash(i1) = SongInDBHash(j1)</li>
@@ -388,13 +388,13 @@
                 <li>abs(i1-i2) = abs(j1-j2)</li>
             </ul>
 
-            <p>This gives us flexibility to record the song from the beginning, middle, or end.</p>
+            <p>This gives us flexibility to record the <span class="keyword">song</span> from the beginning, middle, or end.</p>
 
-            <p>Finally, it is unlikely that every single moment of the song we record in the club will match every corresponding moment of the same song in our library, recorded in the studio. The recording will include a lot of noise that will introduce some error in the matches. So instead of of trying to eliminate all but the correct song from our list of matches, at the very end, we sort all the matched songs in descending order of likelihood, and our favorite is the first song on the ranking list.</p>
+            <p>Finally, it is unlikely that every single moment of the <span class="keyword">song</span> we record in the club will match every corresponding moment of the same <span class="keyword">song</span> in our library, recorded in the studio. The recording will include a lot of noise that will introduce some error in the matches. So instead of of trying to eliminate all but the correct <span class="keyword">song</span> from our list of matches, at the very end, we sort all the matched songs in descending order of likelihood, and our favorite is the first <span class="keyword">song</span> on the ranking list.</p>
 
             <h2 class="title-2">From Top to Bottom</h3>
 
-            <p>To answer the question, “How does Shazam work?” here’s an overview of the entire music recognition and matching process, from top to bottom:</p>
+            <p>To answer the question, “How does <span class="keyword">Shazam</span> work?” here’s an overview of the entire <span class="keyword">music recognition</span> and matching process, from top to bottom:</p>
 
             <!-- insert image-->
 
@@ -404,7 +404,7 @@
 
             <h2 class="title-2">How Does Shazam Work? Now You Know</h2>
 
-            <p>This kind of song recognition software can be used for finding the similarities between songs. Now that you understand how Shazam works, you can see how this can have applications beyond simply Shazaming that nostalgic song playing on the taxi radio. For example, it can help to identify plagiarism in music, or to find out who was the initial inspiration to some pioneers of blues, jazz, rock, pop or any other genre. Maybe a good experiment would be to fill up the song sample database with the classical music of Bach, Beethoven, Vivaldi, Wagner, Chopin and Mozart and try finding the similarities between songs. You would think that even Bob Dylan, Elvis Presley and Robert Johnson were plagiarists!</p>
+            <p>This kind of <span class="keyword">song</span> recognition software can be used for finding the similarities between songs. Now that you understand how <span class="keyword">Shazam</span> works, you can see how this can have applications beyond simply Shazaming that nostalgic <span class="keyword">song</span> playing on the taxi radio. For example, it can help to identify plagiarism in music, or to find out who was the initial inspiration to some pioneers of blues, jazz, rock, pop or any other genre. Maybe a good experiment would be to fill up the <span class="keyword">song</span> sample database with the classical music of Bach, Beethoven, Vivaldi, Wagner, Chopin and Mozart and try finding the similarities between songs. You would think that even Bob Dylan, Elvis Presley and Robert Johnson were plagiarists!</p>
 
             <p>But still we cannot convict them, because music is just a wave that we hear, memorize and repeat in our heads, where it evolves and changes until we record it in the studio and pass it on to the next great musical genius.</p>
 
