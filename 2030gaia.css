@@ -15,11 +15,17 @@
 
 body {
     background-size: cover;
-    background: 
-    linear-gradient(to bottom, rgb(12, 12, 12), rgb(238, 122, 5));
     position: relative;
+    background-image: linear-gradient(#7893e6, #314da3);
+    border-bottom-left-radius: 70% 20%;
+    border-bottom-right-radius: 60% 20%;
+    height: 300px;
+    }
     
-}
+
+
+    
+
 
 
 
@@ -28,7 +34,6 @@ body {
 
 
 #subtitle {
-    color: rgb(40, 36, 36);
     text-align: center;
     padding: 0.5em;
     font-family: 'Dune';
@@ -36,7 +41,7 @@ body {
     font-weight: 900;
     border-radius: 5px;
     background-color: rgb(105, 90, 67) ;
-    border: 2px solid #000;
+    border: 2px solid #ffffff;
 }
 
 
@@ -53,7 +58,8 @@ body {
 
 .dropdown-menu {
     background-color: rgb(124, 99, 58) ;
-    border: 2px solid #000;
+    border: 2px solid #ffffff;
+    color: #F1FAEE;
 }
 
 /* insertion */
@@ -86,7 +92,7 @@ body {
     height: 40vw;
     position: relative;
     z-index: 3;
-    border: 2px solid #000;
+    border: 2px solid #ffffff;
 }
 
 #externalContentColumn {
@@ -105,7 +111,7 @@ body {
 
 #map { 
     height: 28vw;
-    border: 2px solid #000;
+    border: 2px solid #ffffff;
 }
 
 
@@ -124,9 +130,8 @@ body {
 .title{
     font-family: 'Dune';
     color: #F1FAEE;
-    font-weight: 900;
+    font-weight: 900; 
     font-size: 30px;
-    color: #0a0a0a;
     opacity: 1;
     text-align: center;
     text-transform: uppercase;
@@ -137,7 +142,7 @@ body {
 .subtitle {
     font-family: 'Dune';
     color: #F1FAEE;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .author{
@@ -150,26 +155,25 @@ body {
 .publicationdate {
     font-family: 'Dune';
     color: #F1FAEE;
-    font-weight: 700;
+    font-weight: 900; 
     text-align: center;
     font-size: 24px;
 
 }
 
 .content{
-    column-count: 2;
-    column-gap: 50px;
+    column-count: 1;
     width: 100%;
     font-family: 'Dune';
     color: #F1FAEE;
-    font-size: 18x;
-    color: #0a0a0a;
+    font-weight: 750;
+    font-size: 18px;
 
 }
 
 .start::first-letter{
     font-size: 300%;
-    font-weight: bold;
+    font-weight: 900; 
     letter-spacing: 0.1em;
     color: #F1FAEE;
     font-family:'Dune';
@@ -179,7 +183,7 @@ body {
     mix-blend-mode: luminosity; /* Applica lo sfondo grigio solo alle parti colorate dell'immagine */
     max-width: 100%;
     height: auto;
-    border: 2px solid #000;
+    border: 2px solid #ffffff;
     
     
     
@@ -188,15 +192,15 @@ body {
 .img-description{
     font-family: 'Dune';
     color: #F1FAEE;
-    font-weight: 900;
+    font-weight: 900; 
 }
 
 .title-2{
+    text-align: center;
     font-family: 'Dune';
     color: #F1FAEE;
     font-weight: 900;
     font-size: 24px;
-    color: #0a0a0a;
 
 }
 
@@ -204,7 +208,7 @@ body {
     font-family: 'Dune';
     color: #F1FAEE;
     margin: 0 auto;
-    border: 2px solid #000;
+    border: 2px solid #ffffff;
 }
 
 #space {
