@@ -1,8 +1,24 @@
 {
   "people": {
-    "Jovan Jovanovic": 1
+    "Jovan Jovanovic": 1,
+    "Jean-Baptiste Joseph Fourier": 1,
+    "Bach": 1,
+    "Beethoven": 1,
+    "Vivaldi": 1,
+    "Wagner": 1,
+    "Chopin": 1,
+    "Mozart": 1,
+    "Bob Dylan": 1,
+    "Elvis Presley": 1,
+    "Robert Johnson": 1
   },
   "places": {},
-  "keywords": {},
+  "keywords": {
+    "algorithm": 14,
+    "song": 38,
+    "music recognition": 9,
+    "shazam": 14,
+    "java": 2
+  },
   "references": {}
 }

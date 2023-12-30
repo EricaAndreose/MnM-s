@@ -88,7 +88,9 @@ body {
     overflow-y: auto; /* or overflow-y: scroll; */
 }
 
-#map { height: 28%; } /* da cambiare con la percentuale anche qua? */
+#map { 
+    height: 28vw; 
+} /* da cambiare con la percentuale anche qua? */
 
 #footer {
     background-color: #ddd2b2;
@@ -249,6 +251,23 @@ body {
 table tr td, table tr th{
     background-color: rgba(211, 130, 240, 0) !important;
 }
+
+#myTab {
+    overflow-y: auto;
+    max-height: 300px; /* Imposta l'altezza massima desiderata per la visualizzazione dei tab */
+  }
+  
+  .tab-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 250px; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+  }
+  
+  .tab-pane {
+    max-height: 100%; /* Consente al contenuto dei tab di espandersi completamente all'interno del container */
+  }
+  
 
 @media (max-width: 800px) {
     .content {

@@ -67,9 +67,9 @@
                               Music and Tech
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
-                              <li><a class="dropdown-item jsart" data-article="covid.html">Covid</a></li>
-                              <li><a class="dropdown-item jsart" data-article="music_learning.html">Music Learning</a></li>
-                              <li><a class="dropdown-item jsart" data-article="shazam.html">Shazam</a></li>
+                              <li><a class="dropdown-item jsart" data-article="erica1.html">Covid</a></li>
+                              <li><a class="dropdown-item jsart" data-article="erica2.html">Music Learning</a></li>
+                              <li><a class="dropdown-item jsart" data-article="erica3.html">Shazam</a></li>
                             </ul>
                           </li>
                           <li class="nav-item dropdown-submenu">
@@ -152,23 +152,39 @@
                 <div class="row" id="main">                
                     <div class="col-md-3">
                         <div id="asideLeft" class="sticky">
-                            <h2 class="title-metadata">METADATA</h2>
-                            <ul class="nav nav-underline">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Map</a>
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="map-tab" data-bs-toggle="tab" data-bs-target="#map" type="button" role="tab" aria-controls="map" aria-selected="true">Map</button>
                               </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Keywords</a>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="metadata-tab" data-bs-toggle="tab" data-bs-target="#metadata" type="button" role="tab" aria-controls="metadata" aria-selected="flase">Metadata</button>
                               </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">People</a>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="people-tab" data-bs-toggle="tab" data-bs-target="#people" type="button" role="tab" aria-controls="people" aria-selected="false">People</button>
                               </li>
-                              <li class="nav-item">
-                                <a class="nav-link" aria-disabled="true">Ref</a>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="places-tab" data-bs-toggle="tab" data-bs-target="#places" type="button" role="tab" aria-controls="places" aria-selected="false">Places</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="keywords-tab" data-bs-toggle="tab" data-bs-target="#keywords" type="button" role="tab" aria-controls="keywords" aria-selected="false">Keywords</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="references-tab" data-bs-toggle="tab" data-bs-target="#references" type="button" role="tab" aria-controls="references" aria-selected="false">References</button>
                               </li>
                             </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                              <div class="tab-pane active" id="map" role="tabpanel" aria-labelledby="map-tab" tabindex="0"><div id="map"></div></div>
+                              <div class="tab-pane" id="metadata" role="tabpanel" aria-labelledby="metadata-tab" tabindex="0"></div>
+                              <div class="tab-pane" id="people" role="tabpanel" aria-labelledby="people-tab" tabindex="0"></div>
+                              <div class="tab-pane" id="places" role="tabpanel" aria-labelledby="places-tab" tabindex="0"></div>
+                              <div class="tab-pane" id="keywords" role="tabpanel" aria-labelledby="keywords-tab" tabindex="0"></div>
+                              <div class="tab-pane" id="references" role="tabpanel" aria-labelledby="references-tab" tabindex="0"></div>
+                            </div>
+
                         </div>
-                        <div id="map"></div>
                     </div>
                     <div class="col-md-9" id="externalContentColumn">
                 </div>

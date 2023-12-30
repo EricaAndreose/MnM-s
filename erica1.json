@@ -1,17 +1,24 @@
 {
   "people": {
     "Whitney Jefferson": 1,
-    "Beyoncé": 1
+    "Beyoncé": 1,
+    "Christman, E.": 1,
+    "Kelleher, S. R.": 1,
+    "Mahoney, K.": 1,
+    "Watson, A.": 2
   },
   "places": {
-    "United States": 3,
-    "Western New York": 5,
+    "United States": 4,
+    "Western New York": 8,
     "Kentucky": 10
   },
   "keywords": {
-    "music industry": 2,
-    "covid": 6,
-    "music": 9
+    "technology": 3,
+    "music industry": 1,
+    "industry": 15,
+    "music": 14,
+    "pandemic": 3,
+    "covid": 5
   },
   "references": {
     "1. AEP5: National Findings. (2019, May 15). Retrieved from https://www.americansforthearts.org/by-program/reports-and-data/research-studies-publications/arts-economic-prosperity-5/learn/national-findings. ": 1,

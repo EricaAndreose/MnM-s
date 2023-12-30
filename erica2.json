@@ -1,10 +1,26 @@
 {
   "people": {
     "George Waddell": 1,
-    "Aaron Williamon": 1
+    "Aaron Williamon": 1,
+    "Thorgersen": 1,
+    "Zandén": 1,
+    "Bonferroni": 1,
+    "Rosenthal": 1
   },
-  "places": {},
-  "keywords": {},
+  "places": {
+    "United Kingdom": 1
+  },
+  "keywords": {
+    "classroom": 11,
+    "learning": 47,
+    "musicians": 55,
+    "laptops": 5,
+    "one-to-one teaching": 3,
+    "teacher": 26,
+    "instrument": 13,
+    "distance learning": 3,
+    "smartphones": 6
+  },
   "references": {
     "1. Adams, D. A., Nelson, R. R., and Todd, P. A. (1992). Perceived usefulness, ease of use, and usage of information technology: a replication. MIS Quart. 16, 227-247. doi: 10.2307/249577  ": 1,
     "2. Anderson, A. J., and Ellis, A. ( 2017 ). Desktop video assisted music teaching and learning: new opportunities for design and delivery. Br. J. Educ. Technol. 36, 915-917. doi: 10.1111/j.1467-8535.2005.00496.x": 1,
