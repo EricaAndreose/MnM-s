@@ -1,7 +1,7 @@
 @font-face {
     /* Font similar to the original ones. French Gothic. Look at the "g", close letters, spigoli, grossezza
     verticalità e ordine */
-    font-family: sans;
+    font-family: 'sans';
     src: url('font/geronimo/OpenSans-ExtraBold.ttf');
 
 }
@@ -11,15 +11,6 @@
     src: url('font/geronimo/LifeLTStd-Roman.otf')
 }
 
-@font-face {
-    font-family: 'salterio';
-    src: url('font/medieval/salterio/Salterio\ Shadow.ttf');
-}
-
-@font-face {
-    font-family: 'genzsch';
-    src: url('font/medieval/genzsch/GenzschInitials.ttf');
-}
 
 #image-gaia-2{
     background-image: url('img/geronimo/geronimo-stilton-libri.png');
@@ -142,15 +133,16 @@ body {
 p {
     font-family: 'LifeLTStd-Roman';
     font-size: 22px;
-    
-    text-align: justify;
+    line-height: 2.0;
+    text-align: left;
     overflow: hidden; /* Hide any text that overflows */
     text-overflow: ellipsis; /* Display an ellipsis (...) for overflowed text */
     padding: 2%;
+    text-indent: 25px;
 }
 
 .title-1 {
-    font-family: sans;
+    font-family: 'sans';
     color: rgb(210, 35, 0);
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
