@@ -80,7 +80,8 @@ document.addEventListener('DOMContentLoaded', function() {
       let listHtml = '<ul>';
       for (const key in metadata) {
         if (metadata.hasOwnProperty(key)) {
-          listHtml += `<li>${key}: ${metadata[key]}</li>`;
+          const link = metadata[key]; // Assume che i link siano forniti nei dati
+          listHtml += `<li><a href="${link}">${key}</a></li>`;
         }
       }
       listHtml += '</ul>';
