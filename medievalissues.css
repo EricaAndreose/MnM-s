@@ -20,6 +20,11 @@
     src: url('font/medieval/genzsch/GenzschInitials.ttf');
 }
 
+@font-face {
+    font-family: 'latefifteen';
+    src: url(font/medieval/erica_font/Late_medieval-Regular.ttf);
+}
+
 #image-gaia-2{
     display: none;
 }
@@ -86,13 +91,6 @@ body {
     z-index: 1;
 }
 
-#externalContentColumn {
-    background-image: url('img/medieval/02.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 40vw;
-    overflow-y: auto; /* or overflow-y: scroll; */
-}
 
 #map { height: 28vw; }
 
@@ -101,38 +99,81 @@ body {
 }
 
 #externalContentColumn {
+    background-image: url('img/medieval/02.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vw;
+    overflow-y: auto; /* or overflow-y: scroll; */
     padding: 5%;
+}
+
+#decor4 {
+  background-image: url('img/medieval/04.png');
+  background-repeat: no-repeat;
+  background-size: 20%;
+  height: 12vw;
+  padding: 5%;
 }
 
 p {
     font-family: '1492';
     font-size: 22px;
-    column-count: 2;
-    column-gap: 80px;
     text-align: justify;
     overflow: hidden; /* Hide any text that overflows */
     text-overflow: ellipsis; /* Display an ellipsis (...) for overflowed text */
-    padding: 2%;
+    padding-left: 23%;
+    padding-right: 23%;
+    padding-top: 5%;
+    display: table;
 }
 
 .myFirstletter {
-    font-family: genzsch;
-    font-size: 4rem;
-    color: rgb(87, 0, 0)
+    font-family: 'latefifteen';
+    font-size: 10rem;
+    color: rgb(87, 0, 0);
+    margin-inline: 0%;
+    line-height: 0.9;
+    float: left; /* Float the first letter to the left */
+    margin-right: 10px; /* Adjust this value based on your design */
+}
+
+/* Clear the float to prevent following elements from wrapping around */
+p::after {
+    content: "";
+    display: table;
+    clear: both;
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
 }
 
 .title-1 {
-    font-family: salterio;
-    color: rgb(0, 0, 143);
+    font-family: '1492';
+    color: rgb(87, 0, 0);
+    text-align: left;
+    margin-left: 23%;
+    margin-right: 23%;
+    font-size: 3rem;
+    text-transform: capitalize;
 }
 
 .title-2 {
-    font-family: salterio;
+    font-family: '1492';
     color: rgb(0, 0, 143);
+    text-align: left;
+    margin-left: 23%;
+    margin-right: 23%;
+    font-size: 2rem;
+    text-transform: lowercase;
 }
 
 .title-3 {
-    font-family: salterio;
+    font-family: '1492';
+    color: rgb(0, 93, 50);
+    text-align: left;
+    margin-left: 23%;
+    margin-right: 23%;
+    font-size: 2rem;
+    text-transform: lowercase;
 }
 
 

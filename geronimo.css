@@ -152,6 +152,7 @@ p {
     font-family: 'LifeLTStd-Roman';
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.918);
+    text-align: center;
 }
 
 .title-3 {
@@ -219,7 +220,7 @@ p {
 
 .stitle {
     font-size: 20px;
-    font-family: Salterio;
+    font-family: 'sans';
     text-align: center;
     }
 
@@ -248,16 +249,18 @@ p {
     height: 15vw;
     margin-left: 50%;
     margin-top: -12vw;
+    shape-outside: url('img/geronimo/logo.jpg');
 }
 
 #decor2 {
     background-image: url('img/medieval/+3.png');
-    position: relative;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 20%; /* Adjust the size as needed */
     height: 19vw;
-    margin-left: 35%;
-   
+    width: 20vw; /* Adjust the width as needed */
+    display: block;
+    position: absolute;
+    margin-left: 2cm;
 }
 
 #decor3 {
@@ -276,4 +279,20 @@ p {
     width: 70%;
 }
 
+#deco2 {
+    background-image: url('img/geronimo/logo.jpg');
+    background-repeat: no-repeat;
+    background-size: 30% ;
+    float: left;
+    
+    /* Adjust the spacing between the image and text */
+}
 
+#deco2::before {
+    content: ""; /* Empty content to create a pseudo-element for the shape */
+    display: block;
+    float: left; /* Float the shape to the right, opposite of the text */
+    width: 30%; /* Adjust the width based on your design */
+    height: 13vw;
+    shape-outside: url('img/geronimo/logo.jpg'); /* Use the image to define the shape */
+}
