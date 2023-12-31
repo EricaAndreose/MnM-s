@@ -35,6 +35,7 @@
 }
 
 body {
+    cursor: url('img/medieval/Manicula (1).png'), auto;
     background-image: url('img/medieval/parch.jpg');
     background-size: cover; /* Adjust as needed */
     background-repeat: no-repeat; /* Prevent image from repeating */
@@ -91,12 +92,22 @@ body {
     z-index: 1;
 }
 
-
-#map { height: 28vw; }
-
-#footer {
-    background-image: url('img/medieval/back.png');
+/* personalizzazione bottoni metadatati*/
+.nav-item {
+    font-family: '1492' !important;
+    color: rgb(125, 77, 0) !important;
 }
+
+.nav-link {
+    color: rgb(125, 77, 0) !important;
+}
+
+.nav-link:hover {
+    color: rgb(0, 0, 143) !important;
+  }
+/* personalizzazione bottoni metadatati*/
+
+#map { height: 30vw; }
 
 #externalContentColumn {
     background-image: url('img/medieval/02.png');
@@ -105,14 +116,6 @@ body {
     height: 40vw;
     overflow-y: auto; /* or overflow-y: scroll; */
     padding: 5%;
-}
-
-#decor4 {
-  background-image: url('img/medieval/04.png');
-  background-repeat: no-repeat;
-  background-size: 20%;
-  height: 12vw;
-  padding: 5%;
 }
 
 p {
@@ -127,14 +130,26 @@ p {
     display: table;
 }
 
+p .place {
+    color: rgb(0, 0, 143);
+}
+
+p .person {
+    color: rgb(87, 0, 0);
+}
+
+p .keyword {
+    color: rgb(125, 77, 0);
+}
+
 .myFirstletter {
     font-family: 'latefifteen';
-    font-size: 10rem;
+    font-size: 7em;
     color: rgb(87, 0, 0);
     margin-inline: 0%;
-    line-height: 0.9;
+    line-height: 0.7;
     float: left; /* Float the first letter to the left */
-    margin-right: 10px; /* Adjust this value based on your design */
+    margin-right: 1px; /* Adjust this value based on your design */
 }
 
 /* Clear the float to prevent following elements from wrapping around */
@@ -176,7 +191,31 @@ p::after {
     text-transform: lowercase;
 }
 
+/* sistemare tabelle*/
 
+table tr td, table tr th{
+    background-color: rgba(211, 130, 240, 0) !important;
+    font-family: '1492';
+}
+
+table {
+    column-gap: 1px !important;
+    width: 50% !important;
+    margin-left: 23%;
+    margin-right: 23%;
+    white-space: nowrap !important;
+
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .table-container {
+      width: 50%; /* Make the container full width on smaller screens */
+      overflow-x: auto; /* Add horizontal scrollbar on smaller screens if needed */
+    }
+  }
+
+/* fine sistemare tabelle*/
 
 #space {
     height: 17rem; 
@@ -283,17 +322,56 @@ p::after {
     background-image: url('img/medieval/12 2.png');
     position: relative;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 50%;
     height: 19vw;
     margin-left: 35%;
 }
 
 .content img { 
-    filter: sepia(60%);
+    filter: sepia(80%);
+    filter: contrast(80%), saturate(50%);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 55%;
+}
+
+#decor4 {
+    background-image: url('img/medieval/04.png');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: 17vw;
+    margin-left: 35%;
+   
+  }
+  
+#footer {
+    background-image: url('img/medieval/back.png');
+    background-position: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 5px;
+}
+
+#text-f {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#text-f a{
+    color: rgb(125, 77, 0) !important;
+}
+
+#text-f a:hover {
+    color: rgb(0, 0, 143) !important;
+  }
+
+#bottone {
+    font-family: '1492';
+    font-size: 20px;
+    width: 40%;
+    height: 12%;
 }
 
 
