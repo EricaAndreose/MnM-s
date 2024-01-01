@@ -56,8 +56,17 @@ body {
     margin-top: -0.5cm;
 }
 
+.nav-link:hover {
+    cursor: url('img/medieval/Manicula (1).png'), auto;
+}
+
 
 .dropdown-menu {
+    background-image: url('img/medieval/back.png');
+}
+
+.dropdown-menu:hover {
+    cursor: url('img/medieval/Manicula (1).png'), auto;
     background-image: url('img/medieval/back.png');
 }
 
@@ -75,6 +84,7 @@ body {
 }
 
 .dropdown-submenu:hover .dropdown-menu {
+    cursor: url('img/medieval/Manicula (1).png'), auto;
     display: block; /* Display the submenu on hover */
 }
 
@@ -94,20 +104,30 @@ body {
 
 /* personalizzazione bottoni metadatati*/
 .nav-item {
+    cursor: url('img/medieval/Manicula (1).png'), auto !important;
     font-family: '1492' !important;
     color: rgb(125, 77, 0) !important;
 }
 
 .nav-link {
+    cursor: url('img/medieval/Manicula (1).png'), auto;
     color: rgb(125, 77, 0) !important;
 }
 
 .nav-link:hover {
+    cursor: url('img/medieval/Manicula (1).png'), auto !important;
     color: rgb(0, 0, 143) !important;
   }
 /* personalizzazione bottoni metadatati*/
 
-#map { height: 30vw; }
+#map-box { 
+    width: 100%;
+    height: 400px;
+}
+
+#map-box:hover {
+    cursor: url('img/medieval/Manicula (1).png'), auto !important;
+}
 
 #externalContentColumn {
     background-image: url('img/medieval/02.png');
@@ -263,9 +283,8 @@ table {
 
 
 .music-container {
-    background-color: #F1FAEE;
+    background-image: url('img/medieval/back.png');
     border-radius: 15px;
-    box-shadow: 0 10px 10px 0 rgb(87, 31, 1);
     width: 50%;
     height: 25%;
     position: relative;
@@ -276,13 +295,14 @@ table {
     }
 
 .stitle {
+    padding-top: 2%;
     font-size: 20px;
     font-family: Salterio;
     text-align: center;
     }
 
 .navigation {
-    background-color: #F1FAEE;
+    background-image: url('img/medieval/back.png');
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -291,12 +311,17 @@ table {
     }
 
 .action-btn {
-    background-color: #F1FAEE;
+    background-image: url('img/medieval/back.png');
     border: 0;
+    color: rgb(87, 0, 0);
     font-size: 30px;
     cursor: pointer;
     padding: 2px;
     }
+
+.action-btn:hover {
+    cursor: url('img/medieval/Manicula (1).png'), auto;
+}
 
 #decor1 {
     background-image: url('img/medieval/002.png');
@@ -364,6 +389,7 @@ table {
 }
 
 #text-f a:hover {
+    cursor: url('img/medieval/Manicula (1).png'), auto;
     color: rgb(0, 0, 143) !important;
   }
 

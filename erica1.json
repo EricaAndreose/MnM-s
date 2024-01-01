@@ -8,9 +8,27 @@
     "Watson, A.": 2
   },
   "places": {
-    "United States": 4,
-    "Western New York": 8,
-    "Kentucky": 10
+    "United States": {
+      "count": 4,
+      "coordinates": { 
+        "latitudine": 39.73794425516726, 
+        "longitudine": -101.176491669532 
+      }
+    },
+    "Western New York": {
+      "count": 8,
+      "coordinates": { 
+        "latitudine": 43.31559684334129, 
+        "longitudine": -75.40294181531651 
+      }
+    },
+    "Kentucky": {
+      "count": 10,
+      "coordinates": { 
+        "latitudine": 37.357533911708906, 
+        "longitudine": -85.02607216445931
+      }
+    }
   },
   "keywords": {
     "technology": 3,

@@ -72,7 +72,10 @@ body {
     border-radius: 5px;
 }
 
-#map { height: 28vw; }
+#map-box { 
+    width: 100%;
+    height: 400px;
+}
 
 #footer {
     background-color: #F1FAEE;
