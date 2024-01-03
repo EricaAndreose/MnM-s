@@ -88,9 +88,10 @@ body {
     overflow-y: auto; /* or overflow-y: scroll; */
 }
 
-#map { 
-    height: 28vw; 
-} /* da cambiare con la percentuale anche qua? */
+#map-box { 
+    width: 100%;
+    height: 400px;
+}
 
 #footer {
     background-color: #ddd2b2;
