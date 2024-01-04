@@ -20,13 +20,17 @@
 //   });
 // });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const loadButtons = document.querySelectorAll('.jsart');
     const contentColumn = document.getElementById('externalContentColumn');
-    const tabContent = document.querySelector('.tab-content');
   
-    loadButtons.forEach(function(button) {
-      button.addEventListener('click', function() {
+    // Variabili di stato per gestire le occorrenze successive
+    let currentMetadataCategory = null;
+    let currentMetadataId = null;
+    let currentMetadataIndex = 0;
+  
+    loadButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
         const articlePath = this.getAttribute('data-article');
   
         // Fetch the content from the specified articlePath
@@ -69,23 +73,82 @@ document.addEventListener('DOMContentLoaded', function() {
         if (metadata.hasOwnProperty(category)) {
           const tabPane = document.getElementById(category);
           if (tabPane) {
-            tabPane.innerHTML = createListFromMetadata(metadata[category]);
+            tabPane.innerHTML = createListFromMetadata(metadata[category], category);
+            // Aggiungi gestione dell'evento di clic per i link dei metadati
+            tabPane.querySelectorAll('a').forEach(link => {
+              link.addEventListener('click', handleMetadataLinkClick);
+            });
           }
         }
       }
     }
   
     // Funzione di utilità per creare una lista HTML da un oggetto di metadati
-    function createListFromMetadata(metadata) {
+    function createListFromMetadata(metadata, category) {
       let listHtml = '<ul>';
-      for (const key in metadata) {
-        if (metadata.hasOwnProperty(key)) {
-          const link = metadata[key]; // Assume che i link siano forniti nei dati
-          listHtml += `<li><a href="${link}">${key}</a></li>`;
+      for (const key in metadata[0]) {
+        if (metadata[0].hasOwnProperty(key)) {
+          const id = metadata[1][key];
+          listHtml += `<li><a href="#${id}" data-category="${category}">${key}</a></li>`;
         }
       }
       listHtml += '</ul>';
       return listHtml;
     }
-  });
   
+    // Gestore di clic sui link dei metadati
+    function handleMetadataLinkClick(event) {
+        event.preventDefault();
+    
+        const category = event.target.getAttribute('data-category');
+        const id = event.target.getAttribute('href').substring(1);
+    
+        // Rimuovi l'evidenziazione solo dai link dello stesso tipo di metadato
+        document.querySelectorAll(`.${category} .active`).forEach(link => {
+        link.classList.remove('active');
+        });
+    
+        // Aggiungi la classe 'active' al link corrente
+        event.target.classList.add('active');
+    
+        // Verifica se il link cliccato è lo stesso della precedente
+        if (category === currentMetadataCategory && id === currentMetadataId) {
+        // Se sì, passa alla successiva occorrenza
+        currentMetadataIndex++;
+        } else {
+        // Se no, reimposta l'indice a 0 e salva i nuovi dati
+        currentMetadataIndex = 0;
+        currentMetadataCategory = category;
+        currentMetadataId = id;
+        }
+    
+        // Trova e posizionati nella corrispondente occorrenza nel testo
+        scrollToElement(`#${id}`, currentMetadataIndex);
+    }
+    
+    // Funzione di utilità per posizionarsi su un elemento con un determinato indice
+    function scrollToElement(id, index) {
+        const elements = document.querySelectorAll(`${id}`);
+        if (elements.length > index) {
+        // Rimuovi l'evidenziazione dagli elementi precedenti
+        document.querySelectorAll('.highlight').forEach(el => {
+            el.classList.remove('highlight');
+        });
+    
+        // Aggiungi la classe 'highlight' all'elemento corrente
+        elements[index].classList.add('highlight');
+    
+        // Scorrimento verso l'elemento
+        elements[index].scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+        } else {
+        console.log(`Nessun elemento trovato con l'ID: ${id} all'indice ${index}`);
+        }
+    }
+  
+  });
+
+
+
+
+
+
