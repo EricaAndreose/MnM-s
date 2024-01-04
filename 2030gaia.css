@@ -102,6 +102,45 @@ body {
     overflow-y: auto; /* or overflow-y: scroll; */
 }
 
+.highlight {
+    background-color: yellow; /* o qualsiasi altra formattazione visiva desiderata */
+}
+
+#myTab {
+    overflow-y: auto;
+    max-height: 300px; /* Imposta l'altezza massima desiderata per la visualizzazione dei tab */
+  }
+
+#map-tab {
+    border: 3px solid black;
+}
+#metadata-tab{
+    border: 3px solid black;
+}
+#people-tab {
+    border: 3px solid black;
+}
+#places-tab{
+    border: 3px solid black;
+}
+#keywords-tab{
+    border: 3px solid black;
+}
+#references-tab{
+    border: 3px solid black;
+}
+ 
+  .tab-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 250px; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+  }
+  
+  .tab-pane {
+    max-height: 100%; /* Consente al contenuto dei tab di espandersi completamente all'interno del container */
+}
+
 #image-gaia-2 {
     display: none;
 }
