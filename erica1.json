@@ -1,55 +1,80 @@
-{
-  "people": {
-    "Whitney Jefferson": 1,
-    "Beyoncé": 1,
-    "Christman, E.": 1,
-    "Kelleher, S. R.": 1,
-    "Mahoney, K.": 1,
-    "Watson, A.": 2
-  },
-  "places": {
-    "United States": {
-      "count": 4,
-      "coordinates": { 
-        "latitudine": 39.73794425516726, 
-        "longitudine": -101.176491669532 
-      }
+ {
+  "people": [
+    {
+      "Whitney Jefferson": 1,
+      "Beyoncé": 1,
+      "Christman, E.": 1,
+      "Kelleher, S. R.": 1,
+      "Mahoney, K.": 1,
+      "Watson, A.": 2
     },
-    "Western New York": {
-      "count": 8,
-      "coordinates": { 
-        "latitudine": 43.31559684334129, 
-        "longitudine": -75.40294181531651 
-      }
-    },
-    "Kentucky": {
-      "count": 10,
-      "coordinates": { 
-        "latitudine": 37.357533911708906, 
-        "longitudine": -85.02607216445931
-      }
+    {
+      "Whitney Jefferson": "WJ",
+      "Beyoncé": "B",
+      "Christman, E.": null,
+      "Kelleher, S. R.": null,
+      "Mahoney, K.": null,
+      "Watson, A.": null
     }
-  },
-  "keywords": {
-    "technology": 3,
-    "music industry": 1,
-    "industry": 15,
-    "music": 14,
-    "pandemic": 3,
-    "covid": 5
-  },
-  "references": {
-    "1. AEP5: National Findings. (2019, May 15). Retrieved from https://www.americansforthearts.org/by-program/reports-and-data/research-studies-publications/arts-economic-prosperity-5/learn/national-findings. ": 1,
-    "2. Americans for the Arts. (2017). Arts and Economic Prosperity 5 [PDF File]. Retrieved from https://www.asiwny.org/wp-content/uploads/2017/08/NY_WesternNewYork_AEP5_CustomizedReport_FFA-page-2.pdf.": 1,
-    "3. Center for Business and Economic Research. (February 1998). Arts and the Kentucky Economy [PDF File]. Retrieved from http://www.e-archives.ky.gov/pubs/arts_council/artsecon.pdf.": 1,
-    "4. Christman, E. (2020, June 29). Who Are the Highest-Paid Musicians? Top 40 Money Makers 2018. Retrieved from https://www.billboard.com/photos/8520668/2018-highest-paid-musicians-money-makers.": 1,
-    "5. During Economic Highs and Lows, the Arts Are Key Segment of U.S. Economy. (2020, March 17). Retrieved from https://www.arts.gov/news/2020/during-economic-highs-and-lows-arts-are-key-segment-us-economy. ": 1,
-    "6. Kelleher, S. R. (2020, June 16). Why QR Codes Are Popping Up Everywhere During The Pandemic-And How To Read Them In A Snap. Retrieved from https://www.forbes.com/sites/suzannerowankelleher/2020/06/16/why-qr-codes-are-popping-up-everywhere-during-the-pandemic/#4d2e31e0c14d.": 1,
-    "7. Live Nation. (2018). The Power of Live [PDF File]. Retrieved from https://livenationforbrands.com/wp-content/uploads/2019/04/LN_Power-of-Live_WhitePpper.pdf.": 1,
-    "9. Mahoney, K. (2015). Public assembly venue management: Sports, entertainment, meeting, and convention venues. Brown Books Publishing Group.": 1,
-    "10. Pollstar Projects 2020 Total Box Office Would Have Hit $12.2 Billion. (2020, April 3). Retrieved from https://www.pollstar.com/article/pollstar-projects-2020-total-box-office-would-have-hit-122-billion-144197. ": 1,
-    "11. Statista. (2020). Live Music in the U.S. [PDF File]. Retrieved from https://www-statista-com.proxy.library.cmu.edu/study/37206/live-music-statista-dossier/.": 1,
-    "12. Watson, A. (2019, December 16). Retrieved from https://www.statista.com/statistics/380115/number-of-music-tour-tickets-sold-worldwide/#:~:text=The%20time%20series%20shows%20the,number%20dropped%20to%2057.7%20million.": 1,
-    "13. Watson, A. (2019, September 25). Beyoncé - revenue 2018. Retrieved from https://www.statista.com/statistics/491322/beyonce-revenue/. ": 1
-  }
+  ],
+  "places": [
+    {
+      "United States": 4,
+      "Western New York": 8,
+      "Kentucky": 10
+    },
+    {
+      "United States": "US",
+      "Western New York": "WNY",
+      "Kentucky": "K"
+    }
+  ],
+  "keywords": [
+    {
+      "technology": 3,
+      "music industry": 1,
+      "industry": 15,
+      "music": 14,
+      "pandemic": 3,
+      "covid": 5
+    },
+    {
+      "technology": "technology",
+      "music industry": null,
+      "industry": "industry",
+      "music": "music",
+      "pandemic": "pandemic",
+      "covid": "covid"
+    }
+  ],
+  "references": [
+    {
+      "1. AEP5: National Findings. (2019, May 15). Retrieved from https://www.americansforthearts.org/by-program/reports-and-data/research-studies-publications/arts-economic-prosperity-5/learn/national-findings. ": 1,
+      "2. Americans for the Arts. (2017). Arts and Economic Prosperity 5 [PDF File]. Retrieved from https://shorturl.at/aDPQ3.": 1,
+      "3. Center for Business and Economic Research. (February 1998). Arts and the Kentucky Economy [PDF File]. Retrieved from http://www.e-archives.ky.gov/pubs/arts_council/artsecon.pdf.": 1,
+      "4. Christman, E. (2020, June 29). Who Are the Highest-Paid Musicians? Top 40 Money Makers 2018. Retrieved from https://shorturl.at/npxVX.": 1,
+      "5. During Economic Highs and Lows, the Arts Are Key Segment of U.S. Economy. (2020, March 17). Retrieved from https://www.arts.gov/news/2020/during-economic-highs-and-lows-arts-are-key-segment-us-economy. ": 1,
+      "6. Kelleher, S. R. (2020, June 16). Why QR Codes Are Popping Up Everywhere During The Pandemic, And How To Read Them In A Snap. Retrieved from https://shorturl.at/dBDSZ.": 1,
+      "7. Live Nation. (2018). The Power of Live [PDF File]. Retrieved from https://livenationforbrands.com/wp-content/uploads/2019/04/LN_Power-of-Live_WhitePpper.pdf.": 1,
+      "8. Mahoney, K. (2015). Public assembly venue management: Sports, entertainment, meeting, and convention venues. Brown Books Publishing Group.": 1,
+      "9. Pollstar Projects 2020 Total Box Office Would Have Hit $12.2 Billion. (2020, April 3). Retrieved from https://www.pollstar.com/article/pollstar-projects-2020-total-box-office-would-have-hit-122-billion-144197. ": 1,
+      "10. Statista. (2020). Live Music in the U.S. [PDF File]. Retrieved from https://www-statista-com.proxy.library.cmu.edu/study/37206/live-music-statista-dossier/.": 1,
+      "11. Watson, A. (2019, December 16). Retrieved from https://shorturl.at/kxD34.": 1,
+      "12. Watson, A. (2019, September 25). Beyoncé, revenue 2018. Retrieved from https://shorturl.at/aeoD0. ": 1
+    },
+    {
+      "1. AEP5: National Findings. (2019, May 15). Retrieved from https://www.americansforthearts.org/by-program/reports-and-data/research-studies-publications/arts-economic-prosperity-5/learn/national-findings. ": "b01",
+      "2. Americans for the Arts. (2017). Arts and Economic Prosperity 5 [PDF File]. Retrieved from https://shorturl.at/aDPQ3.": "b02",
+      "3. Center for Business and Economic Research. (February 1998). Arts and the Kentucky Economy [PDF File]. Retrieved from http://www.e-archives.ky.gov/pubs/arts_council/artsecon.pdf.": "b03",
+      "4. Christman, E. (2020, June 29). Who Are the Highest-Paid Musicians? Top 40 Money Makers 2018. Retrieved from https://shorturl.at/npxVX.": "b04",
+      "5. During Economic Highs and Lows, the Arts Are Key Segment of U.S. Economy. (2020, March 17). Retrieved from https://www.arts.gov/news/2020/during-economic-highs-and-lows-arts-are-key-segment-us-economy. ": "b05",
+      "6. Kelleher, S. R. (2020, June 16). Why QR Codes Are Popping Up Everywhere During The Pandemic, And How To Read Them In A Snap. Retrieved from https://shorturl.at/dBDSZ.": "b06",
+      "7. Live Nation. (2018). The Power of Live [PDF File]. Retrieved from https://livenationforbrands.com/wp-content/uploads/2019/04/LN_Power-of-Live_WhitePpper.pdf.": "b07",
+      "8. Mahoney, K. (2015). Public assembly venue management: Sports, entertainment, meeting, and convention venues. Brown Books Publishing Group.": "b08",
+      "9. Pollstar Projects 2020 Total Box Office Would Have Hit $12.2 Billion. (2020, April 3). Retrieved from https://www.pollstar.com/article/pollstar-projects-2020-total-box-office-would-have-hit-122-billion-144197. ": "b09",
+      "10. Statista. (2020). Live Music in the U.S. [PDF File]. Retrieved from https://www-statista-com.proxy.library.cmu.edu/study/37206/live-music-statista-dossier/.": "b10",
+      "11. Watson, A. (2019, December 16). Retrieved from https://shorturl.at/kxD34.": "b11",
+      "12. Watson, A. (2019, September 25). Beyoncé, revenue 2018. Retrieved from https://shorturl.at/aeoD0. ": "b12"
+    }
+  ]
 }
