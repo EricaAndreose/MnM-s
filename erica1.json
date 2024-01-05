@@ -11,10 +11,10 @@
     {
       "Whitney Jefferson": "WJ",
       "Beyoncé": "B",
-      "Christman, E.": null,
-      "Kelleher, S. R.": null,
-      "Mahoney, K.": null,
-      "Watson, A.": null
+      "Christman, E.": "EC",
+      "Kelleher, S. R.": "SRK",
+      "Mahoney, K.": "KM",
+      "Watson, A.": "AW"
     }
   ],
   "places": [
@@ -32,15 +32,13 @@
   "keywords": [
     {
       "technology": 3,
-      "music industry": 1,
       "industry": 15,
-      "music": 14,
+      "music": 16,
       "pandemic": 3,
       "covid": 5
     },
     {
       "technology": "technology",
-      "music industry": null,
       "industry": "industry",
       "music": "music",
       "pandemic": "pandemic",
