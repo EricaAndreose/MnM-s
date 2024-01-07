@@ -118,7 +118,19 @@ body {
     cursor: url('img/medieval/Manicula (1).png'), auto !important;
     color: rgb(0, 0, 143) !important;
   }
+
+.tab-content {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    text-align: justify;
+    max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+    max-width: 22vw; /* Set the desired maximum width for the text */
+}
+  
 /* personalizzazione bottoni metadatati*/
+
 
 #map-box { 
     width: 100%;
@@ -137,6 +149,7 @@ body {
     overflow-y: auto; /* or overflow-y: scroll; */
     padding: 5%;
 }
+
 
 p {
     font-family: '1492';
@@ -213,27 +226,80 @@ p::after {
 
 /* sistemare tabelle*/
 
-table tr td, table tr th{
+.table-responsive {
+    max-height: 40vw; /* Adjust the maximum height for the table container */
+    overflow-y: auto; /* Add vertical scrollbar if the content exceeds the height */
+    padding-left: 23vw;
+    padding-right: 23vw;
+}
+
+.table {
+    max-width: 100%; /* Set the maximum width for the table */
+    width: 100%; /* Ensure the table takes up the full width of its container */
+    padding-left: 23vw;
+    padding-right: 23vw;
+}
+
+.table th,
+.table td {
     background-color: rgba(211, 130, 240, 0) !important;
     font-family: '1492';
 }
 
-table {
-    column-gap: 1px !important;
-    width: 50% !important;
-    margin-left: 23%;
-    margin-right: 23%;
-    white-space: nowrap !important;
-
+/* Apply similar styling as <p> */
+.table td,
+.table th {
+    font-size: 14px;
+    text-align: justify;
+    white-space: nowrap; /* Prevent line breaks */
+    padding-left: 23%;
+    padding-right: 23%;
 }
+
+/* Styling for the scrollbars */
+.table-responsive::-webkit-scrollbar {
+    width: 12px; /* Width of the vertical scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */ 
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #555; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners of the thumb */
+}
+
+.table-responsive::-webkit-scrollbar-track-piece:end {
+    margin-right: 50px; 
+}
+  
+.table-responsive::-webkit-scrollbar-track-piece:start {
+    margin-left: 50px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scrollbar track */
+}
+
 
 /* Add responsive styles for smaller screens */
 @media (max-width: 768px) {
-    .table-container {
-      width: 50%; /* Make the container full width on smaller screens */
-      overflow-x: auto; /* Add horizontal scrollbar on smaller screens if needed */
+    .table-responsive {
+        max-height: none; /* Reset max-height on smaller screens */
     }
-  }
+
+    .table {
+        max-width: none; /* Reset max-width on smaller screens */
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
+
+
+
+
+
 
 /* fine sistemare tabelle*/
 
