@@ -60,7 +60,7 @@ body {
     border-radius: 5px;
     margin-left: 1%;
     margin-right: 1%;
-    height: 40em;
+    height: 32em;
     position: relative;
     z-index: 1;
 }
@@ -72,40 +72,46 @@ body {
     border-radius: 5px;
 }
 
+#asideLeft {
+    padding-top: 5px;
+}
+
 .highlight {
     background-color: yellow; /* o qualsiasi altra formattazione visiva desiderata */
 }
 
 #myTab {
-    overflow-y: auto;
-    max-height: 300px; /* Imposta l'altezza massima desiderata per la visualizzazione dei tab */
+    overflow-y: none;
   }
 
 #map-tab {
-    border: 3px solid black;
+    border: 1px solid black;
 }
 #metadata-tab{
-    border: 3px solid black;
+    border: 1px solid black;
 }
 #people-tab {
-    border: 3px solid black;
+    border: 1px solid black;
 }
 #places-tab{
-    border: 3px solid black;
+    border: 1px solid black;
 }
 #keywords-tab{
-    border: 3px solid black;
+    border: 1px solid black;
 }
 #references-tab{
-    border: 3px solid black;
+    border: 1px solid black;
 }
  
   .tab-content {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    max-height: 250px; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
-  }
+    text-align: justify;
+    max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+    max-width: 22vw; /* Set the desired maximum width for the text */
+    }
   
   .tab-pane {
     max-height: 100%; /* Consente al contenuto dei tab di espandersi completamente all'interno del container */
