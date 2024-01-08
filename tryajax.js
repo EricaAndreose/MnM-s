@@ -88,8 +88,15 @@ document.addEventListener('DOMContentLoaded', function () {
       let listHtml = '<ul>';
       for (const key in metadata[0]) {
         if (metadata[0].hasOwnProperty(key)) {
+          const occurrences = metadata[0][key];
           const id = metadata[1][key];
-          listHtml += `<li><a href="#${id}" data-category="${category}">${key}</a></li>`;
+    
+          // Verifica se l'id è vuoto
+          if (id !== '') {
+            listHtml += `<li><a href="#${id}" data-category="${category}">${key}: ${occurrences}</a></li>`;
+          } else {
+            listHtml += `<li>${key}: ${occurrences}</li>`;
+          }
         }
       }
       listHtml += '</ul>';
