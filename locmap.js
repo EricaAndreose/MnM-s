@@ -2,8 +2,18 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZXJpY2FhbmRyZW9zZSIsImEiOiJjbHF2OHNwamUyN3hoM
 
 const mappa = new mapboxgl.Map({
   container: 'map-box',
-  style: 'mapbox://styles/ericaandreose/clqvgxzcs00zv01o36el44ju0',
+  style: 'mapbox://styles/ericaandreose/clr5fspy401hb01qr7elchsk7',
   center: [0, 0],
   zoom: 1.5 // Initial zoom level
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const styleButtons = document.querySelectorAll('.jsstyle');
+
+  styleButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const selectedStyle = this.getAttribute('map-style');
+      mappa.setStyle(selectedStyle);
+    });
+  });
+});

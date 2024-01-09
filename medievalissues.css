@@ -120,6 +120,7 @@ body {
   }
 
 .tab-content {
+    cursor: url('img/medieval/Manicula (1).png'), auto !important;
     padding-top: 10px;
     display: flex;
     flex-direction: column;
@@ -127,6 +128,23 @@ body {
     text-align: justify;
     max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
     max-width: 22vw; /* Set the desired maximum width for the text */
+}
+
+.tab-pane li a{
+    font-family: 'Old_london';
+    cursor: url('img/medieval/Manicula (1).png'), auto !important;
+    color: rgb(0, 0, 143) !important;
+}
+
+#metadata {
+    font-family: 'Old_london';
+    font-size: 22px;
+    cursor: url('img/medieval/Manicula (1).png'), auto !important;
+    color: rgb(0, 0, 143) !important;
+}
+
+.highlight {
+    background-color: rgb(246, 246, 104); /* o qualsiasi altra formattazione visiva desiderata */
 }
   
 /* personalizzazione bottoni metadatati*/

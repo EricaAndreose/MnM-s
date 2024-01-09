@@ -122,7 +122,9 @@ body {
     padding: 5%;
 }
 
-#map { height: 28vw; }
+#map-box { 
+    height: 400px;
+ }
 
 #footer {
     background-image: url('img/geronimo/cheese.jpg');
