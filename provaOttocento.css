@@ -160,6 +160,10 @@ body {
     padding: 7%;
 }
 
+.highlight {
+    background-color: yellow; /* o qualsiasi altra formattazione visiva desiderata */
+}
+
 #space {
     height: 17rem;
 }

@@ -63,6 +63,7 @@ body {
     height: 32em;
     position: relative;
     z-index: 1;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
 }
 
 #externalContentColumn {
