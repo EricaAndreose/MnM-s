@@ -45,6 +45,7 @@ body {
     background-color: transparent;
     margin-top: -0.5%;
     font-family: 'AstrenaDemo';
+    height: 5vh;
 }
 
 
@@ -90,7 +91,7 @@ body {
 
 #map-box { 
     width: 100%;
-    height: 400px;
+    height: 400px;
 }
 
 #footer {
@@ -258,15 +259,17 @@ table tr td, table tr th{
 }
 
 #myTab {
-    overflow-y: auto;
-    max-height: 300px; /* Imposta l'altezza massima desiderata per la visualizzazione dei tab */
+    overflow-y: none;
   }
   
   .tab-content {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    max-height: 250px; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+    text-align: justify;
+    max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+    max-width: 22vw; /* Set the desired maximum width for the text */
   }
   
   .tab-pane {
