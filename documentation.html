@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="eng">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="DC.Title" content="MnM's - Music and Maps Magazine">
+            <meta name="DC.Creator" content="Erica Andreose, Gaia Ortona, Chiara Parravicini">
+            <meta name="DC.Subject" content="Digital Online Magazine">
+            <meta name="DC.Description" content="Information Modeling and Web Technologies project">
+            <meta name="DC.Publisher" content="Alma mater studiorum - Universita di Bologna, Information Modeling and Web Technologies">
+            <meta name="DC.Date" content="2023-14-08">
+            <meta name="DC.Type" content="Website">
+            <meta name="DC.Format" content="HTML/CSS/JS">
+            <meta name="DC.Identifier" content="https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/"> <!--add website URL-->
+            <meta name="DC.Language" content="en">
+
+            <!--link Bootstrap icons-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+            <!--link google icons-->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <!--link favicon per loghetto -->
+            <link rel="icon" href="img/m.png" type="img/jpg"/>
+            <!--link font google-->
+            <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+            
+            <!--CSS of Bootstrap-->
+            <link rel="stylesheet" type="text/css" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+            <!-- css link -->
+            <link rel="stylesheet" id="style-link" href="styleMINE.css">
+
+            <title>MnM's Magazine</title>
+        </head>
+        
+        <body>
+            <!-- gif animated -->
+            <div class="container-fluid" id="gif">
+                <img src="img/mnmsgif.gif" alt="title GIF" id="gifimage">
+            </div>
+            <!-- subtitle -->
+            <div class="container-fluid-nav sticky-top" id="subtitle">
+                <h4>Music and Maps Magazine</h4>
+            
+                <!-- start of the NAVBAR -->
+                <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="documentation.html">Documentation</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="issues.html">Issues</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Styles
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item jsstyle" data-style="issuesstyle.css" data-src="img/lp.png">Default</a></li>
+                          <li><a class="dropdown-item jsstyle" data-style="medievalissues.css" data-src="img/medieval/Wheel.png">1500</a></li>
+                          <li><a class="dropdown-item jsstyle" data-style="provaSeventies.css" data-src="img/seventies/discoSeventies.png">Seventies</a></li>
+                          <li><a class="dropdown-item jsstyle" data-style="provaOttocento.css" data-src="">Art Nouveau</a></li>
+                          <li><a class="dropdown-item jsstyle" data-style="anni30gaia.css" data-src="img/thirties/top-view-straw-hats_41471-8931.png">Anni 30</button>
+                          <li><a class="dropdown-item jsstyle" data-style="geronimo.css" data-src="img/geronimo/cerchio.png">Stilton</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                </nav>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="image-container" id="space">
+                <div id="stick">
+                    <img src="img/arm2.png" class="img-fluid" id="move">
+                </div>
+                <div id="Vinyl">
+                    <img src="img/lp.png" class="img-fluid" id="rotate">
+                </div>
+
+                <div class="music-container" id="music-container">
+                    <h6 class="stitle" id="title">Music Box</h6>
+                    <audio src="./songs/bad_romance.mp3" id="audio"></audio>
+                    <div class="navigation">
+                        <button id="prev" class="action-btn">
+                            <i class="bi bi-skip-backward-circle-fill"></i>
+                        </button>
+                        <button id="js-rotate" class="action-btn action-btn-big">
+                            <i class="bi bi-play-circle-fill"></i>
+                        </button>
+                        <button id="next" class="action-btn">
+                            <i class="bi bi-skip-forward-circle-fill"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        
+            
+
+
+            <div class="container-fluid">
+                <div class="row" id="main">
+                    <div class="col-md-12">
+                        <div id="documentation">
+                            <h2>Documentation</h2>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et iaculis nulla, a bibendum lacus. Duis convallis elit velit. In vel arcu eget turpis posuere luctus. Ut mi velit, imperdiet sit amet fermentum ac, lobortis sit amet orci. Aliquam laoreet, sem a venenatis dapibus, mi dui tempor tellus, at rutrum purus erat non nisi. Suspendisse vestibulum, ligula sed mollis venenatis, neque nisl luctus ante, a condimentum dui est sed sem. Praesent ut diam et est pellentesque accumsan a eu metus. Sed nisi turpis, euismod eu dignissim eu, volutpat non purus. Mauris eget augue viverra, varius ligula efficitur, tincidunt purus. Nullam eu nunc sem.
+
+                                Curabitur sollicitudin mi a metus mattis rutrum bibendum vel urna. Vivamus malesuada turpis ac dapibus auctor. Phasellus egestas pretium risus, vel tincidunt purus commodo maximus. Phasellus mauris quam, pretium non blandit non, pulvinar ac enim. Etiam pharetra eu erat ut efficitur. Integer ut nisi ut risus hendrerit venenatis. Sed mi justo, malesuada id sem id, iaculis cursus velit.
+                                
+                                Nam in purus volutpat, posuere purus non, suscipit nisl. Mauris sapien mi, tincidunt eget mi ut, mattis laoreet sem. Morbi lobortis dui in elementum congue. Duis sed turpis aliquet, congue diam id, tincidunt neque. Aenean enim mi, vestibulum et arcu a, hendrerit bibendum dolor. Nulla cursus ante id felis interdum, sed sodales libero mattis. Nunc id odio sodales orci congue pellentesque in ut leo. Morbi eget neque non enim posuere consectetur. Sed ullamcorper non diam vitae auctor. Aliquam id enim tellus. Mauris vitae purus ligula. In tincidunt cursus diam eu rutrum. Nullam vulputate dolor id aliquam molestie. Praesent lorem diam, pulvinar consequat accumsan interdum, porta et diam. Pellentesque elit est, blandit ut imperdiet eu, malesuada sit amet odio. Mauris orci ligula, fermentum in dapibus quis, aliquet eget tortor.
+                                
+                                Quisque nibh augue, venenatis nec sagittis sed, feugiat at turpis. Praesent ut tortor et est rhoncus sagittis. Nullam suscipit sem dolor, vitae viverra massa porta quis. Sed feugiat mauris nisl, eget consectetur urna sollicitudin in. Aliquam ante sem, pharetra eu urna ac, dignissim egestas metus. Etiam efficitur ipsum eget egestas consequat. Donec placerat dignissim odio, eget tincidunt mi congue eget. Ut orci arcu, euismod vitae accumsan nec, mollis vitae arcu. Aliquam ac faucibus est, vitae sollicitudin turpis. Maecenas egestas eros at justo consequat, eu porta velit semper. Nulla in eleifend tellus. Donec quam mi, lacinia ac gravida finibus, facilisis vitae neque. Aliquam viverra nec mauris eget sollicitudin. </p>                
+                            <br><br>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+            <br>
+
+            <footer>
+                <div class="header">
+                    <link rel="stylesheet" type="text/css" href="styleWAVE.css">
+                
+                    <!--Waves Container-->
+                    <div>
+                
+                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                            <g class="parallax">
+                                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(241, 250, 238, 0.7)" />
+                                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(241, 250, 238, 0.5)" />
+                                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(241, 250, 238, 0.3)" />
+                                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(241, 250, 238, 1)" />
+                            </g>
+                            <defs>
+                                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                            </defs>
+                            
+                        </svg>
+                    </div>
+                    <!--Waves end-->
+                    
+                </div>
+                    <div class="container-fluid">
+                        <div class="row" id="footer">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-4">
+                                <br>
+                                <p class="text">cbdvinopeanùewvpcds+spvkkkkkkkkkkkkkkkkkkkkpda,xwpwqvdbyunvmbon,ph </p>
+                                <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a>
+                                <br>
+                                <p class="text">This work is distributed with the license <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons Attribuzione - Non commerciale - Non opere derivate 3.0 Unported</a>.</p>
+                                <a href="#su"><button type="button" class="btn btn-outline-dark btn-sm" id="bottone">Back to the top</button></a>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4">
+                                <br>
+                                <h3 class="text">Contact</h3>
+                                <p><a href="https://www.unibo.it/it" target="_blank">Alma Mater Studiorum Università di Bologna</a></p>
+                                <p><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" target="_blank">Digital Humanities and Digital Knowledge</a></p>
+                                <p><a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/478833" target="_blank">Scholarly Editing and Digital Textuality</a></p>
+        
+                            </div>
+                            <div class="col-md-1"></div>
+                            <p class="text-center">&copy; Copyright 2023 Erica Andreose, Gaia Ortone, Chiara Parravicini - IMWT project - DHDK - Alma Mater Studiorum Bologna</p>
+                        </div>   
+                    </div>
+                    
+            </footer>
+
+
+            <!-- JS of Bootstrap-->
+            <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" 
+                integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" 
+                crossorigin="anonymous">
+            </script>
+            <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+            <script src="rotation.js"></script>
+            <script src="rotate.js"></script>
+            <script src="app.js"></script>
+            
+            
+        </body>
+
+    </html>
+
+    
+    
