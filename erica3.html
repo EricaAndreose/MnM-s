@@ -161,11 +161,11 @@
             <p>It’s not hard to find an appropriate library for FFT. Here are few of them:</p>
 
             <ul>
-                <li>C – FFTW</li>
-                <li>C++ – EigenFFT</li>
-                <li>Java – JTransform</li>
-                <li>Python – NumPy</li>
-                <li>Ruby – Ruby-FFTW3 (Interface to FFTW)</li>
+                <li><p>C – FFTW</p></li>
+                <li><p>C++ – EigenFFT</p></li>
+                <li><p>Java – JTransform</p></li>
+                <li><p>Python – NumPy</p></li>
+                <li><p>Ruby – Ruby-FFTW3 (Interface to FFTW)</p></li>
             </ul>
 
             <p>Below is an example of an FFT function written in <span class="keyword" id="java">Java</span>. (FFT takes complex numbers as input. To understand the relationship between complex numbers and trigonometric functions, read about Euler’s formula.)</p>
@@ -296,53 +296,54 @@
             <p>To make for easy audio search, this signature becomes the key in a hash table. The corresponding value is the time this set of frequencies appeared in the <span class="keyword" id="song">song</span>, along with the <span class="keyword" id="song">song</span> ID (<span class="keyword" id="song">song</span> title and artist). Here’s an example of how these records might appear in the database.</p>
 
             <!-- insert table-->
-
-            <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">Hash Tag</th>
-                    <th scope="col">Time in Seconds</th>
-                    <th scope="col">Song</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>30 51 99 121 195</td>
-                    <td>53.52</td>
-                    <td>Song A by artist A</td>
-                  </tr>
-                  <tr>
-                    <td>33 56 92 151 185</td>
-                    <td>12.32</td>
-                    <td>Song B by artist B</td>
-                  </tr>
-                  <tr>
-                    <td>39 26 89 141 251</td>
-                    <td>15.34</td>
-                    <td>Song C by artist C</td>
-                  </tr>
-                  <tr>
-                    <td>32 67 100 128 270</td>
-                    <td>78.43</td>
-                    <td>Song D by artist D</td>
-                  </tr>
-                  <tr>
-                    <td>30 51 99 121 195</td>
-                    <td>10.89</td>
-                    <td>Song E by artist E</td>
-                  </tr>
-                  <tr>
-                    <td>34 57 95 111 200</td>
-                    <td>54.52</td>
-                    <td>Song A by artist A</td>
-                  </tr>
-                  <tr>
-                    <td>34 41 93 161 202</td>
-                    <td>11.89</td>
-                    <td>Song E by artist E</td>
-                  </tr>
-                </tbody>
-              </table>              
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Hash Tag</th>
+                        <th scope="col">Time in Seconds</th>
+                        <th scope="col">Song</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>30 51 99 121 195</td>
+                        <td>53.52</td>
+                        <td>Song A by artist A</td>
+                    </tr>
+                    <tr>
+                        <td>33 56 92 151 185</td>
+                        <td>12.32</td>
+                        <td>Song B by artist B</td>
+                    </tr>
+                    <tr>
+                        <td>39 26 89 141 251</td>
+                        <td>15.34</td>
+                        <td>Song C by artist C</td>
+                    </tr>
+                    <tr>
+                        <td>32 67 100 128 270</td>
+                        <td>78.43</td>
+                        <td>Song D by artist D</td>
+                    </tr>
+                    <tr>
+                        <td>30 51 99 121 195</td>
+                        <td>10.89</td>
+                        <td>Song E by artist E</td>
+                    </tr>
+                    <tr>
+                        <td>34 57 95 111 200</td>
+                        <td>54.52</td>
+                        <td>Song A by artist A</td>
+                    </tr>
+                    <tr>
+                        <td>34 41 93 161 202</td>
+                        <td>11.89</td>
+                        <td>Song E by artist E</td>
+                    </tr>
+                    </tbody>
+                </table>   
+            </div>           
 
             <p><span class="myFirstletter">I</span>f we run a whole library of songs through this music identification process, we can build up a database with a complete fingerprint of every <span class="keyword" id="song">song</span> in the library.</p>
 

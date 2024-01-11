@@ -247,15 +247,14 @@ p::after {
 .table-responsive {
     max-height: 40vw; /* Adjust the maximum height for the table container */
     overflow-y: auto; /* Add vertical scrollbar if the content exceeds the height */
-    padding-left: 23vw;
-    padding-right: 23vw;
+    max-width: 50vw; /* for doing the right measures also for the scrolling */
+    margin-left: 10rem; /* for doing the right measures also for the scrolling */
+    margin-right: 10rem; /* for doing the right measures also for the scrolling */
 }
 
 .table {
     max-width: 100%; /* Set the maximum width for the table */
     width: 100%; /* Ensure the table takes up the full width of its container */
-    padding-left: 23vw;
-    padding-right: 23vw;
 }
 
 .table th,
@@ -270,8 +269,7 @@ p::after {
     font-size: 14px;
     text-align: justify;
     white-space: nowrap; /* Prevent line breaks */
-    padding-left: 23%;
-    padding-right: 23%;
+   
 }
 
 /* Styling for the scrollbars */
@@ -281,7 +279,7 @@ p::after {
 }
 
 .table-responsive::-webkit-scrollbar-thumb {
-    background-color: #555; /* Color of the scrollbar thumb */
+    background-color: #881010; /* Color of the scrollbar thumb */
     border-radius: 6px; /* Rounded corners of the thumb */
 }
 
@@ -294,7 +292,7 @@ p::after {
 }
 
 .table-responsive::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Color of the scrollbar track */
+    background-color: #cea232; /* Color of the scrollbar track */
 }
 
 
@@ -485,3 +483,7 @@ p::after {
 }
 
 
+.language-java {
+    margin-left: 22rem;
+    margin-right: 22rem;
+}
