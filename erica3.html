@@ -41,10 +41,11 @@
 			</div> 
 			<p class="author">By <span class="person" id="JJ">Jovan Jovanovic</span></p>
 			<p class="publication-date">01 January 2014</p>
+            <div id="decor1"></div>
             <p class="publication-location">Belgrade, Serbia</p>      
 		</div>
 	
-			
+		
 		       
   		
 
@@ -61,6 +62,7 @@
   			<p><span class="myFirstletter">M</span>obile technologies, along with the huge progress in audio signal processing, have given us <span class="keyword" id="algorithm">algorithm</span> developers the ability to create music recognizers. One of the most popular <span class="keyword" id="MusicRecognition">music recognition</span> apps is <span class="keyword" id="shazam">Shazam</span>. If you capture 20 seconds of a <span class="keyword" id="song">song</span>, no matter if it’s intro, verse, or chorus, it will create a fingerprint for the recorded sample, consult the database, and use its <span class="keyword" id="MusicRecognition">music recognition</span> <span class="keyword" id="algorithm">algorithm</span> to tell you exactly which <span class="keyword" id="song">song</span> you are listening to.</p>
 
             <p><span class="myFirstletter">B</span>ut how does <span class="keyword" id="MusicRecognition">music recognition</span> work? <span class="keyword" id="shazam">Shazam</span>’s <span class="keyword" id="algorithm">algorithm</span> was revealed to world by its inventor Avery Li-Chung Wang in 2003. In this article we’ll go over the fundamentals of <span class="keyword" id="shazam">Shazam</span>’s <span class="keyword" id="MusicRecognition">music recognition</span> <span class="keyword" id="algorithm">algorithm</span> and answer the question: How does <span class="keyword" id="shazam">Shazam</span> work?</p>
+
 
             <h2 class="title-2">Analog to Digital - Sampling a Signal</h2>
   			
@@ -152,6 +154,8 @@
 
             <p><span class="myFirstletter">A</span>nalyzing a signal in the frequency domain simplifies many things immensely. It is more convenient in the world of digital signal processing because the engineer can study the spectrum (the representation of the signal in the frequency domain) and determine which frequencies are present, and which are missing. After that, one can do filtering, increase or decrease some frequencies, or just recognize the exact tone from the given frequencies.</p>
 
+            <div id="decor3"></div>
+
             <h2 class="title-2">The Discrete Fourier Transform</h2>
 
             <p><span class="myFirstletter">S</span>o we need to find a way to convert our signal from the time domain to the frequency domain. Here we call on the Discrete Fourier Transform (DFT) for help. The DFT is a mathematical methodology for performing Fourier analysis on a discrete (sampled) signal. It converts a finite list of equally spaced samples of a function into the list of coefficients of a finite combination of complex sinusoids, ordered by their frequencies, by considering if those sinusoids had been sampled at the same rate.</p>
@@ -161,11 +165,11 @@
             <p>It’s not hard to find an appropriate library for FFT. Here are few of them:</p>
 
             <ul>
-                <li><p>C – FFTW</p></li>
-                <li><p>C++ – EigenFFT</p></li>
-                <li><p>Java – JTransform</p></li>
-                <li><p>Python – NumPy</p></li>
-                <li><p>Ruby – Ruby-FFTW3 (Interface to FFTW)</p></li>
+                <li>C – FFTW</li>
+                <li>C++ – EigenFFT</li>
+                <li>Java – JTransform</li>
+                <li>Python – NumPy</li>
+                <li>Ruby – Ruby-FFTW3 (Interface to FFTW)</p></li>
             </ul>
 
             <p>Below is an example of an FFT function written in <span class="keyword" id="java">Java</span>. (FFT takes complex numbers as input. To understand the relationship between complex numbers and trigonometric functions, read about Euler’s formula.)</p>
@@ -393,6 +397,8 @@
             <p>This gives us flexibility to record the <span class="keyword" id="song">song</span> from the beginning, middle, or end.</p>
 
             <p><span class="myFirstletter">F</span>inally, it is unlikely that every single moment of the <span class="keyword" id="song">song</span> we record in the club will match every corresponding moment of the same <span class="keyword" id="song">song</span> in our library, recorded in the studio. The recording will include a lot of noise that will introduce some error in the matches. So instead of of trying to eliminate all but the correct <span class="keyword" id="song">song</span> from our list of matches, at the very end, we sort all the matched songs in descending order of likelihood, and our favorite is the first <span class="keyword" id="song">song</span> on the ranking list.</p>
+
+            <div id="decor2"></div>
 
             <h2 class="title-2">From Top to Bottom</h3>
 

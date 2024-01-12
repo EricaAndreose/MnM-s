@@ -169,6 +169,7 @@ body {
 }
 
 
+
 p {
     font-family: '1492';
     font-size: 22px;
@@ -482,8 +483,33 @@ p::after {
     height: 12%;
 }
 
+pre {
+    margin-left: 22%;
+    margin-right: 22%;
+}
 
-.language-java {
-    margin-left: 22rem;
-    margin-right: 22rem;
+/* Customize the scrollbar */
+pre::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+pre::-webkit-scrollbar-thumb {
+    background-color: #621313; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners of the scrollbar thumb */
+}
+
+pre::-webkit-scrollbar-track {
+    background-color: #dfc25a; /* Color of the scrollbar track */
+}
+
+/* Optional: Handle when the user hovers over the scrollbar */
+pre::-webkit-scrollbar-thumb:hover {
+    background-color: #270901;
+}
+
+.content ul {
+    margin-left: 22%;
+    margin-right: 22%;
+    font-family: '1492';
+    font-size: 20px;
 }

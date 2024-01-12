@@ -21,33 +21,31 @@
 // });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const loadButtons = document.querySelectorAll('.jsart');
-    const contentColumn = document.getElementById('externalContentColumn');
-  
-    // Variabili di stato per gestire le occorrenze successive
-    let currentMetadataCategory = null;
-    let currentMetadataId = null;
-    let currentMetadataIndex = 0;
-  
-    loadButtons.forEach(function (button) {
-      button.addEventListener('click', function () {
-        const articlePath = this.getAttribute('data-article');
-  
-        // Fetch the content from the specified articlePath
-        fetch(articlePath)
-          .then(response => response.text())
-          .then(content => {
-            // Insert the fetched content into the contentColumn
-            contentColumn.innerHTML = content;
-  
-            // Load and display metadata for the current article
-            loadMetadata(articlePath);
-          })
-          .catch(error => {
-            console.error('Error loading external content:', error);
-          });
-      });
+  const loadButtons = document.querySelectorAll('.jsart');
+  const contentColumn = document.getElementById('externalContentColumn');
+
+  loadButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      const articlePath = this.getAttribute('data-article');
+
+      // Fetch the content from the specified articlePath
+      fetch(articlePath)
+        .then(response => response.text())
+        .then(content => {
+          // Insert the fetched content into the contentColumn
+          contentColumn.innerHTML = content;
+
+          // Load and display metadata for the current article
+          loadMetadata(articlePath);
+
+          // Use the globally accessible map variable
+          addMarkers();
+        })
+        .catch(error => {
+          console.error('Error loading external content:', error);
+        });
     });
+  });
   
     // Funzione per caricare e visualizzare i metadati
     function loadMetadata(articlePath) {
@@ -153,9 +151,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
   });
-
-
-
-
-
 
