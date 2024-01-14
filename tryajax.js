@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const loadButtons = document.querySelectorAll('.jsart');
   const contentColumn = document.getElementById('externalContentColumn');
 
+  // Variabili di stato per gestire le occorrenze successive
+  let currentMetadataCategory = null;
+  let currentMetadataId = null;
+  let currentMetadataIndex = 0;
+
   loadButtons.forEach(function (button) {
     button.addEventListener('click', function () {
       const articlePath = this.getAttribute('data-article');
