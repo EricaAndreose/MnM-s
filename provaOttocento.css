@@ -12,6 +12,9 @@
     font-family: 'True Golden™';
     src: url('font/artnouveau/true_golden_quot_/True_Golden_quot_/trg_____.ttf');
 }
+.background-svg {
+    display: none;
+}
 
 #image-gaia-2{
     display: none;

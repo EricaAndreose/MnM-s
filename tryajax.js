@@ -138,22 +138,32 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Funzione di utilità per posizionarsi su un elemento con un determinato indice
     function scrollToElement(id, index) {
-        const elements = document.querySelectorAll(`${id}`);
-        if (elements.length > index) {
-        // Rimuovi l'evidenziazione dagli elementi precedenti
-        document.querySelectorAll('.highlight').forEach(el => {
-            el.classList.remove('highlight');
-        });
-    
-        // Aggiungi la classe 'highlight' all'elemento corrente
-        elements[index].classList.add('highlight');
-    
-        // Scorrimento verso l'elemento
-        elements[index].scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
-        } else {
-        console.log(`Nessun elemento trovato con l'ID: ${id} all'indice ${index}`);
-        }
-    }
+      const elements = document.querySelectorAll(`${id}`);
+      if (elements.length > index) {
+          // Rimuovi l'evidenziazione dagli elementi precedenti
+          document.querySelectorAll('.highlight').forEach(el => {
+              el.classList.remove('highlight');
+          });
+  
+          // Aggiungi la classe 'highlight' all'elemento corrente
+          elements[index].classList.add('highlight');
+  
+          // Scorrimento verso l'elemento nella parte di testo esterna
+          const externalContentColumn = document.getElementById('externalContentColumn');
+          
+          elements[index].scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+              inline: "center",
+              container: externalContentColumn
+          });
+      } else {
+          console.log(`Nessun elemento trovato con l'ID: ${id} all'indice ${index}`);
+      }
+  }
+  
+
+  
   
   });
 
