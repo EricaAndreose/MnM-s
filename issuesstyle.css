@@ -231,3 +231,7 @@ body {
 #footer {
     border-radius: 5px;
 }
+
+.background-svg {
+    display: none;
+  }
