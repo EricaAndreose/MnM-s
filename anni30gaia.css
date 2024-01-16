@@ -46,6 +46,14 @@ body {
     image-rendering: optimizeQuality;
 }
 
+#image-gaia-3 {
+    display: none;
+}
+
+#image-gaia-4 {
+    display: none;
+}
+
 
 
 
@@ -121,12 +129,11 @@ body {
 }
 
 .highlight {
-    background-color: yellow; /* o qualsiasi altra formattazione visiva desiderata */
+    color: black; /* o qualsiasi altra formattazione visiva desiderata */
 }
 
 #myTab {
-    overflow-y: auto;
-    max-height: 300px; /* Imposta l'altezza massima desiderata per la visualizzazione dei tab */
+    overflow-y: none; /* Imposta l'altezza massima desiderata per la visualizzazione dei tab */
   }
 
 #map-tab {
@@ -152,7 +159,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    max-height: 250px; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+    max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+    max-width: 22vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
   }
   
   .tab-pane {
