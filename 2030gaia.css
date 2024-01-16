@@ -13,13 +13,14 @@
 }
 
 
+
 body {
+    background: linear-gradient(to bottom, #FFDAB9, #8B4513);
     position: relative;
-    background-color:#C28842;
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
     
 }
     
-
 
     
 
@@ -51,6 +52,10 @@ body {
     margin-top: -0.5cm;
 }
 
+.nav-link:hover {
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
+}
+
 #subtitle {
     z-index: 1;
 }
@@ -68,6 +73,10 @@ body {
     z-index: 2;
 }
 
+.dropdown-menu:hover {
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
+}
+
 /* insertion */
 
 .dropdown-submenu {
@@ -82,7 +91,8 @@ body {
 }
 
 .dropdown-submenu:hover .dropdown-menu {
-    display: block;/* Display the submenu on hover */
+    display: block;
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;/* Display the submenu on hover */
 }
 
 
@@ -102,6 +112,21 @@ body {
     border: 2px solid #ffffff;
 }
 
+.nav-item {
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
+}
+
+.nav-link {
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
+}
+
+.nav-link:hover {
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
+  }
+
+
+
+
 #externalContentColumn {
     background-size: cover;
     background-repeat: no-repeat;
@@ -115,41 +140,49 @@ body {
 
 #myTab {
     overflow-y: auto;
-    max-height: 300px;/* Imposta l'altezza massima desiderata per la visualizzazione dei tab */
+    max-height: 300px;
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto; /* Imposta l'altezza massima desiderata per la visualizzazione dei tab */
   }
 
 #map-tab {
     border: 3px solid black;
     font-family: 'Dune';
     color:beige;
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
 }
 #metadata-tab{
     border: 3px solid black;
     font-family: 'Dune';
     color:beige;
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
 }
 #people-tab {
     border: 3px solid black;
     font-family: 'Dune';
     color:beige;
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
 }
 #places-tab{
     border: 3px solid black;
     font-family: 'Dune';
     color:beige;
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
 }
 #keywords-tab{
     border: 3px solid black;
     font-family: 'Dune';
     color:beige;
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
 }
 #references-tab{
     border: 3px solid black;
     font-family: 'Dune';
     color:beige;
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
 }
  
   .tab-content {
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
@@ -159,8 +192,10 @@ body {
     color:beige;/* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
   }
   
-  .tab-pane {
-    max-height: 100%; /* Consente al contenuto dei tab di espandersi completamente all'interno del container */
+  .tab-pane li a{
+    max-height: 100%;
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
+     /* Consente al contenuto dei tab di espandersi completamente all'interno del container */
 }
 
 #image-gaia-2 {
@@ -185,7 +220,7 @@ body {
     background-repeat: no-repeat;
     z-index: 99;
     width: 20%;
-    height: 20%;
+    height: 25%;
     left: 1100px;;
     bottom: 950px;
 }
@@ -201,6 +236,7 @@ body {
     width:100%;
     height: 400px;
     border: 2px solid #ffffff;
+    cursor: url('img/2030img/cursorepianetasabbioso.png')
 }
 
 
@@ -385,6 +421,14 @@ body {
     cursor: pointer;
     padding: 2px;
     }
+
+.action-btn:hover {
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
+}
+
+#text-f a:hover {
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
+  }
 
 #decor1 {
     position: relative;
