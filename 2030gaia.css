@@ -14,13 +14,10 @@
 
 
 body {
-    background-size: cover;
     position: relative;
-    background-image: linear-gradient(#7893e6, #314da3);
-    border-bottom-left-radius: 70% 20%;
-    border-bottom-right-radius: 60% 20%;
-    height: 300px;
-    }
+    background-color:#C28842;
+    
+}
     
 
 
@@ -54,12 +51,21 @@ body {
     margin-top: -0.5cm;
 }
 
+#subtitle {
+    z-index: 1;
+}
+
+
+
+
+
 
 
 .dropdown-menu {
-    background-color: rgb(124, 99, 58) ;
+    background-color: rgb(105, 90, 67) ;
     border: 2px solid #ffffff;
     color: #F1FAEE;
+    z-index: 2;
 }
 
 /* insertion */
@@ -76,22 +82,23 @@ body {
 }
 
 .dropdown-submenu:hover .dropdown-menu {
-    display: block; /* Display the submenu on hover */
+    display: block;/* Display the submenu on hover */
 }
 
-/* insertion */
+
+
 
 #main {
     background-size: cover; /* Adjust as needed */
     background-repeat: no-repeat; /* Prevent image from repeating */
     background: 
-    linear-gradient(to bottom, rgb(12, 12, 12), rgb(238, 122, 5));
+    linear-gradient(to bottom, rgb(56, 48, 38), rgb(124, 99, 58));
     border-radius: 5px;
     margin-left: 1cm;
     margin-right: 1cm;
     height: 40vw;
     position: relative;
-    z-index: 3;
+    z-index: 100;
     border: 2px solid #ffffff;
 }
 
@@ -103,38 +110,53 @@ body {
 }
 
 .highlight {
-    background-color: yellow; /* o qualsiasi altra formattazione visiva desiderata */
+    color: #C28842; /* o qualsiasi altra formattazione visiva desiderata */
 }
 
 #myTab {
     overflow-y: auto;
-    max-height: 300px; /* Imposta l'altezza massima desiderata per la visualizzazione dei tab */
+    max-height: 300px;/* Imposta l'altezza massima desiderata per la visualizzazione dei tab */
   }
 
 #map-tab {
     border: 3px solid black;
+    font-family: 'Dune';
+    color:beige;
 }
 #metadata-tab{
     border: 3px solid black;
+    font-family: 'Dune';
+    color:beige;
 }
 #people-tab {
     border: 3px solid black;
+    font-family: 'Dune';
+    color:beige;
 }
 #places-tab{
     border: 3px solid black;
+    font-family: 'Dune';
+    color:beige;
 }
 #keywords-tab{
     border: 3px solid black;
+    font-family: 'Dune';
+    color:beige;
 }
 #references-tab{
     border: 3px solid black;
+    font-family: 'Dune';
+    color:beige;
 }
  
   .tab-content {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    max-height: 250px; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+    max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+    max-width: 22vw;
+    font-family: 'Dune';
+    color:beige;/* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
   }
   
   .tab-pane {
@@ -142,6 +164,33 @@ body {
 }
 
 #image-gaia-2 {
+    display: none;
+}
+
+#image-gaia-3 {
+    background-image: url(img/2030img/mostroridimensionato.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 0;
+    width: 75%;
+    height: 75%;
+    left: 10px;
+    top: 100px; /* Assicurati che sia sopra tutti gli altri elementi */
+   
+}
+
+#image-gaia-4 {
+    background-image: url(img/2030img/figuradefinitiva.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 99;
+    width: 20%;
+    height: 20%;
+    left: 1100px;;
+    bottom: 950px;
+}
+
+.background-svg {
     display: none;
 }
 
@@ -263,6 +312,7 @@ body {
 }
 
 
+
 #Vinyl {
     position: static;
     text-align: center;
@@ -270,6 +320,9 @@ body {
     height: auto; /* Set the initial height to 100% */
     object-fit: cover; /* Maintain aspect ratio while covering container */
     z-index: -1;
+    
+
+
 }
 
 
@@ -278,7 +331,7 @@ body {
     width: 100%; /* Set the initial width to 100% */
     height: auto;
     object-fit: cover; /* Maintain aspect ratio while covering container */
-    z-index: 1;
+    z-index: 0;
     transform-origin: 0;
     transform: rotate(0deg);
     margin-left: -23vw;
