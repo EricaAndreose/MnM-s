@@ -296,6 +296,10 @@ p::after {
     background-color: #cea232; /* Color of the scrollbar track */
 }
 
+caption {
+    font-family: '1492';
+    font-size: 14px;
+}
 
 /* Add responsive styles for smaller screens */
 @media (max-width: 768px) {
@@ -444,6 +448,8 @@ p::after {
     width: 55%;
 }
 
+
+
 #decor4 {
     background-image: url('img/medieval/04.png');
     position: relative;
@@ -512,4 +518,23 @@ pre::-webkit-scrollbar-thumb:hover {
     margin-right: 22%;
     font-family: '1492';
     font-size: 20px;
+}
+
+.content ol {
+    margin-left: 22%;
+    margin-right: 22%;
+    font-family: '1492';
+    font-size: 20px;
+}
+
+figcaption {
+    font-family: '1492';
+    font-size: 14px;
+    margin-left: 23%;
+    margin-right: 23%;
+}
+
+/*Immagine Chiara */
+.background-svg {
+    display: none;
 }
