@@ -120,6 +120,18 @@ body {
     font-size: 120%;
 }
 
+.publication-date {
+    font-family: 'True Golden™';
+  }
+  
+.title-2 {
+font-family: 'AstrenaDemo';
+}
+
+.title-3 {
+font-family: 'AstrenaDemo';
+}
+
 /* classe per la prima lettera da mettere*/
 
 .article {
