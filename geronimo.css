@@ -1,6 +1,4 @@
 @font-face {
-    /* Font similar to the original ones. French Gothic. Look at the "g", close letters, spigoli, grossezza
-    verticalità e ordine */
     font-family: 'sans';
     src: url('font/geronimo/OpenSans-ExtraBold.ttf');
 
@@ -11,6 +9,85 @@
     src: url('font/geronimo/LifeLTStd-Roman.otf')
 }
 
+@font-face {
+    font-family: 'Animated';
+    src: url('font/geronimo/Animated.ttf')
+}
+
+@font-face {
+    font-family: 'BShadow';
+    src: url('font/geronimo/Black\ Shadow.ttf')
+}
+
+@font-face {
+    font-family: 'FrenchFries';
+    src: url('font/geronimo/French_Fries.ttf')
+}
+
+@font-face {
+    font-family: 'Music';
+    src: url('font/geronimo/random/Musicografi.ttf')
+}
+
+@font-face {
+    font-family: 'Industry';
+    src: url('font/geronimo/random/National\ Industry.ttf')
+}
+
+@font-face {
+    font-family: 'Learning';
+    src: url('font/geronimo/random/KidLearningHowToWrite-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Musician';
+    src: url('font/geronimo/random/Musician\ Crush\ DEMO.ttf')
+}
+
+@font-face {
+    font-family: 'Songs';
+    src: url('font/geronimo/random/Songbird.otf')
+}
+
+@font-face {
+    font-family: 'Data';
+    src: url('font/geronimo/random/Data\ Transfer.ttf')
+}
+
+@font-face {
+    font-family: 'Genre';
+    src: url('font/geronimo/random/FlowerFont-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Funeral';
+    src: url('font/geronimo/random/Funny\ Death.otf')
+}
+
+@font-face {
+    font-family: 'Popular';
+    src: url('font/geronimo/random/Stars_PersonalUseOnly.ttf')
+}
+
+@font-face {
+    font-family: 'School';
+    src: url('font/geronimo/random/FunSchool.ttf')
+}
+
+@font-face {
+    font-family: 'Education';
+    src: url('font/geronimo/random/Education.ttf')
+}
+
+@font-face {
+    font-family: 'Fashion';
+    src: url('font/geronimo/random/Fashion.ttf')
+}
+
+@font-face {
+    font-family: 'Song';
+    src: url('font/geronimo/random/Right\ Song\ DEMO.ttf')
+}
 
 #image-gaia-2{
     background-image: url('img/geronimo/geronimo-stilton-libri.png');
@@ -71,7 +148,6 @@ body {
 
 .navbar {
     background-color: transparent;
-    font-family: '1492';
     margin-top: -0.5cm;
     font-family: 'LifeLTStd-Roman';
     text-transform: capitalize;
@@ -79,7 +155,7 @@ body {
 
 
 .dropdown-menu {
-    background-image: url('img/medieval/back.png');
+    background-image: url('img/geronimo/cheese.jpg');
 }
 
 /* insertion */
@@ -120,6 +196,10 @@ body {
     height: 40vw;
     overflow-y: auto; /* or overflow-y: scroll; */
     padding: 5%;
+}
+
+.highlight {
+    background-color: #00d0ff;
 }
 
 #map-box { 
@@ -171,6 +251,30 @@ p {
     width: 50%; /* Adjust this value as needed */
     margin: 0 auto; /* Center the container horizontally */
     margin-top: -3%;
+}
+
+.content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+
+figcaption {
+    font-family: 'LifeLTStd-Roman';
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.content ul {
+    font-family: 'LifeLTStd-Roman';
+    font-size: 20px;
+}
+
+.content ol {
+    font-family: 'LifeLTStd-Roman';
+    font-size: 20px;
 }
 
 
@@ -247,26 +351,15 @@ p {
     background-image: url('img/geronimo/logo.jpg');
     position: relative;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 60%;
     height: 15vw;
     margin-left: 50%;
-    margin-top: -12vw;
-    shape-outside: url('img/geronimo/logo.jpg');
+    margin-top: -14vw;
 }
+
 
 #decor2 {
-    background-image: url('img/medieval/+3.png');
-    background-repeat: no-repeat;
-    background-size: 20%; /* Adjust the size as needed */
-    height: 19vw;
-    width: 20vw; /* Adjust the width as needed */
-    display: block;
-    position: absolute;
-    margin-left: 2cm;
-}
-
-#decor3 {
-    background-image: url('img/medieval/12 2.png');
+    background-image: url('img/geronimo/tea.png');
     position: relative;
     background-repeat: no-repeat;
     background-size: 40%;
@@ -274,27 +367,121 @@ p {
     margin-left: 35%;
 }
 
-.content img { 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
-
-#deco2 {
-    background-image: url('img/geronimo/logo.jpg');
+#decor3 {
+    background-image: url('img/geronimo/family.png');
+    position: relative;
     background-repeat: no-repeat;
-    background-size: 30% ;
-    float: left;
-    
-    /* Adjust the spacing between the image and text */
+    background-size: 60%;
+    height: 22vw;
+    margin-left: 25%;
 }
 
-#deco2::before {
-    content: ""; /* Empty content to create a pseudo-element for the shape */
-    display: block;
-    float: left; /* Float the shape to the right, opposite of the text */
-    width: 30%; /* Adjust the width based on your design */
-    height: 13vw;
-    shape-outside: url('img/geronimo/logo.jpg'); /* Use the image to define the shape */
+#decor4 {
+    background-image: url('img/geronimo/desk.png');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    height: 25vw;
+    margin-left: 25%;
+}
+
+p .place {
+    font-family: 'BShadow';
+    font-size: 25px;
+    color: rgb(0, 42, 255);
+}
+
+p .person {
+    font-family: 'FrenchFries';
+    font-size: 25px;
+    color: rgb(252, 118, 0);
+}
+
+p .keyword {
+    font-family: 'Animated';
+    font-size: 25px;
+    color: rgb(0, 183, 37);
+}
+
+p #music{
+    font-family: 'Music';
+    font-size: 25px;
+    color: rgb(113, 0, 183);
+    text-transform: uppercase;
+}
+
+p #industry{
+    font-family: 'Industry';
+    font-size: 25px;
+    color: rgb(235, 3, 73);
+    text-transform: uppercase;
+}
+
+p #musicians{
+    font-family: 'Musician';
+    font-size: 25px;
+    color: rgb(255, 170, 0);
+}
+
+p #learning{
+    font-family: 'Learning';
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+}
+
+p #song{
+    font-family: 'Song';
+    font-size: 25px;
+    color: rgb(0, 105, 165);
+}
+
+p #GTZANdataset{
+    font-family: 'Data';
+    font-size: 25px;
+    color: rgb(1, 64, 100);
+}
+
+p #genreClassification{
+    font-family: 'Genre';
+    font-size: 25px;
+    color: rgb(236, 189, 0);
+}
+
+p #funeralMusic {
+    font-family: 'Funeral';
+    font-size: 25px;
+    color: rgb(55, 55, 55);
+}
+
+p #popularMusic {
+    font-family: 'Popular';
+    font-size: 35px;
+    color: rgb(255, 192, 3);
+}
+
+p #school {
+    font-family: 'School';
+    font-size: 35px;
+    color: rgb(154, 3, 255);
+}
+
+p #musicEducation {
+    font-family: 'Education';
+    font-size: 35px;
+    color: rgb(221, 21, 6);
+}
+
+figcaption {
+    font-family: 'LifeLTStd-Roman';
+    font-size: 14px;
+}
+
+caption {
+    font-family: 'LifeLTStd-Roman';
+    font-size: 14px;
+}
+
+/*Immagine Chiara */
+.background-svg {
+    display: none;
 }
