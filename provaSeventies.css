@@ -144,18 +144,22 @@ body {
 .title-2 {
   font-family: 'Stilla Regular';
   text-align: left;
+  font-size: 2.5em;
   color:#34ace0;
-  height: auto;
   transform: rotate(-5deg);
-  padding-bottom: 5%;
+  margin-bottom: 5%;
+  margin-top: 10%;
 }
 
 .title-3 {
   font-family: 'Stilla Regular';
   text-align: left;
+  font-size: 2.5em;
   color:#34ace0;
+  line-height: normal;
   transform: rotate(-5deg);
-  padding-bottom: 5%;
+  margin-bottom: 5%;
+  margin-top: 10%;
 }
 
 
@@ -295,11 +299,11 @@ body {
   margin-right: auto;
   margin-top: -75%;
   background-image: url('img/seventies/musicbox.png');
-  background-size: cover;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
+}
 
 .stitle {
   font-size: 2em;
@@ -308,7 +312,8 @@ body {
   color: black;
   padding-top: 4%;
   margin-bottom: 0%;
-  }
+  width: 80%; /* Esempio: la larghezza dell'elemento è l'80% della .music-container */
+}
 
 .navigation {
   background-color: transparent;
@@ -319,7 +324,10 @@ body {
   z-index: 1;
   position: relative;
   padding-top: 0%;
-  }
+  width: 80%; /* Esempio: la larghezza dell'elemento è l'80% della .music-container */
+  margin-top: 2%; /* Esempio: margine superiore del 2% rispetto alla .music-container */
+}
+
 
 .action-btn {
   border: 0;
@@ -343,13 +351,21 @@ body {
   background-size: 5%;
   background-repeat: round;
   overflow: hidden;
-  /* resize: both; */
   position: relative;
   min-width: auto;
   min-height: auto;
   padding: 5%;
-
+  margin-top: 3%;
+  margin-bottom: 3%;
+  transform: rotate(-5deg);
   }
+
+figcaption {
+  font-family: 'CC Tough Talk';
+  font-size: 1em;
+  transform: rotate(-5deg);
+  margin-bottom: 3%;
+}
 
 table tr td, table tr th{
     background-color: rgba(211, 130, 240, 0) !important;
@@ -366,11 +382,17 @@ table tr td, table tr th{
   min-width: auto;
   min-height: auto;
   padding: 5%;
+  margin-bottom: 5%;
   border-style: dotted;
   border-color: #34ace0;
   border-width: 0.5em;
-
+  background-color: #ede34d;
+  transform: rotate(-5deg);
   }
+
+.table-responsive caption {
+  font-family: 'CC Tough Talk';
+}
 
 .button1:hover, .action-btn:hover {
   transform: scale(1.1); /* Grow on hover */
