@@ -89,6 +89,11 @@
     src: url('font/geronimo/random/Right\ Song\ DEMO.ttf')
 }
 
+@font-face {
+    font-family: 'Sub';
+    src: url('font/geronimo/random/MMarker\ PRC\ Bold.ttf')
+}
+
 #image-gaia-2{
     background-image: url('img/geronimo/geronimo-stilton-libri.png');
     position: absolute;
@@ -97,7 +102,7 @@
     
     /* Adjusted margin values with pixel units */
     margin-left: 58vw; /* Adjust based on your layout */
-    margin-top: -23vw; /* Adjust based on your layout */
+    margin-top: -19vw; /* Adjust based on your layout */
     
     /* Optional: Set width and height for the div */
     width: 500px; /* Adjust based on your image size */
@@ -149,13 +154,15 @@ body {
 .navbar {
     background-color: transparent;
     margin-top: -0.5cm;
-    font-family: 'LifeLTStd-Roman';
+    font-family: 'Animated';
+    font-size: 23px;
     text-transform: capitalize;
 }
 
 
 .dropdown-menu {
     background-image: url('img/geronimo/cheese.jpg');
+    font-size: 20px;
 }
 
 /* insertion */
@@ -165,6 +172,7 @@ body {
 }
 
 .dropdown-submenu .dropdown-menu {
+    font-size: 20px;
     top: 0;
     left: 100%;
     margin-top: -1px;
@@ -173,6 +181,7 @@ body {
 
 .dropdown-submenu:hover .dropdown-menu {
     display: block; /* Display the submenu on hover */
+    font-size: 20px;
 }
 
 /* insertion */
@@ -203,7 +212,7 @@ body {
 }
 
 #map-box { 
-    height: 400px;
+    height: 490px;
  }
 
 #footer {
@@ -219,8 +228,22 @@ p {
     text-align: left;
     overflow: hidden; /* Hide any text that overflows */
     text-overflow: ellipsis; /* Display an ellipsis (...) for overflowed text */
-    padding: 2%;
+    padding: 5%;
     text-indent: 25px;
+}
+
+.title {
+    font-family: 'sans';
+    color: rgb(210, 35, 0);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+    font-family: 'Sub';
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.918);
+    text-align: center;
 }
 
 .title-1 {
@@ -238,12 +261,88 @@ p {
 }
 
 .title-3 {
-    font-family: salterio;
+    font-family: 'Sub';
+    text-transform: capitalize;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.918);
+    text-align: center;
 }
 
 
 #space {
-    height: 17rem; 
+    height: 21rem; 
+}
+
+.tab-content {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    text-align: justify;
+    max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+    max-width: 22vw; /* Set the desired maximum width for the text */
+}
+
+.tab-pane li a{
+    font-family: 'Animated';
+    color: rgb(0, 0, 143) !important;
+}
+
+
+/* personalizzazione bottoni metadatati*/
+.nav-item {
+    cursor: url('img/medieval/Manicula (1).png'), auto !important;
+    font-family: 'Animated' !important;
+    font-size: 20px;
+    color: rgb(125, 77, 0) !important;
+}
+
+.nav-link {
+    cursor: url('img/medieval/Manicula (1).png'), auto;
+    color: rgb(125, 69, 0) !important;
+}
+
+.nav-link:hover {
+    cursor: url('img/medieval/Manicula (1).png'), auto !important;
+    color:  rgb(0, 65, 196) !important;
+  }
+
+.tab-content {
+    cursor: url('img/medieval/Manicula (1).png'), auto !important;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    text-align: justify;
+    max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+    max-width: 22vw; /* Set the desired maximum width for the text */
+}
+
+.tab-pane li a{
+    font-family: 'Animated';
+    font-size: 22px;
+    cursor: url('img/medieval/Manicula (1).png'), auto !important;
+    color:  rgb(0, 65, 196) !important;
+}
+
+#metadata {
+    font-family: 'Animated';
+    font-size: 22px;
+    cursor: url('img/medieval/Manicula (1).png'), auto !important;
+    color:   rgb(0, 65, 196) !important;
+}
+
+.highlight {
+    background-color: rgb(83, 252, 240); /* o qualsiasi altra formattazione visiva desiderata */
+}
+
+  
+/* personalizzazione bottoni metadatati*/
+
+#metadata {
+    font-family: 'Animated';
+    font-size: 22px;
+    color: rgb(0, 65, 196) !important;
 }
 
 .image-container {
@@ -277,6 +376,80 @@ figcaption {
     font-size: 20px;
 }
 
+
+/* sistemare tabelle*/
+
+.table-responsive {
+    max-height: 40vw; /* Adjust the maximum height for the table container */
+    overflow-y: auto; /* Add vertical scrollbar if the content exceeds the height */
+    padding: 5%;
+    margin-right: 3%;
+}
+
+.table {
+    max-width: 100%; /* Set the maximum width for the table */
+    width: 100%; /* Ensure the table takes up the full width of its container */
+}
+
+.table th,
+.table td {
+    background-color: rgba(211, 130, 240, 0) !important;
+    font-family: 'LifeLTStd-Roman';
+}
+
+/* Apply similar styling as <p> */
+.table td,
+.table th {
+    font-size: 14px;
+    text-align: justify;
+    white-space: nowrap; /* Prevent line breaks */
+   
+}
+
+/* Styling for the scrollbars */
+.table-responsive::-webkit-scrollbar {
+    width: 12px; /* Width of the vertical scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */ 
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #0d00ff; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners of the thumb */
+}
+
+.table-responsive::-webkit-scrollbar-track-piece:end {
+    margin-right: 50px; 
+}
+  
+.table-responsive::-webkit-scrollbar-track-piece:start {
+    margin-left: 50px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background-color: #ffd500; /* Color of the scrollbar track */
+}
+
+caption {
+    font-family: 'LifeLTStd-Roman';
+    font-size: 14px;
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .table-responsive {
+        max-height: none; /* Reset max-height on smaller screens */
+    }
+
+    .table {
+        max-width: none; /* Reset max-width on smaller screens */
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
+/* fine sistemare tabelle*/
 
 #Vinyl {
     position: static;
@@ -474,6 +647,12 @@ p #musicEducation {
 figcaption {
     font-family: 'LifeLTStd-Roman';
     font-size: 14px;
+}
+
+.img-description {
+    font-family: 'LifeLTStd-Roman';
+    font-size: 14px;
+    text-align: center;
 }
 
 caption {
