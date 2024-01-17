@@ -213,11 +213,17 @@ body {
     font-size: 24px;
 }
 
-.publicationdate {
+.publication-date {
     font-family: 'Semplicita';
     text-align: center;
     font-size: 24px;
 
+}
+
+.publication-location {
+    font-family: 'Semplicita';
+    text-align: center;
+    font-size: 24px;
 }
 
 .content{
@@ -267,7 +273,7 @@ body {
 }
 
 #space {
-    height: 17rem; 
+    height: 40vh; 
 }
 
 .image-container {
@@ -321,7 +327,7 @@ body {
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -75%;
+    margin-top: -47%;
     }
 
 .stitle {

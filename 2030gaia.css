@@ -15,11 +15,14 @@
 
 
 body {
-    background: linear-gradient(to bottom, #FFDAB9, #8B4513);
     position: relative;
     cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
+    background-color: #C28842;
+   
     
 }
+
+
     
 
     
@@ -142,7 +145,7 @@ body {
     overflow-y: auto;
     max-height: 300px;
     cursor: url('img/2030img/cursorepianetasabbioso.png'), auto; /* Imposta l'altezza massima desiderata per la visualizzazione dei tab */
-  }
+}
 
 #map-tab {
     border: 3px solid black;
@@ -277,13 +280,19 @@ body {
     font-size: 24px;
 }
 
-.publicationdate {
+.publication-date {
     font-family: 'Dune';
     color: #F1FAEE;
     font-weight: 900; 
     text-align: center;
     font-size: 24px;
 
+}
+
+.publication-location {
+    font-family: 'Semplicita';
+    text-align: center;
+    font-size: 24px;
 }
 
 .content{
@@ -337,7 +346,7 @@ body {
 }
 
 #space {
-    height: 17rem; 
+    height: 40vh; 
 }
 
 .image-container {
@@ -386,7 +395,7 @@ body {
 
 
 .music-container {
-    background-color: #F1FAEE;
+    background-color: rgb(56, 48, 38);
     border-radius: 15px;
     box-shadow: 0 10px 10px 0 rgb(87, 31, 1);
     width: 50%;
@@ -395,7 +404,7 @@ body {
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -75%;
+    margin-top: -62%;
     }
 
 .stitle {
