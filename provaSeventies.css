@@ -1,14 +1,4 @@
 @font-face {
-  font-family: 'Fontanio Black';
-  src: url('font/seventies/fontanio/Fontanio-Black.ttf');
-}
-
-@font-face {
-  font-family: 'Negaroa';
-  src: url('font/seventies/negaroa/Negaroa-Regular.ttf');
-}
-
-@font-face {
   font-family: 'Tabasco';
   src: url('font/seventies/Tabasco\ Bold/Tabasco\ Bold.ttf');
 }
@@ -33,6 +23,11 @@
   src: url('font/seventies/Boogaloo\ Avenue\ NF\ Regular/Boogaloo\ Avenue\ NF\ Regular.ttf');
 }
 
+@font-face {
+  font-family: 'CC Tough Talk';
+  src: url('font/seventies/CCToughTalk-Italic.ttf');
+}
+
 #image-gaia-2{
     /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%"><path class="line" d="M 100 100 C 10 100, 10 200, 100 200 L 190 200 C 280 200, 280 300, 190 300 L 100 300 C 10 300, 10 400, 100 400 L 190 400 C 280 400, 280 500, 190 500" fill="none" stroke="#67aba0" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /><path class="line" d="M 100 120 C 10 120, 10 220, 100 220 L 190 220 C 280 220, 280 320, 190 320 L 100 320 C 10 320, 10 420, 100 420 L 190 420 C 280 420, 280 520, 190 520" fill="none" stroke="#deb433" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /><path class="line" d="M 100 140 C 10 140, 10 240, 100 240 L 190 240 C 280 240, 280 340, 190 340 L 100 340 C 10 340, 10 440, 100 440 L 190 440 C 280 440, 280 540, 190 540" fill="none" stroke="#d8651c" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /><path class="line" d="M 100 160 C 10 160, 10 260, 100 260 L 190 260 C 280 260, 280 360, 190 360 L 100 360 C 10 340, 10 460, 100 460 L 190 460 C 280 460, 280 560, 190 560" fill="none" stroke="#ab2e20" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /><animate attributeName="r" from="40" to="0" dur="2s" begin="0s" repeatCount="indefinite" /></svg>');
     z-index: 10;
@@ -55,7 +50,7 @@ body {
 #subtitle {
   font-family: 'Jimi';
   color: #ffffff;
-  background-color: #f1c40f;
+  background-color: #f45683;
   text-align: center;
   padding: 0.5em;
   border-radius: 15px;
@@ -65,7 +60,7 @@ body {
   border-radius: 5px;
   background-color: transparent;
   margin-top: -0.5%;
-  font-family: 'Tabasco';
+  font-family: 'Jimi';
   height: 5vh;
 }
 
@@ -104,7 +99,7 @@ body {
 #main {
   font-family: 'Jimi';
   border-radius: 5px;
-  background-color: #eba74e;
+  background-color: #f45683;;
   margin-left: 0.5%;
   margin-right: 0.5%;
   height: 45%;
@@ -118,7 +113,6 @@ body {
 }
 
 #externalContentColumn {
-  background-color: #efe6da;
   height: 40vw;
   overflow-y: auto; /* or overflow-y: scroll; */
   padding: 5%;
@@ -141,7 +135,7 @@ body {
 }
 
 .generic-info {
-  font-family: 'CG Times';
+  font-family: 'CC Tough Talk';
   color: #000;
   text-align: center;
   font-size: 1em;
@@ -170,40 +164,18 @@ body {
   font-family: 'CG Times';
   font-size: 1em;
   text-align: justify;
-  background-color: #eba74e; 
-  /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%"><path class="line" d="M 100 100 C 10 100, 10 200, 100 200 L 190 200 C 280 200, 280 300, 190 300 L 100 300 C 10 300, 10 400, 100 400 L 190 400 C 280 400, 280 500, 190 500" fill="none" stroke="#67aba0" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /><path class="line" d="M 100 120 C 10 120, 10 220, 100 220 L 190 220 C 280 220, 280 320, 190 320 L 100 320 C 10 320, 10 420, 100 420 L 190 420 C 280 420, 280 520, 190 520" fill="none" stroke="#deb433" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /><path class="line" d="M 100 140 C 10 140, 10 240, 100 240 L 190 240 C 280 240, 280 340, 190 340 L 100 340 C 10 340, 10 440, 100 440 L 190 440 C 280 440, 280 540, 190 540" fill="none" stroke="#d8651c" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /><path class="line" d="M 100 160 C 10 160, 10 260, 100 260 L 190 260 C 280 260, 280 360, 190 360 L 100 360 C 10 340, 10 460, 100 460 L 190 460 C 280 460, 280 560, 190 560" fill="none" stroke="#ab2e20" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /></svg>'); */
-  /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path class="line" d="M 100 100 C 10 100, 10 200, 100 200 L 190 200 C 280 200, 280 300, 190 300 L 100 300 C 10 300, 10 400, 100 400 L 190 400 C 280 400, 280 500, 190 500" fill="none" stroke="#67aba0" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" /></path></svg>') center center; */
-  /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"><animate attributeName="r" from="40" to="0" dur="2s" begin="0s" repeatCount="indefinite" /></circle></svg>') center center no-repeat; */
-  /* background:
-    linear-gradient(45deg, #009688 25%, transparent 25%),
-    linear-gradient(-45deg, #009688 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #009688 75%),
-    linear-gradient(-45deg, transparent 75%, #009688 75%);
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 0, 10px -10px, 0px 10px; */
-  /* box-shadow:
-    inset #009688 0 0 0 5px, 
-    inset #059c8e 0 0 0 1px, 
-    inset #0cab9c 0 0 0 10px, 
-    inset #1fbdae 0 0 0 11px, 
-    inset #8ce9ff 0 0 0 16px, 
-    inset #48e4d6 0 0 0 17px, 
-    inset #e5f9f7 0 0 0 21px, 
-    inset #bfecf7 0 0 0 22px;
-  box-sizing: border-box; */
-  border-style: groove;
-  border-width: 1em;
-  border-color:#34ace0;
+  background-color: #eca0b5; 
   border-radius: 5px;
   margin: auto;
   column-count: 2;
-  column-gap: 4dvw;
+  column-gap: 4vw;
   width: auto;
   height: auto;
   overflow: visible;
   position: relative;
   padding: 7%;
-
+  clip-path: polygon(-17px -23px, 101.75% -101px, 101.64% 100.33%, 49.39% 100.26%, -18px 100.27%);
+  box-shadow: 0 0 0 1em #34ace0; /* Utilizza box-shadow per simulare il bordo */
 }
 
 .highlight {
