@@ -565,3 +565,7 @@ figcaption {
     overflow: hidden;
     overflow-x: hidden;
 }
+
+#header-2030 {
+    display: none;
+}

@@ -128,4 +128,8 @@ body {
 
 #footer {
     background-color: #F1FAEE;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 5px;
+
 }
