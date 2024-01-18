@@ -102,6 +102,7 @@ body {
     z-index: 1;
 }
 
+
 /* personalizzazione bottoni metadatati*/
 .nav-item {
     cursor: url('img/medieval/Manicula (1).png'), auto !important;
@@ -132,15 +133,17 @@ body {
 
 .tab-pane li a{
     font-family: 'Old_london';
+    font-size: 20px;
     cursor: url('img/medieval/Manicula (1).png'), auto !important;
     color: rgb(0, 0, 143) !important;
 }
 
-#metadata {
+#metadata p{
     font-family: 'Old_london';
     font-size: 22px;
     cursor: url('img/medieval/Manicula (1).png'), auto !important;
     color: rgb(0, 0, 143) !important;
+    padding: 1%;
 }
 
 .highlight {
@@ -155,9 +158,6 @@ body {
     height: 490px;
 }
 
-#map-box:hover {
-    cursor: url('img/medieval/Manicula (1).png'), auto !important;
-}
 
 #externalContentColumn {
     background-image: url('img/medieval/02.png');
@@ -167,6 +167,7 @@ body {
     overflow-y: auto; /* or overflow-y: scroll; */
     padding: 5%;
 }
+
 
 
 
@@ -568,4 +569,8 @@ figcaption {
 
 #header-2030 {
     display: none;
+}
+
+#text-center-f{
+    text-align: center;
 }

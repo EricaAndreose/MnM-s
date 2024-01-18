@@ -9,7 +9,7 @@ function initializeMap() {
     container: 'map-box',
     style: 'mapbox://styles/ericaandreose/clr5fspy401hb01qr7elchsk7',
     center: [0, 0],
-    zoom: 0.2 // Initial zoom level
+    zoom: 0.4 // Initial zoom level
   });
 }
 
