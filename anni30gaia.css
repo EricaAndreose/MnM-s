@@ -133,8 +133,8 @@ body {
 }
 
 .highlight {
-    color: rgb(255, 181, 181);
-    font-weight: 1200; /* o qualsiasi altra formattazione visiva desiderata */
+    color: rgb(250, 238, 238);
+    font-weight: bolder; /* o qualsiasi altra formattazione visiva desiderata */
 }
 
 #myTab {
@@ -378,6 +378,14 @@ body {
     background-size: 40%;
     height: 19vw;
     margin-left: 35%;
+}
+
+table tr td, table tr th{
+    background-color: rgba(211, 130, 240, 0) !important;
+}
+
+.table-responsive {
+    font-family: 'Semplicita';
 }
 
 .content img { 
