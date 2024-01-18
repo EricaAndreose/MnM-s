@@ -69,7 +69,7 @@ body {
     font-family: 'Semplicita';
     border-radius: 5px;
     background-color: rgb(209, 195, 177) ;
-    border: 2px solid #000;
+    border: 2px rgb(4, 4, 4);
 }
 
 .navbar {
@@ -90,7 +90,7 @@ body {
 
 .dropdown-menu {
     background-color: rgb(209, 195, 177) ;
-    border: 2px solid #000;
+    border: 2px rgb(4, 4, 4);
 }
 
 /* insertion */
@@ -122,7 +122,7 @@ body {
     height: 40vw;
     position: relative;
     z-index: 100;
-    border: 2px solid #000;
+    border: 2px rgb(4, 4, 4);
 }
 
 #externalContentColumn {
@@ -142,22 +142,23 @@ body {
   }
 
 #map-tab {
-    border: 3px solid black;
+    border: 3px solid rgb(4, 4, 4);
 }
 #metadata-tab{
-    border: 3px solid black;
+    border: 3px solid rgb(4, 4, 4);
 }
 #people-tab {
-    border: 3px solid black;
+    border: 3px solid rgb(4, 4, 4);
+    overflow-y: none;
 }
 #places-tab{
-    border: 3px solid black;
+    border: 3px solid rgb(4, 4, 4);
 }
 #keywords-tab{
-    border: 3px solid black;
+    border: 3px solid rgb(4, 4, 4);
 }
 #references-tab{
-    border: 3px solid black;
+    border: 3px solid rgb(4, 4, 4);
 }
  
   .tab-content {
@@ -208,6 +209,25 @@ body {
     font-family: 'Semplicita';
 }
 
+.title-1 {
+    font-family: 'Monoton';
+    font-size: 30px;
+    color: #0a0a0a;
+    opacity: 1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+
+}
+
+.title-2 {
+    font-family: 'Semplicita';
+}
+
+.title-3 {
+    font-family: 'Semplicita';
+}
+
 .author{
     font-family: 'Semplicita';
     text-align: center;
@@ -237,7 +257,7 @@ body {
 
 }
 
-.start::first-letter{
+.myFirstletter{
     font-size: 300%;
     font-weight: bold;
     letter-spacing: 0.1em;
@@ -249,7 +269,7 @@ body {
     mix-blend-mode: luminosity; /* Applica lo sfondo grigio solo alle parti colorate dell'immagine */
     max-width: 100%;
     height: auto;
-    border: 2px solid #000;
+    border: 2px rgb(4, 4, 4);
     
     
     
@@ -270,7 +290,7 @@ body {
 .table-table-striped{
     font-family: 'Semplicita';
     margin: 0 auto;
-    border: 2px solid #000;
+    border: 2px rgb(4, 4, 4);
 }
 
 #space {
