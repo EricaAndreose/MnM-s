@@ -463,29 +463,16 @@ body {
   }
 
 #decor1 {
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    height: 15vw;
-    margin-left: 50%;
-    margin-top: -12vw;
+   display: none;
 }
 
 #decor2 {
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: 40%;
-    height: 19vw;
-    margin-left: 35%;
+    display: none;
    
 }
 
 #decor3 {
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: 40%;
-    height: 19vw;
-    margin-left: 35%;
+    display: none;
 }
 
 .content img { 
