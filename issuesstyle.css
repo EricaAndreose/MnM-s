@@ -104,35 +104,37 @@ body {
   }
 
 #map-tab {
-    border: 1px solid black;
+    border: 1px solid #473653;
 }
 #metadata-tab{
-    border: 1px solid black;
+    border: 1px solid #473653;
 }
 #people-tab {
-    border: 1px solid black;
+    border: 1px solid #473653;
 }
 #places-tab{
-    border: 1px solid black;
+    border: 1px solid #473653;
 }
 #keywords-tab{
-    border: 1px solid black;
+    border: 1px solid #473653;
 }
 #references-tab{
-    border: 1px solid black;
+    border: 1px solid #473653;
 }
  
-  .tab-content {
+.tab-content {
     padding-top: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
     text-align: justify;
     max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
     max-width: 22vw; /* Set the desired maximum width for the text */
-    }
+}
   
-  .tab-pane {
+.tab-pane {
     max-height: 100%; /* Consente al contenuto dei tab di espandersi completamente all'interno del container */
 }
 
