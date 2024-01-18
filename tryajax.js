@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
           // Insert the fetched content into the contentColumn
           contentColumn.innerHTML = content;
 
+          // Set the scroll position to the top
+          contentColumn.scrollTop = 0;
+
           // Load and display metadata for the current article
           loadMetadata(articlePath);
 
