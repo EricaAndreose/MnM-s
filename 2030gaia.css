@@ -45,6 +45,26 @@ body {
     border: 2px solid #ffffff;
 }
 
+.title-1 {
+    text-align: center;
+    padding: 0.5em;
+    font-family: 'Dune';
+    color: #F1FAEE;
+    font-weight: 900;
+    border-radius: 5px;
+    background-color: rgb(105, 90, 67) ;
+    border: 2px solid #ffffff;
+
+}
+
+.title-2 {
+    font-family: 'Dune';
+}
+
+.title-3 {
+    font-family: 'Dune';
+}
+
 
 .navbar {
     border-radius: 5px;
@@ -149,39 +169,40 @@ body {
 }
 
 #map-tab {
-    border: 3px solid black;
+    border: 3px solid rgb(4, 4, 4);
     font-family: 'Dune';
-    color:beige;
+    color:rgb(240, 240, 215);
     cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
 }
 #metadata-tab{
-    border: 3px solid black;
+    border: 3px solid rgb(4, 4, 4);
     font-family: 'Dune';
-    color:beige;
+    color:rgb(240, 240, 215);
     cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
 }
 #people-tab {
-    border: 3px solid black;
+    border: 3px solid rgb(4, 4, 4);
     font-family: 'Dune';
-    color:beige;
+    color:rgb(240, 240, 215);
     cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
+    overflow-y: none;
 }
 #places-tab{
-    border: 3px solid black;
+    border: 3px solid rgb(4, 4, 4);
     font-family: 'Dune';
-    color:beige;
+    color:rgb(240, 240, 215);
     cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
 }
 #keywords-tab{
-    border: 3px solid black;
+    border: 3px solid rgb(4, 4, 4);
     font-family: 'Dune';
-    color:beige;
+    color:rgb(240, 240, 215);
     cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
 }
 #references-tab{
-    border: 3px solid black;
+    border: 3px solid rgb(4, 4, 4);
     font-family: 'Dune';
-    color:beige;
+    color:rgb(240, 240, 215);
     cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
 }
  
@@ -193,7 +214,7 @@ body {
     max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
     max-width: 22vw;
     font-family: 'Dune';
-    color:beige;/* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+    color:rgb(240, 240, 215);/* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
   }
   
   .tab-pane li a{

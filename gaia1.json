@@ -47,14 +47,12 @@
   ],
   "places": [
     {
-      "NYC": 1,
+      "New York": 2,
       "London": 2,
-      "New York": 1,
       "Los Angeles": 1,
       "Detroit": 1
     },
     {
-      "NYC": "NYC",
       "London": "London",
       "New York": "NYC",
       "Los Angeles": "Los Angeles",
@@ -63,14 +61,12 @@
   ],
   "keywords": [
     {
-      "music": 28,
-      "fashion": 22,
-      "music ": 1
+      "music": 29,
+      "fashion": 22
     },
     {
       "music": "music",
-      "fashion": "fashion",
-      "music ": "music"
+      "fashion": "fashion"
     }
   ],
   "references": [
