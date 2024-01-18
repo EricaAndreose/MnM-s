@@ -40,8 +40,8 @@ body {
 #main {
     background-color: #F1FAEE;
     border-radius: 5px;
-    margin-left: 1cm;
-    margin-right: 1cm;
+    margin-left: 2%;
+    margin-right: 2%;
     position: relative;
     z-index: 1;
 }
@@ -125,11 +125,188 @@ body {
     text-align: center;
 }
 
+#cards{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#imgcard {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+}
+
+/* animazione card*/
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+  
+
+.card {
+    background: #F1FAEE;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+  }
+  
+  
+  
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #1D3557, #3c67e3 43%, #E63946);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
+/* fine animazione card*/
 
 #footer {
     background-color: #F1FAEE;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
     border-radius: 5px;
 
 }
+
+
+
+
+
+#carousel {
+position: relative;
+height: 500px;
+margin: auto 0; /* Center the carousel horizontally and add margin-top */
+overflow: hidden;
+padding: 2%;
+}
+
+#carousel div {
+position: absolute;
+transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+opacity: 1;
+}
+
+#carousel div img {
+width: 30vw;
+max-width: 400px; /* Set a maximum width for the images */
+height: auto; /* Maintain aspect ratio */
+transition: width 1s;
+}
+
+#carousel div.hideLeft {
+left: 0%;
+opacity: 0;
+transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideLeft img {
+    width: 20vw;
+}
+
+
+#carousel div.hideRight {
+left: 100%;
+opacity: 0;
+transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideRight img {
+    width: 20vw;
+}
+
+
+#carousel div.prev {
+z-index: 5;
+left: 30%;
+transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.prev img {
+    width: 25vw;
+}
+
+
+#carousel div.prevLeftSecond {
+z-index: 4;
+left: 15%;
+transform: translateY(50%) translateX(-50%);
+opacity: 0.7;
+}
+
+#carousel div.prevLeftSecond img {
+    width: 20vw;
+}
+
+
+#carousel div.selected {
+z-index: 10;
+left: 50%;
+transform: translateY(0px) translateX(-50%);
+}
+
+#carousel div.next {
+z-index: 5;
+left: 70%;
+transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.next img {
+    width: 25vw;
+}
+
+
+#carousel div.nextRightSecond {
+z-index: 4;
+left: 85%;
+transform: translateY(50%) translateX(-50%);
+opacity: 0.7;
+}
+
+#carousel div.nextRightSecond img {
+    width: 20vw;
+}
+
+
+/* Add this to center the buttons */
+.buttonscar {
+position: relative;
+text-align: center;
+margin-top: 2%; /* Adjust the margin as needed */
+}
+
+.buttonscar button {
+    margin: 0 1%; /* Add spacing between buttons */
+    margin-bottom: 1%;
+  }
