@@ -76,11 +76,36 @@ document.addEventListener('DOMContentLoaded', function () {
         if (metadata.hasOwnProperty(category)) {
           const tabPane = document.getElementById(category);
           if (tabPane) {
-            tabPane.innerHTML = createListFromMetadata(metadata[category], category);
-            // Aggiungi gestione dell'evento di clic per i link dei metadati
-            tabPane.querySelectorAll('a').forEach(link => {
-              link.addEventListener('click', handleMetadataLinkClick);
-            });
+            // Controllo se la categoria è "metadata"
+            if (category === "metadata") {
+              const title = metadata[category][0]["Title"];
+              const author = metadata[category][0]["Authors"];
+              const date = metadata[category][0]["Date of publication"];
+              const sourceUrl = metadata[category][0]["Source"];
+
+              // Verifica e gestisce il titolo
+              const titleHtml = title ? `<p><strong>Title:</strong> ${title}</p>` : '';
+
+              // Verifica e gestisce l'autore
+              const authorHtml = author ? `<p><strong>Author(s):</strong> ${author}</p>` : '';
+
+              // Verifica e gestisce la data di pubblicazione
+              const dateHtml = date ? `<p><strong>Date of publication:</strong> ${date}</p>` : '';
+
+              // Verifica e gestisce l'URL di "Source"
+              const sourceLinkHtml = sourceUrl ? `<p><strong>Source:</strong> <a href="${sourceUrl}" target="_blank">click here</a></p>` : '';
+
+              // Combinazione di tutte le informazioni
+              const metadataHtml = titleHtml + authorHtml + dateHtml + sourceLinkHtml;
+
+              tabPane.innerHTML = metadataHtml;
+            } else {
+              tabPane.innerHTML = createListFromMetadata(metadata[category], category);
+              // Aggiungi gestione dell'evento di clic per i link dei metadati
+              tabPane.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', handleMetadataLinkClick);
+              });
+            }
           }
         }
       }
