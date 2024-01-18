@@ -169,6 +169,7 @@ body {
 
 .dropdown-submenu {
     position: relative;
+    color: rgb(125, 77, 0) !important;
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -182,6 +183,7 @@ body {
 .dropdown-submenu:hover .dropdown-menu {
     display: block; /* Display the submenu on hover */
     font-size: 20px;
+    color: rgb(125, 77, 0) !important;
 }
 
 /* insertion */
@@ -270,7 +272,7 @@ p {
 
 
 #space {
-    height: 21rem; 
+    height: 23vw; 
 }
 
 .tab-content {
@@ -494,7 +496,7 @@ caption {
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -75%;
+    margin-top: -70%;
     }
 
 .stitle {
@@ -662,5 +664,9 @@ caption {
 
 /*Immagine Chiara */
 .background-svg {
+    display: none;
+}
+
+#header-2030 {
     display: none;
 }
