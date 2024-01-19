@@ -134,6 +134,7 @@
 }
 
 body {
+    cursor: url('img/geronimo/penoa.png'), auto;
     background-image: url('img/geronimo/pattern.png');
     background-size: auto; /* Adjust as needed */
     background-repeat: repeat; /* Prevent image from repeating */
@@ -163,6 +164,7 @@ body {
 .dropdown-menu {
     background-image: url('img/geronimo/cheese.jpg');
     font-size: 20px;
+    color: rgb(0, 250, 179) !important;
 }
 
 /* insertion */
@@ -217,10 +219,6 @@ body {
     height: 490px;
  }
 
-#footer {
-    background-image: url('img/geronimo/cheese.jpg');
-    background-size: cover;
-}
 
 
 p {
@@ -293,24 +291,24 @@ p {
 
 /* personalizzazione bottoni metadatati*/
 .nav-item {
-    cursor: url('img/medieval/Manicula (1).png'), auto !important;
+    cursor: url('img/geronimo/penoa.png'), auto !important;
     font-family: 'Animated' !important;
     font-size: 20px;
-    color: rgb(125, 77, 0) !important;
+    color: rgb(185, 0, 0) !important;
 }
 
 .nav-link {
-    cursor: url('img/medieval/Manicula (1).png'), auto;
-    color: rgb(125, 69, 0) !important;
+    cursor: url('img/geronimo/penoa.png'), auto;
+    color: rgb(185, 0, 0) !important;
 }
 
 .nav-link:hover {
-    cursor: url('img/medieval/Manicula (1).png'), auto !important;
-    color:  rgb(0, 65, 196) !important;
+    cursor: url('img/geronimo/penoa.png'), auto !important;
+    color:  rgb(0, 142, 5) !important;
   }
 
 .tab-content {
-    cursor: url('img/medieval/Manicula (1).png'), auto !important;
+    cursor: url('img/geronimo/penoa.png'), auto !important;
     padding-top: 10px;
     display: flex;
     flex-direction: column;
@@ -323,14 +321,14 @@ p {
 .tab-pane li a{
     font-family: 'Animated';
     font-size: 22px;
-    cursor: url('img/medieval/Manicula (1).png'), auto !important;
+    cursor: url('img/geronimo/penoa.png'), auto !important;
     color:  rgb(0, 65, 196) !important;
 }
 
 #metadata {
     font-family: 'Animated';
     font-size: 22px;
-    cursor: url('img/medieval/Manicula (1).png'), auto !important;
+    cursor: url('img/geronimo/penoa.png'), auto !important;
     color:   rgb(0, 65, 196) !important;
 }
 
@@ -496,7 +494,7 @@ caption {
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -70%;
+    margin-top: -75%;
     }
 
 .stitle {
@@ -669,4 +667,19 @@ caption {
 
 #header-2030 {
     display: none;
+}
+
+#footer {
+    background-image: url('img/geronimo/cheese.jpg');
+    background-size: cover;
+}
+
+#text-f {
+   padding-left: 0%;
+   padding-right: 0%;
+}
+
+#text-center-f {
+    text-align: center;
+    padding-top: 2%;
 }

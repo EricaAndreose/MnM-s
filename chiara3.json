@@ -18,15 +18,17 @@
       "José A. Rodríguez-Quiles y García": 1,
       "Konstantina Dogani": 1,
       "Edgard Willems": 1,
-      "Mozart": 1,
-      "Pavarotti": 1
+      "Wolfgang Amadeus Mozart": 1,
+      "Luciano Pavarotti": 1,
+      "Alexandra Kertz-Welzel": 2
     },
     {
       "José A. Rodríguez-Quiles y García": "JARQG",
       "Konstantina Dogani": "KD",
       "Edgard Willems": "EW",
-      "Mozart": "WAM",
-      "Pavarotti": "LP"
+      "Wolfgang Amadeus Mozart": "WAM",
+      "Luciano Pavarotti": "LP",
+      "Alexandra Kertz-Welzel": "AKW"
     }
   ],
   "places": [
@@ -36,7 +38,7 @@
       "Belgium": 2,
       "Croatia": 2,
       "Czech Republic": 2,
-      "Estonia": 5,
+      "Estonia": 6,
       "Finland": 1,
       "France": 4,
       "Germany": 4,
