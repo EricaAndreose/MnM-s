@@ -368,6 +368,14 @@ body {
     border: 2px solid #ffffff;
 }
 
+a {
+    color: rgba(242, 155, 4, 1);
+}
+
+a:hover {
+    color: rgb(4, 4, 4);
+}
+
 #space {
     height: 40vh; 
 }
