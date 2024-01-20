@@ -38,11 +38,11 @@ body {
     background-image: url(img/thirties/Woman1.png);
     position: absolute;
     background-repeat: no-repeat;
-    z-index: 98; /* Assicurati che sia sopra tutti gli altri elementi */
+    z-index: 8; /* Assicurati che sia sopra tutti gli altri elementi */
     width: 35%;
-    height: 100%;
+    height: 94.4%;
     right: 0;
-    top: 0;
+    top: 80px;
     image-rendering: optimizeQuality;
 }
 
@@ -70,6 +70,7 @@ body {
     border-radius: 5px;
     background-color: rgb(209, 195, 177) ;
     border: 2px rgb(4, 4, 4);
+    z-index: 10;
 }
 
 .navbar {
@@ -80,13 +81,7 @@ body {
     z-index: 5;
 }
 
-.sticky-top {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 98;
 
-}
 
 .dropdown-menu {
     background-color: rgb(209, 195, 177) ;
@@ -123,7 +118,7 @@ body {
     margin-right: 1cm;
     height: 40vw;
     position: relative;
-    z-index: 99;
+    z-index: 9;
     border: 2px rgb(4, 4, 4);
 }
 
@@ -267,11 +262,16 @@ body {
     font-family:'Semplicita';
 }
 .article img {
-    background-color: rgba(0, 0, 0, 0.5); /* Sfondo grigio trasparente */
-    mix-blend-mode: luminosity; /* Applica lo sfondo grigio solo alle parti colorate dell'immagine */
+    background-color: rgba(0, 0, 0, 0.5); 
+    mix-blend-mode: luminosity; 
     max-width: 100%;
     height: auto;
-    border: 2px rgb(4, 4, 4);
+    border: 2px solid rgb(4, 4, 4);
+    filter: sepia(60%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; 
     
     
     
@@ -405,13 +405,6 @@ table tr td, table tr th{
     font-family: 'Semplicita';
 }
 
-.content img { 
-    filter: sepia(60%);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
 
 #header-2030 {
     display: none;
