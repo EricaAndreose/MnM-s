@@ -163,7 +163,7 @@ body {
     background-image: url('img/medieval/02.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 40vw;
+    height: 42vw;
     overflow-y: auto; /* or overflow-y: scroll; */
     padding: 5%;
 }
