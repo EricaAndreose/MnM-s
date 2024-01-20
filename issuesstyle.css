@@ -156,7 +156,7 @@ body {
 
 
 #space {
-    height: 17rem; 
+    height: 17vw; 
 }
 
 .image-container {
@@ -210,7 +210,7 @@ body {
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -75%;
+    margin-top: -65%;
     }
 
 .stitle {
