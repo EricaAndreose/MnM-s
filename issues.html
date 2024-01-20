@@ -1,302 +1,349 @@
 <!DOCTYPE html>
 <html lang="eng">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta name="DC.Title" content="MnM's - Music and Maps Magazine">
-            <meta name="DC.Creator" content="Erica Andreose, Gaia Ortona, Chiara Parravicini">
-            <meta name="DC.Subject" content="Digital Online Magazine">
-            <meta name="DC.Description" content="Information Modeling and Web Technologies project">
-            <meta name="DC.Publisher" content="Alma mater studiorum - Universita di Bologna, Information Modeling and Web Technologies">
-            <meta name="DC.Date" content="2023-14-08">
-            <meta name="DC.Type" content="Website">
-            <meta name="DC.Format" content="HTML/CSS/JS">
-            <meta name="DC.Identifier" content="https://ericaandreose.github.io/MnM-s/"> <!--add website URL-->
-            <meta name="DC.Language" content="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="DC.Title" content="MnM's - Music and Maps Magazine">
+    <meta name="DC.Creator" content="Erica Andreose, Gaia Ortona, Chiara Parravicini">
+    <meta name="DC.Subject" content="Digital Online Magazine">
+    <meta name="DC.Description" content="Information Modeling and Web Technologies project">
+    <meta name="DC.Publisher" content="Alma mater studiorum - Universita di Bologna, Information Modeling and Web Technologies">
+    <meta name="DC.Date" content="2023-14-08">
+    <meta name="DC.Type" content="Website">
+    <meta name="DC.Format" content="HTML/CSS/JS">
+    <meta name="DC.Identifier" content="https://ericaandreose.github.io/MnM-s/"> <!--add website URL-->
+    <meta name="DC.Language" content="en">
 
-            <!--link Bootstrap icons-->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-            <!--link google icons-->
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <!--link favicon per loghetto -->
-            <link rel="icon" href="img/m.png" type="img/jpg"/>
-            <!--link font google-->
-            <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
-            
-            <!--CSS of Bootstrap-->
-            <link rel="stylesheet" type="text/css" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
-            <!-- css link -->
-            <link rel="stylesheet" id="style-link" href="issuesstyle.css">
-            <!-- CSS of Leaflet-->
+    <!--link Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--link google icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--link favicon per loghetto -->
+    <link rel="icon" href="img/m.png" type="img/jpg"/>
+    <!--link font google-->
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    
+    <!--CSS of Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    
+    <!-- css link -->
+    <link rel="stylesheet" id="style-link" href="issuesstyle.css">
+    <!-- CSS of Leaflet-->
 
-            <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet' />
 
-            <title>MnM's Magazine</title>
+    <title>MnM's Magazine</title>
 
-            <style>
-              @media (max-width: 991px) {
-                .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-                  display: block;
-                }
-              }
-            </style>            
-        </head>
+    <style>
+      @media (max-width: 991px) {
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+          display: block;
+        }
+      }
+    </style>            
+  </head>
         
-          <body>
-            <!-- gif animated -->
-            <div class="container-fluid" id="gif">
-                <img src="img/mnmsgif.gif" alt="title GIF" id="gifimage">
-            </div>
-            <!-- subtitle -->
-            <div class="container-fluid-nav sticky-top" id="subtitle">
-                <h4 class="title-4">Music and Maps Magazine</h4>
-            
-                <!-- start of the NAVBAR -->
-                <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="documentation.html">Documentation</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="issues.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Issues
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li class="nav-item dropdown-submenu">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Music and Tech
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
-                              <li><a class="dropdown-item jsart" data-article="erica1.html">Covid</a></li>
-                              <li><a class="dropdown-item jsart" data-article="erica2.html">Music Learning</a></li>
-                              <li><a class="dropdown-item jsart" data-article="erica3.html">Shazam</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown-submenu">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Music and Context
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
-                              <li><a class="dropdown-item jsart" data-article="chiara1.html">Music genre classification</a></li>
-                              <li><a class="dropdown-item jsart" data-article="chiara2.html">Funeral music comparison</a></li>
-                              <li><a class="dropdown-item jsart" data-article="chiara3.html">Music in schools</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown-submenu">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Music and Fashion
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
-                              <li><a class="dropdown-item jsart" data-article="gaia1.html">Music and fashion through history</a></li>
-                              <li><a class="dropdown-item jsart" data-article="gaia2.html">Music and African fashion</a></li>
-                              <li><a class="dropdown-item jsart" data-article="gaia3.html">Music and gender-bending fashion</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Styles
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item jsstyle" data-style="issuesstyle.css" data-src="img/lp.png" map-style="mapbox://styles/ericaandreose/clr5fspy401hb01qr7elchsk7">Default</a></li>
-                          <li><a class="dropdown-item jsstyle" data-style="medievalissues.css" data-src="img/medieval/Wheel.png" map-style="mapbox://styles/ericaandreose/clqvgxzcs00zv01o36el44ju0">1500</a></li>
-                          <li><a class="dropdown-item jsstyle" data-style="provaOttocento.css" data-src="img/artnouveau/discoArtNouveau.png" map-style="mapbox://styles/ericaandreose/clr5e1o3701h601qwar1jf6de">1800</a></li>
-                          <li><a class="dropdown-item jsstyle" data-style="anni30gaia.css" data-src="img/thirties/222c4899ec414668aacf03aecbc1a33d-fotor-20231205163932.png" map-style="mapbox://styles/ericaandreose/clr5er6ln01hc01qwf9wk9bzo">1930</a></li>
-                          <li><a class="dropdown-item jsstyle" data-style="provaSeventies.css" data-src="img/seventies/discoSeventies.png" map-style="mapbox://styles/ericaandreose/clr5f0o6f01fn01pj8qt9d5yb">1970</a></li>
-                          <li><a class="dropdown-item jsstyle" data-style="geronimo.css" data-src="img/geronimo/cerchio.png" map-style="mapbox://styles/ericaandreose/clpmid6ux00yn01po7jjfgs7y">2000</a></li>
-                          <li><a class="dropdown-item jsstyle" data-style="2030gaia.css" data-src="img/2030img/vinile2030.png" map-style="mapbox://styles/ericaandreose/clr5f4cdf00is01pd53ts6dcf">2030</a></li>
-                        </ul>
-                      </li>
+  <body>
+    <!-- gif animated -->
+    <div class="container-fluid" id="gif">
+        <img src="img/mnmsgif.gif" alt="title GIF" id="gifimage">
+    </div>
+    <!-- subtitle -->
+    <div class="container-fluid-nav sticky-top" id="subtitle">
+      <h4 class="title-4">Music and Maps Magazine</h4>
+
+      <!-- start of the NAVBAR -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="documentation.html">Documentation</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Issues
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="nav-item dropdown-submenu">
+                    <a class="nav-link dropdown-toggle" onclick="window.location.href='issues.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Music and Tech
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
+                      <li><a class="dropdown-item jsart" data-article="erica1.html">Covid</a></li>
+                      <li><a class="dropdown-item jsart" data-article="erica2.html">Music Learning</a></li>
+                      <li><a class="dropdown-item jsart" data-article="erica3.html">Shazam</a></li>
                     </ul>
-                  </div>
-                </div>
-                </nav>
-            </div>
+                  </li>
+                  <li class="nav-item dropdown-submenu">
+                    <a class="nav-link dropdown-toggle" onclick="window.location.href='issues.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Music and Context
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
+                      <li><a class="dropdown-item jsart" data-article="chiara1.html">Music genre classification</a></li>
+                      <li><a class="dropdown-item jsart" data-article="chiara2.html">Funeral music comparison</a></li>
+                      <li><a class="dropdown-item jsart" data-article="chiara3.html">Music in schools</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown-submenu">
+                    <a class="nav-link dropdown-toggle" onclick="window.location.href='issues.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Music and Fashion
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
+                      <li><a class="dropdown-item jsart" data-article="gaia1.html">Music and fashion through history</a></li>
+                      <li><a class="dropdown-item jsart" data-article="gaia2.html">Music and African fashion</a></li>
+                      <li><a class="dropdown-item jsart" data-article="gaia3.html">Music and gender-bending fashion</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Styles
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item jsstyle" data-style="issuesstyle.css" data-src="img/lp.png" map-style="mapbox://styles/ericaandreose/clr5fspy401hb01qr7elchsk7">Default</a></li>
+                  <li><a class="dropdown-item jsstyle" data-style="medievalissues.css" data-src="img/medieval/Wheel.png" map-style="mapbox://styles/ericaandreose/clqvgxzcs00zv01o36el44ju0">1500</a></li>
+                  <li><a class="dropdown-item jsstyle" data-style="provaOttocento.css" data-src="img/artnouveau/discoArtNouveau.png" map-style="mapbox://styles/ericaandreose/clr5e1o3701h601qwar1jf6de">1800</a></li>
+                  <li><a class="dropdown-item jsstyle" data-style="anni30gaia.css" data-src="img/thirties/222c4899ec414668aacf03aecbc1a33d-fotor-20231205163932.png" map-style="mapbox://styles/ericaandreose/clr5er6ln01hc01qwf9wk9bzo">1930</a></li>
+                  <li><a class="dropdown-item jsstyle" data-style="provaSeventies.css" data-src="img/seventies/discoSeventies.png" map-style="mapbox://styles/ericaandreose/clr5f0o6f01fn01pj8qt9d5yb">1970</a></li>
+                  <li><a class="dropdown-item jsstyle" data-style="geronimo.css" data-src="img/geronimo/cerchio.png" map-style="mapbox://styles/ericaandreose/clpmid6ux00yn01po7jjfgs7y">2000</a></li>
+                  <li><a class="dropdown-item jsstyle" data-style="2030gaia.css" data-src="img/2030img/vinile2030.png" map-style="mapbox://styles/ericaandreose/clr5f4cdf00is01pd53ts6dcf">2030</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end navbar-->
+    </div>
 
             
 
-            <br>
-            <br>
+    <br>
+    <br>
 
+    <!-- music box start -->
+    <div class="image-container" id="space">
+      <div id="stick">
+          <img src="img/arm2.png" class="img-fluid" id="move">
+      </div>
+      <div id="Vinyl">
+          <img src="img/lp.png" class="img-fluid" id="rotate">
+      </div>
 
-            <div class="image-container" id="space">
-              <div id="stick">
-                  <img src="img/arm2.png" class="img-fluid" id="move">
-              </div>
-              <div id="Vinyl">
-                  <img src="img/lp.png" class="img-fluid" id="rotate">
-              </div>
+      <div class="music-container" id="music-container">
+        <h6 class="stitle" id="title">1500 - Gaga</h6>
+        <audio src="./songs/1500 - Gaga.mp3" id="audio"></audio>
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="bi bi-skip-backward-circle-fill"></i>
+          </button>
+          <button id="js-rotate" class="action-btn action-btn-big">
+            <i class="bi bi-play-circle-fill"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="bi bi-skip-forward-circle-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- music box end -->
 
-              <div class="music-container" id="music-container">
-                <h6 class="stitle" id="title">1500 - Gaga</h6>
-                <audio src="./songs/1500 - Gaga.mp3" id="audio"></audio>
-                <div class="navigation">
-                  <button id="prev" class="action-btn">
-                    <i class="bi bi-skip-backward-circle-fill"></i>
-                  </button>
-                  <button id="js-rotate" class="action-btn action-btn-big">
-                    <i class="bi bi-play-circle-fill"></i>
-                  </button>
-                  <button id="next" class="action-btn">
-                    <i class="bi bi-skip-forward-circle-fill"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div id="image-gaia-2" ></div>
-            <div class="background-svg">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 170 300 800" width="100%" height="100%">
-                <path class="line" d="M 100 100 C 10 100, 10 200, 100 200 L 190 200 C 280 200, 280 300, 190 300 L 100 300 C 10 300, 10 400, 100 400 L 190 400 C 280 400, 280 500, 190 500 C 100 500, 100 600, 190 600 L 280 600" fill="none" stroke="#67aba0" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" />
-            
-                <path class="line" d="M 100 120 C 10 120, 10 220, 100 220 L 190 220 C 280 220, 280 320, 190 320 L 100 320 C 10 320, 10 420, 100 420 L 190 420 C 280 420, 280 520, 190 520 C 100 520, 100 620, 190 620 L 280 620" fill="none" stroke="#deb433" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" />
-            
-                <path class="line" d="M 100 140 C 10 140, 10 240, 100 240 L 190 240 C 280 240, 280 340, 190 340 L 100 340 C 10 340, 10 440, 100 440 L 190 440 C 280 440, 280 540, 190 540 C 100 540, 100 640, 190 640 L 280 640" fill="none" stroke="#d8651c" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" />
-            
-                <path class="line" d="M 100 160 C 10 160, 10 260, 100 260 L 190 260 C 280 260, 280 360, 190 360 L 100 360 C 10 360, 10 460, 100 460 L 190 460 C 280 460, 280 560, 190 560 C 100 560, 100 660, 190 660 L 280 660" fill="none" stroke="#ab2e20" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" />
-              </svg>
-            </div>
-            <div id="image-gaia-3"></div>
-            <div id="image-gaia-4"></div>
+    <div id="image-gaia-2" ></div>
+    <div class="background-svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 170 300 800" width="100%" height="100%">
+        <path class="line" d="M 100 100 C 10 100, 10 200, 100 200 L 190 200 C 280 200, 280 300, 190 300 L 100 300 C 10 300, 10 400, 100 400 L 190 400 C 280 400, 280 500, 190 500 C 100 500, 100 600, 190 600 L 280 600" fill="none" stroke="#67aba0" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" />
+    
+        <path class="line" d="M 100 120 C 10 120, 10 220, 100 220 L 190 220 C 280 220, 280 320, 190 320 L 100 320 C 10 320, 10 420, 100 420 L 190 420 C 280 420, 280 520, 190 520 C 100 520, 100 620, 190 620 L 280 620" fill="none" stroke="#deb433" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" />
+    
+        <path class="line" d="M 100 140 C 10 140, 10 240, 100 240 L 190 240 C 280 240, 280 340, 190 340 L 100 340 C 10 340, 10 440, 100 440 L 190 440 C 280 440, 280 540, 190 540 C 100 540, 100 640, 190 640 L 280 640" fill="none" stroke="#d8651c" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" />
+    
+        <path class="line" d="M 100 160 C 10 160, 10 260, 100 260 L 190 260 C 280 260, 280 360, 190 360 L 100 360 C 10 360, 10 460, 100 460 L 190 460 C 280 460, 280 560, 190 560 C 100 560, 100 660, 190 660 L 280 660" fill="none" stroke="#ab2e20" stroke-miterlimit="10" stroke-width="20" stroke-opacity="0.9" />
+      </svg>
+    </div>
+    <div id="image-gaia-3"></div>
+    <div id="image-gaia-4"></div>
 
           
 
-            <div class="container-fluid">
-              <div class="row" id="main">                
-                <div class="col-md-3">
-                  <div id="asideLeft" class="sticky">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="map-tab" data-bs-toggle="tab" data-bs-target="#map" type="button" role="tab" aria-controls="map" aria-selected="true">Map</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="metadata-tab" data-bs-toggle="tab" data-bs-target="#metadata" type="button" role="tab" aria-controls="metadata" aria-selected="flase">Metadata</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="people-tab" data-bs-toggle="tab" data-bs-target="#people" type="button" role="tab" aria-controls="people" aria-selected="false">People</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="places-tab" data-bs-toggle="tab" data-bs-target="#places" type="button" role="tab" aria-controls="places" aria-selected="false">Places</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="keywords-tab" data-bs-toggle="tab" data-bs-target="#keywords" type="button" role="tab" aria-controls="keywords" aria-selected="false">Keywords</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="references-tab" data-bs-toggle="tab" data-bs-target="#references" type="button" role="tab" aria-controls="references" aria-selected="false">Ref.</button>
-                      </li>
-                    </ul>
+    <div class="container-fluid">
+      <div class="row" id="main">                
+        <div class="col-md-3">
+          <div id="asideLeft" class="sticky">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="map-tab" data-bs-toggle="tab" data-bs-target="#map" type="button" role="tab" aria-controls="map" aria-selected="true">Map</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="metadata-tab" data-bs-toggle="tab" data-bs-target="#metadata" type="button" role="tab" aria-controls="metadata" aria-selected="flase">Metadata</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="people-tab" data-bs-toggle="tab" data-bs-target="#people" type="button" role="tab" aria-controls="people" aria-selected="false">People</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="places-tab" data-bs-toggle="tab" data-bs-target="#places" type="button" role="tab" aria-controls="places" aria-selected="false">Places</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="keywords-tab" data-bs-toggle="tab" data-bs-target="#keywords" type="button" role="tab" aria-controls="keywords" aria-selected="false">Keywords</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="references-tab" data-bs-toggle="tab" data-bs-target="#references" type="button" role="tab" aria-controls="references" aria-selected="false">Ref.</button>
+              </li>
+            </ul>
 
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                      <div class="tab-pane active" id="map" role="tabpanel" aria-labelledby="map-tab" tabindex="0"><div id="map-box"></div></div>
-                      <div class="tab-pane" id="metadata" role="tabpanel" aria-labelledby="metadata-tab" tabindex="0"></div>
-                      <div class="tab-pane" id="people" role="tabpanel" aria-labelledby="people-tab" tabindex="0"></div>
-                      <div class="tab-pane" id="places" role="tabpanel" aria-labelledby="places-tab" tabindex="0"></div>
-                      <div class="tab-pane" id="keywords" role="tabpanel" aria-labelledby="keywords-tab" tabindex="0"></div>
-                      <div class="tab-pane" id="references" role="tabpanel" aria-labelledby="references-tab" tabindex="0"></div>
-                    </div>
-
-                  </div>
-                </div>
-              <div class="col-md-9" id="externalContentColumn">
-              </div>
-              <br><br>         
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="map" role="tabpanel" aria-labelledby="map-tab" tabindex="0"><div id="map-box"></div></div>
+              <div class="tab-pane" id="metadata" role="tabpanel" aria-labelledby="metadata-tab" tabindex="0"></div>
+              <div class="tab-pane" id="people" role="tabpanel" aria-labelledby="people-tab" tabindex="0"></div>
+              <div class="tab-pane" id="places" role="tabpanel" aria-labelledby="places-tab" tabindex="0"></div>
+              <div class="tab-pane" id="keywords" role="tabpanel" aria-labelledby="keywords-tab" tabindex="0"></div>
+              <div class="tab-pane" id="references" role="tabpanel" aria-labelledby="references-tab" tabindex="0"></div>
             </div>
+
+          </div>
         </div>
-            
-            <br>
-            <br>
+        <div class="col-md-9" id="externalContentColumn">
 
-            <footer>
 
-              <div id="header-2030">
-                <link rel="stylesheet" type="text/css" href="wave2030.css">
-            
-                <!--Waves Container-->
-                <div>
-            
-                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                        <g class="parallax">
-                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255, 77, 0, 0.7)" />
-                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255, 213, 0, 0.5)" />
-                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255, 77, 0, 0.3)" />
-                            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(242, 155, 4, 1)" />
-                        </g>
-                        <defs>
-                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                        </defs>
-                        
-                    </svg>
-                </div>
-                <!--Waves end-->
-                
-            </div>
+          <div class="container-fluid">
+            <div class="row" id="main">  
+              <h1 id="issues-titles">Issues</h1>
+          
+              <div class="col-md-12 text-center">
+                <!-- Center the carousel -->
+                <div id="carousel">
+          
+                  <div class="prev" id="issue1">
+                    <div id="container-titles">
+                      <h4>Music and Technologies</h4>
+                      <p id="layout"><a class="jsart" data-article="erica1.html">How technology Is Helping The Live Music industry Respond To Covid</a></p>
+                      <p id="layout"><a class="jsart" data-article="erica2.html">Technology Use and Attitudes in Music Learning</a></p>
+                      <p id="layout"><a class="jsart" data-article="erica3.html">How does Shazam work? Music Recognition algorithms, Fingerprinting, and Processing</a></p>
+                    </div>
+                  </div>
               
-              <div class="container-fluid">
-                  <div class="row" id="footer">
-                      <div class="col-md-1"></div>
-                      <div class="col-md-4">
-                          <br>
-                          <p id="text-f">Music and Maps Magazine it's a DHDK project for the exam of Information Modeling and Web Techinologies held by Professor Fabio Vitali.</p>
-                          <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a>
-                          <br>
-                          <p id="text-f">This work is distributed with the license <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons Attribuzione - Non commerciale - Non opere derivate 3.0 Unported</a>.</p>
-                          <a href="#gifimage"><button type="button" class="btn btn-outline-dark btn-sm" id="bottone">Back to the top</button></a>
-                          <br>
-                          <br>
-                      </div>
-                      <div class="col-md-2"></div>
-                      <div class="col-md-4">
-                          <br>
-                          <h3 class="title-3">Contact</h3>
-                          <p id="text-f"><a href="https://www.unibo.it/it" target="_blank">Alma Mater Studiorum Università di Bologna</a></p>
-                          <p id="text-f"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" target="_blank">Digital Humanities and Digital Knowledge</a></p>
-                          <p id="text-f"><a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/454464" target="_blank">Information Modeling and Web Technologies</a></p>
+                  <div class="selected" id="issue2">
+                    <div id="container-titles">
+                      <h4>Music and Context</h4>
+                      <p id="layout"><a class="jsart" data-article="chiara1.html">A robust music genre classification approach for global and regional music datasets evaluation</a></p>
+                      <p id="layout"><a class="jsart" data-article="chiara2.html">A Comparison of Music Characteristics of Funeral Music from Croatia, the Netherlands, and the United Kingdom</a></p>
+                      <p id="layout"><a class="jsart" data-article="chiara3.html">Music in schools across Europe: analysis, interpretation and guidelines for music education in the framework of the European Union</a></p>
+                    </div>
+                  </div>
+              
+                  <div class="next" id="issue3">
+                    <div id="container-titles">
+                      <h4>Music and Fashion</h4>
+                      <p id="layout"><a class="jsart" data-article="gaia1.html">A Timeline of music's influence over fashion</a></p>
+                      <p id="layout"><a class="jsart" data-article="gaia2.html">How Afrobeats Artists Are Using Fashion To Tell Us Who They Are</a></p>
+                      <p id="layout"><a class="jsart" data-article="gaia3.html">How Prince-s Androgynous Genius Changed the Way We Think About Music and Gender</a></p>
+                    </div>
+                  </div>
+              
+                </div>
+                
+                <div class="buttonscar">
+                  <button type="button" class="btn btn-outline-dark" id="prev-btn">Prev</button>
+                  <button type="button" class="btn btn-outline-dark" id="next-btn">Next</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+            
+    <br>
+    <br>
+
+    <footer>
+
+      <div id="header-2030">
+      <link rel="stylesheet" type="text/css" href="wave2030.css">
+    
+        <!--Waves Container-->
+        <div>
+    
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255, 77, 0, 0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255, 213, 0, 0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255, 77, 0, 0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(242, 155, 4, 1)" />
+            </g>
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs> 
+          </svg>
+        </div>
+        <!--Waves end-->
+        
+      </div>
+              
+      <div class="container-fluid">
+        <div class="row" id="footer">
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <br>
+            <p id="text-f">Music and Maps Magazine it's a DHDK project for the exam of Information Modeling and Web Techinologies held by Professor Fabio Vitali.</p>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a>
+            <br>
+            <p id="text-f">This work is distributed with the license <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons Attribuzione - Non commerciale - Non opere derivate 3.0 Unported</a>.</p>
+            <a href="#gifimage"><button type="button" class="btn btn-outline-dark btn-sm" id="bottone">Back to the top</button></a>
+            <br>
+            <br>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <br>
+            <h3 class="title-3">Contact</h3>
+            <p id="text-f"><a href="https://www.unibo.it/it" target="_blank">Alma Mater Studiorum Università di Bologna</a></p>
+            <p id="text-f"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" target="_blank">Digital Humanities and Digital Knowledge</a></p>
+            <p id="text-f"><a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/454464" target="_blank">Information Modeling and Web Technologies</a></p>
+          </div>
+          <div class="col-md-1"></div>
+            <p id="text-center-f">&copy; Copyright 2023 Erica Andreose, Gaia Ortona, Chiara Parravicini - IMWT project - DHDK - Alma Mater Studiorum Bologna</p>
+        </div>   
+      </div>        
+    </footer>
+
+
+    <!-- JS of Bootstrap-->
   
-                      </div>
-                      <div class="col-md-1"></div>
-                      <p id="text-center-f">&copy; Copyright 2023 Erica Andreose, Gaia Ortona, Chiara Parravicini - IMWT project - DHDK - Alma Mater Studiorum Bologna</p>
-                  </div>   
-              </div>        
-            </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" 
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" 
+    crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    
 
+    
+    <!-- js file of Leaflet -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script>
 
-            <!-- JS of Bootstrap-->
-            
-            <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" 
-            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" 
-            crossorigin="anonymous">
-            </script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-            <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
-
-            
-            <!-- js file of Leaflet -->
-            <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script>
- 
-            <!-- our js files -->
-            <script src="tryajax.js"></script>
-            
-            <script src="changeStyle.js"></script>
-            <script src="rotation.js"></script>
-            <script src="rotate.js"></script>
-            <script src="app.js"></script>
-            
-            <script src="locmap.js"></script>
-            
+    <!-- our js files -->
+    <script src="tryajax.js"></script>
+    
+    <script src="changeStyle.js"></script>
+    <script src="rotation.js"></script>
+    <script src="rotate.js"></script>
+    <script src="app.js"></script>
+    <script src="carouselmove.js"></script>
+    <script src="locmap.js"></script>
+  
             
 
-          </body>
+  </body>
 
 </html>
