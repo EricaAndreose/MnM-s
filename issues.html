@@ -25,6 +25,7 @@
             
             <!--CSS of Bootstrap-->
             <link rel="stylesheet" type="text/css" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+            
             <!-- css link -->
             <link rel="stylesheet" id="style-link" href="issuesstyle.css">
             <!-- CSS of Leaflet-->
@@ -66,12 +67,12 @@
                         <a class="nav-link" href="documentation.html">Documentation</a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="issues.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Issues
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li class="nav-item dropdown-submenu">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Music and Tech
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
@@ -81,7 +82,7 @@
                             </ul>
                           </li>
                           <li class="nav-item dropdown-submenu">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Music and Context
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
@@ -91,7 +92,7 @@
                             </ul>
                           </li>
                           <li class="nav-item dropdown-submenu">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Music and Fashion
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
@@ -120,6 +121,7 @@
                   </div>
                 </div>
                 </nav>
+                <!-- end navbar-->
             </div>
 
             
@@ -209,6 +211,54 @@
                   </div>
                 </div>
               <div class="col-md-9" id="externalContentColumn">
+
+
+                <div class="container-fluid">
+                  <div class="row" id="main">  
+                    <h1 id="issues-titles">Issues</h1>
+                
+                    <div class="col-md-12 text-center">
+                      <!-- Center the carousel -->
+                      <div id="carousel">
+                
+                        <div class="prev" id="issue1">
+                          <div id="container-titles">
+                            <h4>Music and Technologies</h4>
+                            <p id="layout"><a class="jsart" data-article="erica1.html">How technology Is Helping The Live Music industry Respond To Covid</a></p>
+                            <p id="layout"><a class="jsart" data-article="erica2.html">Technology Use and Attitudes in Music Learning</a></p>
+                            <p id="layout"><a class="jsart" data-article="erica3.html">How does Shazam work? Music Recognition algorithms, Fingerprinting, and Processing</a></p>
+                          </div>
+                        </div>
+                   
+                        <div class="selected" id="issue2">
+                          <div id="container-titles">
+                            <h4>Music and Context</h4>
+                            <p id="layout"><a class="jsart" data-article="chiara1.html">A robust music genre classification approach for global and regional music datasets evaluation</a></p>
+                            <p id="layout"><a class="jsart" data-article="chiara2.html">A Comparison of Music Characteristics of Funeral Music from Croatia, the Netherlands, and the United Kingdom</a></p>
+                            <p id="layout"><a class="jsart" data-article="chiara3.html">Music in schools across Europe: analysis, interpretation and guidelines for music education in the framework of the European Union</a></p>
+                          </div>
+                        </div>
+                   
+                        <div class="next" id="issue3">
+                          <div id="container-titles">
+                            <h4>Music and Fashion</h4>
+                            <p id="layout"><a class="jsart" data-article="gaia1.html">A Timeline of music's influence over fashion</a></p>
+                            <p id="layout"><a class="jsart" data-article="gaia2.html">How Afrobeats Artists Are Using Fashion To Tell Us Who They Are</a></p>
+                            <p id="layout"><a class="jsart" data-article="gaia3.html">How Prince-s Androgynous Genius Changed the Way We Think About Music and Gender</a></p>
+                          </div>
+                        </div>
+                   
+                      </div>
+                      
+                      <div class="buttonscar">
+                        <button type="button" class="btn btn-outline-dark" id="prev-btn">Prev</button>
+                        <button type="button" class="btn btn-outline-dark" id="next-btn">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
               <br><br>         
             </div>
@@ -280,6 +330,7 @@
             </script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
             <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+            
 
             
             <!-- js file of Leaflet -->
@@ -292,7 +343,7 @@
             <script src="rotation.js"></script>
             <script src="rotate.js"></script>
             <script src="app.js"></script>
-            
+            <script src="carouselmove.js"></script>
             <script src="locmap.js"></script>
             
             
