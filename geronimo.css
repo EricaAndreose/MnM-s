@@ -683,3 +683,85 @@ caption {
     text-align: center;
     padding-top: 2%;
 }
+
+
+
+/* INDEX */
+
+#asideLeft h2{
+    font-family: 'sans';
+    text-align: center;
+    padding: 2%;
+    color: rgb(0, 93, 50);
+    text-transform:uppercase;
+}
+
+#asideLeft p{
+    padding: 0%;
+    line-height: 2.0;
+    
+}
+
+#center h1{
+    font-family: 'sans';
+    text-align: center;
+    padding: 2%;
+    color: rgb(221, 21, 6);
+    text-transform:uppercase;
+}
+
+#center p{
+    padding: 0%;
+    line-height: 2.0;
+}
+
+#asideRight h2{
+    font-family: 'sans';
+    text-align: center;
+    padding: 2%;
+    color: rgb(0, 93, 50);
+    text-transform:uppercase;
+}
+
+#asideRight p{
+    padding: 0%;
+    line-height: 2.0;
+}
+
+#cards{
+    margin-top: 5%;
+    z-index: 99999;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#imgcard{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+}
+
+.card{
+    background-image: url(img/geronimo/cheese.jpg);
+    background-size: cover;
+}
+
+.card-title{
+    font-family: 'Animated';
+    font-size: 32px;
+    text-align: center;
+}
+
+.card-body p{
+    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#start{
+    font-family: 'Sub';
+    font-size: 30px;
+    margin-bottom: 3%;
+}

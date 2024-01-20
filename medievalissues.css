@@ -22,7 +22,7 @@
 
 @font-face {
     font-family: 'latefifteen';
-    src: url(font/medieval/erica_font/Late_medieval-Regular.ttf);
+    src: url('font/medieval/erica_font/Late_medieval-Regular.ttf');
 }
 
 #image-gaia-2{
@@ -573,4 +573,80 @@ figcaption {
 
 #text-center-f{
     text-align: center;
+}
+
+
+/* INDEX */
+
+#asideLeft h2{
+    font-family: 'genzsch';
+    text-align: center;
+    padding: 2%;
+    color: rgb(0, 93, 50);
+}
+
+#asideLeft p{
+    padding: 0%;
+}
+
+#center h1{
+    font-family: 'genzsch';
+    text-align: center;
+    padding: 2%;
+    color: rgb(0, 0, 143);
+}
+
+#center p{
+    padding: 0%;
+}
+
+#asideRight h2{
+    font-family: 'genzsch';
+    text-align: center;
+    padding: 2%;
+    color: rgb(0, 93, 50);
+}
+
+#asideRight p{
+    padding: 0%;
+}
+
+#cards{
+    margin-top: 5%;
+    z-index: 99999;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#imgcard{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+}
+
+.card{
+    background-image: url(img/medieval/back.png);
+}
+
+.card-title{
+    font-family: '1492';
+    font-size: 32px;
+    text-align: center;
+    color: #621313;
+}
+
+.card-body p{
+    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer .col-md-4 h3{
+    font-family: 'genzsch';
+}
+
+#start{
+    font-family: '1492';
+    margin-bottom: 3%;
 }
