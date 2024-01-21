@@ -73,7 +73,7 @@ body {
 
 #externalContentColumn {
     background-color: #F1FAEE;
-    height: 40vw;
+    height: 80vh;
     overflow-y: auto; /* or overflow-y: scroll; */
     border-radius: 5px;
 }
@@ -152,13 +152,15 @@ body {
     flex-direction: column;
     overflow-y: auto;
     text-align: justify;
-    max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
-    max-width: 22vw; /* Set the desired maximum width for the text */
+    /* max-height: 33vw; Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+    /* max-width: 22vw; Set the desired maximum width for the text */
+    width: 100%;
+    max-height: 70vh;
 }
   
-.tab-pane {
-    max-height: 100%; /* Consente al contenuto dei tab di espandersi completamente all'interno del container */
-}
+/* .tab-pane {
+    max-height: 100%; Consente al contenuto dei tab di espandersi completamente all'interno del container
+} */
 
 #map-box { 
     width: 100%;
@@ -212,7 +214,7 @@ body {
 
 
 .button1 {
-    position: absolute;
+    position: relative;
     z-index: 3;
 }
 
@@ -433,3 +435,22 @@ body {
 
       }
 
+@media (max-width: 767px) {
+    #asideLeftSticky .tab-content {
+        width: 100%;
+    }
+
+
+    /* Assicurati di rimuovere eventuali margini o padding che possono influire sulla larghezza */
+    #asideLeftSticky .nav-tabs,
+    #asideLeftSticky .nav-item {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  }
