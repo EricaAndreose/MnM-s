@@ -12,6 +12,7 @@ const audio = document.getElementById('audio');
             './songs/1800 - Sonatine.mp3',
             './songs/1930 - Mariù.mp3',
             './songs/1970 - Pooh.mp3',
+            './songs/2000 - Stilton.mp3',
             './songs/2030 - Dune.mp3'
             // Add more song paths here
         ];
@@ -21,6 +22,7 @@ const audio = document.getElementById('audio');
             '1800 - Sonatine',
             '1930 - Mariù',
             '1970 - Pooh',
+            '2000 - Stilton',
             '2030 - Dune'
             // Add corresponding titles here
         ];
