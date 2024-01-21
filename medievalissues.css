@@ -904,6 +904,14 @@ figcaption {
             margin: 0;
             padding: 0;
         }
+
+        #carousel {
+            padding: 0%;
+        }
+
+        #externalContentColumn{
+            padding: 0%;
+        }
     }
     
     @media (max-width: 991px) {
