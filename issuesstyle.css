@@ -262,6 +262,9 @@ body {
 
 #footer {
     border-radius: 5px;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .background-svg {
@@ -272,11 +275,6 @@ body {
     display: none;
 }
 
-#footer {
-    margin-left: 1%;
-    margin-right: 1%;
-    font-family: 'Courier New', Courier, monospace;
-}
 
 #text-center-f {
     text-align: center;

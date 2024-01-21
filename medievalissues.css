@@ -25,6 +25,16 @@
     src: url('font/medieval/erica_font/Late_medieval-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'cup';
+    src: url(font/medieval/erica_font/cup-and-talon.regular.ttf);
+}
+
+@font-face {
+    font-family: 'onciale';
+    src: url('font/medieval/erica_font/onciale-phf.regular.ttf');
+}
+
 #image-gaia-2{
     display: none;
 }
@@ -127,8 +137,10 @@ body {
     flex-direction: column;
     overflow-y: auto;
     text-align: justify;
-    max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
-    max-width: 22vw; /* Set the desired maximum width for the text */
+    /* max-height: 33vw; Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
+    /* max-width: 22vw; Set the desired maximum width for the text */
+    width: 100%;
+    max-height: 70vh;
 }
 
 .tab-pane li a{
@@ -137,6 +149,13 @@ body {
     cursor: url('img/medieval/Manicula (1).png'), auto !important;
     color: rgb(0, 0, 143) !important;
 }
+
+.tab-pane {
+    max-height: 100%; /* Consente al contenuto dei tab di espandersi completamente all'interno del container */
+}
+/* .tab-pane {
+    max-height: 100%; Consente al contenuto dei tab di espandersi completamente all'interno del container
+} */
 
 #metadata p{
     font-family: 'Old_london';
@@ -163,7 +182,7 @@ body {
     background-image: url('img/medieval/02.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 42vw;
+    height: 90vh;
     overflow-y: auto; /* or overflow-y: scroll; */
     padding: 5%;
 }
@@ -173,7 +192,7 @@ body {
 
 p {
     font-family: '1492';
-    font-size: 22px;
+    font-size: 1.7em;
     text-align: justify;
     overflow: hidden; /* Hide any text that overflows */
     text-overflow: ellipsis; /* Display an ellipsis (...) for overflowed text */
@@ -183,6 +202,13 @@ p {
     display: table;
 }
 
+/* p span a {
+    color: #b53c00;
+} */
+
+p .place a{
+    color: rgb(0, 0, 143);
+}
 p .place {
     color: rgb(0, 0, 143);
 }
@@ -191,7 +217,15 @@ p .person {
     color: rgb(87, 0, 0);
 }
 
+p .person a{
+    color: rgb(87, 0, 0);
+}
+
 p .keyword {
+    color: rgb(125, 77, 0);
+}
+
+p .keyword a{
     color: rgb(125, 77, 0);
 }
 
@@ -266,14 +300,65 @@ p::after {
     text-transform: lowercase;
 }
 
+@media screen and (max-width: 1200px) {
+    #externalContentColumn {
+        background-image: none; /* Remove the background image */
+    }
+
+    p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .title h1 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .subtitle {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .title-1 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .title-2 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .title-3 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .table-responsive {
+        max-width: none;
+        max-height: none; /* Reset max-height on smaller screens */
+        margin-left: 8%; /* for doing the right measures also for the scrolling */
+        margin-right: 8%; /* for doing the right measures also for the scrolling */
+    }
+
+    .table {
+        width: 100%; /* Allow the table to take up the full width of its container */
+        max-width: none; /* Reset max-width on smaller screens */
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+}
+
 /* sistemare tabelle*/
 
 .table-responsive {
     max-height: 40vw; /* Adjust the maximum height for the table container */
     overflow-y: auto; /* Add vertical scrollbar if the content exceeds the height */
-    max-width: 50vw; /* for doing the right measures also for the scrolling */
-    margin-left: 13rem; /* for doing the right measures also for the scrolling */
-    margin-right: 13rem; /* for doing the right measures also for the scrolling */
+    max-width: 90%; /* for doing the right measures also for the scrolling */
+    margin-left: 24%; /* for doing the right measures also for the scrolling */
+    margin-right: 24%; /* for doing the right measures also for the scrolling */
 }
 
 .table {
@@ -324,22 +409,6 @@ caption {
     font-size: 14px;
 }
 
-/* Add responsive styles for smaller screens */
-@media (max-width: 768px) {
-    .table-responsive {
-        max-height: none; /* Reset max-height on smaller screens */
-    }
-
-    .table {
-        max-width: none; /* Reset max-width on smaller screens */
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
-
-
-
 
 
 
@@ -383,6 +452,7 @@ caption {
 
 .button1 {
     position: absolute;
+    position: relative;
     z-index: 3;
 }
 
@@ -650,3 +720,194 @@ figcaption {
     font-family: '1492';
     margin-bottom: 3%;
 }
+
+/* ISSUE BASIC */
+
+.row #main{
+    background-image: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+#issues-titles{
+    font-family: 'genzsch';
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    margin-top: -2%;
+}
+
+#issue1 {
+    background-image: url('img/medieval/01.png');
+    background-size: cover;
+    width: 35%;
+    height: 80%;
+}
+
+#container-titles {
+    padding: 5%;
+    margin-top: 15%;
+}
+
+#container-titles h4{
+    font-family: 'cup';
+    font-size: 2rem;
+    padding: 0%;
+}
+
+#layout {
+    font-family: 'onciale' !important;
+    font-size: 12px !important;
+    text-align: center !important;
+    padding: 0.2% !important;
+    margin-top: 5% !important;
+    font-weight: bold !important;
+}
+
+
+#issue2 {
+    background-image: url('img/medieval/01.png');
+    background-size: cover;
+    width: 35%;
+    height: 80%;
+}
+
+#issue3 {
+    background-image: url('img/medieval/01.png');
+    background-size: cover;
+    width: 35%;
+    height: 80%;
+}
+
+.jsart {
+    color: #561400 !important;
+}
+
+
+#carousel {
+    position: relative;
+    height: 500px;
+    margin: auto 0; /* Center the carousel horizontally and add margin-top */
+    overflow: hidden;
+    padding: 2%;
+    }
+    
+    #carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+    }
+    
+    #carousel div img {
+    width: 30vw;
+    max-width: 400px; /* Set a maximum width for the images */
+    height: auto; /* Maintain aspect ratio */
+    transition: width 1s;
+    }
+    
+    #carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+    }
+    
+    #carousel div.hideLeft img {
+        width: 20vw;
+    }
+    
+    
+    #carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+    }
+    
+    #carousel div.hideRight img {
+        width: 20vw;
+    }
+    
+    
+    #carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+    }
+    
+    #carousel div.prev img {
+        width: 25vw;
+    }
+    
+    
+    #carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+    }
+    
+    #carousel div.prevLeftSecond img {
+        width: 20vw;
+    }
+    
+    
+    #carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+    }
+    
+    #carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+    }
+    
+    #carousel div.next img {
+        width: 25vw;
+    }
+    
+    
+    #carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+    }
+    
+    #carousel div.nextRightSecond img {
+        width: 20vw;
+    }
+    
+    
+    /* Add this to center the buttons */
+    .buttonscar {
+        font-family: 'cup';
+        position: relative;
+        text-align: center; /* Adjust the margin as needed */
+    }
+    
+    .buttonscar button {
+        margin: 0 1%; /* Add spacing between buttons */
+
+      }
+
+
+      @media (max-width: 767px) {
+        #asideLeftSticky .tab-content {
+            width: 100%;
+        }
+    
+    
+        /* Assicurati di rimuovere eventuali margini o padding che possono influire sulla larghezza */
+        #asideLeftSticky .nav-tabs,
+        #asideLeftSticky .nav-item {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    
+    @media (max-width: 991px) {
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+          display: block;
+        }
+      }
