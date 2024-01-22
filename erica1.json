@@ -29,7 +29,11 @@
       "Kelleher, S. R.": "SRK",
       "Mahoney, K.": "KM",
       "Watson, A.": "AW"
+    },
+    {
+      "Beyoncé": "https://en.wikipedia.org/wiki/Beyonc%C3%A9"
     }
+
   ],
   "places": [
     {
@@ -41,7 +45,12 @@
       "United States": "US",
       "Western New York": "WNY",
       "Kentucky": "K"
-    }
+    },
+    {
+    "United States": "https://en.wikipedia.org/wiki/United_States",
+    "Western New York": "https://en.wikipedia.org/wiki/Western_New_York",
+    "Kentucky": "https://en.wikipedia.org/wiki/Kentucky"
+  }
   ],
   "keywords": [
     {
