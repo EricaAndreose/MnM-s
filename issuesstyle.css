@@ -452,3 +452,48 @@ body {
       display: block;
     }
   }
+
+
+/* Original CSS styles remain unchanged */
+
+@media only screen and (max-width: 1000px) {
+    #carousel div {
+      width: 100%; /* Set width to 100% for responsiveness */
+      left: 50%; /* Center the content */
+      transform: translateX(-50%);
+    }
+  
+    #carousel div img {
+      width: 80%; /* Adjust the width of images for responsiveness */
+      max-width: none; /* Remove the maximum width for responsiveness */
+    }
+  
+    #carousel div.hideLeft,
+    #carousel div.hideRight,
+    #carousel div.prev,
+    #carousel div.prevLeftSecond,
+    #carousel div.selected,
+    #carousel div.next,
+    #carousel div.nextRightSecond {
+      left: 50%;
+      transform: translateY(0) translateX(-50%);
+    }
+    
+    #carousel div.prev img,
+    #carousel div.next img,
+    #carousel div.prevLeftSecond img,
+    #carousel div.nextRightSecond img {
+      width: 60%; /* Adjust the width of images for responsiveness */
+      max-width: none; /* Remove the maximum width for responsiveness */
+    }
+  
+    #carousel {
+      height: 80vh; /* Adjust height to fit content */
+    }
+    
+    #carousel div.hideLeft,
+    #carousel div.hideRight {
+      opacity: 1; /* Show hidden elements */
+    }
+  }
+  
