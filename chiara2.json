@@ -39,6 +39,13 @@
       "United Kingdom": "UK",
       "Zagreb": "Zagreb",
       "Osijek": "Osijek"
+    },
+    {
+      "Croatia": "https://en.wikipedia.org/wiki/Croatia",
+      "Netherlands": "https://en.wikipedia.org/wiki/Netherlands",
+      "United Kingdom": "https://en.wikipedia.org/wiki/United_Kingdom",
+      "Zagreb": "https://en.wikipedia.org/wiki/Zagreb",
+      "Osijek": "https://en.wikipedia.org/wiki/Osijek"
     }
   ],
   "keywords": [

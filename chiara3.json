@@ -29,6 +29,12 @@
       "Wolfgang Amadeus Mozart": "WAM",
       "Luciano Pavarotti": "LP",
       "Alexandra Kertz-Welzel": "AKW"
+    },
+    {
+      "Alexandra Kertz-Welzel": "https://en.wikipedia.org/wiki/Alexandra_Kertz-Welzel",
+      "Edgard Willems": "https://en.wikipedia.org/wiki/Edgar_Willems",
+      "Wolfgang Amadeus Mozart": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart",
+      "Luciano Pavarotti": "https://en.wikipedia.org/wiki/Luciano_Pavarotti"
     }
   ],
   "places": [
@@ -91,6 +97,36 @@
       "Rezija": "Rezija",
       "Ljubljana": "Ljubljana",
       "Granada": "Granada"
+    },
+    {
+      "Europe": "https://en.wikipedia.org/wiki/Europe",
+      "Austria": "https://en.wikipedia.org/wiki/Austria",
+      "Belgium": "https://en.wikipedia.org/wiki/Belgium",
+      "Croatia": "https://en.wikipedia.org/wiki/Croatia",
+      "Czech Republic": "https://en.wikipedia.org/wiki/Czech_Republic",
+      "Estonia": "https://en.wikipedia.org/wiki/Estonia",
+      "Finland": "https://en.wikipedia.org/wiki/Finland",
+      "France": "https://en.wikipedia.org/wiki/France",
+      "Germany": "https://en.wikipedia.org/wiki/Germany",
+      "Greece": "https://en.wikipedia.org/wiki/Greece",
+      "Hungary": "https://en.wikipedia.org/wiki/Hungary",
+      "Italy": "https://en.wikipedia.org/wiki/Italy",
+      "Montenegro": "https://en.wikipedia.org/wiki/Montenegro",
+      "Netherlands": "https://en.wikipedia.org/wiki/Netherlands",
+      "Norway": "https://en.wikipedia.org/wiki/Norway",
+      "Poland": "https://en.wikipedia.org/wiki/Poland",
+      "Slovakia": "https://en.wikipedia.org/wiki/Slovakia",
+      "Slovenia": "https://en.wikipedia.org/wiki/Slovenia",
+      "Spain": "https://en.wikipedia.org/wiki/Spain",
+      "Sweden": "https://en.wikipedia.org/wiki/Sweden",
+      "United Kingdom": "https://en.wikipedia.org/wiki/United_Kingdom",
+      "Maastricht": "https://en.wikipedia.org/wiki/Maastricht",
+      "Bologna": "https://en.wikipedia.org/wiki/Bologna",
+      "Pomurje": "https://en.wikipedia.org/wiki/Prekmurje",
+      "Štajerska": "https://en.wikipedia.org/wiki/Styria_(Slovenia)",
+      "Rezija": "https://en.wikipedia.org/wiki/Resia,_Friuli_Venezia_Giulia",
+      "Ljubljana": "https://en.wikipedia.org/wiki/Ljubljana",
+      "Granada": "https://en.wikipedia.org/wiki/Granada"
     }
   ],
   "keywords": [

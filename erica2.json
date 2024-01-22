@@ -29,6 +29,10 @@
       "Zandén": "OlleZandén",
       "Bonferroni": "CarloEmilioBonferroni",
       "Rosenthal": "RobertRosenthal"
+    },
+    {
+      "Bonferroni": "https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni",
+      "Rosenthal": "https://en.wikipedia.org/wiki/Arthur_Rosenthal"
     }
   ],
   "places": [
@@ -37,7 +41,9 @@
     },
     {
       "United Kingdom": "UK"
-    }
+    },
+    {"United Kingdom": "https://en.wikipedia.org/wiki/United_Kingdom"
+  }
   ],
   "keywords": [
     {
