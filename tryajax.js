@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Aggiungi l'icona e il link a Wikipedia se l'URL è disponibile
             if (wikipediaUrl) {
-              listHtml += ` <a href="${wikipediaUrl}" target="_blank" class="wikipedia-link"><img src="img/wiki2.png" alt="Wikipedia"></a>`;
+              listHtml += `&nbsp;&nbsp;<a href="${wikipediaUrl}" target="_blank" class="wikipedia-link"><img src="img/wiki2.png" alt="Wikipedia"></a>`;
             }
 
             listHtml += '</li>';

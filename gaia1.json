@@ -47,7 +47,20 @@
       "Harry Styles": "HS"
     },
     {
-      "Green Day": "https://en.wikipedia.org/wiki/Green_Day"
+      "Green Day": "https://en.wikipedia.org/wiki/Green_Day",
+      "Weezer": "https://en.wikipedia.org/wiki/Weezer",
+      "Fall Out Boy": "https://en.wikipedia.org/wiki/Fall_Out_Boy",
+      "Elvis Presley": "https://simple.wikipedia.org/wiki/Elvis_Presley",
+      "David Bowie": "https://simple.wikipedia.org/wiki/David_Bowie",
+      "Marc Bolan": "https://en.wikipedia.org/wiki/Marc_Bolan",
+      "Kiss": "https://en.wikipedia.org/wiki/Kiss_(band)",
+      "Tim Burton": "https://en.wikipedia.org/wiki/Tim_Burton",
+      "Kurt Cobain": "https://en.wikipedia.org/wiki/Kurt_Cobain",
+      "Marc Jacobs": "https://en.wikipedia.org/wiki/Marc_Jacobs",
+      "Dua Lipa": "https://simple.wikipedia.org/wiki/Dua_Lipa",
+      "Ariana Grande": "https://simple.wikipedia.org/wiki/Ariana_Grande",
+      "Lil Nas": "https://en.wikipedia.org/wiki/Lil_Nas_X",
+      "Harry Styles": "https://en.wikipedia.org/wiki/Harry_Styles"
     }
   ],
 
@@ -63,6 +76,12 @@
       "New York": "NYC",
       "Los Angeles": "Los Angeles",
       "Detroit": "Detroit"
+    },
+    {
+      "London": "https://en.wikipedia.org/wiki/London",
+      "New York": "https://en.wikipedia.org/wiki/New_York_City",
+      "Los Angeles": "https://en.wikipedia.org/wiki/Los_Angeles",
+      "Detroit": "https://en.wikipedia.org/wiki/Detroit"
     }
   ],
   "keywords": [
