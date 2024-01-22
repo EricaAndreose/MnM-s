@@ -84,7 +84,7 @@ body {
 
 
 .dropdown-menu {
-    background-color: rgb(209, 195, 177) ;
+    background-color: rgb(209, 195, 177) !important;
     border: 2px rgb(4, 4, 4);
     z-index: 101;
 }
@@ -113,10 +113,13 @@ body {
     background-size: cover; /* Adjust as needed */
     background-repeat: no-repeat; /* Prevent image from repeating */
     background-color: rgb(209, 195, 177) ;
+    font-family: 'Josefin';
+    font-weight:bold;
+    font-size: 1.35rem;
     border-radius: 5px;
     margin-left: 1cm;
     margin-right: 1cm;
-    height: 40vw;
+    height: 50%;
     position: relative;
     z-index: 9;
     border: 2px rgb(4, 4, 4);
@@ -140,23 +143,31 @@ body {
 
 #map-tab {
     border: 3px solid rgb(4, 4, 4);
+    color: rgb(4,4,4)
+    
 }
 #metadata-tab{
     border: 3px solid rgb(4, 4, 4);
+    color: rgb(4,4,4)
 }
 #people-tab {
     border: 3px solid rgb(4, 4, 4);
+    color: rgb(4,4,4);
     overflow-y: none;
 }
 #places-tab{
     border: 3px solid rgb(4, 4, 4);
+    color: rgb(4,4,4)
 }
 #keywords-tab{
     border: 3px solid rgb(4, 4, 4);
+    color: rgb(4,4,4)
 }
 #references-tab{
     border: 3px solid rgb(4, 4, 4);
+    color: rgb(4,4,4)
 }
+
  
   .tab-content {
     display: flex;
@@ -181,7 +192,8 @@ body {
 
 
 #footer {
-    font-family: 'Monoton';
+    font-family: 'Josefin';
+    font-weight: bold;
     
 }
 
@@ -251,6 +263,7 @@ body {
     font-family: 'Semplicita';
     font-size: 18x;
     color: #0a0a0a;
+    text-align: justify;
 
 }
 
@@ -300,7 +313,7 @@ a {
 }
 
 a:hover {
-    color:#ffffff
+    color:#ffffff;
 }
 
 #space {
@@ -409,3 +422,338 @@ table tr td, table tr th{
 #header-2030 {
     display: none;
 }
+
+@media screen and (max-width: 1200px) {
+    #externalContentColumn {
+        background-image: none; /* Remove the background image */
+    }
+
+    p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .title h1 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .subtitle {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .title-1 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .title-2 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .title-3 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .table-responsive {
+        max-width: none;
+        max-height: none; /* Reset max-height on smaller screens */
+        margin-left: 8%; /* for doing the right measures also for the scrolling */
+        margin-right: 8%; /* for doing the right measures also for the scrolling */
+    }
+
+    .table {
+        width: 100%; /* Allow the table to take up the full width of its container */
+        max-width: none; /* Reset max-width on smaller screens */
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+}
+
+
+
+#asideLeft h2{
+    font-family: 'Josefin';
+    font-weight: bold;
+    text-align: center;
+    padding: 2%;
+    color: #0a0a0a;
+}
+
+#asideLeft p{
+    padding: 0%;
+}
+
+#center h1{
+    font-family: 'Josefin';
+    font-weight: bold;
+    text-align: center;
+    padding: 2%;
+    color: #0a0a0a;
+}
+
+#center p{
+    padding: 0%;
+}
+
+#asideRight h2{
+    font-family: 'Josefin';
+    font-weight: bold;
+    text-align: center;
+    padding: 2%;
+    color: #0a0a0a;
+}
+
+#asideRight p{
+    padding: 0%;
+}
+
+#cards{
+    margin-top: 5%;
+    z-index: 99999;
+    padding-left: 3%;
+    padding-right: 3%;
+   
+}
+
+#imgcard{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    border: solid #0a0a0a;
+}
+
+.card{
+    background-color: rgb(209, 195, 177);
+    border: solid #0a0a0a;
+}
+
+.card-title{
+    font-family: 'Becker';
+    font-size: 32px;
+    text-align: center;
+    color: #0a0a0a;
+}
+
+.card-body p{
+    font-family: 'Josefin';
+    font-weight: bold;
+    text-align: center;
+    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer .col-md-4 h3{
+    font-family: 'Josefin';
+}
+
+
+#start{
+    font-family: 'Josefin';
+    margin-bottom: 3%;
+}
+
+.row #main{
+    background-image: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+#issues-titles{
+    font-family: 'Josefin';
+    font-weight:bolder;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    margin-top: -2%;
+}
+
+#issue1 {
+    background-image: url('img/medieval/01.png');
+    background-size: cover;
+    width: 35%;
+    height: 80%;
+}
+
+#container-titles {
+    padding: 5%;
+    margin-top: 15%;
+}
+
+#container-titles h4{
+    font-family: 'Josefin';
+    font-size: 2rem;
+    padding: 0%;
+}
+
+#layout {
+    font-family: 'Josefin' !important;
+    font-size: 12px !important;
+    text-align: center !important;
+    padding: 0.2% !important;
+    margin-top: 5% !important;
+    font-weight: bold !important;
+}
+
+
+#issue2 {
+    background-image: url('img/medieval/01.png');
+    background-size: cover;
+    width: 35%;
+    height: 80%;
+}
+
+#issue3 {
+    background-image: url('img/medieval/01.png');
+    background-size: cover;
+    width: 35%;
+    height: 80%;
+}
+
+.jsart {
+    color: #0a0a0a !important;
+}
+
+
+#carousel {
+    position: relative;
+    height: 500px;
+    margin: auto 0; /* Center the carousel horizontally and add margin-top */
+    overflow: hidden;
+    padding: 2%;
+    }
+    
+    #carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+    }
+    
+    #carousel div img {
+    width: 30vw;
+    max-width: 400px; /* Set a maximum width for the images */
+    height: auto; /* Maintain aspect ratio */
+    transition: width 1s;
+    }
+    
+    #carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+    }
+    
+    #carousel div.hideLeft img {
+        width: 20vw;
+    }
+    
+    
+    #carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+    }
+    
+    #carousel div.hideRight img {
+        width: 20vw;
+    }
+    
+    
+    #carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+    }
+    
+    #carousel div.prev img {
+        width: 25vw;
+    }
+    
+    
+    #carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+    }
+    
+    #carousel div.prevLeftSecond img {
+        width: 20vw;
+    }
+    
+    
+    #carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+    }
+    
+    #carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+    }
+    
+    #carousel div.next img {
+        width: 25vw;
+    }
+    
+    
+    #carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+    }
+    
+    #carousel div.nextRightSecond img {
+        width: 20vw;
+    }
+    
+    
+    /* Add this to center the buttons */
+    .buttonscar {
+        font-family: 'Josefin';
+        position: relative;
+        text-align: center; /* Adjust the margin as needed */
+    }
+    
+    .buttonscar button {
+        margin: 0 1%; /* Add spacing between buttons */
+
+      }
+
+
+      @media (max-width: 767px) {
+        #asideLeftSticky .tab-content {
+            width: 100%;
+        }
+    
+    
+        /* Assicurati di rimuovere eventuali margini o padding che possono influire sulla larghezza */
+        #asideLeftSticky .nav-tabs,
+        #asideLeftSticky .nav-item {
+            margin: 0;
+            padding: 0;
+        }
+
+        #carousel {
+            padding: 0%;
+        }
+
+        #externalContentColumn{
+            padding: 0%;
+        }
+    }
+    
+    @media (max-width: 991px) {
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+          display: block;
+        }
+      }
