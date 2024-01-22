@@ -34,7 +34,7 @@ body {
 }
 
 #space {
-    height: 17vw; 
+    height: 17rem; 
 }
 
 h1 {
@@ -225,6 +225,18 @@ h2 {
 
 }
 
+/* DOCUMENTATION PAGE */
+.documentation {
+    height: 80vh;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    overflow-y: auto;
+    padding: 2%;
+}
+
+.documentation p {
+    padding: 1%;
+}
 
 
 
