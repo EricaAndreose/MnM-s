@@ -352,7 +352,7 @@ table tr td, table tr th{
 }
 
 .card{
-    background-image: url(img/medieval/back.png);
+    background-color: #ddd2b2;
 }
 
 .card-title{
@@ -368,12 +368,9 @@ table tr td, table tr th{
     margin-right: auto;
 }
 
-#footer .col-md-4 h3{
-    font-family: 'True Golden™';
-}
 
 #start{
-    font-family: 'True Golden™';
+    font-family: 'AstrenaDemo';
     margin-bottom: 3%;
 }
 

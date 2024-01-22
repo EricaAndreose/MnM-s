@@ -102,11 +102,16 @@ document.addEventListener('DOMContentLoaded', function () {
               const metadataHtml = titleHtml + authorHtml + dateHtml + sourceLinkHtml;
 
               tabPane.innerHTML = metadataHtml;
+
             } else {
               tabPane.innerHTML = createListFromMetadata(metadata[category], category);
               // Aggiungi gestione dell'evento di clic per i link dei metadati
               tabPane.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', handleMetadataLinkClick);
+                // Verifica se il link ha la classe 'wikipedia-link'
+                if (!link.classList.contains('wikipedia-link')) {
+                  // Aggiungi l'event listener solo per i link che non sono di Wikipedia
+                  link.addEventListener('click', handleMetadataLinkClick);
+                }
               });
             }
           }
@@ -121,10 +126,21 @@ document.addEventListener('DOMContentLoaded', function () {
         if (metadata[0].hasOwnProperty(key)) {
           const occurrences = metadata[0][key];
           const id = metadata[1][key];
-    
+          
+          // Verifica se il dizionario con i link Wikipedia esiste
+          const wikipediaUrlDict = metadata[2];
+          const wikipediaUrl = wikipediaUrlDict ? wikipediaUrlDict[key] : null;
+
           // Verifica se l'id è vuoto
           if (id !== '') {
-            listHtml += `<li><a href="#${id}" data-category="${category}">${key}: ${occurrences}</a></li>`;
+            listHtml += `<li><a href="#${id}" data-category="${category}" class="metadata-link">${key}: ${occurrences}</a>`;
+
+            // Aggiungi l'icona e il link a Wikipedia se l'URL è disponibile
+            if (wikipediaUrl) {
+              listHtml += ` <a href="${wikipediaUrl}" target="_blank" class="wikipedia-link"><img src="img/wiki2.png" alt="Wikipedia"></a>`;
+            }
+
+            listHtml += '</li>';
           } else {
             listHtml += `<li>${key}: ${occurrences}</li>`;
           }
@@ -136,33 +152,44 @@ document.addEventListener('DOMContentLoaded', function () {
   
     // Gestore di clic sui link dei metadati
     function handleMetadataLinkClick(event) {
-        event.preventDefault();
-    
-        const category = event.target.getAttribute('data-category');
-        const id = event.target.getAttribute('href').substring(1);
-    
-        // Rimuovi l'evidenziazione solo dai link dello stesso tipo di metadato
-        document.querySelectorAll(`.${category} .active`).forEach(link => {
+      event.preventDefault();
+
+      // Se il link ha la classe 'wikipedia-link', apri la finestra e interrompi la funzione
+      if (event.target.classList.contains('wikipedia-link')) {
+        console.log('Link Wikipedia cliccato. Apre la finestra.');
+        window.open(event.target.href, '_blank');
+        return;
+      }
+
+      const category = event.target.getAttribute('data-category');
+      const id = event.target.getAttribute('href');
+
+    // Verifica che gli attributi esistano prima di proseguire
+    if (category !== null && id !== null) {
+      // Rimuovi l'evidenziazione solo dai link dello stesso tipo di metadato
+      document.querySelectorAll(`.${category} .active`).forEach(link => {
         link.classList.remove('active');
-        });
-    
-        // Aggiungi la classe 'active' al link corrente
-        event.target.classList.add('active');
-    
-        // Verifica se il link cliccato è lo stesso della precedente
-        if (category === currentMetadataCategory && id === currentMetadataId) {
+      });
+
+      // Aggiungi la classe 'active' al link corrente
+      event.target.classList.add('active');
+
+      // Verifica se il link cliccato è lo stesso della precedente
+      if (category === currentMetadataCategory && id === currentMetadataId) {
         // Se sì, passa alla successiva occorrenza
         currentMetadataIndex++;
-        } else {
+      } else {
         // Se no, reimposta l'indice a 0 e salva i nuovi dati
         currentMetadataIndex = 0;
         currentMetadataCategory = category;
         currentMetadataId = id;
-        }
-    
-        // Trova e posizionati nella corrispondente occorrenza nel testo
-        scrollToElement(`#${id}`, currentMetadataIndex);
+      }
+
+      // Trova e posizionati nella corrispondente occorrenza nel testo
+      scrollToElement(`${id}`, currentMetadataIndex);
     }
+  }
+    
     
     // Funzione di utilità per posizionarsi su un elemento con un determinato indice
     function scrollToElement(id, index) {
