@@ -39,7 +39,18 @@
       "Bob Dylan": "BD",
       "Elvis Presley": "EP",
       "Robert Johnson": "RJ"
-    }
+    },
+    {"Jean-Baptiste Joseph Fourier": "https://en.wikipedia.org/wiki/Joseph_Fourier",
+    "Bach": "https://en.wikipedia.org/wiki/Johann_Sebastian_Bach",
+    "Beethoven": "https://en.wikipedia.org/wiki/Ludwig_van_Beethoven",
+    "Vivaldi": "https://en.wikipedia.org/wiki/Antonio_Vivaldi",
+    "Wagner": "https://en.wikipedia.org/wiki/Richard_Wagner",
+    "Chopin": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin",
+    "Mozart": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart",
+    "Bob Dylan": "https://en.wikipedia.org/wiki/Bob_Dylan",
+    "Elvis Presley": "https://en.wikipedia.org/wiki/Elvis_Presley",
+    "Robert Johnson": "https://en.wikipedia.org/wiki/Robert_Johnson"
+  }
   ],
   "places": [
     {},
