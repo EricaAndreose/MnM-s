@@ -206,7 +206,7 @@ body {
 #externalContentColumn {
     background-image: url('img/geronimo/paper.png');
     background-size: cover;
-    height: 80vh;
+    height: 85vh;
     overflow-y: auto; /* or overflow-y: scroll; */
     padding: 5%;
 }
@@ -273,23 +273,11 @@ p {
     height: 23vw; 
 }
 
-.tab-content {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-    text-align: justify;
-    /* max-height: 33vw; Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
-    /* max-width: 22vw; Set the desired maximum width for the text */
-    width: 100%;
-    max-height: 70vh;
-}
 
-.tab-pane li a{
+#bottone{
     font-family: 'Animated';
-    color: rgb(0, 0, 143) !important;
+    font-size: 1.3em;
 }
-
 
 /* personalizzazione bottoni metadatati*/
 .nav-item {
@@ -316,8 +304,8 @@ p {
     flex-direction: column;
     overflow-y: auto;
     text-align: justify;
-    max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
-    max-width: 22vw; /* Set the desired maximum width for the text */
+    width: 100%;
+    max-height: 70vh;
 }
 
 .tab-pane li a{
@@ -325,13 +313,6 @@ p {
     font-size: 22px;
     cursor: url('img/geronimo/penoa.png'), auto !important;
     color:  rgb(0, 65, 196) !important;
-}
-
-#metadata {
-    font-family: 'Animated';
-    font-size: 22px;
-    cursor: url('img/geronimo/penoa.png'), auto !important;
-    color:   rgb(0, 65, 196) !important;
 }
 
 .highlight {
@@ -342,10 +323,21 @@ p {
 /* personalizzazione bottoni metadatati*/
 
 #metadata {
+    cursor: url('img/geronimo/penoa.png'), auto !important;
     font-family: 'Animated';
     font-size: 22px;
     color: rgb(0, 65, 196) !important;
+    padding: 5%;
 }
+
+#metadata p{
+    cursor: url('img/geronimo/penoa.png'), auto !important;
+    font-family: 'Sub';
+    font-size: 1em;
+    color: rgb(0, 65, 196) !important;
+    
+}
+
 
 .image-container {
     position: relative;
@@ -566,7 +558,19 @@ p .place {
     color: rgb(0, 42, 255);
 }
 
+p .place a{
+    font-family: 'BShadow';
+    font-size: 25px;
+    color: rgb(0, 42, 255);
+}
+
 p .person {
+    font-family: 'FrenchFries';
+    font-size: 25px;
+    color: rgb(252, 118, 0);
+}
+
+p .person a{
     font-family: 'FrenchFries';
     font-size: 25px;
     color: rgb(252, 118, 0);
@@ -779,11 +783,10 @@ caption {
 }
 
 #issues-titles{
-    font-family: 'genzsch';
+    font-family: 'Sub';
     text-align: center;
     padding: 0%;
     margin: 0%;
-    margin-top: -2%;
 }
 
 #issue1 {
@@ -835,7 +838,13 @@ caption {
 }
 
 .jsart {
-    color: #561400 !important;
+    color: rgb(210, 35, 0)!important;
+    font-family: 'Animated';
+    font-size: 1em;
+}
+
+.jsart:hover {
+    background-color: #f6dd00;
 }
 
 
@@ -936,14 +945,14 @@ caption {
     
     /* Add this to center the buttons */
     .buttonscar {
-        font-family: 'cup';
+        font-family: 'Animated';
         position: relative;
         text-align: center; /* Adjust the margin as needed */
     }
     
     .buttonscar button {
         margin: 0 1%; /* Add spacing between buttons */
-
+        cursor: url('img/geronimo/penoa.png'), auto !important;
       }
 
 
@@ -974,3 +983,60 @@ caption {
           display: block;
         }
       }
+
+
+/* DOCUMENTATION PAGE */
+.documentation {
+    height: 80vh;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    overflow-y: auto;
+    padding: 2%;
+}
+
+.documentation p {
+    padding: 1%;
+}
+
+/* Carousel issues */
+
+@media only screen and (max-width: 1000px) {
+    #carousel div {
+      width: 100%; /* Set width to 100% for responsiveness */
+      left: 50%; /* Center the content */
+      transform: translateX(-50%);
+    }
+  
+    #carousel div img {
+      width: 80%; /* Adjust the width of images for responsiveness */
+      max-width: none; /* Remove the maximum width for responsiveness */
+    }
+  
+    #carousel div.hideLeft,
+    #carousel div.hideRight,
+    #carousel div.prev,
+    #carousel div.prevLeftSecond,
+    #carousel div.selected,
+    #carousel div.next,
+    #carousel div.nextRightSecond {
+      left: 50%;
+      transform: translateY(0) translateX(-50%);
+    }
+    
+    #carousel div.prev img,
+    #carousel div.next img,
+    #carousel div.prevLeftSecond img,
+    #carousel div.nextRightSecond img {
+      width: 60%; /* Adjust the width of images for responsiveness */
+      max-width: none; /* Remove the maximum width for responsiveness */
+    }
+  
+    #carousel {
+      height: 80vh; /* Adjust height to fit content */
+    }
+    
+    #carousel div.hideLeft,
+    #carousel div.hideRight {
+      opacity: 1; /* Show hidden elements */
+    }
+  }
