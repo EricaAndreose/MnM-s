@@ -1,0 +1,9 @@
+{
+  "person_dict": {
+    "CarloEmilioBonferroni": "https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni",
+    "RobertRosenthal": "https://en.wikipedia.org/wiki/Arthur_Rosenthal"
+  },
+  "place_dict": {
+    "UK": "https://en.wikipedia.org/wiki/United_Kingdom"
+  }
+}

@@ -519,6 +519,132 @@ a:hover {
     color:rgb(4, 4, 4);
 }
 
+@media screen and (max-width: 1200px) {
+    #externalContentColumn {
+        background-image: none; /* Remove the background image */
+    }
+
+    p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .title h1 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .subtitle {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .title-1 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .title-2 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .title-3 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .table-responsive {
+        max-width: none;
+        max-height: none; /* Reset max-height on smaller screens */
+        margin-left: 8%; /* for doing the right measures also for the scrolling */
+        margin-right: 8%; /* for doing the right measures also for the scrolling */
+    }
+
+    .table {
+        width: 100%; /* Allow the table to take up the full width of its container */
+        max-width: none; /* Reset max-width on smaller screens */
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+}
+
+
+#asideLeft h2{
+    font-family: 'Dune';
+    text-align: center;
+    padding: 2%;
+    color: rgba(255, 213, 0);
+}
+
+#asideLeft p{
+    padding: 0%;
+}
+
+#center h1{
+    font-family: 'Dune';
+    text-align: center;
+    padding: 2%;
+    color: rgba(242, 155, 4);
+}
+
+#center p{
+    padding: 0%;
+}
+
+#asideRight h2{
+    font-family: 'Dune';
+    text-align: center;
+    padding: 2%;
+    color: rgba(255, 77, 0);
+}
+
+#asideRight p{
+    padding: 0%;
+}
+
+#cards{
+    margin-top: 5%;
+    z-index: 99999;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#imgcard{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+}
+
+.card{
+    background-image: url(img/medieval/back.png);
+}
+
+.card-title{
+    font-family: 'Dune';
+    font-size: 32px;
+    text-align: center;
+    color: #621313;
+}
+
+.card-body p{
+    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer .col-md-4 h3{
+    font-family: 'Dune';
+}
+
+#start{
+    font-family: 'Dune';
+    margin-bottom: 3%;
+}
+
 .row #main{
     background-image: none;
     padding: 0%;

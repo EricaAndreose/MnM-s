@@ -1,0 +1,24 @@
+{
+  "person_dict": {
+    "GD": "https://en.wikipedia.org/wiki/Green_Day",
+    "Weezer": "https://en.wikipedia.org/wiki/Weezer",
+    "FOB": "https://en.wikipedia.org/wiki/Fall_Out_Boy",
+    "EP": "https://simple.wikipedia.org/wiki/Elvis_Presley",
+    "DV": "https://simple.wikipedia.org/wiki/David_Bowie",
+    "MB": "https://en.wikipedia.org/wiki/Marc_Bolan",
+    "KISS": "https://en.wikipedia.org/wiki/Kiss_(band)",
+    "TB": "https://en.wikipedia.org/wiki/Tim_Burton",
+    "KC": "https://en.wikipedia.org/wiki/Kurt_Cobain",
+    "MJ": "https://en.wikipedia.org/wiki/Marc_Jacobs",
+    "DL": "https://simple.wikipedia.org/wiki/Dua_Lipa",
+    "AG": "https://simple.wikipedia.org/wiki/Ariana_Grande",
+    "LN": "https://en.wikipedia.org/wiki/Lil_Nas_X",
+    "HS": "https://en.wikipedia.org/wiki/Harry_Styles"
+  },
+  "place_dict": {
+    "NYC": "https://en.wikipedia.org/wiki/New_York_City",
+    "London": "https://en.wikipedia.org/wiki/London",
+    "Los Angeles": "https://en.wikipedia.org/wiki/Los_Angeles",
+    "Detroit": "https://en.wikipedia.org/wiki/Detroit"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "person_dict": {
+    "AKW": "https://en.wikipedia.org/wiki/Alexandra_Kertz-Welzel",
+    "EW": "https://en.wikipedia.org/wiki/Edgar_Willems",
+    "WAM": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart",
+    "LP": "https://en.wikipedia.org/wiki/Luciano_Pavarotti"
+  },
+  "place_dict": {
+    "EU": "https://en.wikipedia.org/wiki/Europe",
+    "AT": "https://en.wikipedia.org/wiki/Austria",
+    "BE": "https://en.wikipedia.org/wiki/Belgium",
+    "HR": "https://en.wikipedia.org/wiki/Croatia",
+    "CZ": "https://en.wikipedia.org/wiki/Czech_Republic",
+    "EE": "https://en.wikipedia.org/wiki/Estonia",
+    "FI": "https://en.wikipedia.org/wiki/Finland",
+    "FR": "https://en.wikipedia.org/wiki/France",
+    "DE": "https://en.wikipedia.org/wiki/Germany",
+    "EL": "https://en.wikipedia.org/wiki/Greece",
+    "HU": "https://en.wikipedia.org/wiki/Hungary",
+    "IT": "https://en.wikipedia.org/wiki/Italy",
+    "ME": "https://en.wikipedia.org/wiki/Montenegro",
+    "NL": "https://en.wikipedia.org/wiki/Netherlands",
+    "NO": "https://en.wikipedia.org/wiki/Norway",
+    "PL": "https://en.wikipedia.org/wiki/Poland",
+    "SK": "https://en.wikipedia.org/wiki/Slovakia",
+    "SI": "https://en.wikipedia.org/wiki/Slovenia",
+    "ES": "https://en.wikipedia.org/wiki/Spain",
+    "SE": "https://en.wikipedia.org/wiki/Sweden",
+    "UK": "https://en.wikipedia.org/wiki/United_Kingdom",
+    "Maastricht": "https://en.wikipedia.org/wiki/Maastricht",
+    "Bologna": "https://en.wikipedia.org/wiki/Bologna",
+    "Pomurje": "https://en.wikipedia.org/wiki/Prekmurje",
+    "Štajerska": "https://en.wikipedia.org/wiki/Styria_(Slovenia)",
+    "Rezija": "https://en.wikipedia.org/wiki/Resia,_Friuli_Venezia_Giulia",
+    "Ljubljana": "https://en.wikipedia.org/wiki/Ljubljana",
+    "Granada": "https://en.wikipedia.org/wiki/Granada"
+  }
+}

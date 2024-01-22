@@ -1,0 +1,43 @@
+{
+  "person_dict": {
+    "Rema": "https://en.wikipedia.org/wiki/Rema_(musician)",
+    "Ckay": "https://en.wikipedia.org/wiki/CKay",
+    "Cruel-S": "https://en.wikipedia.org/wiki/Cruel_Santino",
+    "Wkid": "https://en.wikipedia.org/wiki/Wizkid",
+    "Burna-B": "https://en.wikipedia.org/wiki/Burna_Boy",
+    "Amaarae": "https://en.wikipedia.org/wiki/Amaarae",
+    "Tems": "https://en.wikipedia.org/wiki/Tems",
+    "Adekunle-G": "https://en.wikipedia.org/wiki/Adekunle_Gold",
+    "FAK": "https://en.wikipedia.org/wiki/Fela_Kuti",
+    "KingSunny": "https://en.wikipedia.org/wiki/King_Sunny_Ad%C3%A9",
+    "ChiefEO": "https://en.wikipedia.org/wiki/Ebenezer_Obey",
+    "MajekF": "https://en.wikipedia.org/wiki/Majek_Fashek",
+    "Puff-Daddy": "https://en.wikipedia.org/wiki/Sean_Combs",
+    "Jay-z": "https://en.wikipedia.org/wiki/Jay-Z",
+    "2pac": "https://en.wikipedia.org/wiki/Tupac_Shakur",
+    "Idbia": "https://en.wikipedia.org/wiki/2Baba",
+    "Tetuila": "https://en.wikipedia.org/wiki/Tony_Tetuila",
+    "AbdulK": "https://en.wikipedia.org/wiki/Eedris_Abdulkareem",
+    "Dbanj": "https://en.wikipedia.org/wiki/D%27banj",
+    "Psquare": "https://en.wikipedia.org/wiki/P-Square",
+    "MJ": "https://en.wikipedia.org/wiki/Michael_Jackson",
+    "TSavage": "https://en.wikipedia.org/wiki/Tiwa_Savage",
+    "YAlade": "https://en.wikipedia.org/wiki/Yemi_Alade",
+    "GHarvey": "https://en.wikipedia.org/wiki/Goldie_Harvey",
+    "SSHay": "https://en.wikipedia.org/wiki/Seyi_Shay",
+    "VAbloh": "https://en.wikipedia.org/wiki/Virgil_Abloh",
+    "BEdo": "https://en.wikipedia.org/wiki/Benson_Idahosa",
+    "Davido": "https://en.wikipedia.org/wiki/Davido",
+    "Badboy": "https://en.wikipedia.org/wiki/Bad_Boy_Timz",
+    "BellaS": "https://en.wikipedia.org/wiki/Bella_Shmurda",
+    "CKay": "https://en.wikipedia.org/wiki/CKay",
+    "EfeA": "https://en.wikipedia.org/wiki/Efe_Ajagba"
+  },
+  "place_dict": {
+    "Nigeria": "https://en.wikipedia.org/wiki/Nigeria",
+    "London": "https://en.wikipedia.org/wiki/London",
+    "England": "https://en.wikipedia.org/wiki/England",
+    "USA": "https://en.wikipedia.org/wiki/United_States",
+    "Ghana": "https://en.wikipedia.org/wiki/Ghana"
+  }
+}

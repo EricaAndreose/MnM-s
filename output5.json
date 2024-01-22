@@ -1,0 +1,10 @@
+{
+  "person_dict": {},
+  "place_dict": {
+    "HR": "https://en.wikipedia.org/wiki/Croatia",
+    "NL": "https://en.wikipedia.org/wiki/Netherlands",
+    "UK": "https://en.wikipedia.org/wiki/United_Kingdom",
+    "Zagreb": "https://en.wikipedia.org/wiki/Zagreb",
+    "Osijek": "https://en.wikipedia.org/wiki/Osijek"
+  }
+}
