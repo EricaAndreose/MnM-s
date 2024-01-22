@@ -419,3 +419,290 @@ table tr td, table tr th{
   background-size: 3%;
   }
 }
+
+/* INDEX */
+
+#asideLeft h2{
+  font-family: 'Tabasco';
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-align: center;
+  padding: 2%;
+  color: #34ace0;
+}
+
+#asideLeft p{
+  padding: 0%;
+  font-family: 'CG Times';
+  text-align: justify;
+}
+
+#center h1{
+  font-family: 'Tabasco';
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-align: center;
+  padding: 2%;
+  color: #34ace0;
+}
+
+#center p{
+  padding: 0%;
+  font-family: 'CG Times';
+  text-align: justify;
+}
+
+#asideRight h2{
+  font-family: 'Tabasco';
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-align: center;
+  padding: 2%;
+  color: #34ace0;
+}
+
+#asideRight p{
+  padding: 0%;
+  font-family: 'CG Times';
+  text-align: justify;
+}
+
+#cards{
+  margin-top: 5%;
+  z-index: 99999;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#imgcard{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+}
+
+.card{
+  background-image: url(img/medieval/back.png);
+}
+
+.card-title{
+  font-family: 'Stilla Regular';
+  font-size: 32px;
+  text-align: center;
+  color: #34ace0;
+}
+
+.card-body p{
+  font-family: 'CC Tough Talk';
+  padding: 0%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer .col-md-4 h3{
+  font-family: 'CG Times';
+}
+
+#start{
+  font-family: 'CG Times';
+  margin-bottom: 3%;
+}
+
+/* ISSUE BASIC */
+
+.row #main{
+  background-image: none;
+  padding: 0%;
+  margin: 0%;
+}
+
+#issues-titles{
+  font-family: 'genzsch';
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
+  margin-top: -2%;
+}
+
+#issue1 {
+  background-image: url('img/medieval/01.png');
+  background-size: cover;
+  width: 35%;
+  height: 80%;
+}
+
+#container-titles {
+  padding: 5%;
+  margin-top: 15%;
+}
+
+#container-titles h4{
+  font-family: 'cup';
+  font-size: 2rem;
+  padding: 0%;
+}
+
+#layout {
+  font-family: 'onciale' !important;
+  font-size: 12px !important;
+  text-align: center !important;
+  padding: 0.2% !important;
+  margin-top: 5% !important;
+  font-weight: bold !important;
+}
+
+
+#issue2 {
+  background-image: url('img/medieval/01.png');
+  background-size: cover;
+  width: 35%;
+  height: 80%;
+}
+
+#issue3 {
+  background-image: url('img/medieval/01.png');
+  background-size: cover;
+  width: 35%;
+  height: 80%;
+}
+
+.jsart {
+  color: #34ace0 !important;
+}
+
+
+#carousel {
+  position: relative;
+  height: 500px;
+  margin: auto 0; /* Center the carousel horizontally and add margin-top */
+  overflow: hidden;
+  padding: 2%;
+  }
+  
+  #carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+  }
+  
+  #carousel div img {
+  width: 30vw;
+  max-width: 400px; /* Set a maximum width for the images */
+  height: auto; /* Maintain aspect ratio */
+  transition: width 1s;
+  }
+  
+  #carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+  }
+  
+  #carousel div.hideLeft img {
+      width: 20vw;
+  }
+  
+  
+  #carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+  }
+  
+  #carousel div.hideRight img {
+      width: 20vw;
+  }
+  
+  
+  #carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+  }
+  
+  #carousel div.prev img {
+      width: 25vw;
+  }
+  
+  
+  #carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+  }
+  
+  #carousel div.prevLeftSecond img {
+      width: 20vw;
+  }
+  
+  
+  #carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+  }
+  
+  #carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+  }
+  
+  #carousel div.next img {
+      width: 25vw;
+  }
+  
+  
+  #carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+  }
+  
+  #carousel div.nextRightSecond img {
+      width: 20vw;
+  }
+  
+  
+  /* Add this to center the buttons */
+  .buttonscar {
+      font-family: 'cup';
+      position: relative;
+      text-align: center; /* Adjust the margin as needed */
+  }
+  
+  .buttonscar button {
+      margin: 0 1%; /* Add spacing between buttons */
+
+    }
+
+
+    @media (max-width: 767px) {
+      #asideLeftSticky .tab-content {
+          width: 100%;
+      }
+  
+  
+      /* Assicurati di rimuovere eventuali margini o padding che possono influire sulla larghezza */
+      #asideLeftSticky .nav-tabs,
+      #asideLeftSticky .nav-item {
+          margin: 0;
+          padding: 0;
+      }
+
+      #carousel {
+          padding: 0%;
+      }
+
+      #externalContentColumn{
+          padding: 0%;
+      }
+  }
+  
+  @media (max-width: 991px) {
+      .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+      }
+    }
