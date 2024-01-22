@@ -92,7 +92,7 @@ body {
 
 #externalContentColumn {
     background-color: #ddd2b2;
-    height: 40vw; /* da cambiare con la percentuale anche qua? */
+    height: 80vh; /* da cambiare con la percentuale anche qua? */
     overflow-y: auto; /* or overflow-y: scroll; */
 }
 

@@ -29,7 +29,7 @@ body {
     border-radius: 5px;
     background-color: transparent;
     font-family: Tracking_Bold;
-    margin-top: -0.5cm;
+    margin-top: -0.5%;
 }
 
 .dropdown-menu {
@@ -180,7 +180,7 @@ body {
 
 
 #space {
-    height: 17vw; 
+    height: 17rem; 
 }
 
 .image-container {
@@ -194,7 +194,7 @@ body {
 #Vinyl {
     position: static;
     text-align: center;
-    width: 100%; /* Set the initial width to 100% */
+    width: auto; /* Set the initial width to 100% */
     height: auto; /* Set the initial height to 100% */
     object-fit: cover; /* Maintain aspect ratio while covering container */
     z-index: -1;
@@ -214,7 +214,7 @@ body {
 
 
 .button1 {
-    position: relative;
+    position: absolute;
     z-index: 3;
 }
 
@@ -496,4 +496,3 @@ body {
       opacity: 1; /* Show hidden elements */
     }
   }
-  
