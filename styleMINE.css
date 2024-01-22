@@ -34,7 +34,7 @@ body {
 }
 
 #space {
-    height: 8cm; 
+    height: 17vw; 
 }
 
 h1 {
@@ -125,6 +125,7 @@ h2 {
     }
 
 .stitle {
+    font-family: Tracking_Bold;
     text-align: center;
     }
 
