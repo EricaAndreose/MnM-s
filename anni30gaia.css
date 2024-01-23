@@ -115,7 +115,8 @@ body {
     background-color: rgb(209, 195, 177) ;
     font-family: 'Josefin';
     font-weight:bold;
-    font-size: 1.35rem;
+    text-align: justify;
+    font-size: 1.25rem;
     border-radius: 5px;
     margin-left: 1cm;
     margin-right: 1cm;
@@ -527,7 +528,10 @@ table tr td, table tr th{
     margin-right: auto;
     padding: 2%;
     border: solid #0a0a0a;
+    filter: sepia(60%) !important;
 }
+
+
 
 .card{
     background-color: rgb(209, 195, 177);
@@ -576,15 +580,17 @@ table tr td, table tr th{
 }
 
 #issue1 {
-    background-image: url('img/medieval/01.png');
-    background-size: cover;
+    background-image: url('img/thirties/issue1.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 35%;
-    height: 80%;
+    height: 100%;
 }
 
 #container-titles {
     padding: 5%;
-    margin-top: 15%;
+    margin-top: 40%;
 }
 
 #container-titles h4{
@@ -600,21 +606,26 @@ table tr td, table tr th{
     padding: 0.2% !important;
     margin-top: 5% !important;
     font-weight: bold !important;
+    background-color: rgba(209, 195, 177, 0.689)
 }
 
 
 #issue2 {
-    background-image: url('img/medieval/01.png');
-    background-size: cover;
+    background-image: url('img/thirties/issue2.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 35%;
-    height: 80%;
+    height: 100%;
 }
 
 #issue3 {
-    background-image: url('img/medieval/01.png');
-    background-size: cover;
+    background-image: url('img/thirties/issue3.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 35%;
-    height: 80%;
+    height: 100%;
 }
 
 .jsart {
@@ -757,3 +768,16 @@ table tr td, table tr th{
           display: block;
         }
       }
+
+.documentation {
+    height: 80vh;
+    font-family: 'Becker';
+    text-align: justify;
+    overflow-y: auto;
+    padding: 2%;
+}
+        
+.documentation p {
+    font-family: 'Semplicita';
+    padding: 1%;
+}
