@@ -891,4 +891,20 @@ a:hover {
     padding: 1%;
 }
 
+.documentation figure {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.documentation figcaption {
+    font-style: 'Dune';
+    font-weight: 600;
+}
+
+.documentation h2 {
+    text-align: center;
+    font-weight: 800;
+}
+
 
