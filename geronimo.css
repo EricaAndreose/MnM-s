@@ -960,6 +960,10 @@ caption {
         #asideLeftSticky .tab-content {
             width: 100%;
         }
+
+        #space{
+            height: 30vh;
+        }
     
     
         /* Assicurati di rimuovere eventuali margini o padding che possono influire sulla larghezza */
