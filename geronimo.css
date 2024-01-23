@@ -223,8 +223,8 @@ body {
 
 p {
     font-family: 'LifeLTStd-Roman';
-    font-size: 22px;
-    line-height: 2.0;
+    font-size: 1.8em;
+    line-height: 2.0em;
     text-align: left;
     overflow: hidden; /* Hide any text that overflows */
     text-overflow: ellipsis; /* Display an ellipsis (...) for overflowed text */
