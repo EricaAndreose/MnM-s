@@ -1002,6 +1002,65 @@ caption {
     padding: 1%;
 }
 
+
+.documentation .subtitle {
+    font-family: 'Sub';
+    color: rgb(0, 65, 196);
+    text-align: center;
+    font-size: 2rem;
+    text-transform: lowercase;
+}
+
+.documentation .title-1 {
+    font-family: 'sans';
+    color: rgb(210, 35, 0);
+    text-align: center;
+
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+.documentation h2 {
+    text-align: center;
+    font-family: 'Sub';
+    color: rgb(0, 65, 196);
+    text-align: center;
+    padding-top: 4%;
+    font-size: 3rem;
+    text-transform: lowercase;
+}
+
+
+.documentation h3 {
+    text-align: center;
+    font-family: 'Sub';
+    color: rgb(0, 93, 50);
+    text-align: left;
+    font-size: 2rem;
+    text-transform: lowercase;
+}
+
+
+.documentation p {
+    padding: 1%;
+}
+
+.documentation ul{
+    font-family: 'LifeLTStd-Roman';
+    font-size: 1.5em;
+    padding: 1%;
+}
+
+.documentation figure{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.documentation figure img{
+    width: 50%;
+}
+
 /* Carousel issues */
 
 @media only screen and (max-width: 1000px) {
