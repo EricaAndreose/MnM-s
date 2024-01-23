@@ -133,6 +133,10 @@ body {
     font-weight: 900;
 }
 
+.dropdown-item {
+    font-weight: 600;
+}
+
 
 
 
@@ -141,14 +145,18 @@ body {
     background-repeat: no-repeat; /* Prevent image from repeating */
     background: 
     linear-gradient(to bottom, rgb(56, 48, 38), rgb(124, 99, 58));
+    font-size: 1.35rem;
+    font-family: 'Dune';
+    font-weight: 700;
     border-radius: 5px;
     margin-left: 1cm;
     margin-right: 1cm;
-    height: 40vw;
+    height: 50%;
     position: relative;
     z-index: 100;
-    border: 2px solid #ffffff;
+    
 }
+
 
 .nav-item {
     cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
@@ -571,6 +579,11 @@ a:hover {
 
 }
 
+#bottone {
+     cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
+     font-weight: 600
+}
+
 
 #asideLeft h2{
     font-family: 'Dune';
@@ -617,10 +630,12 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     padding: 2%;
+    filter: brightness(1.2) contrast(1.2) saturate(1.5) blur(1px) !important;
 }
 
 .card{
-    background-image: url(img/medieval/back.png);
+    background-color:#C28842;
+    border: solid #ffffff
 }
 
 .card-title{
@@ -628,12 +643,16 @@ a:hover {
     font-size: 32px;
     text-align: center;
     color: #621313;
+    font-weight: bold;
 }
 
 .card-body p{
     padding: 0%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    font-family: 'Dune';
+    font-weight:bold
 }
 
 #footer .col-md-4 h3{
@@ -643,6 +662,9 @@ a:hover {
 #start{
     font-family: 'Dune';
     margin-bottom: 3%;
+    cursor: url('img/2030img/cursorepianetasabbioso.png'), auto;
+    font-weight:600
+    
 }
 
 .row #main{
@@ -661,19 +683,22 @@ a:hover {
 }
 
 #issue1 {
-    background-image: url('img/medieval/01.png');
-    background-size: cover;
+    background-image: url('img/2030img/issue12030.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 35%;
-    height: 80%;
+    height: 100%;
 }
 
 #container-titles {
     padding: 5%;
-    margin-top: 15%;
+    margin-top: 30%;
 }
 
 #container-titles h4{
     font-family: 'Dune';
+    font-weight: 600;
     font-size: 2rem;
     padding: 0%;
 }
@@ -685,21 +710,26 @@ a:hover {
     padding: 0.2% !important;
     margin-top: 5% !important;
     font-weight: bold !important;
+    background-color: #302d2ddd;
 }
 
 
 #issue2 {
-    background-image: url('img/medieval/01.png');
-    background-size: cover;
+    background-image: url('img/2030img/issue22030.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 35%;
-    height: 80%;
+    height: 100%;
 }
 
 #issue3 {
-    background-image: url('img/medieval/01.png');
-    background-size: cover;
+    background-image: url('img/2030img/issue32030.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 35%;
-    height: 80%;
+    height: 100%;
 }
 
 .jsart {
@@ -805,12 +835,15 @@ a:hover {
     /* Add this to center the buttons */
     .buttonscar {
         font-family: 'Dune';
+        font-weight: 600;
         position: relative;
         text-align: center; /* Adjust the margin as needed */
     }
     
     .buttonscar button {
-        margin: 0 1%; /* Add spacing between buttons */
+        margin: 0 1%;
+        cursor: url('img/2030img/cursorepianetasabbioso.png'), auto !important;
+         font-weight: 600 !important; /* Add spacing between buttons */
 
       }
 
@@ -842,5 +875,20 @@ a:hover {
           display: block;
         }
       }
+
+.documentation {
+    height: 80vh;
+    font-family: 'Dune';
+    font-weight: 800;
+    text-align: justify;
+    overflow-y: auto;
+    padding: 2%;
+}
+    
+.documentation p {
+    font-weight: 'Dune';
+    color:#F1FAEE;
+    padding: 1%;
+}
 
 
