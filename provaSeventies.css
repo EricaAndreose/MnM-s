@@ -4,13 +4,13 @@
 }
 
 @font-face {
-  font-family: 'Stilla Regular';
+  font-family: 'Stilla Script';
   src: url('font/seventies/Stilla\ Script\ Regular/Stilla\ Script\ Regular.ttf');
 }
 
 @font-face {
   font-family: 'CG Times';
-  src: url('font/seventies/cgtr45w.ttf');
+  src: url('font/seventies/cg_times/CG\ Times\ Regular\ font.ttf');
 }
 
 @font-face {
@@ -100,7 +100,7 @@ body {
   background-color: #f45683;;
   margin-left: 0.5%;
   margin-right: 0.5%;
-  height: 45%;
+  height: 85vh;
   position: relative;
   z-index: 1;
 }
@@ -111,7 +111,7 @@ body {
 }
 
 #externalContentColumn {
-  height: 40vw;
+  height: 85vh;
   overflow-y: auto; /* or overflow-y: scroll; */
   padding: 5%;
 }
@@ -140,7 +140,7 @@ body {
 }
 
 .title-2 {
-  font-family: 'Stilla Regular';
+  font-family: 'Stilla Script';
   text-align: left;
   font-size: 2.5em;
   color:#34ace0;
@@ -150,7 +150,7 @@ body {
 }
 
 .title-3 {
-  font-family: 'Stilla Regular';
+  font-family: 'Stilla Script';
   text-align: left;
   font-size: 2.5em;
   color:#34ace0;
@@ -298,13 +298,15 @@ body {
   margin-top: -75%;
   background-image: url('img/seventies/musicbox.png');
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .stitle {
-  font-size: 2em;
+  font-size: 150%;
   font-family: 'Boogaloo Avenue NF';
   text-align: center;
   color: black;
@@ -329,18 +331,16 @@ body {
 
 .action-btn {
   border: 0;
-  font-size: 30px;
+  font-size: 1em;
   cursor: pointer;
-  padding: 2px;
   background-color: #34ace0; /* A bright blue */
   color: #ffffff;
   border: none;
   border-radius: 20px; /* Rounded edges */
-  padding: 10px 20px;
-  font-size: 1em;
+  padding: 5% 7%;
   cursor: pointer;
   transition: transform 0.3s ease;
-  }
+}
 
 .content img {
   width:100%;
@@ -486,7 +486,7 @@ table tr td, table tr th{
 }
 
 .card-title{
-  font-family: 'Stilla Regular';
+  font-family: 'Stilla Script';
   font-size: 32px;
   text-align: center;
   color: #34ace0;
@@ -519,6 +519,7 @@ table tr td, table tr th{
 
 #issues-titles{
   font-family: 'Tabasco';
+  color:#34ace0;
   text-align: center;
   padding: 0%;
   margin: 0%;
@@ -527,9 +528,11 @@ table tr td, table tr th{
 
 #issue1 {
   background-image: url('img/seventies/seventies1.jpg');
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 35%;
-  height: 80%;
+  height: 100%;
 }
 
 #container-titles {
@@ -539,13 +542,16 @@ table tr td, table tr th{
 
 #container-titles h4{
   font-family: 'Tabasco';
+  color:#f45683;
+  background-color: #ede24dd4;
   font-size: 2rem;
-  padding: 0%;
+  padding: 3% 0%;
 }
 
 #layout {
   font-family: 'CG Times' !important;
-  font-size: 12px !important;
+  font-size: 0.9rem !important;
+  background-color:#34ace0ca !important;
   text-align: center !important;
   padding: 0.2% !important;
   margin-top: 5% !important;
@@ -555,29 +561,32 @@ table tr td, table tr th{
 
 #issue2 {
   background-image: url('img/seventies/seventies2.jpg');
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 35%;
-  height: 80%;
+  height: 100%;
 }
 
 #issue3 {
   background-image: url('img/seventies/seventies3.jpg');
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 35%;
-  height: 80%;
+  height: 100%;
 }
 
 .jsart {
-  color: #34ace0 !important;
+  color: #ffffff !important;
 }
 
 
 #carousel {
   position: relative;
-  height: 500px;
-  margin: auto 0; /* Center the carousel horizontally and add margin-top */
+  height: 60vh;
+  margin: auto 0 2% 0; /* Center the carousel horizontally and add margin-top */
   overflow: hidden;
-  padding: 2%;
   }
   
   #carousel div {
@@ -669,9 +678,10 @@ table tr td, table tr th{
   
   /* Add this to center the buttons */
   .buttonscar {
-      font-family: 'cup';
+      font-family: 'Jimi';
       position: relative;
       text-align: center; /* Adjust the margin as needed */
+      color:#ffffff;
   }
   
   .buttonscar button {
@@ -680,30 +690,87 @@ table tr td, table tr th{
     }
 
 
-    @media (max-width: 767px) {
-      #asideLeftSticky .tab-content {
-          width: 100%;
-      }
-  
-  
-      /* Assicurati di rimuovere eventuali margini o padding che possono influire sulla larghezza */
-      #asideLeftSticky .nav-tabs,
-      #asideLeftSticky .nav-item {
-          margin: 0;
-          padding: 0;
-      }
+@media (max-width: 767px) {
+    #asideLeftSticky .tab-content {
+        width: 100%;
+    }
 
-      #carousel {
-          padding: 0%;
-      }
 
-      #externalContentColumn{
-          padding: 0%;
-      }
+    /* Assicurati di rimuovere eventuali margini o padding che possono influire sulla larghezza */
+    #asideLeftSticky .nav-tabs,
+    #asideLeftSticky .nav-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    #carousel {
+        padding: 0%;
+    }
+
+    #externalContentColumn{
+        padding: 0%;
+    }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #carousel div {
+      width: 100%; /* Set width to 100% for responsiveness */
+      left: 50%; /* Center the content */
+      transform: translateX(-50%);
   }
   
-  @media (max-width: 991px) {
-      .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-        display: block;
-      }
-    }
+  #carousel div img {
+      width: 80%; /* Adjust the width of images for responsiveness */
+      max-width: none; /* Remove the maximum width for responsiveness */
+  }
+  
+  #carousel div.hideLeft,
+  #carousel div.hideRight,
+  #carousel div.prev,
+  #carousel div.prevLeftSecond,
+  #carousel div.selected,
+  #carousel div.next,
+  #carousel div.nextRightSecond {
+      left: 50%;
+      transform: translateY(0) translateX(-50%);
+  }
+  
+  #carousel div.prev img,
+  #carousel div.next img,
+  #carousel div.prevLeftSecond img,
+  #carousel div.nextRightSecond img {
+      width: 60%; /* Adjust the width of images for responsiveness */
+      max-width: none; /* Remove the maximum width for responsiveness */
+  }
+  
+  #carousel {
+      height: 80vh; /* Adjust height to fit content */
+  }
+  
+  #carousel div.hideLeft,
+  #carousel div.hideRight {
+      opacity: 1; /* Show hidden elements */
+  }
+}
+
+/* Media query per dispositivi con larghezza massima di 1000px */
+@media only screen and (max-width: 1000px) {
+  .music-container {
+    width: 100%; /* Imposta la larghezza della .music-container al 100% per dispositivi più piccoli */
+  }
+
+  .stitle {
+    font-size: 1.5em; /* Adatta la dimensione del testo per dispositivi più piccoli */
+  }
+
+  .action-btn {
+    font-size: 0.8em; /* Adatta la dimensione del testo dei bottoni per dispositivi più piccoli */
+    padding: 3% 5%; /* Adatta il padding dei bottoni per dispositivi più piccoli */
+  }
+}
