@@ -69,6 +69,30 @@
       "Alexina Barbin": "AlexinaB",
       "Barbin": "AlexinaB",
       "Michel Foucault": "MichelF"
+    },
+    {
+      "Prince": "https://en.wikipedia.org/wiki/Prince_(musician)",
+      "Boy George": "https://en.wikipedia.org/wiki/Boy_George",
+      "Twisted Sister": "https://en.wikipedia.org/wiki/Twisted_Sister",
+      "Marc Almond": "https://en.wikipedia.org/wiki/Marc_Almond",
+      "Holly Johnson": "https://en.wikipedia.org/wiki/Holly_Johnson",
+      "Jimmy Somerville": "https://en.wikipedia.org/wiki/Jimmy_Somerville",
+      "Grace Jones": "https://en.wikipedia.org/wiki/Grace_Jones",
+      "Annie Lennox": "https://en.wikipedia.org/wiki/Annie_Lennox",
+      "Siouxsie Sioux": "https://en.wikipedia.org/wiki/Siouxsie_Sioux",
+      "Jimi Hendrix": "https://en.wikipedia.org/wiki/Jimi_Hendrix",
+      "Future (aka Future Hendrix)": "https://en.wikipedia.org/wiki/Future_(rapper)",
+      "Rick James": "https://en.wikipedia.org/wiki/Rick_James",
+      "Rolling Stones": "https://en.wikipedia.org/wiki/The_Rolling_Stones",
+      "Little Richard": "https://en.wikipedia.org/wiki/Little_Richard",
+      "Bowie": "https://en.wikipedia.org/wiki/David_Bowie",
+      "Bolan": "https://en.wikipedia.org/wiki/Marc_Bolan",
+      "Barney Hoskyns": "https://en.wikipedia.org/wiki/Barney_Hoskyns",
+      "T.Rex": "https://en.wikipedia.org/wiki/T._Rex_(band)",
+      "Al Green": "https://en.wikipedia.org/wiki/Al_Green",
+      "Curtis Mayfield": "https://en.wikipedia.org/wiki/Curtis_Mayfield",
+      "Marvin Gaye": "https://en.wikipedia.org/wiki/Marvin_Gaye",
+      "Alexina Barbin": "https://en.wikipedia.org/wiki/Herculine_Barbin"
     }
   ],
   "places": [
@@ -83,6 +107,12 @@
       "Long Island": "LongIsland",
       "America": "America",
       "New York": "NY"
+    },
+    {
+      "UK": "https://en.wikipedia.org/wiki/United_Kingdom",
+      "Long Island": "https://en.wikipedia.org/wiki/Long_Island",
+      "America": "https://en.wikipedia.org/wiki/United_States",
+      "New York": "https://en.wikipedia.org/wiki/New_York_City"
     }
   ],
   "keywords": [

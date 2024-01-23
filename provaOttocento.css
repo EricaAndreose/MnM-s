@@ -391,8 +391,10 @@ table tr td, table tr th{
 }
 
 #issue1 {
-    background-image: url('img/artnouveau/backgroundAN.jpg');
+    background-image: url('img/artnouveau/ottocento1.jpg');
     background-size: cover;
+    width: 35%;
+    height: 80%;
 }
 
 #container-titles {
@@ -401,13 +403,13 @@ table tr td, table tr th{
 }
 
 #container-titles h4{
-    font-family: 'cup';
+    font-family: 'AstrenaDemo';
     font-size: 2rem;
-    padding: 0%;
+    padding: 10%;
 }
 
 #layout {
-    font-family: 'onciale' !important;
+    font-family: 'True Golden™' !important;
     font-size: 12px !important;
     text-align: center !important;
     padding: 0.2% !important;
@@ -417,17 +419,17 @@ table tr td, table tr th{
 
 
 #issue2 {
-    background-image: url('img/medieval/01.png');
+    background-image: url('img/artnouveau/ottocento2.jpg');
     background-size: cover;
     width: 35%;
-    height: 80%;
+    height: 100%;
 }
 
 #issue3 {
-    background-image: url('img/medieval/01.png');
+    background-image: url('img/artnouveau/ottocento3.jpg');
     background-size: cover;
     width: 35%;
-    height: 80%;
+    height: 100%;
 }
 
 .jsart {

@@ -83,6 +83,39 @@
       "Bella Shmurda": "BellaS",
       "Dunsin Wright": "Dwright",
       "Efe Asagba": "EfeA"
+    },
+    {
+      "Rema": "https://en.wikipedia.org/wiki/Rema_(musician)",
+      "CKay": "https://en.wikipedia.org/wiki/CKay",
+      "Cruel Santino": "https://en.wikipedia.org/wiki/Cruel_Santino",
+      "Wizkid": "https://en.wikipedia.org/wiki/Wizkid",
+      "Burna Boy": "https://en.wikipedia.org/wiki/Burna_Boy",
+      "Amaarae": "https://en.wikipedia.org/wiki/Amaarae",
+      "Tems": "https://en.wikipedia.org/wiki/Tems",
+      "Adekunle Gold": "https://en.wikipedia.org/wiki/Adekunle_Gold",
+      "Fela Anukulapo Kuti": "https://en.wikipedia.org/wiki/Fela_Kuti",
+      "King Sunny Ade": "https://en.wikipedia.org/wiki/King_Sunny_Ad%C3%A9",
+      "Chief Ebenezer Obey": "https://en.wikipedia.org/wiki/Ebenezer_Obey",
+      "Majek Fashek": "https://en.wikipedia.org/wiki/Majek_Fashek",
+      "Puff Daddy": "https://en.wikipedia.org/wiki/Sean_Combs",
+      "Jay-Z": "https://en.wikipedia.org/wiki/Jay-Z",
+      "2Pac": "https://en.wikipedia.org/wiki/Tupac_Shakur",
+      "2face Idbia": "https://en.wikipedia.org/wiki/2Baba",
+      "Tony Tetuila": "https://en.wikipedia.org/wiki/Tony_Tetuila",
+      "Eedris Abdulkareem": "https://en.wikipedia.org/wiki/Eedris_Abdulkareem",
+      "D’banj": "https://en.wikipedia.org/wiki/D%27banj",
+      "P-Square": "https://en.wikipedia.org/wiki/P-Square",
+      "Michael Jackson": "https://en.wikipedia.org/wiki/Michael_Jackson",
+      "Tiwa Savage": "https://en.wikipedia.org/wiki/Tiwa_Savage",
+      "Yemi Alade": "https://en.wikipedia.org/wiki/Yemi_Alade",
+      "Goldie Harvey": "https://en.wikipedia.org/wiki/Goldie_Harvey",
+      "Seyi Shay": "https://en.wikipedia.org/wiki/Seyi_Shay",
+      "Virgil Abloh": "https://en.wikipedia.org/wiki/Virgil_Abloh",
+      "Benson Edo": "https://en.wikipedia.org/wiki/Benson_Idahosa",
+      "Davido": "https://en.wikipedia.org/wiki/Davido",
+      "Badboytimz": "https://en.wikipedia.org/wiki/Bad_Boy_Timz",
+      "Bella Shmurda": "https://en.wikipedia.org/wiki/Bella_Shmurda",
+      "Efe Asagba": "https://en.wikipedia.org/wiki/Efe_Ajagba"
     }
   ],
   "places": [
@@ -99,6 +132,13 @@
       "England": "England",
       "U.S.": "USA",
       "Ghana": "Ghana"
+    },
+    {
+      "Nigeria": "https://en.wikipedia.org/wiki/Nigeria",
+      "London": "https://en.wikipedia.org/wiki/London",
+      "England": "https://en.wikipedia.org/wiki/England",
+      "U.S.": "https://en.wikipedia.org/wiki/United_States",
+      "Ghana": "https://en.wikipedia.org/wiki/Ghana"
     }
   ],
   "keywords": [
