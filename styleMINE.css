@@ -238,5 +238,19 @@ h2 {
     padding: 1%;
 }
 
+.documentation ul{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    padding: 1%;
+}
 
+.documentation figure{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.documentation figure img{
+    width: 50%;
+}
 
