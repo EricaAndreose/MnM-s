@@ -28,7 +28,7 @@ body {
     background-size: cover;
     background: 
     linear-gradient(rgb(40, 36, 36), rgb(40, 36, 36)) right/30% 100%,
-    linear-gradient(to bottom, rgb(240, 224, 205), rgba(184, 172, 225, 0.564));
+    linear-gradient(to bottom, rgb(240, 224, 205), rgba(215, 212, 225, 0.564));
     background-repeat: no-repeat;
     position: relative;
     
@@ -796,4 +796,8 @@ table tr td, table tr th{
     text-align: center;
     font-weight: 800;
     font-family: 'Monoton';
+}
+
+.documentation figure image {
+    max-width: 50%;
 }
