@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Archive Garamond';
+    src: local('Archive Garamond Exp Regular'), local('Archive-Garamond-Exp-Regular'),
+        url('ArchiveGaramondExp.woff2') format('woff2'),
+        url('ArchiveGaramondExp.woff') format('woff'),
+        url('ArchiveGaramondExp.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

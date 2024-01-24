@@ -1,6 +1,11 @@
 @font-face {
-    font-family: 'AstrenaDemo';
-    src: url('font/artnouveau/astrenademo/Astrena_Demo.ttf');
+    font-family: 'Alte Schwabacher';
+    src: url('font/artnouveau/alte-schwabacher/AlteSchwabacher.ttf');
+}
+
+@font-face {
+    font-family: 'Archive Garamond Exp';
+    src: url('font/artnouveau/ArchiveGaramondExp/ArchiveGaramondExp.ttf');
 }
 
 @font-face {
@@ -8,10 +13,6 @@
     src: url('font/artnouveau/beardsons-normal/Beardsons\ -\ Normal.ttf');
 }
 
-@font-face {
-    font-family: 'True Golden™';
-    src: url('font/artnouveau/true_golden_quot_/True_Golden_quot_/trg_____.ttf');
-}
 .background-svg {
     display: none;
 }
@@ -30,17 +31,19 @@
 }
 
 body {
-    font-family: 'True Golden™'; 
+    font-family: 'Alte Schwabacher'; 
     margin: 0 auto;
-    font-size: 1em; 
-    color: #222;
     padding: 0 1.5%; 
     background-image: url('img/artnouveau/backgroundAN.jpg');
+    text-align: justify;
+    line-height: 1;
+    font-size: 100%;
+    font-weight: lighter;
 }
 
 #subtitle {
-    font-family: 'Beardsons Normal';
-    color: rgb(40, 36, 36);
+    font-family: 'Archive Garamond Exp';
+    color: rgb(30, 28, 28);
     background-color: #ddd2b2;
     text-align: center;
     padding: 0.5em;
@@ -51,19 +54,21 @@ body {
     border-radius: 5px;
     background-color: transparent;
     margin-top: -0.5%;
-    font-family: 'AstrenaDemo';
+    font-family: 'Alte Schwabacher';
     height: 5vh;
 }
 
 
 .dropdown-menu {
-    background-color: #ddd2b2;
+    background-color: #ddd2b2 !important;
+    color:#3b697a !important;
 }
 
 /* insertion */
 
 .dropdown-submenu {
     position: relative;
+    color:#3b697a !important;
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -71,29 +76,36 @@ body {
     left: 100%;
     margin-top: -1px;
     display: none; /* Hide the submenu by default */
+    color:#3b697a !important;
 }
 
 .dropdown-submenu:hover .dropdown-menu {
     display: block; /* Display the submenu on hover */
+    color:#3b697a !important;
 }
 
 /* insertion */
 
 #main {
-    font-family: 'AstrenaDemo';
+    font-family: 'Alte Schwabacher';
     background-color: #ddd2b2;
     border-radius: 5px;
     margin-left: 0.5%;
     margin-right: 0.5%;
-    height: 85vh;
+    height: 80vh;
     position: relative;
     z-index: 1;
+    text-align: justify;
+    line-height: 1;
+    font-size: 100%;
+    font-weight: lighter;
 }
 
 #externalContentColumn {
     background-color: #ddd2b2;
-    height: 85vh; /* da cambiare con la percentuale anche qua? */
+    height: 80vh;
     overflow-y: auto; /* or overflow-y: scroll; */
+    color:rgb(40, 36, 36);
 }
 
 #map-box { 
@@ -105,6 +117,16 @@ body {
     background-color: #ddd2b2;
 }
 
+.content img {
+    width:100%;
+    display: block;
+    position: relative;
+    min-width: auto;
+    min-height: auto;
+    padding: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
 
 .title {
     font-family: 'Beardsons Normal';
@@ -112,26 +134,36 @@ body {
     font-weight: 900;
     letter-spacing: -2px;
     line-height: .90;
-    color: #000;
+    color: rgb(30, 28, 28);
     text-align: center;
 }
 
   
 .title-2 {
-font-family: 'AstrenaDemo';
+    font-family: 'Alte Schwabacher';
+    font-size: 250%;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10%;
 }
 
 .title-3 {
-font-family: 'AstrenaDemo';
+    font-family: 'Alte Schwabacher';
+    font-size: 250%;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10%;
 }
 
-/* classe per la prima lettera da mettere*/
+#main a {
+    color: #a85619;
+}
 
 .article {
-    font-family: 'True Golden™';
-    background: url('img/artnouveau/cornerTopLeft.png') top left no-repeat, url('img/artnouveau/cornerTopRight.png') top right no-repeat, url('img/artnouveau/cornerBottomLeft.png') bottom left no-repeat, url('img/artnouveau/cornerBottomRight.png') bottom right no-repeat;
+    font-family: 'Alte Schwabacher';
+    background: url('img/artnouveau/cornerTopLeft.png') top left no-repeat, url('img/artnouveau/cornerTopRight.png') top right no-repeat;
     background-size: 20%;
-    padding-bottom: 30%;
+    padding-bottom: 12%;
 }
 
 
@@ -141,7 +173,7 @@ font-family: 'AstrenaDemo';
     padding-top: 10%;
     padding-left: 10%;
     padding-right:10%;
-    font-family: 'AstrenaDemo';
+    font-family: 'Archive Garamond Exp';
     text-align: center;
 }
 
@@ -157,22 +189,20 @@ font-family: 'AstrenaDemo';
 
 .content {
     column-count: 2;
-    column-gap: 10dvw;
+    column-gap: 13dvw;
     width: auto;
     height: auto;
     overflow: visible;
     background: 
-        url('img/artnouveau/centro.png') center top repeat-y,
-        url('img/artnouveau/borders.png') left repeat-y, 
-        url('img/artnouveau/borders.png') right repeat-y;
-    background-size: auto, 3%, 3%;
+        url('img/artnouveau/centro.png') center top repeat-y;
+    background-size: auto;
     margin: 20% 2% auto;
     position: relative;
-    padding: 7%;
 }
 
 .highlight {
-    background-color: yellow; /* o qualsiasi altra formattazione visiva desiderata */
+    background-color:#3b697ae8;
+    color:#ddd2b2;
 }
 
 #space {
@@ -211,7 +241,7 @@ font-family: 'AstrenaDemo';
 
 
 .button1 {
-    position: absolute;
+    position: relative;
     z-index: 3;
 }
 
@@ -236,7 +266,7 @@ font-family: 'AstrenaDemo';
 
 .stitle {
     font-size: 20px;
-    font-family: 'AstrenaDemo';
+    font-family: 'Alte Schwabacher';
     text-align: center;
     }
 
@@ -270,71 +300,89 @@ table tr td, table tr th{
 
 #myTab {
     overflow-y: none;
+    
   }
   
-  .tab-content {
+.tab-content {
     padding-top: 10px;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
     text-align: justify;
-    max-height: 33vw; /* Imposta l'altezza massima desiderata per la visualizzazione del contenuto dei tab */
-    max-width: 22vw; /* Set the desired maximum width for the text */
-  }
+    width: 100%;
+    max-height: 70vh;
+}
+
+.nav-item {
+    color: #3b697a !important;
+    font-family: 'Alte Schwabacher';
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.nav-link {
+    color: #3b697a !important;
+    font-family: 'Alte Schwabacher';
+    font-weight: bold;
+    font-size: 1.1em;
+}
   
-  .tab-pane {
-    max-height: 100%; /* Consente al contenuto dei tab di espandersi completamente all'interno del container */
-  }
+  /* .tab-pane {
+    max-height: 100%; /* Consente al contenuto dei tab di espandersi completamente all'interno del container
+  } */
   
 
 @media (max-width: 800px) {
     .content {
-    column-count: 1;
-    margin-left: 7%;
-    margin-right: 7%;
-    background:     
-        url('img/artnouveau/borders.png') left repeat-y, 
-        url('img/artnouveau/borders.png') right repeat-y;
-    background-size: 3%, 3%;
+        column-count: 1;
+        margin-left: 7%;
+        margin-right: 7%;
+        background-image: none;
     }
   }
 
 /* INDEX */
 
 #asideLeft h2{
-    font-family: 'AstrenaDemo';
+    font-family: 'Alte Schwabacher';
     text-align: center;
     padding: 2%;
-    color: rgb(0, 93, 50);
+    color: #a85619;
+    font-size: 2em;
 }
 
 #asideLeft p{
     padding: 0%;
-    font-family: 'True Golden™';
+    font-family: 'Alte Schwabacher';
+    font-size: 1.5em;
 }
 
 #center h1{
-    font-family: 'AstrenaDemo';
+    font-family: 'Alte Schwabacher';
     text-align: center;
     padding: 2%;
-    color: rgb(0, 0, 143);
+    color:#3b697a;
+    font-size: 2em;
 }
 
 #center p{
     padding: 0%;
-    font-family: 'True Golden™';
+    font-family: 'Alte Schwabacher';
+    font-size: 1.5em;
 }
 
 #asideRight h2{
-    font-family: 'AstrenaDemo';
+    font-family: 'Alte Schwabacher';
     text-align: center;
     padding: 2%;
-    color: rgb(0, 93, 50);
+    color:#a85619;
+    font-size: 2em;
 }
 
 #asideRight p{
     padding: 0%;
-    font-family: 'True Golden™';
+    font-family: 'Alte Schwabacher';
+    font-size: 1.5em;
 }
 
 #cards{
@@ -356,10 +404,10 @@ table tr td, table tr th{
 }
 
 .card-title{
-    font-family: 'AstrenaDemo';
+    font-family: 'Alte Schwabacher';
     font-size: 32px;
     text-align: center;
-    color: #621313;
+    color:#3b697a;
 }
 
 .card-body p{
@@ -370,8 +418,9 @@ table tr td, table tr th{
 
 
 #start{
-    font-family: 'AstrenaDemo';
+    font-family: 'Alte Schwabacher';
     margin-bottom: 3%;
+    font-size: 2em;
 }
 
 /* ISSUE BASIC */
@@ -383,7 +432,7 @@ table tr td, table tr th{
 }
 
 #issues-titles{
-    font-family: 'AstrenaDemo';
+    font-family: 'Alte Schwabacher';
     text-align: center;
     padding: 0%;
     margin: 0%;
@@ -405,7 +454,7 @@ table tr td, table tr th{
 }
 
 #container-titles h4{
-    font-family: 'AstrenaDemo';
+    font-family: 'Alte Schwabacher';
     font-size: 1.8rem;
     padding: 2%;
     margin-left: 5% !important;
@@ -416,7 +465,7 @@ table tr td, table tr th{
 }
 
 #layout {
-    font-family: 'True Golden™' !important;
+    font-family: 'Alte Schwabacher' !important;
     font-size: 0.9rem !important;
     text-align: center !important;
     padding: 2% !important;
@@ -424,7 +473,7 @@ table tr td, table tr th{
     margin-right: 5% !important;
     margin-top: 5% !important;
     font-weight: bold !important;
-    background-color: #ddd2b28e !important;
+    background-color: #ddd2b2b9 !important;
 }
 
 
@@ -447,7 +496,8 @@ table tr td, table tr th{
 }
 
 .jsart {
-    color: #561400 !important;
+    color: #3b697a !important;
+    font-weight: bold !important;
 }
 
 
@@ -547,7 +597,7 @@ table tr td, table tr th{
     
     /* Add this to center the buttons */
     .buttonscar {
-        font-family: 'Beardsons Normal';
+        font-family: 'Archive Garamond Exp';
         position: relative;
         text-align: center; /* Adjust the margin as needed */
     }
@@ -558,33 +608,33 @@ table tr td, table tr th{
       }
 
 
-      @media (max-width: 767px) {
-        #asideLeftSticky .tab-content {
-            width: 100%;
-        }
-    
-    
-        /* Assicurati di rimuovere eventuali margini o padding che possono influire sulla larghezza */
-        #asideLeftSticky .nav-tabs,
-        #asideLeftSticky .nav-item {
-            margin: 0;
-            padding: 0;
-        }
-
-        #carousel {
-            padding: 0%;
-        }
-
-        #externalContentColumn{
-            padding: 0%;
-        }
+@media (max-width: 767px) {
+    #asideLeftSticky .tab-content {
+        width: 100%;
     }
-    
-    @media (max-width: 991px) {
-        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-          display: block;
-        }
-      }
+
+
+    /* Assicurati di rimuovere eventuali margini o padding che possono influire sulla larghezza */
+    #asideLeftSticky .nav-tabs,
+    #asideLeftSticky .nav-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    #carousel {
+        padding: 0%;
+    }
+
+    #externalContentColumn{
+        padding: 0%;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
 
 @media only screen and (max-width: 1000px) {
     #carousel div {
