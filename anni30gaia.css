@@ -116,11 +116,11 @@ body {
     font-family: 'Josefin';
     font-weight:bold;
     text-align: justify;
-    font-size: 1.25rem;
+    font-size: 1rem;
     border-radius: 5px;
     margin-left: 1cm;
     margin-right: 1cm;
-    height: 50%;
+    height: 85vh;
     position: relative;
     z-index: 9;
     border: 2px rgb(4, 4, 4);
@@ -265,7 +265,7 @@ body {
     font-size: 18x;
     color: #0a0a0a;
     text-align: justify;
-
+    line-height: 1.4;
 }
 
 .myFirstletter{
@@ -274,13 +274,13 @@ body {
     letter-spacing: 0.1em;
     color: #0a0a0a;
     font-family:'Semplicita';
+    line-height: 1;
 }
 .article img {
     background-color: rgba(0, 0, 0, 0.5); 
     mix-blend-mode: luminosity; 
     max-width: 100%;
     height: auto;
-    border: 2px solid rgb(4, 4, 4);
     filter: sepia(60%);
     display: block;
     margin-left: auto;
@@ -318,7 +318,7 @@ a:hover {
 }
 
 #space {
-    height: 40vh; 
+    height: 19rem; 
 }
 
 .image-container {
@@ -770,7 +770,8 @@ table tr td, table tr th{
       }
 
 .documentation {
-    height: 80vh;
+    height: 80
+    ;
     font-family: 'Becker';
     text-align: justify;
     overflow-y: auto;
