@@ -607,6 +607,27 @@ table tr td, table tr th{
 
       }
 
+.documentation figure {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+.documentation figure img {
+    width:50%;
+}
+
+.documentation {
+    font-family: 'Alte Schwabacher'; 
+    margin: 0 auto;
+    padding: 3%;
+    text-align: justify;
+    line-height: 1;
+    font-size: 100%;
+    overflow-y: auto;
+    height: 80vh;
+}
+
 
 @media (max-width: 767px) {
     #asideLeftSticky .tab-content {
