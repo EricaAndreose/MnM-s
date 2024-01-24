@@ -907,4 +907,8 @@ a:hover {
     font-weight: 800;
 }
 
+.documentation figure image {
+    max-width: 50%;
+}
+
 
