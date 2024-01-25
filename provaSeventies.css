@@ -59,7 +59,6 @@ body {
   background-color: transparent;
   margin-top: -0.5%;
   font-family: 'Jimi';
-  height: 5vh;
 }
 
 
@@ -93,7 +92,7 @@ body {
   background-color: #f45683;
   margin-left: 0.5%;
   margin-right: 0.5%;
-  height: 80vh;
+  height: 80%;
   position: relative;
   z-index: 1;
 }
@@ -441,13 +440,6 @@ table tr td, table tr th{
     column-count: 1;
     margin-left: 7%;
     margin-right: 7%;
-    background: 
-      url('img/seventies/stella.png') top repeat-x,
-      url('img/seventies/stella.png') bottom repeat-x,
-      url('img/seventies/stella.png') left repeat-y, 
-      url('img/seventies/stella.png') right repeat-y;
-    background-size: 3%;
-    height: 80;
   }
 }
 

@@ -55,7 +55,6 @@ body {
     background-color: transparent;
     margin-top: -0.5%;
     font-family: 'Alte Schwabacher';
-    height: 5vh;
 }
 
 
@@ -92,7 +91,7 @@ body {
     border-radius: 5px;
     margin-left: 0.5%;
     margin-right: 0.5%;
-    height: 80vh;
+    height: 80%;
     position: relative;
     z-index: 1;
     text-align: justify;
